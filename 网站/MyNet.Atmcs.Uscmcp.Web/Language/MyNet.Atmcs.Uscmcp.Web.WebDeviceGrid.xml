@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Message>
+  <Language>CN</Language>
+  <Dictionary>
+    <MyNet.Atmcs.Uscmcp.Web.WebDeviceGrid>
+      <WebDeviceGrid3 CN="设备状态" EN="Equipment state" JP="" RU="" />
+      <WebDeviceGrid5 CN="卡口名称" EN="name of the bayonet" JP="" RU="" />
+      <WebDeviceGrid4 CN="设备名称" EN="Device name" JP="" RU="" />
+      <WebDeviceGrid6 CN="网络状态" EN="network status" JP="" RU="" />
+      <WebDeviceGrid7 CN="工作状态" EN="Working state" JP="" RU="" />
+      <WebDeviceGrid8 CN="设备类型" EN="Device type" JP="" RU="" />
+      <WebDeviceGrid9 CN="设备型号" EN="Equipment model" JP="" RU="" />
+      <WebDeviceGrid1 CN="设备状态数据分析" EN="Equipment status data analysis" JP="" RU="" />
+    </MyNet.Atmcs.Uscmcp.Web.WebDeviceGrid>
+  </Dictionary>
+</Message>

@@ -1,0 +1,147 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>证据文件</title>
+    <meta http-equiv="Content-Type" content="text/html" charset="GBK" />
+    <base target="_self" />
+    <style type="text/css">
+        .drag
+        {
+            position: relative;
+            cursor: hand;
+        }
+    </style>
+    <script language="javascript" src="../Scripts/common.js" type="text/javascript" charset="utf-8"></script>
+    <script language="JavaScript" type="text/javascript">
+
+        //debugger
+        var originalZoom = 1;
+        var imgobj, imgDiv, ptop, pleft;
+        function LoadImg() {
+            imgobj = document.getElementById("PreImage");
+            imgDiv = document.getElementById("imageDiv");
+            document.getElementById("PreImage").src = queryString("imgUrl");
+            imgobj.style.height = imgDiv.clientHeight;
+            ptop = imgobj.style.top;
+            pleft = imgobj.style.left;
+        }
+        //debugger	
+        function ZoomMax() {
+            originalZoom = originalZoom * 2;
+            document.getElementById("PreImage").style.zoom = originalZoom;
+            if (imgobj.clientHeight * originalZoom > imgDiv.clientHeight || imgobj.clientWidth * originalZoom > imgDiv.clientHeight) {
+                document.onmousedown = drags;
+                document.onmouseup = new Function("dragapproved=false");
+            }
+            else {
+                document.onmousedown = ""; document.onmouseup = "";
+            }
+            imgobj.style.top = ptop;
+            imgobj.style.left = pleft;
+        }
+        //debugger
+        function ZoomMin() {
+            originalZoom = originalZoom / 2;
+            document.getElementById("PreImage").style.zoom = originalZoom;
+            if (imgobj.clientHeight * originalZoom > imgDiv.clientHeight || imgobj.clientWidth * originalZoom > imgDiv.clientHeight) {
+                document.onmousedown = drags;
+                document.onmouseup = new Function("dragapproved=false");
+            }
+            else {
+                document.onmousedown = ""; document.onmouseup = "";
+            }
+            imgobj.style.top = ptop;
+            imgobj.style.left = pleft;
+        }
+        //debugger
+        function ResetSize() {
+            originalZoom = 1; imgobj.style.height = "";
+            document.getElementById("PreImage").style.zoom = '100%';
+            if (imgobj.clientHeight * originalZoom > imgDiv.clientHeight || imgobj.clientWidth * originalZoom > imgDiv.clientHeight) {
+                document.onmousedown = drags;
+                document.onmouseup = new Function("dragapproved=false");
+            }
+            else {
+                document.onmousedown = ""; document.onmouseup = "";
+            }
+            imgobj.style.top = ptop;
+            imgobj.style.left = pleft;
+        }
+        //debugger
+        function mouseimg() {
+            var zoom = parseInt(document.getElementById("PreImage").style.zoom, 10) || 100;
+            zoom += event.wheelDelta / 12;
+
+            if (zoom > 0) {
+                document.getElementById("PreImage").style.zoom = zoom + '%'; originalZoom = zoom / 100;
+            }
+            if (imgobj.clientHeight * zoom / 100 > imgDiv.clientHeight || imgobj.clientWidth * zoom / 100 > imgDiv.clientHeight) {
+                document.onmousedown = drags;
+                document.onmouseup = new Function("dragapproved=false");
+            }
+            else {
+                document.onmousedown = ""; document.onmouseup = "";
+            }
+            imgobj.style.top = ptop;
+            imgobj.style.left = pleft;
+            return false;
+        }
+
+        var dragapproved = false;
+        var z, x, y;
+        //debugger
+        function move() {
+            if (event.button == 1 && dragapproved) {
+                var left = temp1 + event.clientX - x;
+                var top = temp2 + event.clientY - y;
+                prevX = event.clientX;
+                prevY = event.clientY;
+                z.style.pixelLeft = temp1 + event.clientX - x;
+                z.style.pixelTop = temp2 + event.clientY - y;
+                return false;
+            }
+        }
+        //debugger
+        function drags() {
+            if (!document.all)
+                return;
+            if (event.srcElement.className == "drag") {
+                dragapproved = true;
+                z = event.srcElement;
+                temp1 = z.style.pixelLeft;
+                temp2 = z.style.pixelTop;
+                x = event.clientX;
+                y = event.clientY;
+                document.onmousemove = move;
+            }
+        }  
+
+//-->
+    </script>
+</head>
+<body onload="LoadImg()" onmousewheel="return mouseimg()" style="cursor: move;">
+    <form id="form1" runat="server">
+    <div style="height: 100%; width: 100%">
+        <table style="width: 100%; height: 100%" border="1" cellspacing="2" cellpadding="2">
+            <tr>
+                <td align="left" bgcolor="#CCCCCC" style="width: 100%">
+                    <input name="btnZoomMax" type="button" id="btnZoomMax" value="放大" onclick="ZoomMax()" />
+                    <input name="btnZoomMin" type="button" id="btnZoomMin" value="缩小" onclick="ZoomMin()" />
+                    <input name="btnResetSize" type="button" id="btnResetSize" value="原始尺寸" onclick="ResetSize()" />
+                    <input name="btnClose" type="button" id="btnClose" value="关闭" onclick="window.close()" />
+                    (滚动鼠标滚轴可缩放图片)
+                </td>
+            </tr>
+            <tr>
+                <td align="center" >
+                    <div style="overflow: auto; width: 100%; height: 100%; left: 0px; top: 0px;" id="imageDiv">
+                        <img alt="双击图片关闭页面" src="" id="PreImage" ondblclick="window.close()" class="drag"
+                            style="width: 100%; height: 100%; top: 0px; left: 0px;" />
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    </form>
+</body>
+</html>

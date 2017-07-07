@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Message>
+  <Language>CN</Language>
+  <Dictionary>
+    <WebApplication1.WebForm1>
+      <m9001 CN="确定" EN="Ok"></m9001>
+      <m9002 CN="取消" EN="Cancel" ></m9002>
+      <m9003 CN="查询" EN="Search" ></m9003>
+    </WebApplication1.WebForm1>
+  </Dictionary>
+</Message>

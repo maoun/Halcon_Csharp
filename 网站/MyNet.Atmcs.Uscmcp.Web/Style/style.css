@@ -1,0 +1,52 @@
+﻿@charset "utf-8";
+/*科e互联特效基本框架CSS*/
+body, ul, dl, dd, dt, ol, li, p, h1, h2, h3, h4, h5, h6, textarea, form, select, fieldset, table, td, div, input {margin:0;padding:0;-webkit-text-size-adjust: none}
+h1, h2, h3, h4, h5, h6{font-size:12px;font-weight:normal}
+body>div{margin:0 auto}
+div {text-align:left}
+a img {border:0}
+body { color: #333; text-align: center; font: 12px "宋体"; }
+ul, ol, li {list-style-type:none;vertical-align:0}
+a {outline-style:none;color:#535353;text-decoration:none}
+a:hover { color: #D40000; text-decoration: none}
+.clear{height:0; overflow:hidden; clear:both}
+.button {display: inline-block;zoom: 1; *display: inline;vertical-align: baseline;margin: 0 2px;outline: none;cursor: pointer;text-align: center;text-decoration: none;font: 14px/100% Arial, Helvetica, sans-serif;padding:0.25em 0.6em 0.3em;text-shadow: 0 1px 1px rgba(0,0,0,.3);-webkit-border-radius: .5em; -moz-border-radius: .5em;border-radius: .5em;-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);box-shadow: 0 1px 2px rgba(0,0,0,.2);
+}
+.red {color: #faddde;border: solid 1px #980c10;background: #d81b21;background: -webkit-gradient(linear, left top, left bottom, from(#ed1c24), to(#A51715));background: -moz-linear-gradient(top,  #ed1c24,  #A51715);filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#ed1c24', endColorstr='#aa1317');
+}
+.red:hover { background: #b61318; background: -webkit-gradient(linear, left top, left bottom, from(#c9151b), to(#a11115)); background: -moz-linear-gradient(top,  #c9151b,  #a11115); filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#c9151b', endColorstr='#a11115'); color:#fff;}
+.red:active {color: #de898c;background: -webkit-gradient(linear, left top, left bottom, from(#aa1317), to(#ed1c24));background: -moz-linear-gradient(top,  #aa1317,  #ed1c24);filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#aa1317', endColorstr='#ed1c24');}
+.cor_bs,.cor_bs:hover{color:#ffffff;}
+.keBody{background:url(../images/bodyBg.jpg) repeat #333;}
+.keTitle{height:60px; line-height:60px; font-size:30px; font-family:'微软雅黑'; color:#FFF; text-align:center; background:url(../images/bodyBg3.jpg) repeat-x bottom left; font-weight:normal}
+.kePublic{ background: #FFF; }
+.keBottom{color:#FFF; padding-top:25px; line-height:28px; text-align:center; font-family:'微软雅黑'; background:url(../images/bodyBg2.jpg) repeat-x top left; padding-bottom:25px}
+.keTxtP{font-size:16px; color:#ffffff;}
+.keUrl{color:#FFF; font-size:30px;}
+.keUrl:hover{ text-decoration: underline; color: #FFF; }
+.mKeBanner,.mKeBanner div{text-align:center;}
+/* 效果CSS开始 */
+.banner{height:600px;}
+.banner .ban_c img{position:absolute;width:1920px;left:50%;margin-left:-960px;top:0;}
+.banner .ban_nav{display:none;}
+.banner .Left,.banner .Right{position:absolute;width:38px;height:38px;background:url(../images/cir_white.gif) no-repeat #aaa;right:38%;top:500px;}
+.banner .Left{margin-right:-450px;background-position:5px 0}
+.banner .Right{margin-right:-490px;background-position:-33px 0;background-color:#e6292f;}
+.bann_ext{position:relative;}
+.frontCover{position:absolute;top:-120px;padding:0 0 16px;border-bottom:5px solid #de0000;}
+.frontCover li{float:left;width:100px;padding:3px;background:#000;color:#fff;overflow:hidden;margin-right:10px;cursor:pointer;}
+.frontCover p{text-align:center;height:14px;line-height:18px;overflow:hidden;}
+.frontCover .img{position:relative;height:50px;overflow:hidden;}
+.frontCover img{position:absolute;width:192px;height:50px;left:-50px;}
+.frontCover .open{background:#e60013;}
+.wrap{width:1200px;margin-left:auto;margin-right:auto;}
+
+.slide{position:relative;width:100%;}
+.ban_c{display:none;position:absolute;left:0;top:0;width:100%;height:100%;overflow:hidden;}
+.ban_c img{width:100%;height:100%;}
+.ban_t{position:absolute;left:0;bottom:0;width:100%;padding:4px 0;text-indent:10px;white-space:nowrap;overflow:hidden;color:#fff;background:rgba(0,0,0,.5);filter:progid:DXImageTransform.Microsoft.gradient(startcolorstr=#88000000,endcolorstr=#88000000);z-index:3;}
+.ban_nav{position:absolute;bottom:0;left:0;width:100%;text-align:right;z-index:4;}
+.ban_nav a{display:inline-block;vertical-align:middle;width:14px;height:14px;line-height:14px;overflow:hidden;text-align:center;margin-right:8px;cursor:pointer;text-decoration:none;font-size:10px;-webkit-text-size-adjust:none;background:#ccc;}
+.ban_nav .on{background:#f90;color:#fff;}
+.Left,.Right{cursor:pointer;}
+/* 效果CSS结束 */

@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Message>
+  <Language>CN</Language>
+  <Dictionary>
+    <MyNet.Atmcs.Uscmcp.Web.PassCarInfoQuery>
+      <PassCarInfoQuery1 CN="号牌种类：" EN="Number plate type：" JP="" RU="" />
+      <PassCarInfoQuery2 CN="请选择..." EN="Please select ..." JP="" RU="" />
+      <PassCarInfoQuery3 CN="清除选中" EN="Clear selected" JP="" RU="" />
+      <PassCarInfoQuery4 CN="号牌号码：" EN="Number plate：" JP="" RU="" />
+      <PassCarInfoQuery5 CN="六位号牌号码" EN="Six Number of the plate number" JP="" RU="" />
+      <PassCarInfoQuery6 CN="模糊查询" EN="Fuzzy query" JP="" RU="" />
+      <PassCarInfoQuery7 CN="车身颜色：" EN="Vehicle Body Color" JP="" RU="" />
+      <PassCarInfoQuery8 CN="选择车身颜色..." EN="Select body color..." JP="" RU="" />
+      <PassCarInfoQuery9 CN="查询" EN="Query" JP="" RU="" />
+      <PassCarInfoQuery10 CN="重置" EN="Reset" JP="" RU="" />
+      <PassCarInfoQuery11 CN="高级查询" EN="Advanced Search" JP="" RU="" />
+      <PassCarInfoQuery12 CN="行驶方向：" EN="Driving direction" JP="" RU="" />
+      <PassCarInfoQuery13 CN="选择行驶方向..." EN="Select the travel direction..." JP="" RU="" />
+      <PassCarInfoQuery14 CN="车速(km/h)：" EN="Vehicle speed(km/h)" JP="" RU="" />
+      <PassCarInfoQuery15 CN="车道编号：" EN="Lane Number：" JP="" RU="" />
+      <PassCarInfoQuery16 CN="查询结果" EN="Query Result" JP="" RU="" />
+      <PassCarInfoQuery17 CN="当前0页,共0页" EN="Current 0 Pages, Total 0 Pages" JP="" RU="" />
+      <PassCarInfoQuery18 CN="上一页" EN="Previous page" JP="" RU="" />
+      <PassCarInfoQuery19 CN="下一页" EN="Next page" JP="" RU="" />
+      <PassCarInfoQuery20 CN="导出Excel" EN="ExportExcel" JP="" RU="" />
+      <PassCarInfoQuery21 CN="详细" EN="Detailed" JP="" RU="" />
+      <PassCarInfoQuery22 CN="记录编号" EN="Record number" JP="" RU="" />
+      <PassCarInfoQuery23 CN="卡口名称" EN="Bayonet name" JP="" RU="" />
+      <PassCarInfoQuery24 CN="号牌号码" EN="Number plate" JP="" RU="" />
+      <PassCarInfoQuery25 CN="号牌种类" EN="Number plate type" JP="" RU="" />
+      <PassCarInfoQuery26 CN="过往时间" EN="Aged time" JP="" RU="" />
+    
+      <PassCarInfoQuery29 CN="车辆速度" EN="Vehicle speed" JP="" RU="" />
+      
+      <PassCarInfoQuery31 CN="查询结果：目前查询出符合条件的记录0条,剩余符合条件的尚未加载，请点击下一页进行加载" EN="Query Results: At present, the query out of the record 0, the remaining eligible has not yet loaded, please click on the next page to load" JP="" RU=""/>
+      <PassCarInfoQuery32 CN="详细信息" EN="Details" JP="" RU="" />
+      <PassCarInfoQuery33 CN="车辆图片(图片点击滚轮缩放)" EN="Vehicle picture (picture click wheel zoom)" JP="" RU="" />
+      <PassCarInfoQuery34 CN="卡口选择" EN="Bayonet selection" JP="" RU="" />
+      <PassCarInfoQuery35 CN="清除" EN="Clear" JP="" RU="" />
+      <PassCarInfoQuery36 CN="关闭" EN="Close" JP="" RU="" />
+      <PassCarInfoQuery37 CN="返回目录" EN="Back to Contents" JP="" RU="" />
+     
+ <PassCarInfoQuery41 CN="页,共" EN="Pages, total" JP="" RU="" />
+ <PassCarInfoQuery42 CN="页" EN="Pages" JP="" RU="" />
+<PassCarInfoQuery43 CN="当前" EN="Current" JP="" RU="" />
+ <PassCarInfoQuery45 CN="请选择政府公告图片" EN="Please select the government bulletin picture" JP="" RU="" />
+ <PassCarInfoQuery46 CN="违法加入成功：号牌种类[" EN="Illegal to join the success: No. type [" JP="" RU="" />
+ <PassCarInfoQuery47 CN="] ,号牌号码[" EN="], Plate number [" JP="" RU="" />
+ <PassCarInfoQuery50 CN="] ,违法行为[" EN="], Offenses [" JP="" RU="" />
+ <PassCarInfoQuery51 CN="] ,新加入的违法记录Id[" EN="], The newly added illegal record Id [" JP="" RU="" />
+ <PassCarInfoQuery49 CN=",加入时间[" EN=", Adding time [" JP="" RU="" />
+ <PassCarInfoQuery53 CN="违法加入失败：号牌种类[" EN="Illegal accession failure: Type of plate [" JP="" RU="" />
+ <PassCarInfoQuery52 CN="加入违法成功" EN="Join the illegal success" JP="" RU="" />
+ <PassCarInfoQuery54 CN=",加入时间[" EN=", Adding time [" JP="" RU="" />
+ <PassCarInfoQuery55 CN="加入违法失败" EN="Join the illegal failure" JP="" RU="" />
+<PassCarInfoQuery56 CN="只能选择两个小时之内的时间！" EN="Can only choose two hours of time!" JP="" RU="" />
+ <PassCarInfoQuery57 CN="查询结果：当前查询出符合条件的记录0条,现在显示0条" EN="Query results: The current query out of the records meet the conditions 0, now shows 0" JP="" RU="" />
+ <PassCarInfoQuery58 CN="当前第1页,共0页" EN="Current page 1 of 0" JP="" RU="" />
+ <PassCarInfoQuery60 CN="卡口列表" EN="Bayonet list" JP="" RU="" />
+ <PassCarInfoQuery61 CN="滨州市交通警察支队" EN="Binzhou City Traffic Police Detachment" JP="" RU="" />
+      <PassCarInfoQuery70 CN="您没有登录或操作超时，请重新登录!" EN="You are not logged in or the operation timed out, please log in again!" JP="" RU="" />
+ <PassCarInfoQuery72 CN="访问：过往车辆查询" EN="Access: Passenger vehicle inquiries" JP="" RU="" />
+ <PassCarInfoQuery73 CN="违法车辆查询信息列表" EN="Illegal vehicle inquiry information list" JP="" RU="" />
+ <PassCarInfoQuery74 CN="查询结果：当前查询出符合条件的记录" EN="Query results: the current query out of the records meet the conditions" JP="" RU="" />
+ <PassCarInfoQuery75 CN="条，当前显示50条，其余结果尚未显示，请点击 下一页 进行显示" EN=", The current display 50, the remaining results have not yet displayed, please click on the next page to display" JP="" RU="" />
+ <PassCarInfoQuery76 CN="条" EN="Article" JP="" RU="" />
+ <PassCarInfoQuery77 CN="条,当前显示" EN="The current display" JP="" RU="" />
+ <PassCarInfoQuery78 CN="条，其余结果尚未显示，请点击 上一页 进行显示" EN="Strip, The rest of the results have not yet displayed, click on the previous page to display" JP="" RU="" />
+ <PassCarInfoQuery79 CN="信息提示" EN="message notification" JP="" RU="" />
+ <PassCarInfoQuery80 CN="未查询到相关记录" EN="Not related to the query records" JP="" RU="" /> 
+ <PassCarInfoQuery81 CN="查询时间：" EN="Query time：" JP="" RU="" /> 
+ <PassCarInfoQuery82 CN="卡口列表：" EN="Bayonet list：" JP="" RU="" /> 
+  <PassCarInfoQuery83 CN="车辆品牌：" EN="Vehicle Brands：" JP="" RU="" /> 
+ 
+ 
+    </MyNet.Atmcs.Uscmcp.Web.PassCarInfoQuery>
+  </Dictionary>
+</Message>

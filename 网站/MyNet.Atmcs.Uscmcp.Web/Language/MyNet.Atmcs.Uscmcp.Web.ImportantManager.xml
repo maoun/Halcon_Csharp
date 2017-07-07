@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Message>
+  <Language>CN</Language>
+  <Dictionary>
+    <MyNet.Atmcs.Uscmcp.Web.ImportantManager>
+      <ImportantManager1 CN="号牌号码：" EN="" JP="" RU="" />
+      <ImportantManager2 CN="号牌种类：" EN="" JP="" RU="" />
+      <ImportantManager3 CN="请选择..." EN="" JP="" RU="" />
+      <ImportantManager4 CN="车辆类型：" EN="" JP="" RU="" />
+      <ImportantManager5 CN="请选择车辆类型.." EN="" JP="" RU="" />
+      <ImportantManager6 CN="所属机构：" EN="" JP="" RU="" />
+      <ImportantManager7 CN="查询" EN="" JP="" RU="" />
+      <ImportantManager8 CN="重置" EN="" JP="" RU="" />
+      <ImportantManager9 CN="刷新" EN="" JP="" RU="" />
+      <ImportantManager10 CN="新增" EN="" JP="" RU="" />
+      <ImportantManager11 CN="修改" EN="" JP="" RU="" />
+      <ImportantManager12 CN="删除" EN="" JP="" RU="" />
+      <ImportantManager13 CN="导出Excel" EN="" JP="" RU="" />
+      <ImportantManager15 CN="车辆信息" EN="" JP="" RU="" />
+      <ImportantManager23 CN="车辆类型列表" EN="" JP="" RU="" />
+      <ImportantManager24 CN="重点车辆基本信息" EN="" JP="" RU="" />
+      <ImportantManager45 CN="取消" EN="" JP="" RU="" />
+      <ImportantManager25 CN="所属机构" EN="" JP="" RU="" />
+      <ImportantManager26 CN="号牌号码:" EN="" JP="" RU="" />
+      <ImportantManager27 CN="号牌种类" EN="" JP="" RU="" />
+      <ImportantManager28 CN="请选择..." EN="" JP="" RU="" />
+      <ImportantManager18 CN="车辆类型" EN="" JP="" RU="" />
+      <ImportantManager30 CN="选择车辆类型..." EN="" JP="" RU="" />
+      <ImportantManager31 CN="车辆型号" EN="" JP="" RU="" />
+      <ImportantManager32 CN="车辆品牌" EN="" JP="" RU="" />
+      <ImportantManager33 CN="购置日期" EN="" JP="" RU="" />
+      <ImportantManager34 CN="联系电话" EN="" JP="" RU="" />
+      <ImportantManager35 CN="车架号" EN="" JP="" RU="" />
+      <ImportantManager36 CN="发动机号" EN="" JP="" RU="" />
+      <ImportantManager37 CN="核定客量" EN="" JP="" RU="" />
+      <ImportantManager38 CN="司机姓名" EN="" JP="" RU="" />
+      <ImportantManager39 CN="手机号码" EN="" JP="" RU="" />
+      <ImportantManager40 CN="呼叫号码" EN="" JP="" RU="" />
+      <ImportantManager41 CN="有无GPS" EN="" JP="" RU="" />
+      <ImportantManager42 CN="选择...." EN="" JP="" RU="" />
+      <ImportantManager43 CN="人员状况" EN="" JP="" RU="" />
+      <ImportantManager44 CN="车辆状态" EN="" JP="" RU="" />
+      <ImportantManager16 CN="号牌号码" EN="" JP="" RU="" />
+      <ImportantManager17 CN="号牌种类" EN="" JP="" RU="" />
+      <ImportantManager19 CN="司机姓名" EN="" JP="" RU="" />
+      <ImportantManager20 CN="呼叫号码" EN="" JP="" RU="" />
+      <ImportantManager21 CN="联系电话" EN="" JP="" RU="" />
+      <ImportantManager22 CN="所属机构" EN="" JP="" RU="" />
+      <ImportantManager58 CN="访问：" EN="" JP="" RU="" />
+      <ImportantManager14 CN="所属机构：" EN="" JP="" RU="" />
+      <ImportantManager54 CN="取消" EN="" JP="" RU="" />
+      <ImportantManager46 CN="手机号码" EN="" JP="" RU="" />
+      <ImportantManager47 CN="呼叫号码" EN="" JP="" RU="" />
+      <ImportantManager48 CN="有无GPS" EN="" JP="" RU="" />
+      <ImportantManager49 CN="人员状况" EN="" JP="" RU="" />
+      <ImportantManager50 CN="车辆状态" EN="" JP="" RU="" />
+      <ImportantManager51 CN="限行信息" EN="" JP="" RU="" />
+      <ImportantManager52 CN="限行时间" EN="" JP="" RU="" />
+      <ImportantManager53 CN="检测点标注" EN="" JP="" RU="" />
+      <ImportantManager55 CN="卡口选择" EN="" JP="" RU="" />
+      <ImportantManager29 CN="所属机构" EN="" JP="" RU="" />
+    </MyNet.Atmcs.Uscmcp.Web.ImportantManager>
+  </Dictionary>
+</Message>

@@ -1,0 +1,152 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+}
+
+.left {
+    width: 50%;
+    height: 100%;
+    min-height: 800px;
+    position: absolute;
+    left: 0;
+    background: rgba(250,251,253,0.9);
+    opacity: 0.5;
+}
+
+.right {
+    width: 50%;
+    height: 100%;
+    min-height: 800px;
+    position: absolute;
+    right: 0;
+    background: rgba(250,251,253,0.5);
+    opacity: -1;
+}
+
+.center {
+    width: 950px;
+    height: 800px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -350px;
+    margin-left: -475px;
+    z-index: 99;
+}
+
+.logo {
+    position: absolute;
+    top: 140px;
+    left: 423px;
+
+}
+
+.title {
+    position: absolute;
+    top: 270px;
+    left: 348px;
+    font-size: 27px;
+        text-align:center;
+}
+
+.yuan {
+    top: 50%;
+    left: 50%;
+    width: 287px;
+    height: 574px;
+    margin-top: -287px;
+    position: absolute;
+    opacity: 0.6;
+}
+
+.Username {
+    position: absolute;
+    top: 340px;
+    left: 380px;
+    width: 175px;
+    height: 30px;
+    border: 1px solid silver;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    text-indent: 15px;
+    font-size: 14px;
+    background: transparent;
+}
+
+.Pwd {
+    position: absolute;
+    top: 400px;
+    left: 380px;
+    width: 175px;
+    height: 30px;
+    border: 1px solid silver;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    text-indent: 15px;
+    font-size: 14px;
+    background: transparent;
+}
+
+.rember {
+    position: absolute;
+    top: 450px;
+    left: 380px;
+    width: 175px;
+    height: 30px;
+    border: 1px;
+    font-size: 12px;
+    line-height: 30px;
+    color: #787878;
+}
+
+    .rember span {
+        cursor: pointer;
+    }
+
+.txt3 {
+    position: absolute;
+    top: 500px;
+    left: 395px;
+    width: 150px;
+    height: 28px;
+    text-align: center;
+    line-height: 24px;
+    border: 1px solid silver;
+    border-radius: 8px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    font-size: 14px;
+    background: transparent;
+    color: #787878;
+    cursor: pointer;
+}
+
+    .txt3:active {
+        background: white;
+        line-height: 10px;
+    }
+
+.foot {
+    position: absolute;
+    top: 750px;
+    left: 135px;
+    width: 880px;
+    height: 20px;
+    color: #787878;
+    font-size: 14px;
+}
+
+.foot-sub {
+    position: absolute;
+    top: 680px;
+    left: 362px;
+    width: 226px;
+    height: 50px;
+    color: #787878;
+    font-size: 14px;
+}

@@ -1,0 +1,24 @@
+修改以下中white为black
+WebFlowData.aspx
+WebAlarmData
+WebPeccancyData
+
+
+修改所有页面中TreeStation 的背景色 
+rgba(68,138,202,0.9) 为 #ddecfe
+
+移除审核界面 PeccancySingleCheck PeccancySingleRepeatCheck PeccancyAreaChecking中<body >中
+ style="background-color: rgba(68,138,202,0.9)"
+
+
+移除 WebDeviceShow  Panel1 中 StyleSpec="background: rgba(68,138,202,0.9)"
+
+CarHot中TimeSelect替换
+background-color: #4E80E5;为 color:black;
+
+SuspicionManager中 行事件 white为 green
+
+
+styles文件夹中  ToolbarStyle.css   base.css   chartbar.css  
+
+新平台的背景色为 rgba(68,138,202,0.9)   

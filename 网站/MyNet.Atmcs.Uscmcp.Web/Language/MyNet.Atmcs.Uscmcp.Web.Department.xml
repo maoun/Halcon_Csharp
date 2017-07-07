@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Message>
+  <Language>CN</Language>
+  <Dictionary>
+    <MyNet.Atmcs.Uscmcp.Web.Department>
+      <Department18 CN="访问：" EN="" JP="" RU="" />
+      <Department1 CN="系统类型" EN="" JP="" RU="" />
+      <Department2 CN="选择系统名称" EN="" JP="" RU="" />
+      <Department4 CN="收起" EN="" JP="" RU="" />
+      <Department5 CN="展开" EN="" JP="" RU="" />
+      <Department6 CN="机构关系" EN="" JP="" RU="" />
+      <Department10 CN="详细信息" EN="" JP="" RU="" />
+      <Department11 CN="机构信息" EN="" JP="" RU="" />
+      <Department12 CN="记录编号" EN="" JP="" RU="" />
+      <Department13 CN="机构编号" EN="" JP="" RU="" />
+      <Department14 CN="只能输入数字和编号" EN="" JP="" RU="" />
+      <Department15 CN="机构名称" EN="" JP="" RU="" />
+      <Department16 CN="机构级别" EN="" JP="" RU="" />
+      <Department17 CN="选择机构级别" EN="" JP="" RU="" />
+      <Department19 CN="所属机构" EN="" JP="" RU="" />
+      <Department20 CN="选择所属机构" EN="" JP="" RU="" />
+      <Department21 CN="工作内容" EN="" JP="" RU="" />
+      <Department22 CN="工作地址" EN="" JP="" RU="" />
+      <Department23 CN="负责人" EN="" JP="" RU="" />
+      <Department24 CN="负责人电话" EN="" JP="" RU="" />
+      <Department25 CN="负责人手机" EN="" JP="" RU="" />
+      <Department26 CN="办公电话1" EN="" JP="" RU="" />
+      <Department27 CN="办公电话2" EN="" JP="" RU="" />
+      <Department28 CN="办公电话3" EN="" JP="" RU="" />
+      <Department29 CN="传真号码" EN="" JP="" RU="" />
+      <Department30 CN="邮政编码" EN="" JP="" RU="" />
+      <Department31 CN="增加" EN="" JP="" RU="" />
+      <Department32 CN="增加" EN="" JP="" RU="" />
+      <Department56 CN="删除" EN="" JP="" RU="" />
+      <Department7 CN="机构名称" EN="" JP="" RU="" />
+      <Department8 CN="负责人" EN="" JP="" RU="" />
+      <Department9 CN="负责人电话" EN="" JP="" RU="" />
+    </MyNet.Atmcs.Uscmcp.Web.Department>
+  </Dictionary>
+</Message>

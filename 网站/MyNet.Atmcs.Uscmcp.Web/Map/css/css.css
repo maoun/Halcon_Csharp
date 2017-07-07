@@ -1,0 +1,295 @@
+.z1 {
+    font-family: "宋体";
+    font-size: 9pt;
+    line-height: 17px;
+    color: #000000;
+    text-decoration: none;
+}
+
+.z2 {
+    font-family: "宋体";
+    font-size: 9pt;
+    line-height: 17px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+a.z2:link {
+    font-family: "宋体";
+    font-size: 9pt;
+    line-height: 17px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+a.z2:hover {
+    font-family: "宋体";
+    font-size: 9pt;
+    line-height: 17px;
+    color: #FFCC66;
+    text-decoration: underline;
+}
+
+.z3 {
+    border: 1px #000000 solid;
+    font-family: "宋体";
+    font-size: 9pt;
+    line-height: 17px;
+    color: #000000;
+    text-decoration: none;
+}
+
+a.z1:link {
+    font-family: "宋体";
+    font-size: 9pt;
+    line-height: 17px;
+    color: #000000;
+    text-decoration: none;
+}
+
+a.z1:hover {
+    font-family: "宋体";
+    font-size: 9pt;
+    line-height: 17px;
+    color: #FF0000;
+    text-decoration: underline;
+}
+
+.z4 {
+    font-family: "宋体";
+    font-size: 9pt;
+    line-height: 17px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+a.z4:link {
+    font-family: "宋体";
+    font-size: 9pt;
+    line-height: 17px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+a.z4:hover {
+    font-family: "宋体";
+    font-size: 9pt;
+    line-height: 17px;
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+
+.textarea {
+    font-family: "宋体";
+    font-size: 9pt;
+    line-height: 17px;
+    color: #000000;
+    text-decoration: none;
+    clip: rect( );
+    border-color: black #B6B6B6 #B6B6B6 black;
+    border-style: solid;
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    width: 150;
+}
+
+.z5 {
+    font-family: "宋体";
+    font-size: 9pt;
+    line-height: 17px;
+    color: #000000;
+    text-decoration: none;
+    background-color: #CCCCCC;
+}
+
+a.z5:link {
+    font-family: "宋体";
+    font-size: 9pt;
+    line-height: 17px;
+    color: #000000;
+    text-decoration: none;
+    background-color: #FFCC33;
+}
+
+a.z5:hover {
+    font-family: "宋体";
+    font-size: 9pt;
+    line-height: 17px;
+    text-decoration: underline overline;
+    background-color: #FFCC33;
+    color: #000000;
+}
+
+.anniu {
+    line-height: 10px;
+    text-decoration: none;
+    border-color: #FFFFFF #000000 #000000 #FFFFFF;
+    border-style: ridge;
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    padding-top: 5px;
+    font-size: 9pt;
+    color: #FFFFFF;
+    background-color: #1A68A2;
+}
+
+.anniu2 {
+    font: 9pt/17px "宋体";
+    color: #FFFFFF;
+    text-decoration: none;
+    background-color: #426291;
+    border: 0px ridge;
+}
+
+BODY {
+    SCROLLBAR-HIGHLIGHT-COLOR: 0066B7;
+    SCROLLBAR-SHADOW-COLOR: 0066B7;
+    SCROLLBAR-3DLIGHT-COLOR: #8CAAE7;
+    SCROLLBAR-TRACK-COLOR: #CAE2F7;
+    SCROLLBAR-DARKSHADOW-COLOR: 0066B7;
+    scrollbar-Base-Color: 0066B7;
+}
+
+.one {
+    position: relative;
+    width: 106;
+    height: 20px;
+    background-repeat: no-repeat;
+    cursor: hand;
+}
+
+.two {
+    position: relative;
+    display: none;
+    width: 106;
+    height: 20px;
+    background-repeat: no-repeat;
+    cursor: hand;
+}
+
+.z6 {
+    font-family: "宋体";
+    font-size: 9pt;
+    color: #FFCC33;
+    text-decoration: none;
+}
+
+a.z1:active {
+    font-family: "宋体";
+    font-size: 9pt;
+    line-height: 17px;
+    color: #FF0000;
+    text-decoration: underline;
+}
+
+.textreadonly {
+    border-color: black #B6B6B6 #B6B6B6 black;
+    font-family: "宋体";
+    font-size: 9pt;
+    line-height: 17px;
+    color: #000000;
+    text-decoration: none;
+    background-color: #FFF2D7;
+    border-style: solid;
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    width: 160px;
+}
+
+.z7 {
+    font-family: "宋体";
+    font-size: 12px;
+    line-height: 8px;
+    color: #000000;
+    text-decoration: none;
+}
+
+.fuxuankuang {
+    border: #FFFFFF solid;
+    padding-top: 1px;
+    padding-right: 1px;
+    padding-bottom: 1px;
+    padding-left: 1px;
+    background-color: 5C7EBF;
+    border-width: 1px 2px 2px 1px;
+}
+
+.textarea2 {
+    font-family: "宋体";
+    font-size: 9pt;
+    line-height: 17px;
+    color: #FFFFFF;
+    text-decoration: none;
+    clip: rect( );
+    border-color: black #B6B6B6 #B6B6B6 black;
+    border-style: solid;
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    background-color: #5481CB;
+}
+
+.z8 {
+    font-family: "宋体";
+    font-size: 9pt;
+    line-height: 17px;
+    color: #0000FF;
+    text-decoration: underline;
+}
+
+a.z8:link {
+    font-family: "宋体";
+    font-size: 9pt;
+    line-height: 17px;
+    color: #0000FF;
+    text-decoration: underline;
+}
+
+a.z8:hover {
+    font-family: "宋体";
+    font-size: 9pt;
+    line-height: 17px;
+    color: #FF3333;
+    text-decoration: none;
+}
+
+.z9 {
+    font-family: "宋体";
+    font-size: 9pt;
+    line-height: 17px;
+    color: #FF0000;
+    text-decoration: underline;
+}
+
+a.z9:link {
+    font-family: "宋体";
+    font-size: 9pt;
+    line-height: 17px;
+    color: #FF0000;
+    text-decoration: underline;
+}
+
+a.z9:hover {
+    font-family: "宋体";
+    font-size: 9pt;
+    line-height: 17px;
+    color: #FF0000;
+    text-decoration: line-through;
+}
+
+.biaoge {
+    font-family: "宋体";
+    font-size: 12px;
+    line-height: 17px;
+    color: #000000;
+    text-decoration: none;
+    border: #000000 solid;
+    border-width: 1px 1px 0px;
+}

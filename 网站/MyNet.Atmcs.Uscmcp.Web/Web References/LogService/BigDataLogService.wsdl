@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc12="http://www.w3.org/2003/05/soap-encoding" xmlns:soap12="http://www.w3.org/2003/05/soap-envelope" xmlns:tns="http://interfaces.webservice.log.tvcc.zklt.com" xmlns:soapenc11="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap11="http://schemas.xmlsoap.org/soap/envelope/" targetNamespace="http://interfaces.webservice.log.tvcc.zklt.com" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://interfaces.webservice.log.tvcc.zklt.com">
+      <xsd:element name="BigdataCollectionLog">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="in0" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="BigdataCollectionLogResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="out" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="BigdataSearchLog">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="in0" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="BigdataSearchLogResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="out" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="MysqlErrorLog">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="in0" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="MysqlErrorLogResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="out" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="MysqlCollectionLog">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="in0" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="MysqlCollectionLogResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="out" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="MysqlErrorLogRequest">
+    <wsdl:part name="parameters" element="tns:MysqlErrorLog" />
+  </wsdl:message>
+  <wsdl:message name="MysqlCollectionLogRequest">
+    <wsdl:part name="parameters" element="tns:MysqlCollectionLog" />
+  </wsdl:message>
+  <wsdl:message name="BigdataSearchLogResponse">
+    <wsdl:part name="parameters" element="tns:BigdataSearchLogResponse" />
+  </wsdl:message>
+  <wsdl:message name="BigdataCollectionLogResponse">
+    <wsdl:part name="parameters" element="tns:BigdataCollectionLogResponse" />
+  </wsdl:message>
+  <wsdl:message name="MysqlCollectionLogResponse">
+    <wsdl:part name="parameters" element="tns:MysqlCollectionLogResponse" />
+  </wsdl:message>
+  <wsdl:message name="BigdataCollectionLogRequest">
+    <wsdl:part name="parameters" element="tns:BigdataCollectionLog" />
+  </wsdl:message>
+  <wsdl:message name="MysqlErrorLogResponse">
+    <wsdl:part name="parameters" element="tns:MysqlErrorLogResponse" />
+  </wsdl:message>
+  <wsdl:message name="BigdataSearchLogRequest">
+    <wsdl:part name="parameters" element="tns:BigdataSearchLog" />
+  </wsdl:message>
+  <wsdl:portType name="BigDataLogServicePortType">
+    <wsdl:operation name="BigdataCollectionLog">
+      <wsdl:input name="BigdataCollectionLogRequest" message="tns:BigdataCollectionLogRequest" />
+      <wsdl:output name="BigdataCollectionLogResponse" message="tns:BigdataCollectionLogResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="BigdataSearchLog">
+      <wsdl:input name="BigdataSearchLogRequest" message="tns:BigdataSearchLogRequest" />
+      <wsdl:output name="BigdataSearchLogResponse" message="tns:BigdataSearchLogResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="MysqlErrorLog">
+      <wsdl:input name="MysqlErrorLogRequest" message="tns:MysqlErrorLogRequest" />
+      <wsdl:output name="MysqlErrorLogResponse" message="tns:MysqlErrorLogResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="MysqlCollectionLog">
+      <wsdl:input name="MysqlCollectionLogRequest" message="tns:MysqlCollectionLogRequest" />
+      <wsdl:output name="MysqlCollectionLogResponse" message="tns:MysqlCollectionLogResponse" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BigDataLogServiceHttpBinding" type="tns:BigDataLogServicePortType">
+    <wsdlsoap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="BigdataCollectionLog">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="BigdataCollectionLogRequest">
+        <wsdlsoap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="BigdataCollectionLogResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BigdataSearchLog">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="BigdataSearchLogRequest">
+        <wsdlsoap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="BigdataSearchLogResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MysqlErrorLog">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="MysqlErrorLogRequest">
+        <wsdlsoap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="MysqlErrorLogResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MysqlCollectionLog">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="MysqlCollectionLogRequest">
+        <wsdlsoap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="MysqlCollectionLogResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="BigDataLogService">
+    <wsdl:port name="BigDataLogServiceHttpPort" binding="tns:BigDataLogServiceHttpBinding">
+      <wsdlsoap:address location="http://10.2.111.249:8080/logs-webservice/services/BigDataLogService" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

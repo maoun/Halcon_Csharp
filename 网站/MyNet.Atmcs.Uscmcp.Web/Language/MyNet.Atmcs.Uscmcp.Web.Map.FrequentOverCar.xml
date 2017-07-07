@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Message>
+  <Language>CN</Language>
+  <Dictionary>
+    <MyNet.Atmcs.Uscmcp.Web.Map.FrequentOverCar>
+      <FrequentOverCar1 CN="地图浏览" EN="Map browsing" JP="" RU="" />
+      <FrequentOverCar2 CN="重载地图" EN="Reload the map" JP="" RU="" />
+      <FrequentOverCar3 CN="清除" EN="Clear" JP="" RU="" />
+      <FrequentOverCar4 CN="中心点" EN="Center point" JP="" RU="" />
+      <FrequentOverCar5 CN="测距" EN="Distance measurement" JP="" RU="" />
+      <FrequentOverCar6 CN="测面积" EN="Measuring area" JP="" RU="" />
+      <FrequentOverCar7 CN="卡口标注(请在左侧地图上标注)" EN="Bayonet marking (please mark on the map on the left)" JP="" RU="" />
+      <FrequentOverCar8 CN="周边卡口" EN="Periphery bayonet" JP="" RU="" />
+      <FrequentOverCar9 CN="x坐标" EN="X coordinate" JP="" RU="" />
+      <FrequentOverCar10 CN="y坐标" EN="Y coordinates" JP="" RU="" />
+      <FrequentOverCar11 CN="开始时间:" EN="Starting time:" JP="" RU="" />
+      <FrequentOverCar12 CN="结束时间:" EN="End Time:" JP="" RU="" />
+      <FrequentOverCar13 CN="次数(&gt;=)" EN="Frequency(&gt;=)" JP="" RU="" />
+      <FrequentOverCar14 CN="请选择..." EN="Please choose..." JP="" RU="" />
+      <FrequentOverCar15 CN="请选择次数..." EN="Please select ..." JP="" RU="" />
+      <FrequentOverCar16 CN=" 号牌种类" EN="Number plate type" JP="" RU="" />
+      <FrequentOverCar17 CN="清除选中" EN="Clear selected" JP="" RU="" />
+      <FrequentOverCar18 CN=" 车身颜色" EN="Vehicle Body Color" JP="" RU="" />
+      <FrequentOverCar20 CN="号牌号码:" EN="Number plate：" JP="" RU="" />
+      <FrequentOverCar21 CN="查找" EN="Search" JP="" RU="" />
+      <FrequentOverCar22 CN="首页" EN="Home" JP="" RU="" />
+      <FrequentOverCar23 CN="尾页" EN="Last page" JP="" RU="" />
+      <FrequentOverCar24 CN="当前0页,共0页" EN="Current 0 Pages, Total 0 Pages" JP="" RU="" />
+      <FrequentOverCar25 CN="序号" EN="Serial number" JP="" RU="" />
+      <FrequentOverCar26 CN="车牌" EN="License plate" JP="" RU="" />
+      <FrequentOverCar27 CN="卡口" EN="Check point" JP="" RU="" />
+      <FrequentOverCar28 CN="次数" EN="Frequency" JP="" RU="" />
+      <FrequentOverCar30 CN="xypoint" EN="Xypoint" JP="" RU="" />
+      <FrequentOverCar31 CN="过车信息" EN="Past Car information" JP="" RU="" />
+      <FrequentOverCar32 CN="车辆信息" EN="Vehicle Information" JP="" RU="" />
+      <FrequentOverCar33 CN="车辆品牌" EN="Vehicle brand" JP="" RU="" />
+      <FrequentOverCar34 CN="号牌种类" EN="Number plate type" JP="" RU="" />
+      <FrequentOverCar36 CN="车辆轨迹" EN="Vehicle trajectory" JP="" RU="" />
+      <FrequentOverCar37 CN="落脚点" EN="Foothold" JP="" RU="" />
+      <FrequentOverCar38 CN="违法信息查询" EN="Illegal information query" JP="" RU="" />
+      <FrequentOverCar39 CN="过车记录查询" EN="Car records inquiries" JP="" RU="" />
+      <FrequentOverCar41 CN="过车时间" EN="Passing time" JP="" RU="" />
+      <FrequentOverCar43 CN="您没有登录或操作超时，请重新登录!" EN="You are not logged in or the operation timed out, please log in again!" JP="" RU="" />
+      <FrequentOverCar44 CN="访问：" EN="Access" JP="" RU="" />
+      <FrequentOverCar45 CN="过车记录" EN="Car records" JP="" RU="" />
+      <FrequentOverCar46 CN="提示" EN="Prompt" JP="" RU="" />
+      <FrequentOverCar47 CN="请选择开始时间及结束时间！" EN="Please select start time and end time!" JP="" RU="" />
+      <FrequentOverCar48 CN="请选择要进行比对的卡口！" EN="Please select the bayonet to be aligned!" JP="" RU="" />
+      <FrequentOverCar49 CN="共" EN="Total" JP="" RU="" />
+      <FrequentOverCar50 CN="条记录，当前" EN="Record, current" JP="" RU="" />
+      <FrequentOverCar51 CN="页,共" EN="Pages, Total" JP="" RU="" />
+      <FrequentOverCar52 CN="页" EN="Pages" JP="" RU="" />
+      <FrequentOverCar53 CN="共0条记录，当前0页,共0页" EN="Total 0 Records, Current 0 Pages, Total 0 Pages" JP="" RU="" />
+      <FrequentOverCar54 CN="没有符合条件的数据！" EN="No data match!" JP="" RU="" />
+      <FrequentOverCar55 CN=" 车辆品牌：" EN="Vehicle brand：" JP="" RU="" />
+    </MyNet.Atmcs.Uscmcp.Web.Map.FrequentOverCar>
+  </Dictionary>
+</Message>

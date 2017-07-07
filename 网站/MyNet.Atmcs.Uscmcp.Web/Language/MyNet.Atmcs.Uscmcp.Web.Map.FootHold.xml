@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Message>
+  <Language>CN</Language>
+  <Dictionary>
+    <MyNet.Atmcs.Uscmcp.Web.Map.FootHold>
+      <FootHold1 CN="地图浏览" EN="Map browsing" JP="" RU="" />
+      <FootHold2 CN="重载地图" EN="Reload the map" JP="" RU="" />
+      <FootHold3 CN="清除" EN="Clear" JP="" RU="" />
+      <FootHold4 CN="中心点" EN="Center point" JP="" RU="" />
+      <FootHold5 CN="测距" EN="Distance measurement" JP="" RU="" />
+      <FootHold6 CN="测面积" EN="Measuring area" JP="" RU="" />
+      <FootHold7 CN="号牌号码:" EN="Number plate:" JP="" RU="" />
+      <FootHold8 CN="6位号牌号码" EN="Six number plate number" JP="" RU="" />
+      <FootHold9 CN="号牌种类:" EN="Number plate type:" JP="" RU="" />
+      <FootHold10 CN="请选择..." EN="Please choose..." JP="" RU="" />
+      <FootHold11 CN="清除选中" EN="Clear selected" JP="" RU="" />
+      <FootHold12 CN="高级查询" EN="Advanced Search" JP="" RU="" />
+      <FootHold13 CN="开始时间:" EN="Starting time:" JP="" RU="" />
+      <FootHold14 CN="结束时间:" EN="End Time:" JP="" RU="" />
+      <FootHold15 CN="落脚次数:" EN="Number of feet:" JP="" RU="" />
+      <FootHold16 CN="次" EN="Frequency" JP="" RU="" />
+      <FootHold17 CN="落脚时长:" EN="Duration:" JP="" RU="" />
+      <FootHold18 CN="秒/次" EN="Second/Frequency" JP="" RU="" />
+      <FootHold19 CN="查询" EN="Query" JP="" RU="" />
+      <FootHold20 CN="重置" EN="Reset" JP="" RU="" />
+      <FootHold21 CN="序号" EN="Serial number" JP="" RU="" />
+      <FootHold22 CN="落脚点名称" EN="Name of the foothold" JP="" RU="" />
+      <FootHold23 CN="落脚次数" EN="Number of feet" JP="" RU="" />
+      <FootHold24 CN="累计时间" EN="Cumulative time" JP="" RU="" />
+      <FootHold25 CN="x" EN="X" JP="" RU="" />
+      <FootHold26 CN="y" EN="Y" JP="" RU="" />
+      <FootHold27 CN="卡口ID" EN="Bayonet ID" JP="" RU="" />
+      <FootHold28 CN="您没有登录或操作超时，请重新登陆!" EN="You are not logged in or the operation timed out, please log in again!" JP="" RU="" />
+      <FootHold29 CN="访问：" EN="Access:" JP="" RU="" />
+     
+ <FootHold30 CN="接口服务报错！" EN="Interface service error!" JP="" RU="" />
+<FootHold31 CN="无数据！" EN="No data!" JP="" RU="" />
+<FootHold32 CN="(其他)" EN="(other)" JP="" RU="" />
+<FootHold33 CN="(家)" EN="(Family)" JP="" RU="" />
+<FootHold34 CN="(单位)" EN="(unit)" JP="" RU="" />
+      <FootHold35 CN="请输入车辆信息！" EN="Please enter vehicle information!" JP="" RU="" />
+   <FootHold36 CN="提示" EN="Prompt" JP="" RU="" />
+    
+    </MyNet.Atmcs.Uscmcp.Web.Map.FootHold>
+  </Dictionary>
+</Message>

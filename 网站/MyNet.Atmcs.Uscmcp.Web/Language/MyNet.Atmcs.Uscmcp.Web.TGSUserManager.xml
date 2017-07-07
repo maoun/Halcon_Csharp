@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Message>
+  <Language>CN</Language>
+  <Dictionary>
+    <MyNet.Atmcs.Uscmcp.Web.TGSUserManager>
+      <TGSUserManager1 CN="用户编号：" EN="" JP="" RU="" />
+      <TGSUserManager2 CN="用户名：" EN="" JP="" RU="" />
+      <TGSUserManager3 CN="查询" EN="" JP="" RU="" />
+      <TGSUserManager4 CN="重置" EN="" JP="" RU="" />
+      <TGSUserManager5 CN="注册新用户" EN="" JP="" RU="" />
+      <TGSUserManager6 CN="修改密码" EN="" JP="" RU="" />
+      <TGSUserManager7 CN="删除用户" EN="" JP="" RU="" />
+      <PeccancyQuery16 CN="详细信息" EN="" JP="" RU="" />
+      <TGSUserManager17 CN="所属角色" EN="" JP="" RU="" />
+      <TGSUserManager18 CN="所属角色" EN="" JP="" RU="" />
+      <TGSUserManager19 CN="选择所属角色" EN="" JP="" RU="" />
+      <TGSUserManager20 CN="用户信息" EN="" JP="" RU="" />
+      <TGSUserManager21 CN="用户编号" EN="" JP="" RU="" />
+      <TGSUserManager22 CN="姓名" EN="" JP="" RU="" />
+      <TGSUserManager23 CN="性别" EN="" JP="" RU="" />
+      <TGSUserManager24 CN="选择性别" EN="" JP="" RU="" />
+      <TGSUserManager25 CN="出生年月" EN="" JP="" RU="" />
+      <TGSUserManager26 CN="警号" EN="" JP="" RU="" />
+      <TGSUserManager27 CN="证件类型" EN="" JP="" RU="" />
+      <TGSUserManager28 CN="选择证件类型" EN="" JP="" RU="" />
+      <TGSUserManager29 CN="证件号码" EN="" JP="" RU="" />
+      <TGSUserManager30 CN="联系地址" EN="" JP="" RU="" />
+      <TGSUserManager31 CN="所属机构" EN="" JP="" RU="" />
+      <TGSUserManager32 CN="选择所属机构" EN="" JP="" RU="" />
+      <TGSUserManager33 CN="移动手机" EN="" JP="" RU="" />
+      <TGSUserManager34 CN="固定电话" EN="" JP="" RU="" />
+      <TGSUserManager35 CN="备注信息" EN="" JP="" RU="" />
+      <TGSUserManager36 CN="保存" EN="" JP="" RU="" />
+      <TGSUserManager9 CN="用户编号" EN="" JP="" RU="" />
+      <TGSUserManager10 CN="用户名" EN="" JP="" RU="" />
+      <TGSUserManager11 CN="姓名" EN="" JP="" RU="" />
+      <TGSUserManager12 CN="警号" EN="" JP="" RU="" />
+      <TGSUserManager13 CN="所属机构" EN="" JP="" RU="" />
+      <TGSUserManager14 CN="注册时间" EN="" JP="" RU="" />
+      <TGSUserManager37 CN="用户角色" EN="" JP="" RU="" />
+    </MyNet.Atmcs.Uscmcp.Web.TGSUserManager>
+  </Dictionary>
+</Message>

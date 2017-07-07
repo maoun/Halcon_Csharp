@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Message>
+  <Language>CN</Language>
+  <Dictionary>
+    <MyNet.Atmcs.Uscmcp.Web.LogBusiness>
+      <LogBusiness1 CN="查询时间" EN="Query time" JP="" RU="" />
+      <LogBusiness2 CN="查询类型：" EN="Query Type：" JP="" RU="" />
+      <LogBusiness3 CN="选择查询条件..." EN="Select a query condition..." JP="" RU="" />
+	    <LogBusiness4 CN="清除选中" EN="Clear selected" JP="" RU="" />
+      <LogBusiness5 CN="查询" EN="Inquire" JP="" RU="" />
+	   <LogBusiness6 CN="详细" EN="Detailed" JP="" RU="" />
+      <LogBusiness7 CN="记录编号" EN="Record number" JP="" RU="" />
+      <LogBusiness8 CN="操作用户" EN="Operate the user" JP="" RU="" />
+      <LogBusiness9 CN="操作模块" EN="Operation module" JP="" RU="" />
+      <LogBusiness10 CN="用户IP" EN="User IP" JP="" RU="" />
+      <LogBusiness11 CN="接口地址" EN="Interface address" JP="" RU="" />
+      <LogBusiness12 CN="接口名称" EN="The interface name" JP="" RU="" />
+      <LogBusiness13 CN="记录时间" EN="Record time" JP="" RU="" />
+      <LogBusiness14 CN="导出Excel" EN="Export Excel" JP="" RU="" />
+      <LogBusiness15 CN="交互日志详细信息" EN="Interactive log details" JP="" RU="" />
+      <LogBusiness16 CN="详细信息" EN="Details" JP="" RU="" />
+     
+      <LogBusiness18 CN="用户名称" EN="User name" JP="" RU="" />
+      <LogBusiness19 CN="服务名称" EN="Service name" JP="" RU="" />
+      <LogBusiness20 CN="操作模块名称" EN="Operation module name" JP="" RU="" />
+    
+      <LogBusiness22 CN="服务地址" EN="Service address" JP="" RU="" />
+      <LogBusiness23 CN="调用者传参" EN="The caller passes" JP="" RU="" />
+      <LogBusiness24 CN="服务接口名称" EN="Service interface name" JP="" RU="" />
+      <LogBusiness25 CN="返回结果" EN="Returns the result" JP="" RU="" />
+	   <LogBusiness26 CN="您没有登录或操作超时，请重新登录!" EN="You are not logged in or the operation timed out, please sign in again！" JP="" RU="" />
+      <LogBusiness27 CN="访问：业务日志查询" EN="Access: Query the service log" JP="" RU="" />
+	   <LogBusiness28 CN="运行日志查询列表" EN="Run the log query list" JP="" RU="" />
+  
+    </MyNet.Atmcs.Uscmcp.Web.LogBusiness>
+  </Dictionary>
+</Message>

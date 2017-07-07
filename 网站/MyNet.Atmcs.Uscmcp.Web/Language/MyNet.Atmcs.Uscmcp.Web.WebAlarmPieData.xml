@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Message>
+  <Language>CN</Language>
+  <Dictionary>
+    <MyNet.Atmcs.Uscmcp.Web.WebAlarmPieData>
+      <WebAlarmPieData1 CN="车辆报警类型对比" EN="Vehicle Alarm Type Comparison" JP="" RU="" />
+    </MyNet.Atmcs.Uscmcp.Web.WebAlarmPieData>
+  </Dictionary>
+</Message>

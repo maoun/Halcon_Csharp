@@ -1,0 +1,76 @@
+﻿body {
+    margin: 0 0 0 0;
+}
+/*  <!--工具条样式--> */
+
+.map_toolbar {
+    height: 33px;
+    background: url(../../VNSIDGIS/img/main/map_tool_bg.jpg);
+}
+
+.map_toolbar_btn {
+    cursor: pointer;
+    float: right;
+    display: block;
+    width: 25px;
+    height: 24px;
+    color: #1973b1;
+    background-repeat: no-repeat;
+    margin: -5px 0px 0px 0px;
+    /*text-align: right;*/
+}
+
+.map_toolbar_btn_yw {
+    cursor: pointer;
+    float: right;
+    display: block;
+    width: 58px;
+    height: 24px;
+    color: #1973b1;
+    background: url(../../VNSIDGIS/img/main/map_tool_btn.jpg);
+    background-repeat: no-repeat;
+    margin: 0px 0px 0px 6px;
+    text-align: center;
+    line-height: 24px;
+}
+
+.map_toolbar_sp {
+    float: left;
+    display: block;
+    width: 4px;
+    height: 18px;
+    background-image: url(../../VNSIDGIS/img/main/jiange.png);
+    background-repeat: no-repeat;
+    margin: 2px 0px 0px 10px;
+    text-align: right;
+}
+
+.map_toolbar_panel_close {
+    cursor: pointer;
+    display: block;
+    width: 11px;
+    height: 11px;
+    background-image: url(../../VNSIDGIS/img/main/panel_close.png);
+    background-repeat: no-repeat;
+    margin: 0px 0px 0px 0px;
+    text-align: right;
+}
+
+.map_toolbar_panel_open {
+    cursor: pointer;
+    display: block;
+    width: 11px;
+    height: 11px;
+    background-image: url(../../VNSIDGIS/img/main/panel_open.png);
+    background-repeat: no-repeat;
+    margin: 0px 0px 0px 0px;
+    text-align: right;
+}
+
+.s {
+    background-image: url(../images/toolbar/zoomOut.png) !important;
+}
+
+.ing {
+    background-image: url(../../App_Themes/Default/Frame/loading.gif) !important;
+}

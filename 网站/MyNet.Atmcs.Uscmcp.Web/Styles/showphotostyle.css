@@ -1,0 +1,22 @@
+/**
+  in order for showphoto 
+  this is by http://www.i5a6.com/
+  create time 2008-12-26 by liyz modify 
+*/
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ DropMenu ~~~~ */
+.popupmenu_popup
+{
+    text-align: left;
+    line-height: 1.4em;
+    padding: 10px;
+    overflow: hidden;
+    border: 1px solid #CAD9EA;
+   background:#000000;
+    background-repeat: repeat-x;
+    background-position: 0 1px;
+}
+
+
+
+
+

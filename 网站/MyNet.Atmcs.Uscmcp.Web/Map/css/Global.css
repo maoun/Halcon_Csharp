@@ -1,0 +1,121 @@
+.FootText {
+    background-color: #FFFFFF;
+    font: 12px/宋体;
+}
+
+.ContentText {
+    font-family: "宋体";
+    font-size: 12px;
+}
+
+.ToPageText {
+    font-family: "宋体";
+    font-size: 10px;
+}
+
+.STYLE1 {
+    font-size: 12pt;
+    font-weight: bold;
+}
+
+table {
+    font-size: 9pt;
+    font-weight: normal;
+    margin-left: 0px;
+}
+
+.tableInput {
+    border: 0px;
+    text-align: center;
+    centerAlign: expression(this.align='center');
+}
+
+table.tableInput td {
+    font-size: 9pt;
+    text-align: right;
+    padding: 1px 1px 1px 1px;
+    height: 25px;
+}
+
+table.tableInput select {
+    behavior: url(../htc/select.htc);
+    -moz-binding: url(../htc/bindings.xml#select.htc);
+    font-size: 12px;
+    background: #ffffff;
+    color: blue;
+    width: 100%;
+}
+
+table.tableInput textarea {
+    border: 1px #7B9EBD solid;
+    font-size: 12px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.text {
+    overflow: hidden;
+    border: 1px #7B9EBD solid;
+    font-size: 12px;
+    width: 100%;
+}
+
+.tdRight {
+    text-align: right;
+}
+
+hr {
+    size: 1px;
+    color: #7293F4;
+}
+
+.PageText {
+    font-family: "宋体";
+    font-size: 12px;
+    color: #0066CC;
+}
+
+.divTreeStyle {
+    width: 225;
+    height: 410;
+    color: #336699;
+    background-color: #ffffff;
+    border: solid 1px gray;
+    overflow: auto;
+}
+
+.divStyle {
+    width: 100%;
+    color: #336699;
+    background-color: #ffffff;
+    border: solid 1px gray;
+    overflow: auto;
+}
+
+.deptDivClass {
+    z-index: 10000;
+    position: absolute;
+    display: inline;
+    width: 250;
+    height: 340;
+}
+
+a:link {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+a:active {
+    color: #ffffff;
+    text-decoration: none;
+}

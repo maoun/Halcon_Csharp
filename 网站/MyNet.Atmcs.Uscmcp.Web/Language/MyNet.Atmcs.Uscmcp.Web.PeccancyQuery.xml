@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Message>
+  <Language>CN</Language>
+  <Dictionary>
+    <MyNet.Atmcs.Uscmcp.Web.PeccancyQuery>
+      <PeccancyQuery1 CN="查询时间：" EN="" JP="" RU="" />
+      <PeccancyQuery3 CN="号牌种类：" EN="" JP="" RU="" />
+      <PeccancyQuery4 CN="请选择..." EN="" JP="" RU="" />
+      <PeccancyQuery2 CN="号牌号码：" EN="" JP="" RU="" />
+      <PeccancyQuery5 CN="模糊查询" EN="" JP="" RU="" />
+      <PeccancyQuery6 CN="违法行为：" EN="" JP="" RU="" />
+      <PeccancyQuery7 CN="选择违法行为..." EN="" JP="" RU="" />
+      <PeccancyQuery8 CN="数据来源：" EN="" JP="" RU="" />
+      <PeccancyQuery9 CN="选择数据来源..." EN="" JP="" RU="" />
+      <PeccancyQuery10 CN="所属机构：" EN="" JP="" RU="" />
+      <PeccancyQuery11 CN="违法地点：" EN="" JP="" RU="" />
+      <PeccancyQuery12 CN="选择违法地点..." EN="" JP="" RU="" />
+      <PeccancyQuery13 CN="行驶方向：" EN="" JP="" RU="" />
+      <PeccancyQuery14 CN="选择行驶方向..." EN="" JP="" RU="" />
+      <PeccancyQuery15 CN="处理状态：" EN="" JP="" RU="" />
+      <PeccancyQuery16 CN="选择处理状态..." EN="" JP="" RU="" />
+      <PeccancyQuery19 CN="查询" EN="" JP="" RU="" />
+      <PeccancyQuery20 CN="重置" EN="" JP="" RU="" />
+      <PeccancyQuery22 CN="首页" EN="" JP="" RU="" />
+      <PeccancyQuery23 CN="上一页" EN="" JP="" RU="" />
+      <PeccancyQuery24 CN="下一页" EN="" JP="" RU="" />
+      <PeccancyQuery25 CN="尾页" EN="" JP="" RU="" />
+      <PeccancyQuery28 CN="导出Excel" EN="" JP="" RU="" />
+      <PeccancyQuery44 CN="详细信息" EN="" JP="" RU="" />
+      <PeccancyQuery31 CN="详细" EN="" JP="" RU="" />
+      <PeccancyQuery32 CN="视频" EN="" JP="" RU="" />
+      <PeccancyQuery34 CN="记录编号" EN="" JP="" RU="" />
+      <PeccancyQuery35 CN="违法地点" EN="" JP="" RU="" />
+      <PeccancyQuery36 CN="号牌号码" EN="" JP="" RU="" />
+      <PeccancyQuery37 CN="号牌种类" EN="" JP="" RU="" />
+      <PeccancyQuery38 CN="违法时间" EN="" JP="" RU="" />
+      <PeccancyQuery39 CN="违法行为" EN="" JP="" RU="" />
+      <PeccancyQuery40 CN="行驶方向" EN="" JP="" RU="" />
+      <PeccancyQuery41 CN="速度限速" EN="" JP="" RU="" />
+      <PeccancyQuery42 CN="处理状态" EN="" JP="" RU="" />
+      <PeccancyQuery43 CN="所属机构" EN="" JP="" RU="" />
+      <PeccancyQuery51 CN="信息提示" EN="" JP="" RU="" />
+      <PeccancyQuery52 CN="未查询到相关记录" EN="" JP="" RU="" />
+      <PeccancyQuery55 CN="查询结果：当前是第" EN="" JP="" RU="" />
+      <PeccancyQuery56 CN="页,共有" EN="" JP="" RU="" />
+      <PeccancyQuery58 CN="条记录" EN="" JP="" RU="" />
+      <PeccancyCheck62 CN="微软雅黑" EN="" JP="" RU="" />
+      <PeccancyQuery59 CN="车辆图片(图片点击滚轮缩放)" EN="" JP="" RU="" />
+      <PeccancyQuery45 CN="访问：" EN="" JP="" RU="" />
+      <PeccancyQuery61 CN="清除选中：" EN="" JP="" RU="" />
+    </MyNet.Atmcs.Uscmcp.Web.PeccancyQuery>
+  </Dictionary>
+</Message>

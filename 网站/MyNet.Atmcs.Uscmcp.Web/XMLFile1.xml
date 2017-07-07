@@ -1,0 +1,62 @@
+﻿
+<!--区间限速 区域规则-->
+<?xml version="1.0" encoding="utf-8" ?>
+<road>
+  <roadseg>
+    <!--nextkkid：结束监测点 qjjl：区间距离 xcxs：小车限速（km/h） dcxs：大车限速（km/h）xcxds：小车限低速（km/h）  
+    dcxds：大车限低速（km/h）xsfx：行驶方向 sfwf：是否违法  形成区间段 -->
+    <kkid nextkkid="2" qjjl="" xcxgs="" dcxgs="" xcxds="" dcxds="" fxbh="" sfwf="">1</kkid>
+    <kkid nextkkid="4" qjjl="" xcxgs="" dcxgs="" xcxds="" dcxds="" fxbh="" sfwf="">3</kkid>
+    <kkid nextkkid="6" qjjl="" xcxgs="" dcxgs="" xcxds="" dcxds="" fxbh="" sfwf="">5</kkid>
+    <kkid nextkkid="8" qjjl="" xcxgs="" dcxgs="" xcxds="" dcxds="" fxbh="" sfwf="">7</kkid>
+  </roadseg>
+</road>
+
+
+
+<!--其他类型(客运车、危化品车等) 区域规则-->
+<?xml version="1.0" encoding="utf-8" ?>
+<road>
+  <roadseg>
+<!-- nextkkid limit为空-->
+<kkid nextkkid="" limit="">3</kkid>
+<kkid nextkkid="" limit="">4</kkid>
+<kkid nextkkid="" limit="">5</kkid>
+<kkid nextkkid="" limit="">6</kkid>
+<kkid nextkkid="" limit="">7</kkid>
+<kkid nextkkid="" limit="">8</kkid>
+<kkid nextkkid="" limit="">9</kkid>
+<kkid nextkkid="" limit="">10</kkid>
+  </roadseg>
+</road>
+
+<!--2-5时客运车辆时间规则-->
+<?xml version="1.0" encoding="utf-8" ?>
+<time  starttime ="2016-05-01" endtime="2016-10-01">
+  <!--每周全天-->
+  <day week="1,2,3,4,5,6,7">
+    <!--每天凌晨2点到5点限行-->
+    <hour>2,3,4,5</hour>
+  </day>
+</time>
+
+<!--危化品车时间规则-->
+<?xml version="1.0" encoding="utf-8" ?>
+<time  starttime ="2016-05-01" endtime="2016-10-01">
+  <!--每周周二周三周四-->
+  <day week="1,2,3,4,5,6,7">
+    <!--每天凌晨5点到23点限行-->
+    <hour>5,6,7...23</hour>
+  </day>
+</time>
+
+
+<!--北京限外地车-->
+<?xml version="1.0" encoding="utf-8" ?>
+<time starttime ="2016-05-01" endtime="2016-10-01">
+  <!--每周 周一到周五-->
+  <day week="1,2,3,4,5">
+    <hour>7,8,9,17,18,19,20</hour>
+  </day>
+</time>
+

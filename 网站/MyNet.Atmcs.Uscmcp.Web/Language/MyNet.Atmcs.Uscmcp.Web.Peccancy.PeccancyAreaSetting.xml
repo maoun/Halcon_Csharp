@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Message>
+  <Language>CN</Language>
+  <Dictionary>
+    <MyNet.Atmcs.Uscmcp.Web.Peccancy.PeccancyAreaSetting>
+      <PeccancyAreaSetting1 CN="区间超速配置" EN="Interval speeding configuration" JP="" RU="" />
+      <PeccancyAreaSetting2 CN="开始卡口：" EN="Began to mount：" JP="" RU="" />
+      <PeccancyAreaSetting3 CN="选择开始卡口" EN="Select start bayonet" JP="" RU="" />
+      <PeccancyAreaSetting4 CN="结束卡口：" EN="End of the bayonet：" JP="" RU="" />
+      <PeccancyAreaSetting5 CN="选择结束卡口" EN="Ended his bayonet" JP="" RU="" />
+      <PeccancyAreaSetting6 CN="查询" EN="Query" JP="" RU="" />
+      <PeccancyAreaSetting7 CN="重置" EN="Reset" JP="" RU="" />
+      <PeccancyAreaSetting8 CN="区间配置" EN="Interval configuration" JP="" RU="" />
+	  <PeccancyAreaSetting9 CN="区间编号" EN="Interval number" JP="" RU="" />
+      <PeccancyAreaSetting10 CN="开始卡口" EN="Began to mount" JP="" RU="" />
+      <PeccancyAreaSetting11 CN="结束卡口" EN="End of the bayonet" JP="" RU="" />
+      <PeccancyAreaSetting12 CN="区间距离" EN="Interval distance" JP="" RU="" />
+      <PeccancyAreaSetting13 CN="小车限速" EN="Car speed limit" JP="" RU="" />
+      <PeccancyAreaSetting14 CN="大车限速" EN="Cart speed limit" JP="" RU="" />
+      <PeccancyAreaSetting15 CN="小车限低速" EN="Car limit of low speed" JP="" RU="" />
+      <PeccancyAreaSetting16 CN="大车限低速" EN="Cart limit of low speed" JP="" RU="" />
+      <PeccancyAreaSetting17 CN="行驶方向" EN="Driving direction" JP="" RU="" />
+      <PeccancyAreaSetting18 CN="是否违法" EN="Whether illegal" JP="" RU="" />
+      <PeccancyAreaSetting19 CN="区间配置" EN="Interval configuration" JP="" RU="" />
+      <PeccancyAreaSetting20 CN="记录编号" EN="Record number" JP="" RU="" />
+      <PeccancyAreaSetting21 CN="区间编号" EN="Interval number" JP="" RU="" />
+      <PeccancyAreaSetting22 CN="开始卡口" EN="Began to mount" JP="" RU="" />
+      <PeccancyAreaSetting23 CN="选择开始卡口" EN="Select start bayonet" JP="" RU="" />
+      <PeccancyAreaSetting24 CN="结束卡口" EN="End of the bayonet" JP="" RU="" />
+      <PeccancyAreaSetting25 CN="选择结束卡口" EN="Ended his bayonet" JP="" RU="" />
+      <PeccancyAreaSetting26 CN="行驶方向" EN="Driving direction" JP="" RU="" />
+      <PeccancyAreaSetting27 CN="选择方向" EN="Select the direction" JP="" RU="" />
+      <PeccancyAreaSetting28 CN="是否违法" EN="Whether illegal" JP="" RU="" />
+      <PeccancyAreaSetting29 CN="选择是否" EN="Choose whether or not" JP="" RU="" />
+      <PeccancyAreaSetting30 CN="区间距离" EN="Interval distance" JP="" RU="" />
+      <PeccancyAreaSetting31 CN="小车限速" EN="Car speed limit" JP="" RU="" />
+      <PeccancyAreaSetting32 CN="大车限速" EN="Cart speed limit" JP="" RU="" />
+      <PeccancyAreaSetting33 CN="小车限低速" EN="Car limit of low speed" JP="" RU="" />
+      <PeccancyAreaSetting34 CN="大车限低速" EN="Cart limit of low speed" JP="" RU="" />
+      <PeccancyAreaSetting35 CN="新增" EN="Add" JP="" RU="" />
+      <PeccancyAreaSetting36 CN="保存" EN="Save" JP="" RU="" />
+      <PeccancyAreaSetting37 CN="删除" EN="Delete" JP="" RU="" />
+	  <PeccancyAreaSetting38 CN="您没有登录或操作超时，请重新登录!" EN="You are not logged in or operating a timeout, please login again!" JP="" RU="" />
+      <PeccancyAreaSetting39 CN="访问：区间超速配置" EN="Access：Interval speeding configuration" JP="" RU="" />
+	  <PeccancyAreaSetting40 CN="信息更新" EN="Information update" JP="" RU="" />
+      <PeccancyAreaSetting41 CN="保存成功" EN="Save success" JP="" RU="" />
+      <PeccancyAreaSetting42 CN="信息" EN="Information" JP="" RU="" />
+      <PeccancyAreaSetting43 CN="确认要删除" EN="Confirmation to delete" JP="" RU="" />
+      <PeccancyAreaSetting44 CN="这条记录吗?" EN="This record?" JP="" RU="" />
+	  <PeccancyAreaSetting45 CN="是" EN="Yes" JP="" RU="" />
+      <PeccancyAreaSetting46 CN="否" EN="No" JP="" RU="" />
+	  <PeccancyAreaSetting47 CN="信息提示" EN="Message" JP="" RU="" />
+      <PeccancyAreaSetting48 CN="删除成功" EN="Delete success" JP="" RU="" />
+    </MyNet.Atmcs.Uscmcp.Web.Peccancy.PeccancyAreaSetting>
+  </Dictionary>
+</Message>

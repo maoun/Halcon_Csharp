@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<layers>
+  <layer id="05"  name="设备专题"  icon="custom-iconSB">
+    <sublayer  id="0501"  name="电子警察" icon="Q-img-1" marktype="point" markicon="TMS" >  </sublayer>
+    <sublayer  id="0502"  name="治安卡口" icon="Q-img-2" marktype="point" markicon="TGS" >  </sublayer>
+    <sublayer  id="0503"  name="高清视频" icon="custom-icon10" marktype="point" markicon="CCTV" >  </sublayer>
+    <sublayer  id="0504"  name="交通信号" icon="custom-icon12" marktype="point" markicon="UTC" >  </sublayer>
+    <sublayer  id="0505"  name="诱导大屏" icon="custom-icon11" marktype="point" markicon="VMS" >  </sublayer>
+    <sublayer  id="0506"  name="事件检测" icon="custom-icon15" marktype="point" markicon="TES" >  </sublayer>
+  </layer>
+  
+</layers>

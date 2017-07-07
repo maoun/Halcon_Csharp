@@ -1,0 +1,309 @@
+/*JIA 2009,4month*/
+
+
+/*表格样式 小写C+16进制代码 = 字体颜色样式名称*/
+/*边框*/
+.table {border:1px solid #A5D1EC;
+}
+	
+/*---外部表格START------------------------------------------------------------*/	
+/*顶部表格设计----------------------------------------------------------------*/
+/*高度固定 背景以X轴平铺*/
+.wTableTopCenter{ 
+     height:30px; 
+	 background:url(../images/images_tab/tabtopcenter.gif) repeat-x;
+}
+/*宽高固定 背景不重复*/
+.wTableTopLeft{ 
+     width:12px; 
+	 height:30px; 
+	 background:url(../images/images_tab/tabtopleft.gif) no-repeat left;
+}
+/*宽高固定 背景不重复*/
+.wTableTopRight{ 
+     width:16px; 
+	 height:30px; 
+	 background:url(../images/images_tab/tabtopright.gif) no-repeat right;
+}
+
+/*中部表格设计----------------------------------------------------------------*/
+/*背景颜色*/
+.wTableCenterCenter{ background-color:#fff;}
+/*宽固定 背景以Y轴平铺*/
+.wTableCenterLeft{ 
+     width:8px; 
+	 background:url(../images/images_tab/tabcenterleft.gif) repeat-y left;
+}
+/*宽固定 背景以Y轴平铺*/
+.wTableCenterRight{ 
+     width:8px; 
+	 background:url(../images/images_tab/tabcenterright.gif) repeat-y right;
+}
+
+/*底部表格设计----------------------------------------------------------------*/
+/*高度固定 背景以X轴平铺*/
+.wTableBottomCenter{ 
+     height:35px; 
+	 background:url(../images/images_tab/tabbottomcenter.gif) repeat-x;
+}
+/*宽高固定 背景不重复*/
+.wTableBottomLeft{ 
+     width:12px; 
+	 height:35px; 
+	 background:url(../images/images_tab/tabbottomleft.gif) no-repeat left top;
+}
+/*宽高固定 背景不重复*/
+.wTableBottomRight{ 
+     width:16px; 
+	 height:35px; 
+	 background:url(../images/images_tab/tabbottomright.gif) no-repeat right top;
+}
+/*---外部表格 END-------------------------------------------------------------*/	
+
+/*---内部表格START-------------------------------------------------------------*/
+/*表格样式 TITLE----------------------------------------------------------------*/
+/*高固定 背景以X轴平铺 文本行高 文本位置*/
+.titleTopBack{ 
+     height:22px; 
+	 background:url(../images/images_tab/bg.gif) repeat-x; 
+	 line-height:22px; 
+	 text-align:center;
+}
+/*表格 td 边框样式 右边+下边----------------------------------------------------*/
+/*边框 文本位置*/
+.td_r_b{ 
+     border-bottom:1px solid #b5d6e6; 
+	 border-right:1px solid #b5d6e6; 
+	 text-align:center;
+}
+/*表格 td 边框样式 右边----------------------------------------------------------------*/
+/*边框 文本位置*/
+.td_r{ 
+     border-right:1px solid #b5d6e6; 
+	 text-align:center;
+}
+/*表格 td 边框样式 下边----------------------------------------------------------------*/
+/*边框 文本位置*/
+.td_b{ 
+     border-bottom:1px solid #b5d6e6; 
+	 text-align:center;
+}
+/*表格 颜色样式----------------------------------------------------------------*/
+/*背景颜色 文本颜色*/
+td.alt {
+     background-color:#F5FAFA; 
+	 color: #797268;
+}
+/*边框 文本颜色位置*/
+td.spec {
+     border-top: 0; 
+	 color:#4f6b72; 
+	 text-align:center;
+}
+/*文本颜色 背景以X轴平铺*/
+tr.th {
+     color: #4f6b72; 
+	 background:url(../images/images_tab/title_back.gif) repeat-x;
+}
+/*背景*/
+tr.alts{ background-color:expression('#fff,#F5FAFA'.split(',')[rowIndex%2]); }
+
+/*---内部表格END-------------------------------------------------------------*/	
+
+/*查询条件TITLE----------------------------------------------------------*/
+/*宽固定 文本颜色 检索或设置对象中的文本的缩进 字体大小 背景不重复 字体行高粗细 滤镜效果*/
+.sleek{ 
+     width:141px;
+	 color:#ffffff;
+	 text-indent:12px; 
+	 font-size:14px; 
+	 background:url(../images/images_tab/table_title_03.gif) no-repeat; 
+	 line-height:24px; 
+	 font-weight:bold;
+	 filter:glow(color=#1070a3,strength=1);
+}
+/*边框 背景颜色*/
+.sleektd{ 
+     border:1px solid #b5d6e6; 
+	 background-color:#E8F6FD;
+}/*td的样式*/
+/*检索或设置对象中的文本的缩进*/	 
+.textA{ text-indent:12px;}/*字数多的时候用*/
+/*检索或设置对象中的文本的缩进*/
+.textB{ text-indent:30px;}/*字数少的时候用*/
+/*TAB(事故)样式----------------------------------------------------------*/
+/*边框 字体行高*/
+.tr { 
+     border-bottom:1px dashed #C0C0C0; 
+	 line-height:23px;
+}
+/*边框*/
+.textarea{ border:1px solid #C8C8C6;}
+/*背景颜色*/
+.td { background-color:#E4E9F4;}
+
+/*对齐样式,使用对齐目标的英文名称命名-----------------------------------*/
+/*边框 文本位置 字体行高*/
+.right{
+     border-bottom:1px dashed #C0C0C0; 
+	 border-right:1px dashed #C0C0C0; 
+	 text-align:right; 
+	 line-height:21px;
+}
+/*内补丁 边框 文本位置 字体行高*/
+.left{ 
+     padding-left:2px; 
+	 border-bottom:1px dashed #C0C0C0; 
+	 border-right:1px dashed #C0C0C0; 
+	 text-align:left; 
+	 line-height:21px;
+}
+/*内补丁 边框 文本位置 字体行高*/
+.leftBottom{
+     padding-left:2px;
+	 border-bottom:1px dashed #C0C0C0;
+	 text-align:left;
+	 line-height:21px;
+	 }/* 居左 TD 下边框1像素*/
+
+
+/*系统首页 右侧---------------------------------------------------------*/
+/*高度固定 背景不重复 背景颜色*/
+.tableBack{ 
+     height:516px; 
+	 background:url(../images/images_tab/right_back.jpg) no-repeat right bottom; 
+	 background-color:#FFFFFF;
+}
+/*宽高固定 背景不重复*/
+.tableImg{  
+     width:422px; 
+	 height:126px;
+	 background:url(../images/images_tab/img.gif) no-repeat;
+}
+/*宽固定*/
+.width{ width:167px;} 
+
+/*汽泡样式 TOP----------------------------------------------------------*/
+/*宽高固定 背景不重复*/
+.bubbleTopLeft { 
+     width:23px; 
+	 height:18px; 
+	 background:url(../images/images_tab/image_bubble/bubbletopleft.gif) no-repeat left top;
+}
+/*高固定 背景以X轴平铺*/
+.bubbleTopCenter{ 
+     height:18px; 
+	 background:url(../images/images_tab/image_bubble/bubbletopcenter.gif) repeat-x;
+}
+/*宽高固定 背景不重复*/
+.bubbleTopRight{ 
+     width:11px; 
+	 height:18px; 
+	 background:url(../images/images_tab/image_bubble/bubbletopright.gif) no-repeat right top;
+}
+/*汽泡样式 CENTER------------------------------------------------------*/
+/*背景颜色*/
+.bubbleCenterCenter{ background-color:#FFFFFF;}
+/*宽固定 背景以Y轴平铺*/
+.bubbleCenterLeft{ 
+     width:23px; 
+	 background:url(../images/images_tab/image_bubble/bubblecenterleft.gif) repeat-y left;
+}
+/*宽固定 背景以Y轴平铺*/
+.bubbleCenterRight{ 
+     width:11px; 
+	 background:url(../images/images_tab/image_bubble/bubblecenterright.gif) repeat-y right;
+}
+/*汽泡样式 BOTTOM-------------------------------------------------------*/
+/*高固定 背景以X轴平铺*/
+.bubbleBottomCenter{ 
+     height:20px; 
+	 background:url(../images/images_tab/image_bubble/bubblebottomcenter.gif) repeat-x;
+}
+/*宽高固定 背景不重复*/
+.bubbleBottomLeft{ 
+     width:23px; 
+	 height:20px; 
+	 background:url(../images/images_tab/image_bubble/bubblebottomleft.gif) no-repeat left top;
+}
+/*宽高固定 背景不重复*/
+.bubbleBottomRight{ 
+     width:11px; 
+	 height:20px; 
+	 background:url(../images/images_tab/image_bubble/bubblebottomright.gif) no-repeat right top;
+}
+
+/*视频 TOP-------------------------------------------------------------*/
+/*宽高固定 背景不重复*/
+.videoTopLeft { 
+     width:22px; 
+	 height:21px; 
+	 background:url(../images/images_tab/videotopleft.gif) no-repeat left top;
+}
+/*高固定 背景以X轴重复*/
+.videoTopCenter { 
+     height:21px; 
+	 background:url(../images/images_tab/videotopcenter.gif) repeat-x;
+}
+/*宽高固定 背景不重复*/
+.videoTopRight{ 
+     width:21px; 
+	 height:21px; 
+	 background:url(../images/images_tab/videotopright.gif) no-repeat right top;
+}
+
+/*视频 CENTER----------------------------------------------------------------*/
+/*宽固定 背景以Y轴平铺*/
+.videoCenterLeft { 
+     width:22px; 
+	 background:url(../images/images_tab/videocenterleft.gif) repeat-y left top;
+}
+/*高度*/
+.videoCenterCenter { height:auto;}
+/*宽高固定 背景以Y轴平铺*/
+.videoCenterRight{ 
+     width:21px; 
+	 height:28px; 
+	 background:url(../images/images_tab/videocenterright.gif) repeat-y right top;
+}
+
+/*视频 BOTTOM----------------------------------------------------------------*/
+/*宽高固定 背景不重复*/
+.videoBottomLeft { 
+     width:22px; 
+	 height:23px; 
+	 background:url(../images/images_tab/videobottomleft.gif) no-repeat left top;
+}
+/*高固定 背景以X轴平铺*/
+.videoBottomCenter { 
+     height:23px; 
+	 background:url(../images/images_tab/videobottomcenter.gif) repeat-x;
+}
+/*宽高固定 背景不重复*/
+.videoBottomRight{ 
+     width:21px; 
+	 height:23px; 
+	 background:url(../images/images_tab/videobottomright.gif) no-repeat right top;
+}
+/*视频表格----------------------------------------------------------------*/
+/*宽高固定 背景以X轴平铺 背景颜色 文本位置*/
+.videoPlayBack { 
+     width:100%; 
+	 height:500px; 
+	 border:1px solid #ffffff; 
+	 background:url(../images/images_tab/video_lineback_03.gif) repeat-x top; 
+	 background-color:#106CAB; 
+	 text-align:center;
+}/*播放按钮+背景*/
+/*高固定 背景以X轴平铺*/
+.videoPlay{ 
+     height:40px; 
+	 background:url(../images/images_tab/transparence_05.gif) repeat-x;
+}
+
+/*下拉列表表格----------------------------------------------------------------*/
+/*背景颜色 边框*/
+.tree{ 
+     background-color:#E5F4FD; 
+	 border-top:1px solid #B5D6E6;
+}

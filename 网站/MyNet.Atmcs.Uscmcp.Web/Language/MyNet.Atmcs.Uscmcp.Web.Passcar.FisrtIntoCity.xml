@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Message>
+  <Language>CN</Language>
+  <Dictionary>
+    <MyNet.Atmcs.Uscmcp.Web.Passcar.FisrtIntoCity>
+      <FisrtIntoCity1 CN="号牌种类：" EN="Number plate type：" JP="" RU="" />
+      <FisrtIntoCity2 CN="请选择..." EN="Please choose..." JP="" RU="" />
+      <FisrtIntoCity3 CN="清除选中" EN="Clear selected" JP="" RU="" />
+      <FisrtIntoCity4 CN="号牌号码:" EN="Number plate:" JP="" RU="" />
+      <FisrtIntoCity5 CN="六位号牌号码" EN="Six number plate number" JP="" RU="" />
+      <FisrtIntoCity6 CN="模糊查询" EN="Fuzzy query" JP="" RU="" />
+      <FisrtIntoCity7 CN="查询" EN="Inquire" JP="" RU="" />
+      <FisrtIntoCity8 CN="首页" EN="Home" JP="" RU="" />
+      <FisrtIntoCity9 CN="上一页" EN="Previous page" JP="" RU="" />
+      <FisrtIntoCity10 CN="下一页" EN="Next page" JP="" RU="" />
+      <FisrtIntoCity11 CN="尾页" EN="Last page" JP="" RU="" />
+      <FisrtIntoCity12 CN="查询结果：当前是第" EN="Search result: Current is the first" JP="" RU="" />
+      <FisrtIntoCity13 CN="页,共有" EN="Pages, total" JP="" RU="" />
+      <FisrtIntoCity15 CN="条记录" EN="Records" JP="" RU="" />
+      <FisrtIntoCity16 CN="详情" EN="Details" JP="" RU="" />
+      <FisrtIntoCity17 CN="卡口名称" EN="Bayonet name" JP="" RU="" />
+      <FisrtIntoCity18 CN="号牌号码" EN="Number plate number" JP="" RU="" />
+      <FisrtIntoCity19 CN="号牌种类" EN="Number plate type" JP="" RU="" />
+      <FisrtIntoCity20 CN="过往时间" EN="Past time" JP="" RU="" />
+      <FisrtIntoCity21 CN="行车方向" EN="Driving direction" JP="" RU="" />
+      <FisrtIntoCity22 CN="车道" EN="Lane" JP="" RU="" />
+      <FisrtIntoCity23 CN="车辆速度" EN="Vehicle speed" JP="" RU="" />
+      <FisrtIntoCity24 CN="数据来源" EN="Data Sources" JP="" RU="" />
+      <FisrtIntoCity25 CN="记录类型" EN="The record type" JP="" RU="" />
+      <FisrtIntoCity26 CN="车辆图片(图片点击滚轮缩放)" EN="Vehicle picture (picture click wheel zoom)" JP="" RU="" />
+      <FisrtIntoCity27 CN="您没有登录或操作超时，请重新登录!" EN="You are not logged in or the operation timed out, please log in again!" JP="" RU="" />
+      <FisrtIntoCity28 CN="访问：初次入城" EN="Visit: First into the city" JP="" RU="" />
+      <FisrtIntoCity29 CN="信息提示" EN="message notification" JP="" RU="" />
+      <FisrtIntoCity30 CN="只能选择两个小时之内的时间！" EN="Can only choose two hours of time!" JP="" RU="" />
+      <FisrtIntoCity31 CN="当前没数据" EN="No data currently" JP="" RU="" />
+      <FisrtIntoCity32 CN="查询时间:" EN="Query time：" JP="" RU="" />
+    </MyNet.Atmcs.Uscmcp.Web.Passcar.FisrtIntoCity>
+  </Dictionary>
+</Message>

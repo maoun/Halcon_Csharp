@@ -1,0 +1,48 @@
+/*JIA 2009,4month*/
+/*滑动样式----------------------------------------------------------------*/
+/*文本流向对象的右边,宽100%,高180PX,上边外补丁5PX*/
+#Preview1,#Preview2,#Preview3{ 
+      float:left; 
+	  width:100%; 
+	  height:180px; 
+	  margin-top:5px;
+}
+/*宽100%,高24PX;背景图像不重复,白色背景*/
+#scrolldoorFrame { 
+      width:100%; 
+	  height:24px; 
+	  background:url(../images/images_tab/sleek_a.gif) no-repeat; 
+	  background-color:#FFF;
+}
+/*项目列表前的类型为无,宽100%,高24PX;字体大小12PX;背景不重复*/
+#scrolldoorFrame ul{
+      list-style:none; 
+	  width:100%; 
+	  height:24px; 
+	  font-size:12px; 
+	  background:url(../images/images_tab/sleek_a.gif) no-repeat;
+}
+/*块对象的默认值,文本流向对象的右边,宽87PX,高18PX;上边内补丁6PX;文本居中*/
+#scrolldoorFrame ul li{ 
+      display:block; 
+	  float:left; 
+	  width:87px; 
+	  height:18px; 
+	  padding-top:6px; 
+	  text-align:center;
+}
+
+/*下边边框无样式,背景不重复*/
+#scrolldoorFrame ul .q{ 
+      border-bottom-style:none; 
+	  background:url(../images/images_tab/sleek_hover.gif) no-repeat;
+}
+/*文本流向对象的右边;内补丁2px 0px 2px 0px;1PX浅蓝色虚线边框(上边和下边),DIV的内容自动换行*/
+#frame{ 
+      float:left; 
+	  width:99.8%;
+	  padding:2px 0px 2px 0px; 
+	  border-top:1px dashed #A5D1EC; 
+	  border-bottom:1px dashed #A5D1EC; 
+	  word-wrap:break-word; 
+}

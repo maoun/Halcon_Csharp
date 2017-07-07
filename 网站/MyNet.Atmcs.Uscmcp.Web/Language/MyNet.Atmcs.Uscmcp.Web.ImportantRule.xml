@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Message>
+  <Language>CN</Language>
+  <Dictionary>
+    <MyNet.Atmcs.Uscmcp.Web.ImportantRule>
+      <ImportantRule1 CN="卡口名称" EN="" JP="" RU="" />
+      <ImportantRule2 CN="查询" EN="" JP="" RU="" />
+      <ImportantRule5 CN="添加" EN="" JP="" RU="" />
+      <ImportantRule8 CN="删除" EN="" JP="" RU="" />
+      <ImportantRule9 CN="移除" EN="" JP="" RU="" />
+      <ImportantRule10 CN="移除选中的限行地点" EN="" JP="" RU="" />
+      <ImportantRule11 CN="保存" EN="" JP="" RU="" />
+      <ImportantRule12 CN="限行地点" EN="" JP="" RU="" />
+      <ImportantRule3 CN="道路编号" EN="" JP="" RU="" />
+    </MyNet.Atmcs.Uscmcp.Web.ImportantRule>
+  </Dictionary>
+</Message>

@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Message>
+<Language>CN</Language>
+<Dictionary>
+<MyNet.Atmcs.Uscmcp.Web.LogRunning>
+<LogRunning1 CN="查询类型：" EN="Query Type:" JP="" RU="" />
+<LogRunning2 CN="请选择..." EN="Please choose..." JP="" RU="" />
+<LogRunning3  CN="清除选中" EN="Clear selected" JP="" RU="" />
+<LogRunning4 CN="操作用户：" EN="Operation User:" JP="" RU="" />
+<LogRunning5 CN="查询" EN="Inquire" JP="" RU="" />
+<LogRunning6 CN="详细" EN="Detailed" JP="" RU="" />
+<LogRunning7 CN="记录编号" EN="Record number" JP="" RU="" />
+<LogRunning8 CN="操作用户" EN="Operate the user" JP="" RU="" />
+<LogRunning9 CN="操作类型" EN="The type of operation" JP="" RU="" />
+<LogRunning10 CN="操作事件" EN="Operation event" JP="" RU="" />
+<LogRunning11 CN="用户IP" EN="User IP" JP="" RU="" />
+<LogRunning12 CN="记录时间" EN="Record time" JP="" RU="" />
+<LogRunning13 CN="导出Excel" EN="Export Excel" JP="" RU="" />
+<LogRunning14  CN="您没有登录或操作超时，请重新登录!" EN="You are not logged in or the operation timed out, please log in again!" JP="" RU="" />
+<LogRunning15 CN="访问：运行日志查询" EN="Access: Run the log query" JP="" RU="" />
+<LogRunning16  CN="运行日志查询列表" EN="Run the log query list" JP="" RU="" />
+<LogRunning17  CN="提示" EN="Prompt" JP="" RU="" />
+<LogRunning18  CN="未查询到相关记录!" EN="No query to the relevant records!" JP="" RU="" />
+</MyNet.Atmcs.Uscmcp.Web.LogRunning>
+</Dictionary>
+</Message>

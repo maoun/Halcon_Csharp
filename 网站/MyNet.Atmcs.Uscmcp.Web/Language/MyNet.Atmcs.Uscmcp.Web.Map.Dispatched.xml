@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Message>
+  <Language>CN</Language>
+  <Dictionary>
+    <MyNet.Atmcs.Uscmcp.Web.Map.Dispatched>
+      <Dispatched1 CN="地图浏览" EN="Map browsing" JP="" RU="" />
+      <Dispatched2 CN="重载地图" EN="Reload the map" JP="" RU="" />
+      <Dispatched3 CN="清除" EN="Clear" JP="" RU="" />
+      <Dispatched4 CN="中心点" EN="Center point" JP="" RU="" />
+      <Dispatched5 CN="测距" EN="Distance measurement" JP="" RU="" />
+      <Dispatched6 CN="测面积" EN="Measuring area" JP="" RU="" />
+      <Dispatched7 CN="布控范围标注(请在左侧地图上标注)" EN="Controlled range annotation (please mark on the map on the left)" JP="" RU="" />
+      <Dispatched8 CN="号牌号码:" EN="Number plate:" JP="" RU="" />
+      <Dispatched22 CN="模糊布控" EN="Fuzzy Control" JP="" RU="" />
+      <Dispatched9 CN="号牌种类" EN="Number plate type" JP="" RU="" />
+      <Dispatched10 CN="请选择" EN="Please choose" JP="" RU="" />
+      <Dispatched11 CN="请选择..." EN="Please choose..." JP="" RU="" />
+      <Dispatched13 CN="有效时间:" EN="Effective time:" JP="" RU="" />
+      <Dispatched12 CN="对比原因" EN="Contrast reasons" JP="" RU="" />
+      <Dispatched20 CN="布控联系人" EN="Controlled contact" JP="" RU="" />
+      <Dispatched21 CN="联系电话" EN="Contact number" JP="" RU="" />
+      <Dispatched14 CN="布控" EN="Deployment" JP="" RU="" />
+      <Dispatched15 CN="卡口名称" EN="Bayonet name" JP="" RU="" />
+      <Dispatched16 CN="x" EN="X" JP="" RU="" />
+      <Dispatched17 CN="y" EN="Y" JP="" RU="" />
+      <Dispatched18 CN="卡口ID" EN="Bayonet ID" JP="" RU="" />
+ <Dispatched23 CN="六位号牌号码" EN="Six number plate number" JP="" RU="" />
+ 
+
+<Dispatched24 CN="清除选中" EN="Clear selected" JP="" RU="" />
+<Dispatched25 CN="布控类型" EN="Type of dispatch" JP="" RU="" />
+<Dispatched26 CN="选择比对类型" EN="Select a match type" JP="" RU="" />
+
+    </MyNet.Atmcs.Uscmcp.Web.Map.Dispatched>
+
+  </Dictionary>
+</Message>

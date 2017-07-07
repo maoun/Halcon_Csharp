@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Message>
+  <Language>CN</Language>
+  <Dictionary>
+    <MyNet.Atmcs.Uscmcp.Web.WebPassCarVehHead>
+      <WebPassCarVehHead1 CN="本省车辆统计分析" EN="Statistics and Analysis of Vehicles" JP="" RU="" />
+ <WebPassCarVehHead2 CN="本地" EN="local" JP="" RU="" />
+ <WebPassCarVehHead3 CN="异地" EN="Off-site" JP="" RU="" />
+    </MyNet.Atmcs.Uscmcp.Web.WebPassCarVehHead>
+  </Dictionary>
+</Message>

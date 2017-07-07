@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{44EF9B66-59BD-451C-9106-AB57BD6B8C0C}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MyNet.Atmcs.Uscmcp.UI</RootNamespace>
+    <AssemblyName>MyNet.Atmcs.Uscmcp.UI</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="UIDepartment.ascx" />
+    <Content Include="UIStation.ascx" />
+    <Content Include="VehicleHead.ascx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UIDepartment.ascx.cs">
+      <DependentUpon>UIDepartment.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UIDepartment.ascx.designer.cs">
+      <DependentUpon>UIDepartment.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UIStation.ascx.cs">
+      <DependentUpon>UIStation.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UIStation.ascx.designer.cs">
+      <DependentUpon>UIStation.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="VehicleHead.ascx.cs">
+      <DependentUpon>VehicleHead.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VehicleHead.ascx.designer.cs">
+      <DependentUpon>VehicleHead.ascx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Cache.Bll">
+      <HintPath>..\MyNet.Atmcs.Uscmcp.Web\lib\Cache.Bll.dll</HintPath>
+    </Reference>
+    <Reference Include="Cache.Dal">
+      <HintPath>..\MyNet.Atmcs.Uscmcp.Web\lib\Cache.Dal.dll</HintPath>
+    </Reference>
+    <Reference Include="Cache.Helper">
+      <HintPath>..\MyNet.Atmcs.Uscmcp.Web\lib\Cache.Helper.dll</HintPath>
+    </Reference>
+    <Reference Include="Cache.Model">
+      <HintPath>..\MyNet.Atmcs.Uscmcp.Web\lib\Cache.Model.dll</HintPath>
+    </Reference>
+    <Reference Include="Ext.Net">
+      <HintPath>..\dll\Ext.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="Ext.Net.Utilities">
+      <HintPath>..\dll\Ext.Net.Utilities.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\dll\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Common">
+      <HintPath>..\MyNet.Atmcs.Uscmcp.Web\lib\ServiceStack.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Interfaces">
+      <HintPath>..\MyNet.Atmcs.Uscmcp.Web\lib\ServiceStack.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Redis">
+      <HintPath>..\MyNet.Atmcs.Uscmcp.Web\lib\ServiceStack.Redis.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.ServiceInterface">
+      <HintPath>..\MyNet.Atmcs.Uscmcp.Web\lib\ServiceStack.ServiceInterface.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Text">
+      <HintPath>..\MyNet.Atmcs.Uscmcp.Web\lib\ServiceStack.Text.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.XML" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MyNet.Atmcs.Uscmcp.Bll\MyNet.Atmcs.Uscmcp.Bll.csproj">
+      <Project>{92B1CFF8-1AC4-4FC9-80CB-E609D39054C1}</Project>
+      <Name>MyNet.Atmcs.Uscmcp.Bll</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MyNet.Atmcs.Uscmcp.Data\MyNet.Atmcs.Uscmcp.Data.csproj">
+      <Project>{549C1473-352B-438F-8FF7-B0576B726E52}</Project>
+      <Name>MyNet.Atmcs.Uscmcp.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MyNet.Atmcs.Uscmcp.IData\MyNet.Atmcs.Uscmcp.IData.csproj">
+      <Project>{135B55EC-9A7E-4713-B78D-898E1625F99A}</Project>
+      <Name>MyNet.Atmcs.Uscmcp.IData</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MyNet.Atmcs.Uscmcp.Model\MyNet.Atmcs.Uscmcp.Model.csproj">
+      <Project>{619963ea-573d-4d14-b664-e7f58db7c576}</Project>
+      <Name>MyNet.Atmcs.Uscmcp.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MyNet.Common.Lang\MyNet.Common.Lang.csproj">
+      <Project>{9e67d2c6-d828-4968-ae6f-e2941ccefa9f}</Project>
+      <Name>MyNet.Common.Lang</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="web.config" />
+    <None Include="web.Debug.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
+    <None Include="web.Release.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>11933</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

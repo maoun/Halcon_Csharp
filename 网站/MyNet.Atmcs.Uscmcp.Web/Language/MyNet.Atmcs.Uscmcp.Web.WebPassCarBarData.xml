@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Message>
+  <Language>CN</Language>
+  <Dictionary>
+    <MyNet.Atmcs.Uscmcp.Web.WebPassCarBarData>
+      <WebPassCarBarData1 CN="本市车辆" EN="City vehicles" JP="" RU="" />
+      <WebPassCarBarData2 CN="本省车辆" EN="Province vehicles" JP="" RU="" />
+      <WebPassCarBarData3 CN="外省车辆" EN="Other provinces vehicles" JP="" RU="" />
+      <WebPassCarBarData4 CN="黑名单" EN="blacklist" JP="" RU="" />
+      <WebPassCarBarData5 CN="初入车" EN="First entered car" JP="" RU="" />
+      <WebPassCarBarData6 CN="套牌车" EN="Deck car" JP="" RU="" />
+      <WebPassCarBarData7 CN="未年审" EN="Not examined" JP="" RU="" />
+      <WebPassCarBarData8 CN="黄标车" EN="Yellow standard car" JP="" RU="" />
+    </MyNet.Atmcs.Uscmcp.Web.WebPassCarBarData>
+  </Dictionary>
+</Message>

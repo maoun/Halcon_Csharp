@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Message>
+  <Language>CN</Language>
+  <Dictionary>
+    <MyNet.Atmcs.Uscmcp.Web.AlarmInfoCount>
+      <AlarmInfoCount1 CN="查询时间：" EN="Query time：" JP="" RU="" />
+      <AlarmInfoCount2 CN="统计类型：" EN="Statistics type：" JP="" RU="" />
+	  <AlarmInfoCount3 CN="清除选中" EN="Clear selected" JP="" RU="" />
+	  <AlarmInfoCount4 CN="报警类型" EN="Alarm type" JP="" RU="" />
+      <AlarmInfoCount5 CN="处理状态" EN="Processing state" JP="" RU="" />
+      <AlarmInfoCount6 CN="号牌种类" EN="Plate type" JP="" RU="" />
+      <AlarmInfoCount7 CN="卡口名称：" EN="Bayonet name：" JP="" RU="" />
+      <AlarmInfoCount8 CN="查询" EN="Query" JP="" RU="" />
+      <AlarmInfoCount9 CN="重置" EN="Reset" JP="" RU="" />
+      <AlarmInfoCount10 CN="显示图表" EN="Display the chart" JP="" RU="" />
+      <AlarmInfoCount11 CN="打印统计报表" EN="Print a statistical report" JP="" RU="" />
+      <AlarmInfoCount12 CN="打印统计图表" EN="Print a statistical chart" JP="" RU="" />
+      <AlarmInfoCount13 CN="列表统计" EN="List statistics" JP="" RU="" />
+	  <AlarmInfoCount14 CN="行驶方向" EN="Driving direction" JP="" RU="" />
+      <AlarmInfoCount15 CN="统计类型" EN="Statistics type" JP="" RU="" />
+      <AlarmInfoCount16 CN="统计数量" EN="Statistics number" JP="" RU="" />
+      <AlarmInfoCount17 CN="百分比" EN="Percentage" JP="" RU="" />
+      <AlarmInfoCount18 CN="图例" EN="Legend" JP="" RU="" />
+      <AlarmInfoCount19 CN="用该列进行分组" EN="Use this column for grouping" JP="" RU="" />
+      <AlarmInfoCount20 CN="显示分组" EN="Displays the grouping" JP="" RU="" />
+      <AlarmInfoCount21 CN="清除" EN="Clear" JP="" RU="" />
+      <AlarmInfoCount22 CN="关闭" EN="Close" JP="" RU="" />
+      <AlarmInfoCount23 CN="返回目录" EN="Back to Contents" JP="" RU="" />
+      <AlarmInfoCount24 CN="关闭" EN="Close" JP="" RU="" />
+	  <AlarmInfoCount25 CN="报警车辆统计" EN="Alarm vehicle statistics" JP="" RU="" />
+      <AlarmInfoCount26 CN="当前没查询到数据" EN="No data is currently being queried" JP="" RU="" />
+	  <AlarmInfoCount27 CN="报表打印" EN="Report printing" JP="" RU="" />
+	  <AlarmInfoCount28 CN="您没有登录或操作超时，请重新登录!" EN="You are not logged in or operating a timeout, please login again!" JP="" RU="" />
+      <AlarmInfoCount29 CN="访问：" EN="Access：" JP="" RU="" />
+      <AlarmInfoCount30 CN="信息提示" EN="Information prompt" JP="" RU="" />
+      <AlarmInfoCount31 CN="请在卡口列表中选择卡口" EN="Select the bayonet in the bayonet list" JP="" RU="" />
+      <AlarmInfoCount32 CN="未查询到符合条件的任何记录！" EN="No query to meet any of the conditions of the record!" JP="" RU="" />
+      <AlarmInfoCount33 CN="报警车辆" EN="Alarm vehicle" JP="" RU="" />
+      <AlarmInfoCount34 CN="按照" EN="According to" JP="" RU="" />
+      <AlarmInfoCount35 CN="统计" EN="Statistics" JP="" RU="" />
+	  <AlarmInfoCount36 CN="统计时间" EN="Statistics Time" JP="" RU="" />
+	  <AlarmInfoCount37 CN="卡口列表" EN="Bayonet list" JP="" RU="" />
+    </MyNet.Atmcs.Uscmcp.Web.AlarmInfoCount>
+  </Dictionary>
+</Message>

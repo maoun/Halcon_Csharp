@@ -1,0 +1,33 @@
+ 
+ 
+/*JIA 2009,6month*/
+/*------------------------------------------------------------------ 
+[Navigation] 
+1 navigation / #navigation 
+2 tree / .tree
+——————————————————————-*/
+/*主界面顶部导航样式----------------------------------------------------------------*/
+/*块对象的默认值;宽1000PX,高26PX,外补丁自动;背景图片不重复;不显示超过对象尺寸的内容;文本居中,行高26PX*/
+#navigation {
+	display:block;
+	width:1000px;
+	height:26px;
+	margin:0 auto;
+	background:url(../images/navigation_back.gif);
+	overflow:hidden;
+	line-height:26px;
+	text-align:center; }
+/*文本流向对象的右边;宽173PX,高26PX;左外补丁3PX;背景不重复;字体大小12PX,浅青色,红色发光*/ 
+#navigation h1 {
+	float:left;
+	width:173px;
+	height:26px;
+	margin-left:3px;
+	background:url(../images/welcome.gif) no-repeat;
+	font-size:12px;
+	color:#C7EAF7;
+	filter:glow(Color=red, Strength=1); }
+ 
+
+ 
+ 

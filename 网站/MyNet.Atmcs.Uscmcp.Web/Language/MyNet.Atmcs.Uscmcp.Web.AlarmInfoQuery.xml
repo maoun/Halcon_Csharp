@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Message>
+  <Language>CN</Language>
+  <Dictionary>
+    <MyNet.Atmcs.Uscmcp.Web.AlarmInfoQuery>
+      <AlarmInfoQuery1 CN="查询时间：" EN="" JP="" RU="" />
+      <AlarmInfoQuery49 CN="布控类型：" EN="" JP="" RU="" />
+      <AlarmInfoQuery50 CN="选择布控类型..." EN="" JP="" RU="" />
+      <AlarmInfoQuery3 CN="号牌种类：" EN="" JP="" RU="" />
+      <AlarmInfoQuery4 CN="请选择..." EN="" JP="" RU="" />
+      <AlarmInfoQuery2 CN="号牌号码：" EN="" JP="" RU="" />
+      <PeccancyQuery5 CN="模糊查询" EN="" JP="" RU="" />
+      <AlarmInfoQuery11 CN="消息类型：" EN="" JP="" RU="" />
+      <AlarmInfoQuery9 CN="报警类型：" EN="" JP="" RU="" />
+      <AlarmInfoQuery10 CN="选择报警类型..." EN="" JP="" RU="" />
+      <AlarmInfoQuery34 CN="处理结果：" EN="" JP="" RU="" />
+      <AlarmInfoQuery35 CN="选择处理结果..." EN="" JP="" RU="" />
+      <AlarmInfoQuery14 CN="显示条数：" EN="" JP="" RU="" />
+      <AlarmInfoQuery15 CN="选择..." EN="" JP="" RU="" />
+      <AlarmInfoQuery16 CN="查询" EN="" JP="" RU="" />
+      <AlarmInfoQuery17 CN="重置" EN="" JP="" RU="" />
+      <AlarmInfoQuery38 CN="详细信息" EN="" JP="" RU="" />
+      <AlarmInfoQuery12 CN="预警" EN="" JP="" RU="" />
+      <AlarmInfoQuery13 CN="报警" EN="" JP="" RU="" />
+      <AlarmInfoQuery24 CN="详细" EN="" JP="" RU="" />
+      <AlarmInfoQuery25 CN="记录编号" EN="" JP="" RU="" />
+      <AlarmInfoQuery26 CN="报警卡口" EN="" JP="" RU="" />
+      <AlarmInfoQuery27 CN="号牌号码" EN="" JP="" RU="" />
+      <AlarmInfoQuery28 CN="号牌种类" EN="" JP="" RU="" />
+      <AlarmInfoQuery51 CN="布控类型" EN="" JP="" RU="" />
+      <AlarmInfoQuery29 CN="报警时间" EN="" JP="" RU="" />
+      <AlarmInfoQuery30 CN="报警类型" EN="" JP="" RU="" />
+      <AlarmInfoQuery31 CN="报警原因" EN="" JP="" RU="" />
+      <AlarmInfoQuery39 CN="处理结果" EN="" JP="" RU="" />
+      <AlarmInfoQuery32 CN="消息类型" EN="" JP="" RU="" />
+      <AlarmInfoQuery58 CN="信息提示" EN="" JP="" RU="" />
+      <AlarmInfoQuery60 CN="当前没数据" EN="" JP="" RU="" />
+      <AlarmInfoQuery47 CN="报警信息查询" EN="" JP="" RU="" />
+      <AlarmInfoQuery48 CN="查看详细信息" EN="" JP="" RU="" />
+      <AlarmInfoQuery5 CN="号牌种类：" EN="" JP="" RU="" />
+      <AlarmInfoQuery6 CN="请选择..." EN="" JP="" RU="" />
+      <AlarmInfoQuery7 CN="号牌号码：" EN="" JP="" RU="" />
+      <AlarmInfoQuery8 CN="六位号牌号码" EN="" JP="" RU="" />
+      <AlarmInfoQuery18 CN="显示条数：" EN="" JP="" RU="" />
+      <AlarmInfoQuery19 CN="选择..." EN="" JP="" RU="" />
+      <AlarmInfoQuery20 CN="查询" EN="" JP="" RU="" />
+      <AlarmInfoQuery21 CN="重置" EN="" JP="" RU="" />
+      <AlarmInfoQuery22 CN="首页" EN="" JP="" RU="" />
+      <AlarmInfoQuery23 CN="上一页" EN="" JP="" RU="" />
+      <AlarmInfoQuery41 CN="详细信息" EN="" JP="" RU="" />
+      <AlarmInfoQuery52 CN="车辆图片(图片点击滚轮缩放)" EN="" JP="" RU="" />
+      <AlarmInfoQuery42 CN="报警信息" EN="" JP="" RU="" />
+      <AlarmInfoQuery43 CN="清除" EN="" JP="" RU="" />
+      <AlarmInfoQuery44 CN="关闭" EN="" JP="" RU="" />
+      <AlarmInfoQuery45 CN="返回目录" EN="" JP="" RU="" />
+      <AlarmInfoQuery46 CN="关闭" EN="" JP="" RU="" />
+      <AlarmInfoQuery54 CN="访问：" EN="" JP="" RU="" />
+      <AlarmInfoQuery33 CN="号牌号码" EN="" JP="" RU="" />
+      <AlarmInfoQuery36 CN="报警时间" EN="" JP="" RU="" />
+      <AlarmInfoQuery37 CN="报警类型" EN="" JP="" RU="" />
+      <AlarmInfoQuery40 CN="消息类型" EN="" JP="" RU="" />
+    </MyNet.Atmcs.Uscmcp.Web.AlarmInfoQuery>
+  </Dictionary>
+</Message>

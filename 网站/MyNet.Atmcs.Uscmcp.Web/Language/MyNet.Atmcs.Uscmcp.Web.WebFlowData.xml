@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Message>
+  <Language>CN</Language>
+  <Dictionary>
+    <MyNet.Atmcs.Uscmcp.Web.WebFlowData>
+      <WebFlowData1 CN="实际在线" EN="Actual online" JP="" RU="" />
+      <WebFlowData2 CN="通过车次" EN="Through trips" JP="" RU="" />
+      <WebFlowData3 CN="24小时通过车次与实际在线对比分析" EN="24 hours by train with the actual online comparative analysis" JP="" RU="" />
+      <WebFlowData5 CN="时" EN="hour" JP="" RU="" />
+    </MyNet.Atmcs.Uscmcp.Web.WebFlowData>
+  </Dictionary>
+</Message>

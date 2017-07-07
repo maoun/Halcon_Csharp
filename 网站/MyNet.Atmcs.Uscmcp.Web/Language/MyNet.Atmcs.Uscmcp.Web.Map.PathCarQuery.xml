@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Message>
+  <Language>CN</Language>
+  <Dictionary>
+    <MyNet.Atmcs.Uscmcp.Web.Map.PathCarQuery>
+      <PathCarQuery1 CN="地图浏览" EN="Map browsing" JP="" RU="" />
+      <PathCarQuery2 CN="重载地图" EN="Reload the map" JP="" RU="" />
+      <PathCarQuery3 CN="清除" EN="Clear " JP="" RU="" />
+      <PathCarQuery4 CN="中心点" EN="Center point" JP="" RU="" />
+      <PathCarQuery5 CN="测距" EN="Distance measurement" JP="" RU="" />
+      <PathCarQuery6 CN="测面积" EN="Measuring area" JP="" RU="" />
+      <PathCarQuery7 CN="图片显示" EN="Picture display" JP="" RU="" />
+      <PathCarQuery8 CN="开始时间:" EN="Starting time:" JP="" RU="" />
+      <PathCarQuery9 CN="结束时间:" EN="End Time:" JP="" RU="" />
+      <PathCarQuery10 CN="号牌号码:" EN="Number plate:" JP="" RU="" />
+      <PathCarQuery11 CN="6位号牌号码" EN="Six Number plate number" JP="" RU="" />
+      <PathCarQuery12 CN="号牌种类" EN="Number plate type" JP="" RU="" />
+      <PathCarQuery13 CN="请选择" EN="Please choose" JP="" RU="" />
+      <PathCarQuery14 CN="请选择..." EN="Please choose..." JP="" RU="" />
+      <PathCarQuery15 CN="清除选中" EN="Clear selected" JP="" RU="" />
+      <PathCarQuery16 CN="查找" EN="Reset" JP="" RU="" />
+     <PathCarQuery80 CN="重置" EN="Reset" JP="" RU="" />
+      <PathCarQuery17 CN="播放速度" EN="Playback speed" JP="" RU="" />
+      <PathCarQuery18 CN="慢速" EN="Slow" JP="" RU="" />
+      <PathCarQuery19 CN="正常" EN="Normal" JP="" RU="" />
+      <PathCarQuery20 CN="快速" EN="Fast" JP="" RU="" />
+      <PathCarQuery21 CN="轨迹播放" EN="Track playback" JP="" RU="" />
+      <PathCarQuery22 CN="首页" EN="Home" JP="" RU="" />
+      <PathCarQuery23 CN="尾页" EN="Last page" JP="" RU="" />
+      <PathCarQuery24 CN="当前0页,共0页" EN="Current 0 Pages, Total 0 Pages" JP="" RU="" />
+      <PathCarQuery25 CN="序号" EN="Serial number" JP="" RU="" />
+      <PathCarQuery26 CN="道路名称" EN="Road name" JP="" RU="" />
+      <PathCarQuery27 CN="车道" EN="Lane" JP="" RU="" />
+      <PathCarQuery28 CN="方向" EN="Direction" JP="" RU="" />
+      <PathCarQuery29 CN="过往时间" EN="Aged time" JP="" RU="" />
+      <PathCarQuery30 CN="x" EN="X" JP="" RU="" />
+      <PathCarQuery31 CN="y" EN="Y" JP="" RU="" />
+      <PathCarQuery32 CN="文件" EN="File" JP="" RU="" />
+ 	<PathCarQuery33 CN="您没有登录或操作超时，请重新登录" EN="" JP="" RU="" />
+<PathCarQuery34 CN="播放" EN="Play" JP="" RU="" />
+<PathCarQuery35 CN="访问：" EN="Access:" JP="" RU="" />
+<PathCarQuery36 CN="当前车-" EN="Current car -" JP="" RU="" />
+<PathCarQuery37 CN="提示" EN="Prompt" JP="" RU="" />
+<PathCarQuery38 CN="轨迹查询条件不完整" EN="Track query conditions are incomplete" JP="" RU="" />
+<PathCarQuery39 CN="接口服务报错！" EN="Interface service error!" JP="" RU="" />
+<PathCarQuery40 CN="当前" EN="Current" JP="" RU="" />
+<PathCarQuery41 CN="页,共" EN="Pages, Total" JP="" RU="" />
+<PathCarQuery42 CN="页(共" EN="Pages( Total" JP="" RU="" />
+<PathCarQuery43 CN="条)" EN="Article)" JP="" RU="" />
+<PathCarQuery44 CN="无数据！" EN="No data!" JP="" RU="" />
+    </MyNet.Atmcs.Uscmcp.Web.Map.PathCarQuery>
+  </Dictionary>
+</Message>

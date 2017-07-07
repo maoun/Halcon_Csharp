@@ -1,0 +1,18 @@
+﻿
+/* 违法查询时间控件 */
+.laydate-span{
+    float: left;
+    line-height: 24px !important;
+    text-align: center;
+} 
+
+.laydate-icon{
+    float: left;
+    list-style: none;
+    cursor: pointer;
+    line-height: 22px !important;
+}
+
+
+
+

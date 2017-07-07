@@ -1,0 +1,96 @@
+﻿.datasheetbox1 ul {
+    width: 100%;
+    display: block;
+    padding: 11px 20px;
+    float: left;
+}
+
+    .datasheetbox1 ul li {
+        float: left;
+        margin-right: 32px;
+    }
+
+        .datasheetbox1 ul li span {
+            font-size: 16px;
+            color: #2c474f;
+      
+            width: 100%;
+            float: left;
+        }
+
+            .datasheetbox1 ul li span.title {
+                line-height: 22px;
+            }
+
+            .datasheetbox1 ul li span.number {
+                line-height: 22px;
+            }
+
+        .datasheetbox1 ul li p {
+            width: 100%;
+            float: left;
+            height: 15px;
+            position: relative;
+            border-radius: 8px;
+            margin: 6px 0;
+            box-shadow: 1px 1px 1px #cccccc;
+            background: rgba(46, 156, 218, 0.2) !important;
+            filter: Alpha(opacity=20);
+            background: #2e9cda;
+        }
+
+            .datasheetbox1 ul li p em {
+                position: absolute;
+                left: 0;
+                top: 0;
+                height: 15px;
+                border-radius: 8px;
+            }
+
+        .datasheetbox1 ul li.data1 p em {
+            background-color: #0594e4;
+        }
+
+        .datasheetbox1 ul li.data2 p em {
+            background-color: #f0a204;
+        }
+
+        .datasheetbox1 ul li.data3 p em {
+            background-color: #90da17;
+        }
+
+        .datasheetbox1 ul li.data4 p em {
+            background-color: #e77a34;
+        }
+
+        .datasheetbox1 ul li.data5 p em {
+            background-color: #a871ef;
+        }
+
+        .datasheetbox1 ul li.data6 p em {
+            background-color: #79cff1;
+        }
+
+        .datasheetbox1 ul li.data7 p em {
+            background-color: #e9dd5a;
+        }
+
+        .datasheetbox1 ul li.data8 p em {
+            background-color: #2e9cda;
+        }
+
+        .datasheetbox1 ul li.data9 p em {
+            background-color: #f0a204;
+        }
+
+        .datasheetbox1 ul li.data10 p em {
+            background-color: #90da17;
+        }
+
+        .datasheetbox1 ul li.data11 p em {
+            background-color: #3cd8eb;
+        }
+
+        .datasheetbox1 ul li.data12 p em {
+            background-color: #a871ef;
+        }

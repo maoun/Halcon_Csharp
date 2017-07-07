@@ -1,0 +1,57 @@
+ 
+ 
+/*JIA 2009,6month*/
+/*字体样式----------------------------------------------------------------*/
+/*字体颜色*/
+.fontImportant { color:#FF0000 }
+/*字体黑色,大小14PX,行高21PX,粗体,居左*/
+.fontBasicInfo{
+	color:#000;
+	font-weight:bold;
+	font-size:14px;
+	line-height:21px;
+	text-align:left; }
+
+/*字体大小:12PX,居左*/
+.fontCurrentLocation {
+	font-size: 12px;
+	text-align:left; }
+
+/*字体大小:12PX,粗体*/
+.fontCurrentLocationBold {
+	font-size: 12px;
+	font-weight: bold; }
+  /*当前位置*/
+
+/*字体深青色,大小12PX*/
+.fontRecord {
+	color: #03515d;
+	font-size: 12px; }
+ 
+/*登录head字体样式 样式名称(c(color的首字母)+颜色的16进制)----------------------------------------------------------------*/
+/*字体白色*/
+.fontLogoText { color:#FFF; }
+/*高度5PX*/
+.height { height:5px; }
+ 
+/*系统首页 字体样式---------------------------------------------------------*/
+/*字体橙色,大小24PX,宋体,粗体*/
+.fontSysIndexLogo {
+	color:#FFA700;
+	font-size:24px;
+	font-family:"宋体";
+	font-weight:bold; }
+ 
+.fontLoginText {
+	text-align:center;
+	height:1px;
+	font-size:9pt;
+	color:#bfdbeb;
+	filter:glow(color=#1070a3,strength=1); }
+
+/*底部 字体样式---------------------------------------------------------*/
+/*字体白色*/
+.fontFoot {
+	color:#000000;
+}
+/*字体样式----------------------------------------------------------------*/

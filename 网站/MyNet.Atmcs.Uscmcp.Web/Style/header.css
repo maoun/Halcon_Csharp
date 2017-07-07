@@ -1,0 +1,127 @@
+ 
+ 
+/*JIA 2009,6month*/
+/*页头样式----------------------------------------------------------------*/
+/*宽1000PX,高57PX, 外补丁（外边距）自动,背景不重复*/
+#header {
+	width:1000px;
+	height:57px;
+	margin:0 auto;
+	background:url(../images/header.jpg) no-repeat; /*background:url(../images/head_back.jpg) no-repeat;*/ /*background:url(../images/head_back.gif) no-repeat;*/ }
+ /*块对象的默认值,文本流向对象的右边,宽50%;字体白色,黑体,行高57PX,大小24PX*/
+#header h1 {
+	display:block;
+	float:left;
+	width:50%;
+	color:#FFF;
+	font-family:"黑体";
+	line-height:57px;
+	font-size:24px;
+}
+
+/* 页头样式 head_back.gif/header.jpg作为背景的时候--------------------------------------------------------------*/
+/*项目列表前的类型为无;文本流向对象的右边;宽35%;上边内补丁10PX;右边内补丁3PX;文本居右;*/
+#header ul {
+	list-style:none;
+	float:right;
+	width:35%;
+	padding-top:10px;
+	padding-right:3px;
+	text-align:right; }
+/*块对象的默认值;字体浅蓝色,行高21PX*/ 
+#header ul li {
+	display:block;
+	color:#A6C6DB;
+	line-height:21px; }
+			
+/*交通综合信息发布页头样式----------------------------------------------------------------*/
+/*宽1000PX,高57PX, 外补丁（外边距）自动,背景不重复*/
+#headerZh {
+	height:57px;
+	margin:0 auto;
+	background:url(../images/head.png) no-repeat;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/head.png',sizingMethod='scale');
+}
+ /*块对象的默认值,文本流向对象的右边,宽50%;字体白色,黑体,行高57PX,大小24PX*/
+#headerZh h1 {
+	display:block;
+	float:left;
+	width:50%;
+	color:#FFF;
+	text-align:left;
+	padding-left:80px;
+	font-family:"黑体";
+	line-height:57px;
+	font-size:24px; }
+
+#headerZh h2 {
+	display:block;
+	float:left;
+	width:20%;
+	color:#FFF;
+	text-align: left;
+    padding-top:12px;
+    padding-left:80px;
+	font-family:"黑体";
+	line-height:57px;
+	font-size:24px; }
+#headerZh h3 {
+	display:block;
+	float:left;
+	width:20%;
+	color:#FFF;
+	text-align:left;
+	padding-left:60px;
+	padding-top:10px;
+	font-family:"黑体";
+	line-height:47px;
+	font-size:12px;}
+
+#headerZh h5 {
+	display:block;
+	float:left;
+	text-align:right;
+	width:20%;
+	position:absolute;
+	right:230px;
+}
+
+ 
+/* 页头样式 head_back.gif/header.jpg作为背景的时候--------------------------------------------------------------*/
+/*项目列表前的类型为无;文本流向对象的右边;宽35%;上边内补丁10PX;右边内补丁3PX;文本居右;*/
+#headerZh ul {
+	list-style:none;
+	float:right;
+	text-align:left;
+ }
+/*块对象的默认值;字体浅蓝色,行高21PX*/ 
+#headerZh ul li {
+	display:block;
+	color:#A6C6DB;
+	line-height:19px;
+	position:relative;
+	right:0px;
+}
+
+/*文本流向对象的左边,块对象的默认值,项目列表前的类型为无,宽度35%*/			
+#headerZh ol {
+    float:right;
+    display:block;
+	list-style:none;
+	width:230px;
+	height:19px;
+	position:absolute;
+	right:0px;
+	top:37px;
+	background:url(../images/aboutBack.png) no-repeat;
+}
+/*块对象的默认值;字体浅蓝色,行高21PX*/ 
+#headerZh ol li {
+	display:inline;
+	color:#A6C6DB;
+	text-align:left;
+	line-height:19px;
+	border-right:1px solid #A6C6DB;
+	padding-left:5px;
+	letter-spacing:1px;
+}

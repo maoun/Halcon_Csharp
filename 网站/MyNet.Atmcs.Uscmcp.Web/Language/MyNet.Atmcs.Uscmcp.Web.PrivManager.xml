@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Message>
+  <Language>CN</Language>
+  <Dictionary>
+    <MyNet.Atmcs.Uscmcp.Web.PrivManager>
+      <PrivManager1 CN="权限编号：" EN="Permission Number：" JP="" RU="" />
+      <PrivManager2 CN="权限名称：" EN="The permission name：" JP="" RU="" />
+      <PrivManager3 CN="查询" EN="Inquire" JP="" RU="" />
+      <PrivManager4 CN="重置" EN="Reset" JP="" RU="" />
+      <PrivManager5 CN="新增权限" EN="Add permissions" JP="" RU="" />
+      <PrivManager6 CN="删除权限" EN="Delete permissions" JP="" RU="" />
+      <PrivManager7 CN="更新" EN="Update" JP="" RU="" />
+      <PrivManager8 CN="退出" EN="Drop out" JP="" RU="" />
+      <PrivManager9 CN="权限编号" EN="The permission number" JP="" RU="" />
+      <PrivManager10 CN="权限名称" EN="The permission name" JP="" RU="" />
+      <PrivManager11 CN="权限描述" EN="Permission description" JP="" RU="" />
+      <PrivManager12 CN="详细信息" EN="Details" JP="" RU="" />
+      <PrivManager13 CN="保存" EN="Save" JP="" RU="" />
+      <PrivManager14 CN="收起" EN="Put away" JP="" RU="" />
+      <PrivManager15 CN="展开" EN="Expand" JP="" RU="" />
+      <PrivManager16 CN="您没有登录或操作超时，请重新登录!" EN="You are not logged in or the operation timed out, please log in again!" JP="" RU="" />
+      <PrivManager17 CN="访问：权限信息管理" EN="Access: Permission Information Management" JP="" RU="" />
+	   <PrivManager18 CN="信息" EN="Information" JP="" RU="" />
+      <PrivManager19 CN="确认要删除编号为[" EN="Confirm that you want to delete the number for[" JP="" RU="" />
+      <PrivManager20 CN="]吗?" EN="]It?" JP="" RU="" />
+      <PrivManager21 CN="是" EN="Yes" JP="" RU="" />
+      <PrivManager22 CN="否" EN="No" JP="" RU="" />
+	   <PrivManager23 CN="权限修改" EN="Permission modification" JP="" RU="" />
+      <PrivManager24 CN="修改成功" EN="Successfully modified" JP="" RU="" />  
+      <PrivManager27 CN="修改" EN="Modify" JP="" RU="" />
+	   <PrivManager28 CN="删除:[" EN="Delete:[" JP="" RU="" />
+      <PrivManager29 CN="]权限" EN="]Permissions" JP="" RU="" />
+      <PrivManager30 CN="权限删除" EN="Permission removed" JP="" RU="" />
+      <PrivManager31 CN="删除成功" EN="Successfully deleted" JP="" RU="" />
+	    <PrivManager32 CN="权限新增" EN="Permissions are added" JP="" RU="" />
+      <PrivManager33 CN="新增成功" EN="Added successfully" JP="" RU="" />
+      <PrivManager34 CN="新增:[" EN="Added:[" JP="" RU="" />
+	   <PrivManager36 CN="修改:[" EN="Modify:[" JP="" RU="" />
+	    <PrivManager37 CN="用户权限:[" EN="User rights:[" JP="" RU="" />
+		 <PrivManager38 CN="]修改成[" EN="]Changed to[" JP="" RU="" />
+      <PrivManager41 CN="增加权限" EN="Increase the permissions" JP="" RU="" />
+      <PrivManager42 CN="权限信息" EN="Permission information" JP="" RU="" />
+    
+      <PrivManager45 CN="请输入权限名称" EN="Please enter a name for the permission" JP="" RU="" />
+    
+      <PrivManager47 CN="请输入权限描述" EN="Please enter a description" JP="" RU="" />
+     
+      <PrivManager49 CN="取消" EN="Cancel" JP="" RU="" />
+    
+     
+     
+     
+    </MyNet.Atmcs.Uscmcp.Web.PrivManager>
+  </Dictionary>
+</Message>

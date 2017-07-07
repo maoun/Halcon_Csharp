@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc12="http://www.w3.org/2003/05/soap-encoding" xmlns:soap12="http://www.w3.org/2003/05/soap-envelope" xmlns:tns="http://query" xmlns:soapenc11="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap11="http://schemas.xmlsoap.org/soap/envelope/" targetNamespace="http://query" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://query">
+      <xsd:element name="cancelWarn">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="in0" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="cancelWarnResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="out" type="xsd:boolean" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="layout">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="in0" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in1" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in2" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in3" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="layoutResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="out" type="xsd:boolean" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="GetPassCarInfo">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="in0" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="GetPassCarInfoResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="out" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="GetPassCarInfo1">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="in0" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in1" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in2" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in3" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in4" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in5" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in6" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in7" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in8" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in9" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in10" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in11" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in12" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in13" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in14" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in15" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in16" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in17" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in18" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in19" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in20" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="GetPassCarInfo1Response">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="out" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="cancleLayout">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="in0" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="cancleLayoutResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="out" type="xsd:boolean" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="GetFollowPassCarInfo">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="in0" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="GetFollowPassCarInfoResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="out" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="cancel">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="in0" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="cancelResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="out" type="xsd:boolean" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="GetFootholdInfo">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="in0" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="GetFootholdInfoResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="out" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="addWarn">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="in0" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in1" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in2" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="addWarnResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="out" type="xsd:boolean" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="addTgs">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="in0" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in1" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in2" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in3" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="addTgsResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="out" type="xsd:boolean" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="GetFrequentlyPassCarInfo">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="in0" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="GetFrequentlyPassCarInfoResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="out" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="addCar">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="in0" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in1" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in2" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="addCarResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="out" type="xsd:boolean" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="addTgsResponse">
+    <wsdl:part name="parameters" element="tns:addTgsResponse" />
+  </wsdl:message>
+  <wsdl:message name="cancelResponse">
+    <wsdl:part name="parameters" element="tns:cancelResponse" />
+  </wsdl:message>
+  <wsdl:message name="addWarnResponse">
+    <wsdl:part name="parameters" element="tns:addWarnResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetPassCarInfo1Request">
+    <wsdl:part name="parameters" element="tns:GetPassCarInfo1" />
+  </wsdl:message>
+  <wsdl:message name="layoutResponse">
+    <wsdl:part name="parameters" element="tns:layoutResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetFollowPassCarInfoResponse">
+    <wsdl:part name="parameters" element="tns:GetFollowPassCarInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="cancelWarnRequest">
+    <wsdl:part name="parameters" element="tns:cancelWarn" />
+  </wsdl:message>
+  <wsdl:message name="GetPassCarInfoRequest">
+    <wsdl:part name="parameters" element="tns:GetPassCarInfo" />
+  </wsdl:message>
+  <wsdl:message name="GetFootholdInfoResponse">
+    <wsdl:part name="parameters" element="tns:GetFootholdInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="cancleLayoutRequest">
+    <wsdl:part name="parameters" element="tns:cancleLayout" />
+  </wsdl:message>
+  <wsdl:message name="GetFollowPassCarInfoRequest">
+    <wsdl:part name="parameters" element="tns:GetFollowPassCarInfo" />
+  </wsdl:message>
+  <wsdl:message name="addCarResponse">
+    <wsdl:part name="parameters" element="tns:addCarResponse" />
+  </wsdl:message>
+  <wsdl:message name="layoutRequest">
+    <wsdl:part name="parameters" element="tns:layout" />
+  </wsdl:message>
+  <wsdl:message name="addCarRequest">
+    <wsdl:part name="parameters" element="tns:addCar" />
+  </wsdl:message>
+  <wsdl:message name="addTgsRequest">
+    <wsdl:part name="parameters" element="tns:addTgs" />
+  </wsdl:message>
+  <wsdl:message name="cancelWarnResponse">
+    <wsdl:part name="parameters" element="tns:cancelWarnResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetPassCarInfoResponse">
+    <wsdl:part name="parameters" element="tns:GetPassCarInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetFootholdInfoRequest">
+    <wsdl:part name="parameters" element="tns:GetFootholdInfo" />
+  </wsdl:message>
+  <wsdl:message name="cancelRequest">
+    <wsdl:part name="parameters" element="tns:cancel" />
+  </wsdl:message>
+  <wsdl:message name="GetFrequentlyPassCarInfoResponse">
+    <wsdl:part name="parameters" element="tns:GetFrequentlyPassCarInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="addWarnRequest">
+    <wsdl:part name="parameters" element="tns:addWarn" />
+  </wsdl:message>
+  <wsdl:message name="GetFrequentlyPassCarInfoRequest">
+    <wsdl:part name="parameters" element="tns:GetFrequentlyPassCarInfo" />
+  </wsdl:message>
+  <wsdl:message name="cancleLayoutResponse">
+    <wsdl:part name="parameters" element="tns:cancleLayoutResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetPassCarInfo1Response">
+    <wsdl:part name="parameters" element="tns:GetPassCarInfo1Response" />
+  </wsdl:message>
+  <wsdl:portType name="querypasscarPortType">
+    <wsdl:operation name="cancelWarn">
+      <wsdl:input name="cancelWarnRequest" message="tns:cancelWarnRequest" />
+      <wsdl:output name="cancelWarnResponse" message="tns:cancelWarnResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="layout">
+      <wsdl:input name="layoutRequest" message="tns:layoutRequest" />
+      <wsdl:output name="layoutResponse" message="tns:layoutResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPassCarInfo">
+      <wsdl:input name="GetPassCarInfoRequest" message="tns:GetPassCarInfoRequest" />
+      <wsdl:output name="GetPassCarInfoResponse" message="tns:GetPassCarInfoResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPassCarInfo1">
+      <wsdl:input name="GetPassCarInfo1Request" message="tns:GetPassCarInfo1Request" />
+      <wsdl:output name="GetPassCarInfo1Response" message="tns:GetPassCarInfo1Response" />
+    </wsdl:operation>
+    <wsdl:operation name="cancleLayout">
+      <wsdl:input name="cancleLayoutRequest" message="tns:cancleLayoutRequest" />
+      <wsdl:output name="cancleLayoutResponse" message="tns:cancleLayoutResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFollowPassCarInfo">
+      <wsdl:input name="GetFollowPassCarInfoRequest" message="tns:GetFollowPassCarInfoRequest" />
+      <wsdl:output name="GetFollowPassCarInfoResponse" message="tns:GetFollowPassCarInfoResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="cancel">
+      <wsdl:input name="cancelRequest" message="tns:cancelRequest" />
+      <wsdl:output name="cancelResponse" message="tns:cancelResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFootholdInfo">
+      <wsdl:input name="GetFootholdInfoRequest" message="tns:GetFootholdInfoRequest" />
+      <wsdl:output name="GetFootholdInfoResponse" message="tns:GetFootholdInfoResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="addWarn">
+      <wsdl:input name="addWarnRequest" message="tns:addWarnRequest" />
+      <wsdl:output name="addWarnResponse" message="tns:addWarnResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="addTgs">
+      <wsdl:input name="addTgsRequest" message="tns:addTgsRequest" />
+      <wsdl:output name="addTgsResponse" message="tns:addTgsResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFrequentlyPassCarInfo">
+      <wsdl:input name="GetFrequentlyPassCarInfoRequest" message="tns:GetFrequentlyPassCarInfoRequest" />
+      <wsdl:output name="GetFrequentlyPassCarInfoResponse" message="tns:GetFrequentlyPassCarInfoResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="addCar">
+      <wsdl:input name="addCarRequest" message="tns:addCarRequest" />
+      <wsdl:output name="addCarResponse" message="tns:addCarResponse" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="querypasscarHttpBinding" type="tns:querypasscarPortType">
+    <wsdlsoap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="cancelWarn">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="cancelWarnRequest">
+        <wsdlsoap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="cancelWarnResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="layout">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="layoutRequest">
+        <wsdlsoap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="layoutResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPassCarInfo">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="GetPassCarInfoRequest">
+        <wsdlsoap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="GetPassCarInfoResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPassCarInfo1">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="GetPassCarInfo1Request">
+        <wsdlsoap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="GetPassCarInfo1Response">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="cancleLayout">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="cancleLayoutRequest">
+        <wsdlsoap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="cancleLayoutResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFollowPassCarInfo">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="GetFollowPassCarInfoRequest">
+        <wsdlsoap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="GetFollowPassCarInfoResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="cancel">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="cancelRequest">
+        <wsdlsoap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="cancelResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFootholdInfo">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="GetFootholdInfoRequest">
+        <wsdlsoap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="GetFootholdInfoResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addWarn">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="addWarnRequest">
+        <wsdlsoap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="addWarnResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addTgs">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="addTgsRequest">
+        <wsdlsoap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="addTgsResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFrequentlyPassCarInfo">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="GetFrequentlyPassCarInfoRequest">
+        <wsdlsoap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="GetFrequentlyPassCarInfoResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addCar">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="addCarRequest">
+        <wsdlsoap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="addCarResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="querypasscar">
+    <wsdl:port name="querypasscarHttpPort" binding="tns:querypasscarHttpBinding">
+      <wsdlsoap:address location="http://192.168.1.232:8080/query_webservice/services/querypasscar" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

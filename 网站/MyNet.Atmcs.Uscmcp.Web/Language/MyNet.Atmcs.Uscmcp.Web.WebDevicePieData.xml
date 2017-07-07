@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Message>
+  <Language>CN</Language>
+  <Dictionary>
+    <MyNet.Atmcs.Uscmcp.Web.WebDevicePieData>
+      <WebDevicePieData1 CN="设备辖区维度分析统计" EN="Dimension analysis and statistics of equipment area" JP="" RU="" />
+      <WebDevicePieData2 CN="设备辖区" EN="Equipment area" JP="" RU="" />
+    </MyNet.Atmcs.Uscmcp.Web.WebDevicePieData>
+  </Dictionary>
+</Message>

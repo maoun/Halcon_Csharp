@@ -1,0 +1,99 @@
+﻿/*-------------------------↓提示框的样式↓--------------------------------*/
+
+.tooltipinputerr
+{
+	border: solid 1px red;
+	background: #ffff99 url(../images/page/exclamation.png) no-repeat 2px center;
+}
+
+.tooltipinputok
+{
+
+}
+
+.tooltipshowpanel
+{
+	z-index: auto;
+	display: none;
+	position:absolute;
+	width: 276px;
+	height: 35px;
+	overflow: hidden;
+	text-indent: 5px;
+	line-height: 40px;
+	font-size: 12px;
+	font-family: Arial;
+	color:blue;
+	background: url(../images/page/tooltop.gif) no-repeat left top;
+	opacity:0.9;
+    filter: alpha(opacity=90);
+	}
+/*-------------------------↑提示框的样式↑--------------------------------*/
+
+
+
+/*-------------------------↓分页控件的样式↓--------------------------------*/
+.anpager .cpb /*当前页索引按钮样式*/
+{
+	background:#1F3A87 none repeat scroll 0 0;
+	border:1px solid #CCCCCC;
+	color:#FFFFFF;
+	font-weight:bold;
+	margin:5px 4px 0 0;
+	padding:4px 5px 0;
+}
+
+.anpager a /*超链接样式*/
+{
+	background:#FFFFFF none repeat scroll 0 0;
+	border:1px solid #CCCCCC;
+	color:#1F3A87;
+	margin:5px 4px 0 0;
+	padding:4px 5px 0;
+	text-decoration:none
+}
+
+.anpager a:hover /*鼠标悬停时的超链接样式*/
+{
+	background:#1F3A87 none repeat scroll 0 0;
+	border:1px solid #1F3A87;
+	color:#FFFFFF;
+}
+
+/*-------------------------↑分页控件的样式↑--------------------------------*/
+
+/*-------------------↓方向treeview的div样式↓--------------------------------*/
+.DivClose
+{
+	display:none;
+	position:absolute;
+	width:250px;
+	height:220px;
+	border-style:solid;
+	border-color:Gray; 
+	border-width:1px;
+	background-color:#99A479;
+}
+.LabelClose
+{
+	vertical-align:text-top; 
+	position:absolute;
+	bottom:0px;
+	font-family:Verdana;
+}
+
+.DivList
+{
+	display:none;
+	background-color:White;
+	width:250px;
+	position:absolute;
+	height:200px;
+	overflow-y:auto; 
+	overflow-x:hidden;
+	border-style:solid;
+	border-color:Gray; 
+	border-width:1px;
+	text-align:left;
+}
+/*--------------------↑方向treeview的div样式↑--------------------*/

@@ -1,0 +1,53 @@
+
+ 
+/*JIA 2009,4month*/
+/* COLORS 
+　　Body Background: url(../images/back_02.gif) 
+　　Main Text: #1D1F20 
+　　Links: #FF0000 
+　　Border: #A5D1EC 
+　　*/
+/*全局 样式----------------------------------------------------------------*/
+　　
+ 
+ 
+ /*外补丁内补丁为零*/
+html,body,div,ul,ol,li,p,h1,h2,h3,h4,h5,h6,table,td,th,form,fieldset,img,dl,dt,dd {
+	margin:0;
+	padding:0; }
+ /*文字深灰色,大小12PX*/
+textarea,input,select,body {
+	font-size:12px;
+	color:#1D1F20; }
+ /*文字进行垂直方向的居中*/
+select,input { vertical-align:middle; }
+ /*无边框*/
+fieldset,img { border:0; }
+ /*项目列表前的类型为无*/
+ul,ol { list-style:none; }
+/*滚动条的显示*/ 
+html {
+	overflow-x:hidden !important;
+	overflow-y:auto !important;
+	*overflow-y:none; /* *overflow-y:auto !important; */ }
+/*文字居中,大小12PX,字体“"宋体", Helvetica, sans-serif”,字体深灰色,背景以X轴平铺,背景居上,上边内补丁5PX,不显示超过对象尺寸的内容*/ 
+body {
+	text-align:left;
+	font:12px,"宋体", Helvetica, sans-serif;
+	background:url(../images/back_02.gif) repeat-x top;
+	background-color:#02609C;
+	padding-top:5px;
+	color:#1D1F20;
+	overflow:hidden;
+	}
+/*设置或检索表格的行和单元格的边是合并在一起还是按照标准的HTML样式分开 属性设置相邻单元格的边框间的距离*/
+table { 
+      border-collapse: collapse; 
+      border-spacing: 0; 
+} 
+/*鼠标光标类型*/ 
+a,a * { cursor:pointer; }
+/*在IE中实行强制换行*/
+* { word-break: break-all; }
+ 
+

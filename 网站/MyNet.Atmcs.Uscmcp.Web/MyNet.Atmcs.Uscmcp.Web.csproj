@@ -1,0 +1,3755 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FFE6F9D1-788A-4471-AB32-F6882B782FB2}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MyNet.Atmcs.Uscmcp.Web</RootNamespace>
+    <AssemblyName>MyNet.Atmcs.Uscmcp.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication>enabled</IISExpressAnonymousAuthentication>
+    <IISExpressWindowsAuthentication>disabled</IISExpressWindowsAuthentication>
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <IntermediateOutputPath>C:\Users\Mao_TP\AppData\Local\Temp\vs54EF.tmp\Debug\</IntermediateOutputPath>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <IntermediateOutputPath>C:\Users\Mao_TP\AppData\Local\Temp\vs54EF.tmp\Release\</IntermediateOutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Cache.Bll, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Cache.Bll.dll</HintPath>
+    </Reference>
+    <Reference Include="Cache.Dal, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Cache.Dal.dll</HintPath>
+    </Reference>
+    <Reference Include="Cache.Helper, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Cache.Helper.dll</HintPath>
+    </Reference>
+    <Reference Include="Cache.Model, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Cache.Model.dll</HintPath>
+    </Reference>
+    <Reference Include="Ext.Net">
+      <HintPath>..\dll\Ext.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="Ext.Net.Utilities">
+      <HintPath>..\dll\Ext.Net.Utilities.dll</HintPath>
+    </Reference>
+    <Reference Include="FusionCharts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=58bb3098fe7f0ede, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\FusionCharts.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\..\..\2015新版本\通用\MyNet.Common.Log\MyNet.Common.Log\bin\Debug\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="MyNet.Common.Config, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\2015新版本\WEBFramework\MyNet.DataAccess\MyNet.DataAccess.Interface\MyNet.DataAccess.MySqlDAL\bin\Debug\MyNet.Common.Config.dll</HintPath>
+    </Reference>
+    <Reference Include="MyNet.Common.ConfigEdit, Version=2.0.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\2015新版本\WEBFramework\MyNet.DataAccess\MyNet.DataAccess.Interface\MyNet.DataAccess.MySqlDAL\bin\Debug\MyNet.Common.ConfigEdit.dll</HintPath>
+    </Reference>
+    <Reference Include="MyNet.Common.Data, Version=2.0.0.17, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\dll\MyNet.Common.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="MyNet.Common.Log, Version=1.0.0.3, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\2015新版本\WEBFramework\MyNet.DataAccess\MyNet.DataAccess.Interface\MyNet.DataAccess.MySqlDAL\bin\Debug\MyNet.Common.Log.dll</HintPath>
+    </Reference>
+    <Reference Include="MyNet.Common.Method">
+      <HintPath>..\..\..\2015新版本\WEBFramework\MyNet.Web.Framework.GIS\MyNet.Web.Framework.GIS\bin\MyNet.Common.Method.dll</HintPath>
+    </Reference>
+    <Reference Include="MyNet.DataAccess.Model, Version=1.0.0.2, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\MyNet.Atmcs.Uscmcp.Bll\bin\Debug\MyNet.DataAccess.Model.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.0.2.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\2015新版本\WEBFramework\MyNet.DataAccess\MyNet.DataAccess.Interface\MyNet.DataAccess.MySqlDAL\bin\Debug\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="netchartdir">
+      <HintPath>..\..\..\2015新版本\WEBFramework\MyNet.Web.Framework.GIS\MyNet.Web.Framework.GIS\bin\netchartdir.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b9a188c8922137c6, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\dll\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Common, Version=3.9.60.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\ServiceStack.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Interfaces, Version=3.9.60.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\ServiceStack.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Redis, Version=3.9.60.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\ServiceStack.Redis.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.ServiceInterface, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\ServiceStack.ServiceInterface.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Text, Version=3.9.60.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\ServiceStack.Text.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ActiveX\dotnetfx4.0.exe" />
+    <Content Include="ActiveX\UscmcpWebActiveX.exe" />
+    <Content Include="Capture\01.png" />
+    <Content Include="Capture\09.png" />
+    <Content Include="Capture\10.png" />
+    <Content Include="Capture\763e8190fc429bec447ecda85ae989e8.jpg" />
+    <Content Include="Count\ODAnalysisMain.aspx" />
+    <Content Include="Count\PeccancyOperateAnalysis.aspx" />
+    <Content Include="Count\PeccancyOperateLog.aspx" />
+    <Content Include="KakouSelect\css\zTreeStyle\img\h2.png" />
+    <Content Include="Port\FlowInfoQuery.aspx" />
+    <Content Include="Port\AlarmportSetting.aspx" />
+    <Content Include="Common\CSBrowse.aspx" />
+    <Content Include="Common\CSBrowse.html" />
+    <Content Include="Common\DropDownControl.aspx" />
+    <Content Include="Common\DropDownSetValueControl.aspx" />
+    <Content Include="Common\ImageCut.aspx" />
+    <Content Include="Common\ImageGetBig.html" />
+    <Content Include="Common\ImageVideo.html" />
+    <Content Include="Common\ExMainIndex.aspx" />
+    <Content Include="Common\Print\install_lodop.exe" />
+    <Content Include="Common\Print\LodopFuncs.js" />
+    <Content Include="Count\AllAnalysisMain.aspx" />
+    <Content Include="Count\DriverAnalysisMain.aspx" />
+    <Content Include="Count\OtherAnalysisMain.aspx" />
+    <Content Include="Count\PeccancyAnalysisMain.aspx" />
+    <Content Include="Count\VehicleAnalysisMain.aspx" />
+    <Content Include="Css\cabel-v1.css" />
+    <Content Include="Css\chooser.css" />
+    <Content Include="Css\css.css" />
+    <Content Include="Css\EasyUICss\easyui.css" />
+    <Content Include="Css\EasyUICss\icon.css" />
+    <Content Include="Css\EasyUICss\icons\back.png" />
+    <Content Include="Css\EasyUICss\icons\blank.gif" />
+    <Content Include="Css\EasyUICss\icons\cancel.png" />
+    <Content Include="Css\EasyUICss\icons\clear.png" />
+    <Content Include="Css\EasyUICss\icons\cut.png" />
+    <Content Include="Css\EasyUICss\icons\edit_add.png" />
+    <Content Include="Css\EasyUICss\icons\edit_remove.png" />
+    <Content Include="Css\EasyUICss\icons\filesave.png" />
+    <Content Include="Css\EasyUICss\icons\filter.png" />
+    <Content Include="Css\EasyUICss\icons\help.png" />
+    <Content Include="Css\EasyUICss\icons\large_chart.png" />
+    <Content Include="Css\EasyUICss\icons\large_clipart.png" />
+    <Content Include="Css\EasyUICss\icons\large_picture.png" />
+    <Content Include="Css\EasyUICss\icons\large_shapes.png" />
+    <Content Include="Css\EasyUICss\icons\large_smartart.png" />
+    <Content Include="Css\EasyUICss\icons\lock.png" />
+    <Content Include="Css\EasyUICss\icons\man.png" />
+    <Content Include="Css\EasyUICss\icons\mini_add.png" />
+    <Content Include="Css\EasyUICss\icons\mini_edit.png" />
+    <Content Include="Css\EasyUICss\icons\mini_refresh.png" />
+    <Content Include="Css\EasyUICss\icons\more.png" />
+    <Content Include="Css\EasyUICss\icons\no.png" />
+    <Content Include="Css\EasyUICss\icons\ok.png" />
+    <Content Include="Css\EasyUICss\icons\pencil.png" />
+    <Content Include="Css\EasyUICss\icons\print.png" />
+    <Content Include="Css\EasyUICss\icons\redo.png" />
+    <Content Include="Css\EasyUICss\icons\reload.png" />
+    <Content Include="Css\EasyUICss\icons\search.png" />
+    <Content Include="Css\EasyUICss\icons\sum.png" />
+    <Content Include="Css\EasyUICss\icons\tip.png" />
+    <Content Include="Css\EasyUICss\icons\undo.png" />
+    <Content Include="Css\EasyUICss\tree.css" />
+    <Content Include="Css\examples.css" />
+    <Content Include="Css\Global.css" />
+    <Content Include="Css\main.css" />
+    <Content Include="Css\pager.css" />
+    <Content Include="Css\pop.css" />
+    <Content Include="Css\prettyPhoto.css" />
+    <Content Include="Css\showphotostyle.css" />
+    <Content Include="Css\tira.css" />
+    <Content Include="DataCount\AlarmDataCount.aspx" />
+    <Content Include="Alarm\AlarmCarDeal.aspx" />
+    <Content Include="Alarm\AlarmInfoCount.aspx" />
+    <Content Include="Alarm\AlarmInfoQuery.aspx" />
+    <Content Include="Alarm\AlarmMonitor.aspx" />
+    <Content Include="bin\Apache.NMS.ActiveMQ.dll" />
+    <Content Include="bin\Apache.NMS.dll" />
+    <Content Include="bin\Ext.Net.dll" />
+    <Content Include="bin\Ext.Net.Utilities.dll" />
+    <Content Include="bin\FusionCharts.dll" />
+    <Content Include="bin\Kafka.Client.dll" />
+    <Content Include="bin\log4net.dll" />
+    <Content Include="bin\MyNet.Atmcs.Uscmcp.Bll.dll" />
+    <Content Include="bin\MyNet.Atmcs.Uscmcp.Bll.pdb" />
+    <Content Include="bin\MyNet.Atmcs.Uscmcp.Data.dll" />
+    <Content Include="bin\MyNet.Atmcs.Uscmcp.Data.pdb" />
+    <Content Include="bin\MyNet.Atmcs.Uscmcp.IData.dll" />
+    <Content Include="bin\MyNet.Atmcs.Uscmcp.IData.pdb" />
+    <Content Include="bin\MyNet.Atmcs.Uscmcp.Setting.dll" />
+    <Content Include="bin\MyNet.Atmcs.Uscmcp.Setting.pdb" />
+    <Content Include="bin\MyNet.Atmcs.Uscmcp.UI.dll" />
+    <Content Include="bin\MyNet.Atmcs.Uscmcp.UI.pdb" />
+    <Content Include="bin\MyNet.Atmcs.Uscmcp.Web.dll" />
+    <Content Include="bin\MyNet.Atmcs.Uscmcp.Web.pdb" />
+    <Content Include="bin\MyNet.Common.Config.dll" />
+    <Content Include="bin\MyNet.Common.ConfigEdit.dll" />
+    <Content Include="bin\MyNet.Common.Data.dll" />
+    <Content Include="bin\MyNet.Common.Log.dll" />
+    <Content Include="bin\MyNet.Common.Method.dll" />
+    <Content Include="bin\MyNet.Common.MQ.dll" />
+    <Content Include="bin\MyNet.DataAccess.Model.dll" />
+    <Content Include="bin\MySql.Data.dll" />
+    <Content Include="bin\netchartdir.dll" />
+    <Content Include="bin\Newtonsoft.Json.dll" />
+    <Content Include="bin\RabbitMQ.Client.dll" />
+    <Content Include="Global.asax" />
+    <Content Include="Images\BackGround\000001\bg - 副本.jpg" />
+    <Content Include="Images\BackGround\000001\bg.png" />
+    <Content Include="Images\loading.gif" />
+    <Content Include="Images\Mapimg\baidumap.png" />
+    <Content Include="Images\row-over.gif" />
+    <Content Include="Image\jiantou-down.png" />
+    <Content Include="KakouSelect\api\apiCss\api.js" />
+    <Content Include="KakouSelect\api\apiCss\common.css" />
+    <Content Include="KakouSelect\api\apiCss\common_ie6.css" />
+    <Content Include="KakouSelect\api\apiCss\img\apiMenu.gif" />
+    <Content Include="KakouSelect\api\apiCss\img\apiMenu.png" />
+    <Content Include="KakouSelect\api\apiCss\img\background.jpg" />
+    <Content Include="KakouSelect\api\apiCss\img\chinese.png" />
+    <Content Include="KakouSelect\api\apiCss\img\close.png" />
+    <Content Include="KakouSelect\api\apiCss\img\contact-bg.png" />
+    <Content Include="KakouSelect\api\apiCss\img\english.png" />
+    <Content Include="KakouSelect\api\apiCss\img\header-bg.png" />
+    <Content Include="KakouSelect\api\apiCss\img\lightbulb.png" />
+    <Content Include="KakouSelect\api\apiCss\img\overlay_arrow.gif" />
+    <Content Include="KakouSelect\api\apiCss\img\overlay_arrow.png" />
+    <Content Include="KakouSelect\api\apiCss\img\overlay_bg.png" />
+    <Content Include="KakouSelect\api\apiCss\img\overlay_close_IE6.gif" />
+    <Content Include="KakouSelect\api\apiCss\img\zTreeStandard.gif" />
+    <Content Include="KakouSelect\api\apiCss\img\zTreeStandard.png" />
+    <Content Include="KakouSelect\api\apiCss\jquery-1.6.2.min.js" />
+    <Content Include="KakouSelect\api\apiCss\jquery.ztree.core.js" />
+    <Content Include="KakouSelect\api\apiCss\zTreeStyleForApi.css" />
+    <Content Include="KakouSelect\api\API_cn.html" />
+    <Content Include="KakouSelect\api\API_en.html" />
+    <Content Include="KakouSelect\api\cn\fn.zTree.destroy.html" />
+    <Content Include="KakouSelect\api\cn\fn.zTree.getZTreeObj.html" />
+    <Content Include="KakouSelect\api\cn\fn.zTree.init.html" />
+    <Content Include="KakouSelect\api\cn\fn.zTree._z.html" />
+    <Content Include="KakouSelect\api\cn\setting.async.autoParam.html" />
+    <Content Include="KakouSelect\api\cn\setting.async.contentType.html" />
+    <Content Include="KakouSelect\api\cn\setting.async.dataFilter.html" />
+    <Content Include="KakouSelect\api\cn\setting.async.dataType.html" />
+    <Content Include="KakouSelect\api\cn\setting.async.enable.html" />
+    <Content Include="KakouSelect\api\cn\setting.async.otherParam.html" />
+    <Content Include="KakouSelect\api\cn\setting.async.type.html" />
+    <Content Include="KakouSelect\api\cn\setting.async.url.html" />
+    <Content Include="KakouSelect\api\cn\setting.callback.beforeAsync.html" />
+    <Content Include="KakouSelect\api\cn\setting.callback.beforeCheck.html" />
+    <Content Include="KakouSelect\api\cn\setting.callback.beforeClick.html" />
+    <Content Include="KakouSelect\api\cn\setting.callback.beforeCollapse.html" />
+    <Content Include="KakouSelect\api\cn\setting.callback.beforeDblClick.html" />
+    <Content Include="KakouSelect\api\cn\setting.callback.beforeDrag.html" />
+    <Content Include="KakouSelect\api\cn\setting.callback.beforeDragOpen.html" />
+    <Content Include="KakouSelect\api\cn\setting.callback.beforeDrop.html" />
+    <Content Include="KakouSelect\api\cn\setting.callback.beforeEditName.html" />
+    <Content Include="KakouSelect\api\cn\setting.callback.beforeExpand.html" />
+    <Content Include="KakouSelect\api\cn\setting.callback.beforeMouseDown.html" />
+    <Content Include="KakouSelect\api\cn\setting.callback.beforeMouseUp.html" />
+    <Content Include="KakouSelect\api\cn\setting.callback.beforeRemove.html" />
+    <Content Include="KakouSelect\api\cn\setting.callback.beforeRename.html" />
+    <Content Include="KakouSelect\api\cn\setting.callback.beforeRightClick.html" />
+    <Content Include="KakouSelect\api\cn\setting.callback.onAsyncError.html" />
+    <Content Include="KakouSelect\api\cn\setting.callback.onAsyncSuccess.html" />
+    <Content Include="KakouSelect\api\cn\setting.callback.onCheck.html" />
+    <Content Include="KakouSelect\api\cn\setting.callback.onClick.html" />
+    <Content Include="KakouSelect\api\cn\setting.callback.onCollapse.html" />
+    <Content Include="KakouSelect\api\cn\setting.callback.onDblClick.html" />
+    <Content Include="KakouSelect\api\cn\setting.callback.onDrag.html" />
+    <Content Include="KakouSelect\api\cn\setting.callback.onDragMove.html" />
+    <Content Include="KakouSelect\api\cn\setting.callback.onDrop.html" />
+    <Content Include="KakouSelect\api\cn\setting.callback.onExpand.html" />
+    <Content Include="KakouSelect\api\cn\setting.callback.onMouseDown.html" />
+    <Content Include="KakouSelect\api\cn\setting.callback.onMouseUp.html" />
+    <Content Include="KakouSelect\api\cn\setting.callback.onNodeCreated.html" />
+    <Content Include="KakouSelect\api\cn\setting.callback.onRemove.html" />
+    <Content Include="KakouSelect\api\cn\setting.callback.onRename.html" />
+    <Content Include="KakouSelect\api\cn\setting.callback.onRightClick.html" />
+    <Content Include="KakouSelect\api\cn\setting.check.autoCheckTrigger.html" />
+    <Content Include="KakouSelect\api\cn\setting.check.chkboxType.html" />
+    <Content Include="KakouSelect\api\cn\setting.check.chkDisabledInherit.html" />
+    <Content Include="KakouSelect\api\cn\setting.check.chkStyle.html" />
+    <Content Include="KakouSelect\api\cn\setting.check.enable.html" />
+    <Content Include="KakouSelect\api\cn\setting.check.nocheckInherit.html" />
+    <Content Include="KakouSelect\api\cn\setting.check.radioType.html" />
+    <Content Include="KakouSelect\api\cn\setting.data.keep.leaf.html" />
+    <Content Include="KakouSelect\api\cn\setting.data.keep.parent.html" />
+    <Content Include="KakouSelect\api\cn\setting.data.key.checked.html" />
+    <Content Include="KakouSelect\api\cn\setting.data.key.children.html" />
+    <Content Include="KakouSelect\api\cn\setting.data.key.name.html" />
+    <Content Include="KakouSelect\api\cn\setting.data.key.title.html" />
+    <Content Include="KakouSelect\api\cn\setting.data.key.url.html" />
+    <Content Include="KakouSelect\api\cn\setting.data.simpleData.enable.html" />
+    <Content Include="KakouSelect\api\cn\setting.data.simpleData.idKey.html" />
+    <Content Include="KakouSelect\api\cn\setting.data.simpleData.pIdKey.html" />
+    <Content Include="KakouSelect\api\cn\setting.data.simpleData.rootPId.html" />
+    <Content Include="KakouSelect\api\cn\setting.edit.drag.autoExpandTrigger.html" />
+    <Content Include="KakouSelect\api\cn\setting.edit.drag.autoOpenTime.html" />
+    <Content Include="KakouSelect\api\cn\setting.edit.drag.borderMax.html" />
+    <Content Include="KakouSelect\api\cn\setting.edit.drag.borderMin.html" />
+    <Content Include="KakouSelect\api\cn\setting.edit.drag.inner.html" />
+    <Content Include="KakouSelect\api\cn\setting.edit.drag.isCopy.html" />
+    <Content Include="KakouSelect\api\cn\setting.edit.drag.isMove.html" />
+    <Content Include="KakouSelect\api\cn\setting.edit.drag.maxShowNodeNum.html" />
+    <Content Include="KakouSelect\api\cn\setting.edit.drag.minMoveSize.html" />
+    <Content Include="KakouSelect\api\cn\setting.edit.drag.next.html" />
+    <Content Include="KakouSelect\api\cn\setting.edit.drag.prev.html" />
+    <Content Include="KakouSelect\api\cn\setting.edit.editNameSelectAll.html" />
+    <Content Include="KakouSelect\api\cn\setting.edit.enable.html" />
+    <Content Include="KakouSelect\api\cn\setting.edit.removeTitle.html" />
+    <Content Include="KakouSelect\api\cn\setting.edit.renameTitle.html" />
+    <Content Include="KakouSelect\api\cn\setting.edit.showRemoveBtn.html" />
+    <Content Include="KakouSelect\api\cn\setting.edit.showRenameBtn.html" />
+    <Content Include="KakouSelect\api\cn\setting.treeId.html" />
+    <Content Include="KakouSelect\api\cn\setting.treeObj.html" />
+    <Content Include="KakouSelect\api\cn\setting.view.addDiyDom.html" />
+    <Content Include="KakouSelect\api\cn\setting.view.addHoverDom.html" />
+    <Content Include="KakouSelect\api\cn\setting.view.autoCancelSelected.html" />
+    <Content Include="KakouSelect\api\cn\setting.view.dblClickExpand.html" />
+    <Content Include="KakouSelect\api\cn\setting.view.expandSpeed.html" />
+    <Content Include="KakouSelect\api\cn\setting.view.fontCss.html" />
+    <Content Include="KakouSelect\api\cn\setting.view.nameIsHTML.html" />
+    <Content Include="KakouSelect\api\cn\setting.view.removeHoverDom.html" />
+    <Content Include="KakouSelect\api\cn\setting.view.selectedMulti.html" />
+    <Content Include="KakouSelect\api\cn\setting.view.showIcon.html" />
+    <Content Include="KakouSelect\api\cn\setting.view.showLine.html" />
+    <Content Include="KakouSelect\api\cn\setting.view.showTitle.html" />
+    <Content Include="KakouSelect\api\cn\setting.view.txtSelectedEnable.html" />
+    <Content Include="KakouSelect\api\cn\treeNode.checked.html" />
+    <Content Include="KakouSelect\api\cn\treeNode.checkedOld.html" />
+    <Content Include="KakouSelect\api\cn\treeNode.check_Child_State.html" />
+    <Content Include="KakouSelect\api\cn\treeNode.check_Focus.html" />
+    <Content Include="KakouSelect\api\cn\treeNode.children.html" />
+    <Content Include="KakouSelect\api\cn\treeNode.chkDisabled.html" />
+    <Content Include="KakouSelect\api\cn\treeNode.click.html" />
+    <Content Include="KakouSelect\api\cn\treeNode.diy.html" />
+    <Content Include="KakouSelect\api\cn\treeNode.editNameFlag.html" />
+    <Content Include="KakouSelect\api\cn\treeNode.getCheckStatus.html" />
+    <Content Include="KakouSelect\api\cn\treeNode.getIndex.html" />
+    <Content Include="KakouSelect\api\cn\treeNode.getNextNode.html" />
+    <Content Include="KakouSelect\api\cn\treeNode.getParentNode.html" />
+    <Content Include="KakouSelect\api\cn\treeNode.getPath.html" />
+    <Content Include="KakouSelect\api\cn\treeNode.getPreNode.html" />
+    <Content Include="KakouSelect\api\cn\treeNode.halfCheck.html" />
+    <Content Include="KakouSelect\api\cn\treeNode.icon.html" />
+    <Content Include="KakouSelect\api\cn\treeNode.iconClose.html" />
+    <Content Include="KakouSelect\api\cn\treeNode.iconOpen.html" />
+    <Content Include="KakouSelect\api\cn\treeNode.iconSkin.html" />
+    <Content Include="KakouSelect\api\cn\treeNode.isAjaxing.html" />
+    <Content Include="KakouSelect\api\cn\treeNode.isFirstNode.html" />
+    <Content Include="KakouSelect\api\cn\treeNode.isHidden.html" />
+    <Content Include="KakouSelect\api\cn\treeNode.isHover.html" />
+    <Content Include="KakouSelect\api\cn\treeNode.isLastNode.html" />
+    <Content Include="KakouSelect\api\cn\treeNode.isParent.html" />
+    <Content Include="KakouSelect\api\cn\treeNode.level.html" />
+    <Content Include="KakouSelect\api\cn\treeNode.name.html" />
+    <Content Include="KakouSelect\api\cn\treeNode.nocheck.html" />
+    <Content Include="KakouSelect\api\cn\treeNode.open.html" />
+    <Content Include="KakouSelect\api\cn\treeNode.parentTId.html" />
+    <Content Include="KakouSelect\api\cn\treeNode.target.html" />
+    <Content Include="KakouSelect\api\cn\treeNode.tId.html" />
+    <Content Include="KakouSelect\api\cn\treeNode.url.html" />
+    <Content Include="KakouSelect\api\cn\treeNode.zAsync.html" />
+    <Content Include="KakouSelect\api\cn\zTreeObj.addNodes.html" />
+    <Content Include="KakouSelect\api\cn\zTreeObj.cancelEditName.html" />
+    <Content Include="KakouSelect\api\cn\zTreeObj.cancelSelectedNode.html" />
+    <Content Include="KakouSelect\api\cn\zTreeObj.checkAllNodes.html" />
+    <Content Include="KakouSelect\api\cn\zTreeObj.checkNode.html" />
+    <Content Include="KakouSelect\api\cn\zTreeObj.copyNode.html" />
+    <Content Include="KakouSelect\api\cn\zTreeObj.destroy.html" />
+    <Content Include="KakouSelect\api\cn\zTreeObj.editName.html" />
+    <Content Include="KakouSelect\api\cn\zTreeObj.expandAll.html" />
+    <Content Include="KakouSelect\api\cn\zTreeObj.expandNode.html" />
+    <Content Include="KakouSelect\api\cn\zTreeObj.getChangeCheckedNodes.html" />
+    <Content Include="KakouSelect\api\cn\zTreeObj.getCheckedNodes.html" />
+    <Content Include="KakouSelect\api\cn\zTreeObj.getNodeByParam.html" />
+    <Content Include="KakouSelect\api\cn\zTreeObj.getNodeByTId.html" />
+    <Content Include="KakouSelect\api\cn\zTreeObj.getNodeIndex.html" />
+    <Content Include="KakouSelect\api\cn\zTreeObj.getNodes.html" />
+    <Content Include="KakouSelect\api\cn\zTreeObj.getNodesByFilter.html" />
+    <Content Include="KakouSelect\api\cn\zTreeObj.getNodesByParam.html" />
+    <Content Include="KakouSelect\api\cn\zTreeObj.getNodesByParamFuzzy.html" />
+    <Content Include="KakouSelect\api\cn\zTreeObj.getSelectedNodes.html" />
+    <Content Include="KakouSelect\api\cn\zTreeObj.hideNode.html" />
+    <Content Include="KakouSelect\api\cn\zTreeObj.hideNodes.html" />
+    <Content Include="KakouSelect\api\cn\zTreeObj.moveNode.html" />
+    <Content Include="KakouSelect\api\cn\zTreeObj.reAsyncChildNodes.html" />
+    <Content Include="KakouSelect\api\cn\zTreeObj.refresh.html" />
+    <Content Include="KakouSelect\api\cn\zTreeObj.removeChildNodes.html" />
+    <Content Include="KakouSelect\api\cn\zTreeObj.removeNode.html" />
+    <Content Include="KakouSelect\api\cn\zTreeObj.selectNode.html" />
+    <Content Include="KakouSelect\api\cn\zTreeObj.setChkDisabled.html" />
+    <Content Include="KakouSelect\api\cn\zTreeObj.setEditable.html" />
+    <Content Include="KakouSelect\api\cn\zTreeObj.setting.html" />
+    <Content Include="KakouSelect\api\cn\zTreeObj.showNode.html" />
+    <Content Include="KakouSelect\api\cn\zTreeObj.showNodes.html" />
+    <Content Include="KakouSelect\api\cn\zTreeObj.transformToArray.html" />
+    <Content Include="KakouSelect\api\cn\zTreeObj.transformTozTreeNodes.html" />
+    <Content Include="KakouSelect\api\cn\zTreeObj.updateNode.html" />
+    <Content Include="KakouSelect\api\en\fn.zTree.destroy.html" />
+    <Content Include="KakouSelect\api\en\fn.zTree.getZTreeObj.html" />
+    <Content Include="KakouSelect\api\en\fn.zTree.init.html" />
+    <Content Include="KakouSelect\api\en\fn.zTree._z.html" />
+    <Content Include="KakouSelect\api\en\setting.async.autoParam.html" />
+    <Content Include="KakouSelect\api\en\setting.async.contentType.html" />
+    <Content Include="KakouSelect\api\en\setting.async.dataFilter.html" />
+    <Content Include="KakouSelect\api\en\setting.async.dataType.html" />
+    <Content Include="KakouSelect\api\en\setting.async.enable.html" />
+    <Content Include="KakouSelect\api\en\setting.async.otherParam.html" />
+    <Content Include="KakouSelect\api\en\setting.async.type.html" />
+    <Content Include="KakouSelect\api\en\setting.async.url.html" />
+    <Content Include="KakouSelect\api\en\setting.callback.beforeAsync.html" />
+    <Content Include="KakouSelect\api\en\setting.callback.beforeCheck.html" />
+    <Content Include="KakouSelect\api\en\setting.callback.beforeClick.html" />
+    <Content Include="KakouSelect\api\en\setting.callback.beforeCollapse.html" />
+    <Content Include="KakouSelect\api\en\setting.callback.beforeDblClick.html" />
+    <Content Include="KakouSelect\api\en\setting.callback.beforeDrag.html" />
+    <Content Include="KakouSelect\api\en\setting.callback.beforeDragOpen.html" />
+    <Content Include="KakouSelect\api\en\setting.callback.beforeDrop.html" />
+    <Content Include="KakouSelect\api\en\setting.callback.beforeEditName.html" />
+    <Content Include="KakouSelect\api\en\setting.callback.beforeExpand.html" />
+    <Content Include="KakouSelect\api\en\setting.callback.beforeMouseDown.html" />
+    <Content Include="KakouSelect\api\en\setting.callback.beforeMouseUp.html" />
+    <Content Include="KakouSelect\api\en\setting.callback.beforeRemove.html" />
+    <Content Include="KakouSelect\api\en\setting.callback.beforeRename.html" />
+    <Content Include="KakouSelect\api\en\setting.callback.beforeRightClick.html" />
+    <Content Include="KakouSelect\api\en\setting.callback.onAsyncError.html" />
+    <Content Include="KakouSelect\api\en\setting.callback.onAsyncSuccess.html" />
+    <Content Include="KakouSelect\api\en\setting.callback.onCheck.html" />
+    <Content Include="KakouSelect\api\en\setting.callback.onClick.html" />
+    <Content Include="KakouSelect\api\en\setting.callback.onCollapse.html" />
+    <Content Include="KakouSelect\api\en\setting.callback.onDblClick.html" />
+    <Content Include="KakouSelect\api\en\setting.callback.onDrag.html" />
+    <Content Include="KakouSelect\api\en\setting.callback.onDragMove.html" />
+    <Content Include="KakouSelect\api\en\setting.callback.onDrop.html" />
+    <Content Include="KakouSelect\api\en\setting.callback.onExpand.html" />
+    <Content Include="KakouSelect\api\en\setting.callback.onMouseDown.html" />
+    <Content Include="KakouSelect\api\en\setting.callback.onMouseUp.html" />
+    <Content Include="KakouSelect\api\en\setting.callback.onNodeCreated.html" />
+    <Content Include="KakouSelect\api\en\setting.callback.onRemove.html" />
+    <Content Include="KakouSelect\api\en\setting.callback.onRename.html" />
+    <Content Include="KakouSelect\api\en\setting.callback.onRightClick.html" />
+    <Content Include="KakouSelect\api\en\setting.check.autoCheckTrigger.html" />
+    <Content Include="KakouSelect\api\en\setting.check.chkboxType.html" />
+    <Content Include="KakouSelect\api\en\setting.check.chkDisabledInherit.html" />
+    <Content Include="KakouSelect\api\en\setting.check.chkStyle.html" />
+    <Content Include="KakouSelect\api\en\setting.check.enable.html" />
+    <Content Include="KakouSelect\api\en\setting.check.nocheckInherit.html" />
+    <Content Include="KakouSelect\api\en\setting.check.radioType.html" />
+    <Content Include="KakouSelect\api\en\setting.data.keep.leaf.html" />
+    <Content Include="KakouSelect\api\en\setting.data.keep.parent.html" />
+    <Content Include="KakouSelect\api\en\setting.data.key.checked.html" />
+    <Content Include="KakouSelect\api\en\setting.data.key.children.html" />
+    <Content Include="KakouSelect\api\en\setting.data.key.name.html" />
+    <Content Include="KakouSelect\api\en\setting.data.key.title.html" />
+    <Content Include="KakouSelect\api\en\setting.data.key.url.html" />
+    <Content Include="KakouSelect\api\en\setting.data.simpleData.enable.html" />
+    <Content Include="KakouSelect\api\en\setting.data.simpleData.idKey.html" />
+    <Content Include="KakouSelect\api\en\setting.data.simpleData.pIdKey.html" />
+    <Content Include="KakouSelect\api\en\setting.data.simpleData.rootPId.html" />
+    <Content Include="KakouSelect\api\en\setting.edit.drag.autoExpandTrigger.html" />
+    <Content Include="KakouSelect\api\en\setting.edit.drag.autoOpenTime.html" />
+    <Content Include="KakouSelect\api\en\setting.edit.drag.borderMax.html" />
+    <Content Include="KakouSelect\api\en\setting.edit.drag.borderMin.html" />
+    <Content Include="KakouSelect\api\en\setting.edit.drag.inner.html" />
+    <Content Include="KakouSelect\api\en\setting.edit.drag.isCopy.html" />
+    <Content Include="KakouSelect\api\en\setting.edit.drag.isMove.html" />
+    <Content Include="KakouSelect\api\en\setting.edit.drag.maxShowNodeNum.html" />
+    <Content Include="KakouSelect\api\en\setting.edit.drag.minMoveSize.html" />
+    <Content Include="KakouSelect\api\en\setting.edit.drag.next.html" />
+    <Content Include="KakouSelect\api\en\setting.edit.drag.prev.html" />
+    <Content Include="KakouSelect\api\en\setting.edit.editNameSelectAll.html" />
+    <Content Include="KakouSelect\api\en\setting.edit.enable.html" />
+    <Content Include="KakouSelect\api\en\setting.edit.removeTitle.html" />
+    <Content Include="KakouSelect\api\en\setting.edit.renameTitle.html" />
+    <Content Include="KakouSelect\api\en\setting.edit.showRemoveBtn.html" />
+    <Content Include="KakouSelect\api\en\setting.edit.showRenameBtn.html" />
+    <Content Include="KakouSelect\api\en\setting.treeId.html" />
+    <Content Include="KakouSelect\api\en\setting.treeObj.html" />
+    <Content Include="KakouSelect\api\en\setting.view.addDiyDom.html" />
+    <Content Include="KakouSelect\api\en\setting.view.addHoverDom.html" />
+    <Content Include="KakouSelect\api\en\setting.view.autoCancelSelected.html" />
+    <Content Include="KakouSelect\api\en\setting.view.dblClickExpand.html" />
+    <Content Include="KakouSelect\api\en\setting.view.expandSpeed.html" />
+    <Content Include="KakouSelect\api\en\setting.view.fontCss.html" />
+    <Content Include="KakouSelect\api\en\setting.view.nameIsHTML.html" />
+    <Content Include="KakouSelect\api\en\setting.view.removeHoverDom.html" />
+    <Content Include="KakouSelect\api\en\setting.view.selectedMulti.html" />
+    <Content Include="KakouSelect\api\en\setting.view.showIcon.html" />
+    <Content Include="KakouSelect\api\en\setting.view.showLine.html" />
+    <Content Include="KakouSelect\api\en\setting.view.showTitle.html" />
+    <Content Include="KakouSelect\api\en\setting.view.txtSelectedEnable.html" />
+    <Content Include="KakouSelect\api\en\treeNode.checked.html" />
+    <Content Include="KakouSelect\api\en\treeNode.checkedOld.html" />
+    <Content Include="KakouSelect\api\en\treeNode.check_Child_State.html" />
+    <Content Include="KakouSelect\api\en\treeNode.check_Focus.html" />
+    <Content Include="KakouSelect\api\en\treeNode.children.html" />
+    <Content Include="KakouSelect\api\en\treeNode.chkDisabled.html" />
+    <Content Include="KakouSelect\api\en\treeNode.click.html" />
+    <Content Include="KakouSelect\api\en\treeNode.diy.html" />
+    <Content Include="KakouSelect\api\en\treeNode.editNameFlag.html" />
+    <Content Include="KakouSelect\api\en\treeNode.getCheckStatus.html" />
+    <Content Include="KakouSelect\api\en\treeNode.getIndex.html" />
+    <Content Include="KakouSelect\api\en\treeNode.getNextNode.html" />
+    <Content Include="KakouSelect\api\en\treeNode.getParentNode.html" />
+    <Content Include="KakouSelect\api\en\treeNode.getPath.html" />
+    <Content Include="KakouSelect\api\en\treeNode.getPreNode.html" />
+    <Content Include="KakouSelect\api\en\treeNode.halfCheck.html" />
+    <Content Include="KakouSelect\api\en\treeNode.icon.html" />
+    <Content Include="KakouSelect\api\en\treeNode.iconClose.html" />
+    <Content Include="KakouSelect\api\en\treeNode.iconOpen.html" />
+    <Content Include="KakouSelect\api\en\treeNode.iconSkin.html" />
+    <Content Include="KakouSelect\api\en\treeNode.isAjaxing.html" />
+    <Content Include="KakouSelect\api\en\treeNode.isFirstNode.html" />
+    <Content Include="KakouSelect\api\en\treeNode.isHidden.html" />
+    <Content Include="KakouSelect\api\en\treeNode.isHover.html" />
+    <Content Include="KakouSelect\api\en\treeNode.isLastNode.html" />
+    <Content Include="KakouSelect\api\en\treeNode.isParent.html" />
+    <Content Include="KakouSelect\api\en\treeNode.level.html" />
+    <Content Include="KakouSelect\api\en\treeNode.name.html" />
+    <Content Include="KakouSelect\api\en\treeNode.nocheck.html" />
+    <Content Include="KakouSelect\api\en\treeNode.open.html" />
+    <Content Include="KakouSelect\api\en\treeNode.parentTId.html" />
+    <Content Include="KakouSelect\api\en\treeNode.target.html" />
+    <Content Include="KakouSelect\api\en\treeNode.tId.html" />
+    <Content Include="KakouSelect\api\en\treeNode.url.html" />
+    <Content Include="KakouSelect\api\en\treeNode.zAsync.html" />
+    <Content Include="KakouSelect\api\en\zTreeObj.addNodes.html" />
+    <Content Include="KakouSelect\api\en\zTreeObj.cancelEditName.html" />
+    <Content Include="KakouSelect\api\en\zTreeObj.cancelSelectedNode.html" />
+    <Content Include="KakouSelect\api\en\zTreeObj.checkAllNodes.html" />
+    <Content Include="KakouSelect\api\en\zTreeObj.checkNode.html" />
+    <Content Include="KakouSelect\api\en\zTreeObj.copyNode.html" />
+    <Content Include="KakouSelect\api\en\zTreeObj.destroy.html" />
+    <Content Include="KakouSelect\api\en\zTreeObj.editName.html" />
+    <Content Include="KakouSelect\api\en\zTreeObj.expandAll.html" />
+    <Content Include="KakouSelect\api\en\zTreeObj.expandNode.html" />
+    <Content Include="KakouSelect\api\en\zTreeObj.getChangeCheckedNodes.html" />
+    <Content Include="KakouSelect\api\en\zTreeObj.getCheckedNodes.html" />
+    <Content Include="KakouSelect\api\en\zTreeObj.getNodeByParam.html" />
+    <Content Include="KakouSelect\api\en\zTreeObj.getNodeByTId.html" />
+    <Content Include="KakouSelect\api\en\zTreeObj.getNodeIndex.html" />
+    <Content Include="KakouSelect\api\en\zTreeObj.getNodes.html" />
+    <Content Include="KakouSelect\api\en\zTreeObj.getNodesByFilter.html" />
+    <Content Include="KakouSelect\api\en\zTreeObj.getNodesByParam.html" />
+    <Content Include="KakouSelect\api\en\zTreeObj.getNodesByParamFuzzy.html" />
+    <Content Include="KakouSelect\api\en\zTreeObj.getSelectedNodes.html" />
+    <Content Include="KakouSelect\api\en\zTreeObj.hideNode.html" />
+    <Content Include="KakouSelect\api\en\zTreeObj.hideNodes.html" />
+    <Content Include="KakouSelect\api\en\zTreeObj.moveNode.html" />
+    <Content Include="KakouSelect\api\en\zTreeObj.reAsyncChildNodes.html" />
+    <Content Include="KakouSelect\api\en\zTreeObj.refresh.html" />
+    <Content Include="KakouSelect\api\en\zTreeObj.removeChildNodes.html" />
+    <Content Include="KakouSelect\api\en\zTreeObj.removeNode.html" />
+    <Content Include="KakouSelect\api\en\zTreeObj.selectNode.html" />
+    <Content Include="KakouSelect\api\en\zTreeObj.setChkDisabled.html" />
+    <Content Include="KakouSelect\api\en\zTreeObj.setEditable.html" />
+    <Content Include="KakouSelect\api\en\zTreeObj.setting.html" />
+    <Content Include="KakouSelect\api\en\zTreeObj.showNode.html" />
+    <Content Include="KakouSelect\api\en\zTreeObj.showNodes.html" />
+    <Content Include="KakouSelect\api\en\zTreeObj.transformToArray.html" />
+    <Content Include="KakouSelect\api\en\zTreeObj.transformTozTreeNodes.html" />
+    <Content Include="KakouSelect\api\en\zTreeObj.updateNode.html" />
+    <Content Include="KakouSelect\css\awesomeStyle\awesome.css" />
+    <Content Include="KakouSelect\css\awesomeStyle\img\loading.gif" />
+    <Content Include="KakouSelect\css\demo.css" />
+    <Content Include="KakouSelect\css\ext.png" />
+    <Content Include="KakouSelect\css\metroStyle\img\line_conn.png" />
+    <Content Include="KakouSelect\css\metroStyle\img\loading.gif" />
+    <Content Include="KakouSelect\css\metroStyle\img\metro.gif" />
+    <Content Include="KakouSelect\css\metroStyle\img\metro.png" />
+    <Content Include="KakouSelect\css\metroStyle\metroStyle.css" />
+    <Content Include="KakouSelect\css\threemenu.png.gif" />
+    <Content Include="KakouSelect\css\zTreeStyle\img\diy\1_close.png" />
+    <Content Include="KakouSelect\css\zTreeStyle\img\diy\1_open.png" />
+    <Content Include="KakouSelect\css\zTreeStyle\img\diy\2.png" />
+    <Content Include="KakouSelect\css\zTreeStyle\img\diy\3.png" />
+    <Content Include="KakouSelect\css\zTreeStyle\img\diy\4.png" />
+    <Content Include="KakouSelect\css\zTreeStyle\img\diy\5.png" />
+    <Content Include="KakouSelect\css\zTreeStyle\img\diy\6.png" />
+    <Content Include="KakouSelect\css\zTreeStyle\img\diy\7.png" />
+    <Content Include="KakouSelect\css\zTreeStyle\img\diy\8.png" />
+    <Content Include="KakouSelect\css\zTreeStyle\img\diy\9.png" />
+    <Content Include="KakouSelect\css\zTreeStyle\img\h1.png" />
+    <Content Include="KakouSelect\css\zTreeStyle\img\line_conn.gif" />
+    <Content Include="KakouSelect\css\zTreeStyle\img\loading.gif" />
+    <Content Include="KakouSelect\css\zTreeStyle\img\tree_icons.png" />
+    <Content Include="KakouSelect\css\zTreeStyle\img\zTreeStandard.gif" />
+    <Content Include="KakouSelect\css\zTreeStyle\img\zTreeStandard.png" />
+    <Content Include="KakouSelect\css\zTreeStyle\zTreeStyle.css" />
+    <Content Include="KakouSelect\css\zTreeStyle\zTreeStyleAlarm.css" />
+    <Content Include="KakouSelect\js\jquery-1.4.4.min.js" />
+    <Content Include="KakouSelect\js\jquery.ztree.all.js" />
+    <Content Include="KakouSelect\js\jquery.ztree.all.min.js" />
+    <Content Include="KakouSelect\js\jquery.ztree.core.js" />
+    <Content Include="KakouSelect\js\jquery.ztree.core.min.js" />
+    <Content Include="KakouSelect\js\jquery.ztree.excheck.js" />
+    <Content Include="KakouSelect\js\jquery.ztree.excheck.min.js" />
+    <Content Include="KakouSelect\js\jquery.ztree.exedit.js" />
+    <Content Include="KakouSelect\js\jquery.ztree.exedit.min.js" />
+    <Content Include="KakouSelect\js\jquery.ztree.exhide.js" />
+    <Content Include="KakouSelect\js\jquery.ztree.exhide.min.js" />
+    <Content Include="KakouSelect\log v3.x.txt" />
+    <Content Include="Passcar\Test.aspx" />
+    <Content Include="Port\FlowMonitor.aspx" />
+    <Content Include="Scripts\Clzpp\mapcarPicker.js" />
+    <Content Include="Scripts\EasyUIJs\datagrid-detailview.js" />
+    <Content Include="Scripts\EasyUIJs\datagrid-groupview.js" />
+    <Content Include="Scripts\EasyUIJs\jquery.easyui.min.js" />
+    <Content Include="Scripts\EasyUIJs\tree.js" />
+    <Content Include="Scripts\Zoom\gallery.html" />
+    <Content Include="Scripts\Zoom\icon\bigger.png" />
+    <Content Include="Scripts\Zoom\icon\close_big.png" />
+    <Content Include="Scripts\Zoom\icon\close_small.png" />
+    <Content Include="Scripts\Zoom\icon\download.png" />
+    <Content Include="Scripts\Zoom\icon\full_screen.png" />
+    <Content Include="Scripts\Zoom\icon\next.png" />
+    <Content Include="Scripts\Zoom\icon\prev.png" />
+    <Content Include="Scripts\Zoom\icon\rotate.png" />
+    <Content Include="Scripts\Zoom\icon\smaller.png" />
+    <Content Include="Scripts\Zoom\jquery.js" />
+    <Content Include="Scripts\Zoom\jquery.photo.gallery.js" />
+    <Content Include="Scripts\Zoom\photoGallery.css" />
+    <Content Include="SpecialMonitor\SpecialMonitor.aspx" />
+    <Content Include="Styles\Clzpp\base.css" />
+    <Content Include="Styles\Clzpp\mapcarPicker.css" />
+    <Content Include="Styles\hphm\autohphm.css" />
+    <Content Include="Styles\datetime.css" />
+    <Content Include="Style\mapcarPicker.css" />
+    <Content Include="Suspicion\ChecklessManager.aspx" />
+    <Content Include="System\NoticePicManager.aspx" />
+    <Content Include="System\SystemCode.aspx" />
+    <Content Include="System\SystemMain.aspx" />
+    <Content Include="UserGuide\Blank.aspx" />
+    <Content Include="build\dist\chart\bar.js" />
+    <Content Include="build\dist\chart\chord.js" />
+    <Content Include="build\dist\chart\eventRiver.js" />
+    <Content Include="build\dist\chart\force.js" />
+    <Content Include="build\dist\chart\funnel.js" />
+    <Content Include="build\dist\chart\gauge.js" />
+    <Content Include="build\dist\chart\heatmap.js" />
+    <Content Include="build\dist\chart\k.js" />
+    <Content Include="build\dist\chart\line.js" />
+    <Content Include="build\dist\chart\map.js" />
+    <Content Include="build\dist\chart\pie.js" />
+    <Content Include="build\dist\chart\radar.js" />
+    <Content Include="build\dist\chart\scatter.js" />
+    <Content Include="build\dist\chart\tree.js" />
+    <Content Include="build\dist\chart\treemap.js" />
+    <Content Include="build\dist\chart\venn.js" />
+    <Content Include="build\dist\chart\wordCloud.js" />
+    <Content Include="build\dist\echarts-all.js" />
+    <Content Include="build\dist\echarts.js" />
+    <Content Include="build\echarts-optimize-conf.js" />
+    <Content Include="build\source\chart\bar.js" />
+    <Content Include="build\source\chart\chord.js" />
+    <Content Include="build\source\chart\eventRiver.js" />
+    <Content Include="build\source\chart\force.js" />
+    <Content Include="build\source\chart\funnel.js" />
+    <Content Include="build\source\chart\gauge.js" />
+    <Content Include="build\source\chart\heatmap.js" />
+    <Content Include="build\source\chart\k.js" />
+    <Content Include="build\source\chart\line.js" />
+    <Content Include="build\source\chart\map.js" />
+    <Content Include="build\source\chart\pie.js" />
+    <Content Include="build\source\chart\radar.js" />
+    <Content Include="build\source\chart\scatter.js" />
+    <Content Include="build\source\chart\tree.js" />
+    <Content Include="build\source\chart\treemap.js" />
+    <Content Include="build\source\chart\venn.js" />
+    <Content Include="build\source\chart\wordCloud.js" />
+    <Content Include="build\source\echarts-all.js" />
+    <Content Include="build\source\echarts.js" />
+    <Content Include="Count\PassCarFlowCount.aspx" />
+    <Content Include="Count\PassCarInfoCount.aspx" />
+    <Content Include="Count\PassCarOcrCount.aspx" />
+    <Content Include="Count\PassCarSpeedCount.aspx" />
+    <Content Include="Count\PeccancyCount.aspx" />
+    <Content Include="DataCount\DeviceDataCount.aspx" />
+    <Content Include="DataCount\WinPassAnalysis.aspx" />
+    <Content Include="DevManager\DevManagerMain.aspx" />
+    <Content Include="Export\blacklist.xsl" />
+    <Content Include="Export\checkless.xsl" />
+    <Content Include="Export\Csv.xsl" />
+    <Content Include="Export\Excel.xsl" />
+    <Content Include="Export\Expmain.htm" />
+    <Content Include="Export\hidelist.htm" />
+    <Content Include="Export\right.htm" />
+    <Content Include="Export\Suspicion.xsl" />
+    <Content Include="Export\Web_FileExp.htm" />
+    <Content Include="Images\BackGround\000001\000001_20160606103106463.jpg" />
+    <Content Include="Images\BackGround\000001\000001_20160606103115414.jpg" />
+    <Content Include="Images\BackGround\000001\000001_20160614103706794.png" />
+    <Content Include="Images\BackGround\000001\000001_20161031110211927.png" />
+    <Content Include="Images\BackGround\000001\bg.jpg" />
+    <Content Include="Images\BackGround\Default\bg.jpg" />
+    <Content Include="Images\back\login.png" />
+    <Content Include="Images\Banner\simple\collapsed-est.png" />
+    <Content Include="Images\Car\CarAlarm.png" />
+    <Content Include="Images\Car\cardel.png" />
+    <Content Include="Images\f01.png" />
+    <Content Include="Images\img\Ico\biao.png" />
+    <Content Include="Images\Left\menuico0102.png" />
+    <Content Include="Images\Left\menuico0103.png" />
+    <Content Include="Images\Left\menuico0101.png" />
+    <Content Include="Images\Left\menuico0101_1.png" />
+    <Content Include="Images\Left\menuico0104.png" />
+    <Content Include="Images\Left\menuico0105.png" />
+    <Content Include="Images\Left\menuico0106.png" />
+    <Content Include="Images\Left\menuico0107.png" />
+    <Content Include="Images\Left\menuico0108.png" />
+    <Content Include="Images\Left\menuico0109.png" />
+    <Content Include="Images\Left\menuico0110.png" />
+    <Content Include="Images\Left\menuico0111.png" />
+    <Content Include="Images\login\bg.png" />
+    <Content Include="Images\login\logomain.png" />
+    <Content Include="Images\login\yuan.png" />
+    <Content Include="Images\logo-new.jpg" />
+    <Content Include="Images\logo\logo.png" />
+    <Content Include="Images\Mapimg\add.png" />
+    <Content Include="Images\Mapimg\biao.png" />
+    <Content Include="Images\Mapimg\cctv.png" />
+    <Content Include="Images\Mapimg\CCTV_1.png" />
+    <Content Include="Images\Mapimg\CCTV_2.png" />
+    <Content Include="Images\Mapimg\tcs.png" />
+    <Content Include="Images\Mapimg\TCS_1.png" />
+    <Content Include="Images\Mapimg\TCS_2.png" />
+    <Content Include="Images\Mapimg\tgs.png" />
+    <Content Include="Images\Mapimg\TGS_1.png" />
+    <Content Include="Images\Mapimg\TGS_2.png" />
+    <Content Include="Images\Mapimg\tms.png" />
+    <Content Include="Images\Mapimg\TMS_1.png" />
+    <Content Include="Images\Mapimg\TMS_2.png" />
+    <Content Include="Images\persons\download1.jpg" />
+    <Content Include="Images\persons\download2.jpg" />
+    <Content Include="Images\persons\download3.jpg" />
+    <Content Include="Images\persons\noname-3.png" />
+    <Content Include="Images\persons\noname-4.png" />
+    <Content Include="Images\QueryImage\3006.png" />
+    <Content Include="Images\QueryImage\3007.png" />
+    <Content Include="Images\QueryImage\3011.png" />
+    <Content Include="Images\QueryImage\一牌多车_23.png" />
+    <Content Include="Images\QueryImage\3012.png" />
+    <Content Include="Images\QueryImage\3013.png" />
+    <Content Include="Images\QueryImage\3009.png" />
+    <Content Include="Images\QueryImage\3010.png" />
+    <Content Include="Images\QueryImage\3005.png" />
+    <Content Include="Images\QueryImage\3004.png" />
+    <Content Include="Images\QueryImage\3014.png" />
+    <Content Include="Images\QueryImage\3008.png" />
+    <Content Include="Images\QueryImage\3003.png" />
+    <Content Include="Images\QueryImage\3002.png" />
+    <Content Include="Images\QueryImage\3001.png" />
+    <Content Include="Images\Template\bar.png" />
+    <Content Include="Images\Template\line.png" />
+    <Content Include="Images\Template\page.png" />
+    <Content Include="Images\Template\pie.png" />
+    <Content Include="Images\Template\table.png" />
+    <Content Include="Images\Template\Tem010101_1.png" />
+    <Content Include="Images\Template\Tem010101.png" />
+    <Content Include="Images\Template\Tem010102.png" />
+    <Content Include="Images\Template\Tem010102_1.png" />
+    <Content Include="Images\Template\Tem010103.png" />
+    <Content Include="Images\Template\Tem010103_1.png" />
+    <Content Include="Images\Template\Tem010104.png" />
+    <Content Include="Images\Template\Tem010104_1.png" />
+    <Content Include="Images\top\top.png" />
+    <Content Include="Images\top\top_1.png" />
+    <Content Include="Images\Video.jpg" />
+    <Content Include="Images\persons\noname-1.png" />
+    <Content Include="Images\persons\noname-2.png" />
+    <Content Include="Images\persons\userShouce.jpg" />
+    <Content Include="Image\bgfoot.png" />
+    <Content Include="Image\hpTemp.png" />
+    <Content Include="Image\jiantou.png" />
+    <Content Include="Image\jiao.png" />
+    <Content Include="Image\page.jpg" />
+    <Content Include="Image\s0.png" />
+    <Content Include="Image\s1.png" />
+    <Content Include="Image\SelectImg.png" />
+    <Content Include="Image\SelectImgBg.png" />
+    <Content Include="Image\shu.png" />
+    <Content Include="Image\xia.png" />
+    <Content Include="Important\ImportantMain.aspx" />
+    <Content Include="DataCount\ImpRoadMonitor.aspx" />
+    <Content Include="Important\PeccancyAreaSetting.aspx" />
+    <Content Include="lib\Cache.Bll.dll" />
+    <Content Include="lib\Cache.Dal.dll" />
+    <Content Include="lib\Cache.Helper.dll" />
+    <Content Include="lib\Cache.Model.dll" />
+    <Content Include="lib\ServiceStack.Common.dll" />
+    <Content Include="lib\ServiceStack.Interfaces.dll" />
+    <Content Include="lib\ServiceStack.Redis.dll" />
+    <Content Include="lib\ServiceStack.ServiceInterface.dll" />
+    <Content Include="lib\ServiceStack.Text.dll" />
+    <Content Include="Login.aspx" />
+    <Content Include="LogManager\LogMain.aspx" />
+    <Content Include="Map\Bmap.html" />
+    <Content Include="Map\CCTVSingleBrowse.aspx" />
+    <Content Include="Map\css\cabel-v1.css" />
+    <Content Include="Map\css\chooser.css" />
+    <Content Include="Map\css\css.css" />
+    <Content Include="Map\css\custom.css" />
+    <Content Include="DataCount\CurrentDataCount.aspx" />
+    <Content Include="DataService\DataService.asmx" />
+    <Content Include="ExtraList\ExtraListManager.aspx" />
+    <Content Include="FusionCharts\Area2D.swf" />
+    <Content Include="FusionCharts\Bar2D.swf" />
+    <Content Include="FusionCharts\Bubble.swf" />
+    <Content Include="FusionCharts\Column2D.swf" />
+    <Content Include="FusionCharts\Column3D.swf" />
+    <Content Include="FusionCharts\Doughnut2D.swf" />
+    <Content Include="FusionCharts\Doughnut3D.swf" />
+    <Content Include="FusionCharts\FCExporter.swf" />
+    <Content Include="FusionCharts\firebug-lite.js" />
+    <Content Include="FusionCharts\Funnel.swf" />
+    <Content Include="FusionCharts\FusionCharts.js" />
+    <Content Include="FusionCharts\FusionChartsExportComponent.js" />
+    <Content Include="FusionCharts\highcharts.js" />
+    <Content Include="FusionCharts\InverseMSArea.swf" />
+    <Content Include="FusionCharts\InverseMSColumn2D.swf" />
+    <Content Include="FusionCharts\InverseMSLine.swf" />
+    <Content Include="FusionCharts\jquery.min.js" />
+    <Content Include="FusionCharts\Line.swf" />
+    <Content Include="FusionCharts\LogMSColumn2D.swf" />
+    <Content Include="FusionCharts\LogMSLine.swf" />
+    <Content Include="FusionCharts\MSArea.swf" />
+    <Content Include="FusionCharts\MSBar2D.swf" />
+    <Content Include="FusionCharts\MSBar3D.swf" />
+    <Content Include="FusionCharts\MSColumn2D.swf" />
+    <Content Include="FusionCharts\MSColumn3D.swf" />
+    <Content Include="FusionCharts\MSColumn3DLineDY.swf" />
+    <Content Include="FusionCharts\MSColumnLine3D.swf" />
+    <Content Include="FusionCharts\MSCombi2D.swf" />
+    <Content Include="FusionCharts\MSCombi3D.swf" />
+    <Content Include="FusionCharts\MSCombiDY2D.swf" />
+    <Content Include="FusionCharts\MSLine.swf" />
+    <Content Include="FusionCharts\MSSpline.swf" />
+    <Content Include="FusionCharts\MSSplineArea.swf" />
+    <Content Include="FusionCharts\MSStackedColumn2D.swf" />
+    <Content Include="FusionCharts\MSStackedColumn2DLineDY.swf" />
+    <Content Include="FusionCharts\Pie2D.swf" />
+    <Content Include="FusionCharts\Pie3D.swf" />
+    <Content Include="FusionCharts\Pyramid.swf" />
+    <Content Include="FusionCharts\Scatter.swf" />
+    <Content Include="FusionCharts\ScrollArea2D.swf" />
+    <Content Include="FusionCharts\ScrollColumn2D.swf" />
+    <Content Include="FusionCharts\ScrollCombi2D.swf" />
+    <Content Include="FusionCharts\ScrollCombiDY2D.swf" />
+    <Content Include="FusionCharts\ScrollLine2D.swf" />
+    <Content Include="FusionCharts\ScrollStackedColumn2D.swf" />
+    <Content Include="FusionCharts\Spline.swf" />
+    <Content Include="FusionCharts\SplineArea.swf" />
+    <Content Include="FusionCharts\SSGrid.swf" />
+    <Content Include="FusionCharts\StackedArea2D.swf" />
+    <Content Include="FusionCharts\StackedBar2D.swf" />
+    <Content Include="FusionCharts\StackedBar3D.swf" />
+    <Content Include="FusionCharts\StackedColumn2D.swf" />
+    <Content Include="FusionCharts\StackedColumn3D.swf" />
+    <Content Include="FusionCharts\StackedColumn3DLineDY.swf" />
+    <Content Include="Images\Car\car.png" />
+    <Content Include="Images\Car\car16.png" />
+    <Content Include="Images\Car\carpass.png" />
+    <Content Include="Images\Car\counter.png" />
+    <Content Include="Images\Car\online.png" />
+    <Content Include="Images\img\003c.gif" />
+    <Content Include="Images\img\1.jpg" />
+    <Content Include="Images\img\10000001.jpg" />
+    <Content Include="Images\img\2.jpg" />
+    <Content Include="Images\img\3.jpg" />
+    <Content Include="Images\img\4.jpg" />
+    <Content Include="Images\img\5.jpg" />
+    <Content Include="Images\img\accept.png" />
+    <Content Include="Images\img\add.png" />
+    <Content Include="Images\img\add1.png" />
+    <Content Include="Images\img\addtitle_bg.png" />
+    <Content Include="Images\img\Alarm.gif" />
+    <Content Include="Images\img\alarm.jpg" />
+    <Content Include="Images\img\Alarm1.gif" />
+    <Content Include="Images\img\Alarm2.gif" />
+    <Content Include="Images\img\Alarm3.gif" />
+    <Content Include="Images\img\Alarm4.gif" />
+    <Content Include="Images\img\bfb.gif" />
+    <Content Include="Images\img\bfb.png" />
+    <Content Include="Images\img\bg.png" />
+    <Content Include="Images\img\bgcopyrirht.png" />
+    <Content Include="Images\img\blank.gif" />
+    <Content Include="Images\img\border1.png" />
+    <Content Include="Images\img\border2.png" />
+    <Content Include="Images\img\bubble-tail2.png" />
+    <Content Include="Images\img\call.png" />
+    <Content Include="Images\img\car.jpg" />
+    <Content Include="Images\img\car.png" />
+    <Content Include="Images\img\Car1.gif" />
+    <Content Include="Images\img\car\Car.gif" />
+    <Content Include="Images\img\car\CarE.gif" />
+    <Content Include="Images\img\car\CarE1.gif" />
+    <Content Include="Images\img\car\CarN.gif" />
+    <Content Include="Images\img\car\CarN1.gif" />
+    <Content Include="Images\img\car\CarNE.gif" />
+    <Content Include="Images\img\car\CarNE1.gif" />
+    <Content Include="Images\img\car\CarNW.gif" />
+    <Content Include="Images\img\car\CarNW1.gif" />
+    <Content Include="Images\img\car\CarS.gif" />
+    <Content Include="Images\img\car\CarS1.gif" />
+    <Content Include="Images\img\car\CarSE.gif" />
+    <Content Include="Images\img\car\CarSE1.gif" />
+    <Content Include="Images\img\car\CarSW.gif" />
+    <Content Include="Images\img\car\CarSW1.gif" />
+    <Content Include="Images\img\car\CarW.gif" />
+    <Content Include="Images\img\car\CarW1.gif" />
+    <Content Include="Images\img\CCTV.gif" />
+    <Content Include="Images\img\CCTV.png" />
+    <Content Include="Images\img\CCTV1.gif" />
+    <Content Include="Images\img\closedhand.cur" />
+    <Content Include="Images\img\cloud-popup-relative.png" />
+    <Content Include="Images\img\columns.gif" />
+    <Content Include="Images\img\com.gif" />
+    <Content Include="Images\img\COM.png" />
+    <Content Include="Images\img\cut.png" />
+    <Content Include="Images\img\cut1.png" />
+    <Content Include="Images\img\dcll.png" />
+    <Content Include="Images\img\dian.png" />
+    <Content Include="Images\img\dian2.png" />
+    <Content Include="Images\img\dian3.png" />
+    <Content Include="Images\img\down.png" />
+    <Content Include="Images\img\drag-rectangle-off.png" />
+    <Content Include="Images\img\drag-rectangle-on.png" />
+    <Content Include="Images\img\east-mini.png" />
+    <Content Include="Images\img\edit.gif" />
+    <Content Include="Images\img\err.jpg" />
+    <Content Include="Images\img\error.gif" />
+    <Content Include="Images\img\EWTFM.gif" />
+    <Content Include="Images\img\exclamation.png" />
+    <Content Include="Images\img\favadd.gif" />
+    <Content Include="Images\img\fl.png" />
+    <Content Include="Images\img\fx.png" />
+    <Content Include="Images\img\Gray.png" />
+    <Content Include="Images\img\green %282%29.png" />
+    <Content Include="Images\img\Green.png" />
+    <Content Include="Images\img\grid.gif" />
+    <Content Include="Images\img\guo.png" />
+    <Content Include="Images\img\GZ.gif" />
+    <Content Include="Images\img\GZ.png" />
+    <Content Include="Images\img\GZ0.gif" />
+    <Content Include="Images\img\home.gif" />
+    <Content Include="Images\img\Ico\BJ.png" />
+    <Content Include="Images\img\Ico\BZ.png" />
+    <Content Include="Images\img\Ico\BZGJ.png" />
+    <Content Include="Images\img\Ico\BZJZ.png" />
+    <Content Include="Images\img\Ico\BZZS.png" />
+    <Content Include="Images\img\Ico\CCTV.png" />
+    <Content Include="Images\img\Ico\GREEN.gif" />
+    <Content Include="Images\img\Ico\GZ.png" />
+    <Content Include="Images\img\Ico\JC.png" />
+    <Content Include="Images\img\Ico\JL.png" />
+    <Content Include="Images\img\Ico\JQ.png" />
+    <Content Include="Images\img\Ico\JY.png" />
+    <Content Include="Images\img\Ico\LK.png" />
+    <Content Include="Images\img\Ico\LL.png" />
+    <Content Include="Images\img\Ico\NBJ.png" />
+    <Content Include="Images\img\Ico\RED.gif" />
+    <Content Include="Images\img\Ico\SB.png" />
+    <Content Include="Images\img\Ico\SBGJ.png" />
+    <Content Include="Images\img\Ico\SG.png" />
+    <Content Include="Images\img\Ico\TFM.png" />
+    <Content Include="Images\img\Ico\TGS.png" />
+    <Content Include="Images\img\Ico\TMS.png" />
+    <Content Include="Images\img\Ico\UTC.png" />
+    <Content Include="Images\img\Ico\VMS.png" />
+    <Content Include="Images\img\Ico\WEA.png" />
+    <Content Include="Images\img\Ico\WF.gif" />
+    <Content Include="Images\img\Ico\WFTJ.png" />
+    <Content Include="Images\img\Ico\YD.png" />
+    <Content Include="Images\img\Ico\YD1.png" />
+    <Content Include="Images\img\Ico\YELLOW.gif" />
+    <Content Include="Images\img\Ico\ZD.png" />
+    <Content Include="Images\img\Ico\ZH.png" />
+    <Content Include="Images\img\ie6\borderBottomCenter.png" />
+    <Content Include="Images\img\ie6\borderBottomLeft.png" />
+    <Content Include="Images\img\ie6\borderBottomRight.png" />
+    <Content Include="Images\img\ie6\borderMiddleLeft.png" />
+    <Content Include="Images\img\ie6\borderMiddleRight.png" />
+    <Content Include="Images\img\ie6\borderTopCenter.png" />
+    <Content Include="Images\img\ie6\borderTopLeft.png" />
+    <Content Include="Images\img\ie6\borderTopRight.png" />
+    <Content Include="Images\img\inputbt.png" />
+    <Content Include="Images\img\inputbt1.png" />
+    <Content Include="Images\img\iw2.png" />
+    <Content Include="Images\img\iw3.png" />
+    <Content Include="Images\img\iw_close.gif" />
+    <Content Include="Images\img\iw_fullscreen.gif" />
+    <Content Include="Images\img\iw_minus.gif" />
+    <Content Include="Images\img\iw_plus.gif" />
+    <Content Include="Images\img\jian.png" />
+    <Content Include="Images\img\jie.png" />
+    <Content Include="Images\img\layer-switcher-maximize.png" />
+    <Content Include="Images\img\layer-switcher-minimize.png" />
+    <Content Include="Images\img\lgbt.png" />
+    <Content Include="Images\img\lgbt1.png" />
+    <Content Include="Images\img\lgbt11.png" />
+    <Content Include="Images\img\line.png" />
+    <Content Include="Images\img\ll.png" />
+    <Content Include="Images\img\loading.gif" />
+    <Content Include="Images\img\loading1.gif" />
+    <Content Include="Images\img\loading_b.GIF" />
+    <Content Include="Images\img\LOGO_p.png" />
+    <Content Include="Images\img\LOGO_s.png" />
+    <Content Include="Images\img\mail.gif" />
+    <Content Include="Images\img\mainbg.png" />
+    <Content Include="Images\img\mam.png" />
+    <Content Include="Images\img\managel.png" />
+    <Content Include="Images\img\mapcontrols2.png" />
+    <Content Include="Images\img\marker-blue.png" />
+    <Content Include="Images\img\marker-gold.png" />
+    <Content Include="Images\img\marker-green.png" />
+    <Content Include="Images\img\marker.png" />
+    <Content Include="Images\img\marker2.png" />
+    <Content Include="Images\img\marker3.png" />
+    <Content Include="Images\img\marker5-smail.png" />
+    <Content Include="Images\img\marker5.png" />
+    <Content Include="Images\img\marker6.png" />
+    <Content Include="Images\img\markerff.gif" />
+    <Content Include="Images\img\markerTransparent.png" />
+    <Content Include="Images\img\marker_shadow.png" />
+    <Content Include="Images\img\measuring-stick-off.png" />
+    <Content Include="Images\img\measuring-stick-on.png" />
+    <Content Include="Images\img\morelink.gif" />
+    <Content Include="Images\img\mviewl.png" />
+    <Content Include="Images\img\njd.gif" />
+    <Content Include="Images\img\NJD.jpg" />
+    <Content Include="Images\img\njd.png" />
+    <Content Include="Images\img\normal.gif" />
+    <Content Include="Images\img\north-mini.png" />
+    <Content Include="Images\img\NSTFM.gif" />
+    <Content Include="Images\img\num.png" />
+    <Content Include="Images\img\number\line.png" />
+    <Content Include="Images\img\number\pg.png" />
+    <Content Include="Images\img\number\pg_m.png" />
+    <Content Include="Images\img\number\pg_q.png" />
+    <Content Include="Images\img\number\pg_s.png" />
+    <Content Include="Images\img\number\right.png" />
+    <Content Include="Images\img\number\step1.png" />
+    <Content Include="Images\img\number\step10.png" />
+    <Content Include="Images\img\number\step11.png" />
+    <Content Include="Images\img\number\step2.png" />
+    <Content Include="Images\img\number\step20.png" />
+    <Content Include="Images\img\number\step21.png" />
+    <Content Include="Images\img\number\step3.png" />
+    <Content Include="Images\img\number\step30.png" />
+    <Content Include="Images\img\number\step31.png" />
+    <Content Include="Images\img\number\step4.png" />
+    <Content Include="Images\img\number\step40.png" />
+    <Content Include="Images\img\number\step41.png" />
+    <Content Include="Images\img\number\tb1.gif" />
+    <Content Include="Images\img\number\tb10.gif" />
+    <Content Include="Images\img\number\tb11.gif" />
+    <Content Include="Images\img\number\tb12.gif" />
+    <Content Include="Images\img\number\tb13.gif" />
+    <Content Include="Images\img\number\tb14.gif" />
+    <Content Include="Images\img\number\tb15.gif" />
+    <Content Include="Images\img\number\tb16.gif" />
+    <Content Include="Images\img\number\tb17.gif" />
+    <Content Include="Images\img\number\tb18.gif" />
+    <Content Include="Images\img\number\tb19.gif" />
+    <Content Include="Images\img\number\tb2.gif" />
+    <Content Include="Images\img\number\tb20.gif" />
+    <Content Include="Images\img\number\tb3.gif" />
+    <Content Include="Images\img\number\tb4.gif" />
+    <Content Include="Images\img\number\tb5.gif" />
+    <Content Include="Images\img\number\tb6.gif" />
+    <Content Include="Images\img\number\tb7.gif" />
+    <Content Include="Images\img\number\tb8.gif" />
+    <Content Include="Images\img\number\tb9.gif" />
+    <Content Include="Images\img\ok.jpg" />
+    <Content Include="Images\img\openhand.cur" />
+    <Content Include="Images\img\Orange.png" />
+    <Content Include="Images\img\pagination_1.png" />
+    <Content Include="Images\img\panning-hand-off.png" />
+    <Content Include="Images\img\panning-hand-on.png" />
+    <Content Include="Images\img\Pie.png" />
+    <Content Include="Images\img\pjsd.png" />
+    <Content Include="Images\img\pjz.png" />
+    <Content Include="Images\img\playvideo.png" />
+    <Content Include="Images\img\POST.gif" />
+    <Content Include="Images\img\preview.png" />
+    <Content Include="Images\img\qtll.png" />
+    <Content Include="Images\img\Red.gif" />
+    <Content Include="Images\img\Red.png" />
+    <Content Include="Images\img\regiest.png" />
+    <Content Include="Images\img\returnhome.gif" />
+    <Content Include="Images\img\roadstate.jpg" />
+    <Content Include="Images\img\row-over.gif" />
+    <Content Include="Images\img\ruler.cur" />
+    <Content Include="Images\img\shadow50.png" />
+    <Content Include="Images\img\shandong.gif" />
+    <Content Include="Images\img\shandong1.gif" />
+    <Content Include="Images\img\shandong2.gif" />
+    <Content Include="Images\img\shandong2.png" />
+    <Content Include="Images\img\shandong3.gif" />
+    <Content Include="Images\img\sheng.png" />
+    <Content Include="Images\img\shi.png" />
+    <Content Include="Images\img\Shutdown.gif" />
+    <Content Include="Images\img\slider.png" />
+    <Content Include="Images\img\SNTFM.gif" />
+    <Content Include="Images\img\south-mini.png" />
+    <Content Include="Images\img\state\accept.png" />
+    <Content Include="Images\img\state\alarm.gif" />
+    <Content Include="Images\img\state\alarm.jpg" />
+    <Content Include="Images\img\state\bfb.gif" />
+    <Content Include="Images\img\state\err.jpg" />
+    <Content Include="Images\img\state\error.gif" />
+    <Content Include="Images\img\state\exclamation.png" />
+    <Content Include="Images\img\state\Gray.png" />
+    <Content Include="Images\img\state\Green.png" />
+    <Content Include="Images\img\state\loading.gif" />
+    <Content Include="Images\img\state\loading1.gif" />
+    <Content Include="Images\img\state\loading_b.GIF" />
+    <Content Include="Images\img\state\mark0.png" />
+    <Content Include="Images\img\state\mark1.png" />
+    <Content Include="Images\img\state\normal.gif" />
+    <Content Include="Images\img\state\ok.jpg" />
+    <Content Include="Images\img\state\Orange.png" />
+    <Content Include="Images\img\state\post1.png" />
+    <Content Include="Images\img\state\post2.png" />
+    <Content Include="Images\img\state\post3.png" />
+    <Content Include="Images\img\state\Red.png" />
+    <Content Include="Images\img\state\row-over.gif" />
+    <Content Include="Images\img\state\Shutdown.gif" />
+    <Content Include="Images\img\state\success.gif" />
+    <Content Include="Images\img\state\trackback01.gif" />
+    <Content Include="Images\img\state\trackback02.gif" />
+    <Content Include="Images\img\state\unknow.gif" />
+    <Content Include="Images\img\Station\utc.jpg" />
+    <Content Include="Images\img\success.gif" />
+    <Content Include="Images\img\TES.png" />
+    <Content Include="Images\img\TFM.gif" />
+    <Content Include="Images\img\TFM.png" />
+    <Content Include="Images\img\TFM1 %282%29.png" />
+    <Content Include="Images\img\TFM1.gif" />
+    <Content Include="Images\img\TFML.gif" />
+    <Content Include="Images\img\TFMR.gif" />
+    <Content Include="Images\img\Tfm\01.jpg" />
+    <Content Include="Images\img\Tfm\02.jpg" />
+    <Content Include="Images\img\Tfm\03.jpg" />
+    <Content Include="Images\img\Tfm\04.jpg" />
+    <Content Include="Images\img\Tfm\1.jpg" />
+    <Content Include="Images\img\Tfm\2.jpg" />
+    <Content Include="Images\img\Tfm\3.jpg" />
+    <Content Include="Images\img\Tfm\4.jpg" />
+    <Content Include="Images\img\Tfm\5.jpg" />
+    <Content Include="Images\img\TGS.gif" />
+    <Content Include="Images\img\TGS.png" />
+    <Content Include="Images\img\TGS1.png" />
+    <Content Include="Images\img\titlebg.jpg" />
+    <Content Include="Images\img\TMS.gif" />
+    <Content Include="Images\img\TMS.png" />
+    <Content Include="Images\img\toolbar\center.png" />
+    <Content Include="Images\img\toolbar\draw_line_off.png" />
+    <Content Include="Images\img\toolbar\draw_point_off.png" />
+    <Content Include="Images\img\toolbar\draw_polygon_off.png" />
+    <Content Include="Images\img\toolbar\east.gif" />
+    <Content Include="Images\img\toolbar\Flow.png" />
+    <Content Include="Images\img\toolbar\loading.gif" />
+    <Content Include="Images\img\toolbar\measure.gif" />
+    <Content Include="Images\img\toolbar\move_feature_off.png" />
+    <Content Include="Images\img\toolbar\north.gif" />
+    <Content Include="Images\img\toolbar\pan_off.png" />
+    <Content Include="Images\img\toolbar\refearch.gif" />
+    <Content Include="Images\img\toolbar\ruler.png" />
+    <Content Include="Images\img\toolbar\save_features_off.png" />
+    <Content Include="Images\img\toolbar\sliderthumb.gif" />
+    <Content Include="Images\img\toolbar\south.gif" />
+    <Content Include="Images\img\toolbar\track.gif" />
+    <Content Include="Images\img\toolbar\west.gif" />
+    <Content Include="Images\img\toolbar\zoomin.gif" />
+    <Content Include="Images\img\toolbar\zoomIn.png" />
+    <Content Include="Images\img\toolbar\zoomout.gif" />
+    <Content Include="Images\img\toolbar\zoomOut.png" />
+    <Content Include="Images\img\TPS.png" />
+    <Content Include="Images\img\trackback01.gif" />
+    <Content Include="Images\img\trackback02.gif" />
+    <Content Include="Images\img\transparent.gif" />
+    <Content Include="Images\img\transparent.png" />
+    <Content Include="Images\img\unknow.gif" />
+    <Content Include="Images\img\up.png" />
+    <Content Include="Images\img\user.jpg" />
+    <Content Include="Images\img\user.png" />
+    <Content Include="Images\img\UTC.gif" />
+    <Content Include="Images\img\UTC.png" />
+    <Content Include="Images\img\vcard_edit.png" />
+    <Content Include="Images\img\VMS.gif" />
+    <Content Include="Images\img\VMS.png" />
+    <Content Include="Images\img\WEA.gif" />
+    <Content Include="Images\img\WEA.png" />
+    <Content Include="Images\img\west-mini.png" />
+    <Content Include="Images\img\WETFM.gif" />
+    <Content Include="Images\img\xcll.png" />
+    <Content Include="Images\img\xl.png" />
+    <Content Include="Images\img\Yellow.gif" />
+    <Content Include="Images\img\YJWZ.png" />
+    <Content Include="Images\img\YJZB.png" />
+    <Content Include="Images\img\YJZJ.png" />
+    <Content Include="Images\img\yl.png" />
+    <Content Include="Images\img\yt11.png" />
+    <Content Include="Images\img\yt21.png" />
+    <Content Include="Images\img\yt31.png" />
+    <Content Include="Images\img\yt41.png" />
+    <Content Include="Images\img\yt51.png" />
+    <Content Include="Images\img\yt61.png" />
+    <Content Include="Images\img\yt71.png" />
+    <Content Include="Images\img\yt81.png" />
+    <Content Include="Images\img\yt91.png" />
+    <Content Include="Images\img\ytbg.png" />
+    <Content Include="Images\img\ytbg1.png" />
+    <Content Include="Images\img\zcll.png" />
+    <Content Include="Images\img\ZD.gif" />
+    <Content Include="Images\img\zll.png" />
+    <Content Include="Images\img\zoom-minus-mini.png" />
+    <Content Include="Images\img\zoom-plus-mini.png" />
+    <Content Include="Images\img\zoom-world-mini.png" />
+    <Content Include="Images\img\zoombar.png" />
+    <Content Include="Images\img\zoombarbakup\east-mini.png" />
+    <Content Include="Images\img\zoombarbakup\layer-switcher-maximize.png" />
+    <Content Include="Images\img\zoombarbakup\north-mini.png" />
+    <Content Include="Images\img\zoombarbakup\slider.png" />
+    <Content Include="Images\img\zoombarbakup\south-mini.png" />
+    <Content Include="Images\img\zoombarbakup\west-mini.png" />
+    <Content Include="Images\img\zoombarbakup\zoom-minus-mini.png" />
+    <Content Include="Images\img\zoombarbakup\zoom-plus-mini.png" />
+    <Content Include="Images\img\zoombarbakup\zoom-world-mini.png" />
+    <Content Include="Images\img\zoombarbakup\zoombar.png" />
+    <Content Include="Images\img\展标1.png" />
+    <Content Include="Images\NoImage.png" />
+    <Content Include="Images\Sets\close.gif" />
+    <Content Include="Images\Sets\loading.gif" />
+    <Content Include="Images\Sets\newwindow.gif" />
+    <Content Include="Images\Sets\resize.gif" />
+    <Content Include="Images\state\0.jpg" />
+    <Content Include="Images\state\1.jpg" />
+    <Content Include="Images\state\2.png" />
+    <Content Include="Images\state\3.png" />
+    <Content Include="Images\state\9.png" />
+    <Content Include="Images\state\accept.png" />
+    <Content Include="Images\state\alarm.gif" />
+    <Content Include="Images\state\alarm.jpg" />
+    <Content Include="Images\state\bfb.gif" />
+    <Content Include="Images\state\Connect.png" />
+    <Content Include="Images\state\err.jpg" />
+    <Content Include="Images\state\error.gif" />
+    <Content Include="Images\state\exclamation.png" />
+    <Content Include="Images\state\Gray.png" />
+    <Content Include="Images\state\Green.png" />
+    <Content Include="Images\state\loading.gif" />
+    <Content Include="Images\state\loading1.gif" />
+    <Content Include="Images\state\loading_b.GIF" />
+    <Content Include="Images\state\normal.gif" />
+    <Content Include="Images\state\ok.jpg" />
+    <Content Include="Images\state\Orange.png" />
+    <Content Include="Images\state\Red.png" />
+    <Content Include="Images\state\row-over.gif" />
+    <Content Include="Images\state\Shutdown.gif" />
+    <Content Include="Images\state\success.gif" />
+    <Content Include="Images\state\trackback01.gif" />
+    <Content Include="Images\state\trackback02.gif" />
+    <Content Include="Images\state\unknow.gif" />
+    <Content Include="Image\bg1.jpg" />
+    <Content Include="Image\down_ico.png" />
+    <Content Include="Image\logo.png" />
+    <Content Include="Image\logo1.png" />
+    <Content Include="Image\mem_ico.png" />
+    <Content Include="Image\menuico.png" />
+    <Content Include="Image\monitorbg.png" />
+    <Content Include="Image\navico.png" />
+    <Content Include="Image\tub1.png" />
+    <Content Include="Image\tub2.png" />
+    <Content Include="Image\tub3.png" />
+    <Content Include="Image\Upward_ico.png" />
+    <Content Include="imgs\40.png" />
+    <Content Include="imgs\401.png" />
+    <Content Include="MainIndex.aspx" />
+    <Content Include="Map\CarHot.aspx" />
+    <Content Include="Map\CarIllegalQuery.aspx" />
+    <Content Include="Map\CarQuery.aspx" />
+    <Content Include="Map\CarStrandQuery.aspx" />
+    <Content Include="Map\css\Global.css" />
+    <Content Include="Map\css\images\check-choose.png" />
+    <Content Include="Map\css\images\check-cir-befroe.png" />
+    <Content Include="Map\css\images\check-cir.png" />
+    <Content Include="Map\css\images\check-normal.png" />
+    <Content Include="Map\css\images\close-icon.png" />
+    <Content Include="Map\css\images\list-radio-active.png" />
+    <Content Include="Map\css\images\list-radio.png" />
+    <Content Include="Map\css\images\m-left-arrow.png" />
+    <Content Include="Map\css\images\m-right-arrow.png" />
+    <Content Include="Map\css\images\qui-icon1-active.png" />
+    <Content Include="Map\css\images\qui-icon1.png" />
+    <Content Include="Map\css\images\qui-icon2-active.png" />
+    <Content Include="Map\css\images\qui-icon2.png" />
+    <Content Include="Map\css\images\qui-icon3-active.png" />
+    <Content Include="Map\css\images\qui-icon3.png" />
+    <Content Include="Map\css\images\qui-icon4-active.png" />
+    <Content Include="Map\css\images\qui-icon4.png" />
+    <Content Include="Map\css\images\qui-icon5-active.png" />
+    <Content Include="Map\css\images\qui-icon5.png" />
+    <Content Include="Map\css\images\qui-icon6-active.png" />
+    <Content Include="Map\css\images\qui-icon6.png" />
+    <Content Include="Map\css\images\tips-arrow.png" />
+    <Content Include="Map\css\main.css" />
+    <Content Include="Map\css\map.css" />
+    <Content Include="Map\css\pager.css" />
+    <Content Include="Map\css\pop.css" />
+    <Content Include="Map\css\prettyPhoto.css" />
+    <Content Include="Map\css\showphotostyle.css" />
+    <Content Include="Map\css\SyntaxHighlighter.css" />
+    <Content Include="Map\css\tira.css" />
+    <Content Include="Map\css\UI-Response.css" />
+    <Content Include="Map\css\Ui-skin.css" />
+    <Content Include="Map\Dispatched.aspx" />
+    <Content Include="Map\images\01.ico" />
+    <Content Include="Map\images\01.png" />
+    <Content Include="Map\images\biao.ico" />
+    <Content Include="Map\images\biao.png" />
+    <Content Include="Map\images\Sets\close.gif" />
+    <Content Include="Map\images\Sets\loading.gif" />
+    <Content Include="Map\images\Sets\newwindow.gif" />
+    <Content Include="Map\images\Sets\resize.gif" />
+    <Content Include="Map\img\images\Sets\close.gif" />
+    <Content Include="Map\img\images\Sets\loading.gif" />
+    <Content Include="Map\img\images\Sets\newwindow.gif" />
+    <Content Include="Map\img\images\Sets\resize.gif" />
+    <Content Include="Map\img\backup\CCTV.gif" />
+    <Content Include="Map\img\backup\TGS.gif" />
+    <Content Include="Map\img\backup\TMS.gif" />
+    <Content Include="Map\img\CCTV_1.gif" />
+    <Content Include="Map\img\CCTV_2.gif" />
+    <Content Include="Map\img\dev_01.png" />
+    <Content Include="Map\img\dev_02.png" />
+    <Content Include="Map\img\dev_03.png" />
+    <Content Include="Map\img\dev_04.png" />
+    <Content Include="Map\img\f_depart.png" />
+    <Content Include="Map\img\f_home.png" />
+    <Content Include="Map\img\f_other.png" />
+    <Content Include="Map\img\TCS.gif" />
+    <Content Include="Map\img\TCS_1.gif" />
+    <Content Include="Map\img\TCS_2.gif" />
+    <Content Include="Map\img\VGS.gif" />
+    <Content Include="Map\img\TGS_1.gif" />
+    <Content Include="Map\img\TGS_2.gif" />
+    <Content Include="Map\img\TMS_1.gif" />
+    <Content Include="Map\img\TMS_2.gif" />
+    <Content Include="Map\js\jquery-1.7.min.js" />
+    <Content Include="Map\js\sockjs-0.3.min.js" />
+    <Content Include="Map\js\stomp.js" />
+    <Content Include="Map\MapStation.aspx" />
+    <Content Include="Map\ShowImage.aspx" />
+    <Content Include="Map\TgsFlowAmply.aspx" />
+    <Content Include="Map\TgsPassCarAmply.aspx" />
+    <Content Include="Map\TgsShowDevice.aspx" />
+    <Content Include="Map\TgsShowStation.aspx" />
+    <Content Include="Passcar\AnalyFollowVehicles.aspx" />
+    <Content Include="Passcar\ComplexQuery.aspx" />
+    <Content Include="Passcar\DriverRelationAnalysis.aspx" />
+    <Content Include="Passcar\FaceShelterQuery.aspx" />
+    <Content Include="Passcar\FeatureQuery.aspx" />
+    <Content Include="Map\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Map\FootHold.aspx" />
+    <Content Include="Map\FrequentOverCar.aspx" />
+    <Content Include="Map\img\images\01.ico" />
+    <Content Include="Map\img\images\01.png" />
+    <Content Include="Passcar\FisrtIntoCity.aspx" />
+    <Content Include="Passcar\ImgCarQuery.aspx" />
+    <Content Include="Passcar\OneCarMulLisence.aspx" />
+    <Content Include="Passcar\OneLisenceMulCar.aspx" />
+    <Content Include="Passcar\OneLisenceMulCarMapShow.aspx" />
+    <Content Include="Passcar\PassAlarmQuery.aspx" />
+    <Content Include="Passcar\PasscarAllQuery.aspx" />
+    <Content Include="Passcar\PassCarInfoQueryMain.aspx" />
+    <Content Include="Passcar\PassCarInfoQuery.aspx" />
+    <Content Include="Passcar\PassCarInfoQueryImg.aspx" />
+    <Content Include="Passcar\PassCarPathQuery.aspx" />
+    <Content Include="Passcar\PeccancyInfoQuery.aspx" />
+    <Content Include="Passcar\UnlicensedVehiclesQuery.aspx" />
+    <Content Include="Passcar\VehicleRelationAnalysis.aspx" />
+    <Content Include="DataCount\PeccancyDataCount.aspx" />
+    <Content Include="Passcar\WebImageTest.aspx" />
+    <Content Include="PeccancyArea\PeccancyArea.aspx" />
+    <Content Include="PeccancyArea\PeccancyAreaCheck.aspx" />
+    <Content Include="PeccancyArea\PeccancyAreaChecking.aspx" />
+    <Content Include="PeccancyArea\PeccancyAreaCount.aspx" />
+    <Content Include="PeccancyArea\PeccancyAreaQuery.aspx" />
+    <Content Include="PeccancyArea\PeccancyAreaSetting.aspx" />
+    <Content Include="Peccancy\PeccancySettingMain.aspx" />
+    <Content Include="Peccancy\Test.aspx" />
+    <Content Include="Scripts\BigImg\hammer.min.js" />
+    <Content Include="Scripts\BigImg\index.js" />
+    <Content Include="Scripts\BigImg\jquery-1.11.0.min.js" />
+    <Content Include="Scripts\BigImg\jquery.bridget.js" />
+    <Content Include="Scripts\BigImg\jquery.event.drag.js" />
+    <Content Include="Scripts\BigImg\jquery.mousewheel.min.js" />
+    <Content Include="Scripts\BigImg\mag-analytics.js" />
+    <Content Include="Scripts\BigImg\mag-control.js" />
+    <Content Include="Scripts\BigImg\mag-jquery.js" />
+    <Content Include="Scripts\BigImg\mag.js" />
+    <Content Include="Scripts\BigImg\PreventGhostClick.js" />
+    <Content Include="Scripts\BigImg\screenfull.js" />
+    <Content Include="Scripts\Clzpp\carData.js" />
+    <Content Include="Scripts\Clzpp\carPicker.js" />
+    <Content Include="Scripts\Clzpp\jquery-2.1.3.min.js" />
+    <Content Include="Scripts\cutpic.js" />
+    <Content Include="Scripts\hammer.min.js" />
+    <Content Include="Scripts\jquery-ui-1.10.4.min.js" />
+    <Content Include="Scripts\jquery.mCustomScrollbar.js" />
+    <Content Include="Scripts\jquery.media.js" />
+    <Content Include="Scripts\jquery.mobile-1.4.5.min.js" />
+    <Content Include="Scripts\jquery.mousewheel.js" />
+    <Content Include="Scripts\jquery.mousewheel.min.js" />
+    <Content Include="Scripts\jquery.rotate.min.js" />
+    <Content Include="Scripts\laydate\laydate.js" />
+    <Content Include="Scripts\laydate\need\laydate.css" />
+    <Content Include="Scripts\laydate\skins\dahong\icon.png" />
+    <Content Include="Scripts\laydate\skins\dahong\laydate.css" />
+    <Content Include="Scripts\laydate\skins\danlan\icon.png" />
+    <Content Include="Scripts\laydate\skins\danlan\laydate.css" />
+    <Content Include="Scripts\laydate\skins\default\icon.png" />
+    <Content Include="Scripts\laydate\skins\default\laydate.css" />
+    <Content Include="Scripts\laydate\skins\molv\icon.png" />
+    <Content Include="Scripts\laydate\skins\molv\laydate.css" />
+    <Content Include="FilterCommon\StationStore.ashx" />
+    <Content Include="Scripts\PDFObject\.gitignore" />
+    <Content Include="Scripts\PDFObject\bower.json" />
+    <Content Include="Scripts\optiscroll.js" />
+    <Content Include="Scripts\PDFObject\package.json" />
+    <Content Include="Scripts\PDFObject\readme.md" />
+    <Content Include="Scripts\PDFObject\pdfobject.js" />
+    <Content Include="Scripts\PDFObject\pdfobject.min.js" />
+    <Content Include="Scripts\UIContorl.js" />
+    <Content Include="Station\DeviceMain.aspx" />
+    <Content Include="Station\KeyRoadManager.aspx" />
+    <Content Include="Station\RoadMain.aspx" />
+    <Content Include="Station\StationMain.aspx" />
+    <Content Include="Styles\BigImg\bootstrap.min.css" />
+    <Content Include="Styles\BigImg\default.css" />
+    <Content Include="Styles\BigImg\htmleaf-demo.css" />
+    <Content Include="Styles\BigImg\index.css" />
+    <Content Include="Styles\BigImg\mag.css" />
+    <Content Include="Styles\chartbar.css" />
+    <Content Include="Styles\Clzpp\carPicker.css" />
+    <Content Include="Styles\htmleaf-demo.css" />
+    <Content Include="Styles\login.css" />
+    <Content Include="Styles\optiscroll.css" />
+    <Content Include="Styles\showphotostyle.css" />
+    <Content Include="Styles\tabStyle.css" />
+    <Content Include="Styles\ToolbarStyle.css" />
+    <Content Include="Template\WebAlarmQuery.aspx" />
+    <Content Include="Template\WebAlarmData.aspx" />
+    <Content Include="Template\WebComplexPieData.aspx" />
+    <Content Include="Template\WebAlarmPieData.aspx" />
+    <Content Include="Template\WebDeviceGrid.aspx" />
+    <Content Include="Template\WebDevicePieData.aspx" />
+    <Content Include="Template\WebDevicePieData1.aspx" />
+    <Content Include="Template\WebDevicePieData2.aspx" />
+    <Content Include="Template\WebDeviceShow.aspx" />
+    <Content Include="Template\WebFlowData.aspx" />
+    <Content Include="Template\WebPassCarHot.aspx" />
+    <Content Include="Template\WebPassCarBarData.aspx" />
+    <Content Include="Template\WebPassCarJLLX.aspx" />
+    <Content Include="Template\WebPassCarType.aspx" />
+    <Content Include="Template\WebPassCarAnalysis.aspx" />
+    <Content Include="Template\WebPassCarVehHead.aspx" />
+    <Content Include="Template\WebPeccancyBarData.aspx" />
+    <Content Include="Template\WebPeccancyData.aspx" />
+    <Content Include="Template\WebPeccancyGrid.aspx" />
+    <Content Include="Common\UserGuide.aspx" />
+    <Content Include="User\UserMain.aspx" />
+    <Content Include="XMLFile1.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="bin\chartdir.lic" />
+    <Content Include="Alarm\Getjson.ashx" />
+    <None Include="bin\MyNet.Atmcs.Uscmcp.Web.dll.config" />
+    <Content Include="Export\blacklist.xls" />
+    <Content Include="Export\checkless.xls" />
+    <Content Include="Export\Suspicion.xls" />
+    <Content Include="Export\ImportTemplateDownload.xls" />
+    <Content Include="KakouSelect\.gitattributes" />
+    <Content Include="KakouSelect\.gitignore" />
+    <Content Include="KakouSelect\css\awesomeStyle\awesome.less" />
+    <Content Include="KakouSelect\css\awesomeStyle\fa.less" />
+    <Content Include="KakouSelect\js\ztree.3.5.26.zip" />
+    <Content Include="KakouSelect\README.md" />
+    <Content Include="KakouSelect\zTree.v3.jquery.json" />
+    <None Include="Map\img\images\biao.ico" />
+    <Content Include="Map\img\images\biao.png" />
+    <Content Include="Map\img\003c.gif" />
+    <Content Include="Map\img\1.jpg" />
+    <Content Include="Map\img\10000001.jpg" />
+    <Content Include="Map\img\2.jpg" />
+    <Content Include="Map\img\3.jpg" />
+    <Content Include="Map\img\4.jpg" />
+    <Content Include="Map\img\5.jpg" />
+    <Content Include="Map\img\accept.png" />
+    <Content Include="Map\img\accident.png" />
+    <Content Include="Map\img\add.png" />
+    <Content Include="Map\img\add1.png" />
+    <Content Include="Map\img\addtitle_bg.png" />
+    <Content Include="Map\img\Alarm.gif" />
+    <Content Include="Map\img\alarm.jpg" />
+    <Content Include="Map\img\Alarm1.gif" />
+    <Content Include="Map\img\Alarm2.gif" />
+    <Content Include="Map\img\Alarm3.gif" />
+    <Content Include="Map\img\Alarm4.gif" />
+    <Content Include="Map\img\bfb.gif" />
+    <Content Include="Map\img\bg.png" />
+    <Content Include="Map\img\bgcopyrirht.png" />
+    <Content Include="Map\img\blank.gif" />
+    <Content Include="Map\img\border1.png" />
+    <Content Include="Map\img\border2.png" />
+    <Content Include="Map\img\bubble-tail2.png" />
+    <Content Include="Map\img\car.png" />
+    <Content Include="Map\img\Car1.gif" />
+    <Content Include="Map\img\car\Car.gif" />
+    <Content Include="Map\img\car\CarE.gif" />
+    <Content Include="Map\img\car\CarE1.gif" />
+    <Content Include="Map\img\car\CarN.gif" />
+    <Content Include="Map\img\car\CarN1.gif" />
+    <Content Include="Map\img\car\CarNE.gif" />
+    <Content Include="Map\img\car\CarNE1.gif" />
+    <Content Include="Map\img\car\CarNW.gif" />
+    <Content Include="Map\img\car\CarNW1.gif" />
+    <Content Include="Map\img\car\CarS.gif" />
+    <Content Include="Map\img\car\CarS1.gif" />
+    <Content Include="Map\img\car\CarSE.gif" />
+    <Content Include="Map\img\car\CarSE1.gif" />
+    <Content Include="Map\img\car\CarSW.gif" />
+    <Content Include="Map\img\car\CarSW1.gif" />
+    <Content Include="Map\img\car\CarW.gif" />
+    <Content Include="Map\img\car\CarW1.gif" />
+    <Content Include="Map\img\CCTV.gif" />
+    <Content Include="Map\img\CCTV.png" />
+    <Content Include="Map\img\CCTV1.gif" />
+    <Content Include="Map\img\closedhand.cur" />
+    <Content Include="Map\img\cloud-popup-relative.png" />
+    <Content Include="Map\img\columns.gif" />
+    <Content Include="Map\img\com.gif" />
+    <Content Include="Map\img\COM.png" />
+    <Content Include="Map\img\cut.png" />
+    <Content Include="Map\img\cut1.png" />
+    <Content Include="Map\img\dcll.png" />
+    <Content Include="Map\img\down.png" />
+    <Content Include="Map\img\drag-rectangle-off.png" />
+    <Content Include="Map\img\drag-rectangle-on.png" />
+    <Content Include="Map\img\duoyun.png" />
+    <Content Include="Map\img\east-mini.png" />
+    <Content Include="Map\img\edit.gif" />
+    <Content Include="Map\img\err.jpg" />
+    <Content Include="Map\img\error.gif" />
+    <Content Include="Map\img\EWTFM.gif" />
+    <Content Include="Map\img\exclamation.png" />
+    <Content Include="Map\img\favadd.gif" />
+    <Content Include="Map\img\fl.png" />
+    <Content Include="Map\img\fx.png" />
+    <Content Include="Map\img\Gray.png" />
+    <Content Include="Map\img\green %282%29.png" />
+    <Content Include="Map\img\Green.png" />
+    <Content Include="Map\img\grid.gif" />
+    <Content Include="Map\img\guo.png" />
+    <Content Include="Map\img\GZ.gif" />
+    <Content Include="Map\img\GZ.png" />
+    <Content Include="Map\img\GZ0.gif" />
+    <Content Include="Map\img\home.gif" />
+    <Content Include="Map\img\Ico\afd.ico" />
+    <Content Include="Map\img\Ico\BJ.png" />
+    <Content Include="Map\img\Ico\CCTV.png" />
+    <Content Include="Map\img\Ico\GZ.png" />
+    <Content Include="Map\img\Ico\NBJ.png" />
+    <Content Include="Map\img\Ico\SG.png" />
+    <Content Include="Map\img\Ico\TFM.png" />
+    <Content Include="Map\img\Ico\TGS.png" />
+    <Content Include="Map\img\Ico\TMS.png" />
+    <Content Include="Map\img\Ico\UTC.png" />
+    <Content Include="Map\img\Ico\VMS.png" />
+    <Content Include="Map\img\Ico\WEA.png" />
+    <Content Include="Map\img\Ico\YD.png" />
+    <Content Include="Map\img\Ico\ZD.png" />
+    <Content Include="Map\img\ie6\borderBottomCenter.png" />
+    <Content Include="Map\img\ie6\borderBottomLeft.png" />
+    <Content Include="Map\img\ie6\borderBottomRight.png" />
+    <Content Include="Map\img\ie6\borderMiddleLeft.png" />
+    <Content Include="Map\img\ie6\borderMiddleRight.png" />
+    <Content Include="Map\img\ie6\borderTopCenter.png" />
+    <Content Include="Map\img\ie6\borderTopLeft.png" />
+    <Content Include="Map\img\ie6\borderTopRight.png" />
+    <Content Include="Map\img\illegas.png" />
+    <Content Include="Map\img\inputbt.png" />
+    <Content Include="Map\img\inputbt1.png" />
+    <Content Include="Map\img\iw2.png" />
+    <Content Include="Map\img\iw3.png" />
+    <Content Include="Map\img\iw_close.gif" />
+    <Content Include="Map\img\iw_fullscreen.gif" />
+    <Content Include="Map\img\iw_minus.gif" />
+    <Content Include="Map\img\iw_plus.gif" />
+    <Content Include="Map\img\jie.png" />
+    <Content Include="Map\img\layer-switcher-maximize.png" />
+    <Content Include="Map\img\layer-switcher-minimize.png" />
+    <Content Include="Map\img\lgbt.png" />
+    <Content Include="Map\img\lgbt1.png" />
+    <Content Include="Map\img\lgbt11.png" />
+    <Content Include="Map\img\line.png" />
+    <Content Include="Map\img\loading.gif" />
+    <Content Include="Map\img\loading1.gif" />
+    <Content Include="Map\img\loading_b.GIF" />
+    <Content Include="Map\img\LOGO_p.png" />
+    <Content Include="Map\img\LOGO_s.png" />
+    <Content Include="Map\img\mail.gif" />
+    <Content Include="Map\img\mainbg.png" />
+    <Content Include="Map\img\mam.png" />
+    <Content Include="Map\img\managel.png" />
+    <Content Include="Map\img\mapcontrols2.png" />
+    <Content Include="Map\img\marker-blue.png" />
+    <Content Include="Map\img\marker-gold.png" />
+    <Content Include="Map\img\marker-green.png" />
+    <Content Include="Map\img\marker.png" />
+    <Content Include="Map\img\marker2.png" />
+    <Content Include="Map\img\marker3.png" />
+    <Content Include="Map\img\marker5-smail.png" />
+    <Content Include="Map\img\marker5.png" />
+    <Content Include="Map\img\marker6.png" />
+    <Content Include="Map\img\markerff.gif" />
+    <Content Include="Map\img\markerTransparent.png" />
+    <Content Include="Map\img\marker_shadow.png" />
+    <Content Include="Map\img\measuring-stick-off.png" />
+    <Content Include="Map\img\measuring-stick-on.png" />
+    <Content Include="Map\img\mviewl.png" />
+    <Content Include="Map\img\njd.gif" />
+    <Content Include="Map\img\NJD.jpg" />
+    <Content Include="Map\img\njd.png" />
+    <Content Include="Map\img\normal.gif" />
+    <Content Include="Map\img\north-mini.png" />
+    <Content Include="Map\img\NSTFM.gif" />
+    <Content Include="Map\img\number\pg.png" />
+    <Content Include="Map\img\number\pg_m.png" />
+    <Content Include="Map\img\number\pg_q.png" />
+    <Content Include="Map\img\number\pg_s.png" />
+    <Content Include="Map\img\number\tb1.gif" />
+    <Content Include="Map\img\number\tb10.gif" />
+    <Content Include="Map\img\number\tb11.gif" />
+    <Content Include="Map\img\number\tb12.gif" />
+    <Content Include="Map\img\number\tb13.gif" />
+    <Content Include="Map\img\number\tb14.gif" />
+    <Content Include="Map\img\number\tb15.gif" />
+    <Content Include="Map\img\number\tb16.gif" />
+    <Content Include="Map\img\number\tb17.gif" />
+    <Content Include="Map\img\number\tb18.gif" />
+    <Content Include="Map\img\number\tb19.gif" />
+    <Content Include="Map\img\number\tb2.gif" />
+    <Content Include="Map\img\number\tb20.gif" />
+    <Content Include="Map\img\number\tb3.gif" />
+    <Content Include="Map\img\number\tb4.gif" />
+    <Content Include="Map\img\number\tb5.gif" />
+    <Content Include="Map\img\number\tb6.gif" />
+    <Content Include="Map\img\number\tb7.gif" />
+    <Content Include="Map\img\number\tb8.gif" />
+    <Content Include="Map\img\number\tb9.gif" />
+    <Content Include="Map\img\ok.jpg" />
+    <Content Include="Map\img\openhand.cur" />
+    <Content Include="Map\img\Orange.png" />
+    <Content Include="Map\img\panning-hand-off.png" />
+    <Content Include="Map\img\panning-hand-on.png" />
+    <Content Include="Map\img\Pie.png" />
+    <Content Include="Map\img\pjsd.png" />
+    <Content Include="Map\img\playvideo.png" />
+    <Content Include="Map\img\preview.png" />
+    <Content Include="Map\img\qing.png" />
+    <Content Include="Map\img\qtll.png" />
+    <Content Include="Map\img\Red.gif" />
+    <Content Include="Map\img\Red.png" />
+    <Content Include="Map\img\regiest.png" />
+    <Content Include="Map\img\returnhome.gif" />
+    <Content Include="Map\img\roadstate.jpg" />
+    <Content Include="Map\img\row-over.gif" />
+    <Content Include="Map\img\ruler.cur" />
+    <Content Include="Map\img\shadow50.png" />
+    <Content Include="Map\img\shandong.gif" />
+    <Content Include="Map\img\shandong1.gif" />
+    <Content Include="Map\img\shandong2.gif" />
+    <Content Include="Map\img\shandong2.png" />
+    <Content Include="Map\img\shandong3.gif" />
+    <Content Include="Map\img\sheng.png" />
+    <Content Include="Map\img\shi.png" />
+    <Content Include="Map\img\Shutdown.gif" />
+    <Content Include="Map\img\slider.png" />
+    <Content Include="Map\img\SNTFM.gif" />
+    <Content Include="Map\img\south-mini.png" />
+    <Content Include="Map\img\state\accept.png" />
+    <Content Include="Map\img\state\alarm.gif" />
+    <Content Include="Map\img\state\alarm.jpg" />
+    <Content Include="Map\img\state\bfb.gif" />
+    <Content Include="Map\img\state\err.jpg" />
+    <Content Include="Map\img\state\error.gif" />
+    <Content Include="Map\img\state\exclamation.png" />
+    <Content Include="Map\img\state\Gray.png" />
+    <Content Include="Map\img\state\Green.png" />
+    <Content Include="Map\img\state\loading.gif" />
+    <Content Include="Map\img\state\loading1.gif" />
+    <Content Include="Map\img\state\loading_b.GIF" />
+    <Content Include="Map\img\state\normal.gif" />
+    <Content Include="Map\img\state\ok.jpg" />
+    <Content Include="Map\img\state\Orange.png" />
+    <Content Include="Map\img\state\Red.png" />
+    <Content Include="Map\img\state\row-over.gif" />
+    <Content Include="Map\img\state\Shutdown.gif" />
+    <Content Include="Map\img\state\success.gif" />
+    <Content Include="Map\img\state\trackback01.gif" />
+    <Content Include="Map\img\state\trackback02.gif" />
+    <Content Include="Map\img\state\unknow.gif" />
+    <Content Include="Map\img\Station\utc.jpg" />
+    <Content Include="Map\img\success.gif" />
+    <Content Include="Map\img\TES.png" />
+    <Content Include="Map\img\TFM.gif" />
+    <Content Include="Map\img\TFM.png" />
+    <Content Include="Map\img\TFM1 %282%29.png" />
+    <Content Include="Map\img\TFM1.gif" />
+    <Content Include="Map\img\TFML.gif" />
+    <Content Include="Map\img\TFMR.gif" />
+    <Content Include="Map\img\Tfm\01.jpg" />
+    <Content Include="Map\img\Tfm\02.jpg" />
+    <Content Include="Map\img\Tfm\03.jpg" />
+    <Content Include="Map\img\Tfm\04.jpg" />
+    <Content Include="Map\img\Tfm\1.jpg" />
+    <Content Include="Map\img\Tfm\2.jpg" />
+    <Content Include="Map\img\Tfm\3.jpg" />
+    <Content Include="Map\img\Tfm\4.jpg" />
+    <Content Include="Map\img\Tfm\5.jpg" />
+    <Content Include="Map\img\TGS.gif" />
+    <Content Include="Map\img\TGS.png" />
+    <Content Include="Map\img\TGS1.png" />
+    <Content Include="Map\img\TMS.gif" />
+    <Content Include="Map\img\TMS.png" />
+    <Content Include="Map\img\toolbar\center.png" />
+    <Content Include="Map\img\toolbar\draw_line_off.png" />
+    <Content Include="Map\img\toolbar\draw_point_off.png" />
+    <Content Include="Map\img\toolbar\draw_polygon_off.png" />
+    <Content Include="Map\img\toolbar\east.gif" />
+    <Content Include="Map\img\toolbar\Flow.png" />
+    <Content Include="Map\img\toolbar\loading.gif" />
+    <Content Include="Map\img\toolbar\measure.gif" />
+    <Content Include="Map\img\toolbar\move_feature_off.png" />
+    <Content Include="Map\img\toolbar\north.gif" />
+    <Content Include="Map\img\toolbar\pan_off.png" />
+    <Content Include="Map\img\toolbar\refearch.gif" />
+    <Content Include="Map\img\toolbar\ruler.png" />
+    <Content Include="Map\img\toolbar\save_features_off.png" />
+    <Content Include="Map\img\toolbar\sliderthumb.gif" />
+    <Content Include="Map\img\toolbar\south.gif" />
+    <Content Include="Map\img\toolbar\track.gif" />
+    <Content Include="Map\img\toolbar\west.gif" />
+    <Content Include="Map\img\toolbar\zoomin.gif" />
+    <Content Include="Map\img\toolbar\zoomIn.png" />
+    <Content Include="Map\img\toolbar\zoomout.gif" />
+    <Content Include="Map\img\toolbar\zoomOut.png" />
+    <Content Include="Map\img\TPS.png" />
+    <Content Include="Map\img\trackback01.gif" />
+    <Content Include="Map\img\trackback02.gif" />
+    <Content Include="Map\img\transparent.gif" />
+    <Content Include="Map\img\transparent.png" />
+    <Content Include="Map\img\unknow.gif" />
+    <Content Include="Map\img\up.png" />
+    <Content Include="Map\img\UTC.gif" />
+    <Content Include="Map\img\UTC.png" />
+    <Content Include="Map\img\vcard_edit.png" />
+    <Content Include="Map\img\VMS.gif" />
+    <Content Include="Map\img\VMS.png" />
+    <Content Include="Map\img\WEA.gif" />
+    <Content Include="Map\img\WEA.png" />
+    <Content Include="Map\img\west-mini.png" />
+    <Content Include="Map\img\WETFM.gif" />
+    <Content Include="Map\img\xcll.png" />
+    <Content Include="Map\img\Xframe.GIF" />
+    <Content Include="Map\img\Xframe.jpg" />
+    <Content Include="Map\img\xl.png" />
+    <Content Include="Map\img\Yellow.gif" />
+    <Content Include="Map\img\yin.png" />
+    <Content Include="Map\img\yl.png" />
+    <Content Include="Map\img\yt11.png" />
+    <Content Include="Map\img\yt21.png" />
+    <Content Include="Map\img\yt31.png" />
+    <Content Include="Map\img\yt41.png" />
+    <Content Include="Map\img\yt51.png" />
+    <Content Include="Map\img\yt61.png" />
+    <Content Include="Map\img\yt71.png" />
+    <Content Include="Map\img\yt81.png" />
+    <Content Include="Map\img\yt91.png" />
+    <Content Include="Map\img\ytbg.png" />
+    <Content Include="Map\img\ytbg1.png" />
+    <Content Include="Map\img\zcll.png" />
+    <Content Include="Map\img\ZD.gif" />
+    <Content Include="Map\img\zll.png" />
+    <Content Include="Map\img\zoom-minus-mini.png" />
+    <Content Include="Map\img\zoom-plus-mini.png" />
+    <Content Include="Map\img\zoom-world-mini.png" />
+    <Content Include="Map\img\zoombar.png" />
+    <Content Include="Map\img\zoombarbakup\east-mini.png" />
+    <Content Include="Map\img\zoombarbakup\layer-switcher-maximize.png" />
+    <Content Include="Map\img\zoombarbakup\north-mini.png" />
+    <Content Include="Map\img\zoombarbakup\slider.png" />
+    <Content Include="Map\img\zoombarbakup\south-mini.png" />
+    <Content Include="Map\img\zoombarbakup\west-mini.png" />
+    <Content Include="Map\img\zoombarbakup\zoom-minus-mini.png" />
+    <Content Include="Map\img\zoombarbakup\zoom-plus-mini.png" />
+    <Content Include="Map\img\zoombarbakup\zoom-world-mini.png" />
+    <Content Include="Map\img\zoombarbakup\zoombar.png" />
+    <Content Include="Map\img\展标1.png" />
+    <Content Include="Map\js\cdjcv.js" />
+    <Content Include="Map\js\CheckLodop.js" />
+    <Content Include="Map\js\CJL.0.1.min.js" />
+    <Content Include="Map\js\common.js" />
+    <Content Include="Map\js\CommonExt.js" />
+    <Content Include="Map\js\EzMapAPI.js" />
+    <Content Include="Map\js\FancyZoom.js" />
+    <Content Include="Map\js\FancyZoomHTML.js" />
+    <Content Include="Map\js\getTiles.js" />
+    <Content Include="Map\js\ImageMode.js" />
+    <Content Include="Map\js\ImageZoom.js" />
+    <Content Include="Map\js\iscroll.js" />
+    <Content Include="Map\js\jquery-1.2.6.min.js" />
+    <Content Include="Map\js\jquery.nicescroll.js" />
+    <Content Include="Map\js\LessIE.js" />
+    <Content Include="Map\js\main.js" />
+    <Content Include="Map\js\map.js" />
+    <Content Include="Map\js\mapconfig.js" />
+    <Content Include="Map\js\mapCorrect.js" />
+    <Content Include="Map\js\Qquery1.91-min.js" />
+    <Content Include="Map\js\showphoto.js" />
+    <Content Include="Map\js\Tween.js" />
+    <Content Include="Map\js\Ui-skin.js" />
+    <Content Include="Map\js\zoom.js" />
+    <Content Include="Map\MapLayerConfig.xml" />
+    <Content Include="Map\BGisBrowse.aspx" />
+    <Content Include="Map\PathCarQuery.aspx" />
+    <Content Include="Map\QuipmentSpecial.aspx" />
+    <Content Include="Map\temp\car.png" />
+    <Content Include="Map\temp\chepai.png" />
+    <Content Include="Map\temp\map.png" />
+    <Content Include="Peccancy\LocationUpload.aspx" />
+    <Content Include="Peccancy\PeccancyRepeatCheck.aspx" />
+    <Content Include="Peccancy\DpcPeccancyQuery.aspx" />
+    <Content Include="Peccancy\PeccancyType.aspx" />
+    <Content Include="Peccancy\PeccancyTypeSetting.aspx" />
+    <Content Include="Peccancy\TmsStationManager.aspx" />
+    <Content Include="Peccancy\TmsUserLocation.aspx" />
+    <Content Include="Scripts\bmap.js" />
+    <Content Include="Scripts\bmapFile.js" />
+    <Content Include="Scripts\CJL.0.1.min.js" />
+    <Content Include="Scripts\common.js" />
+    <Content Include="Scripts\FancyZoom.js" />
+    <Content Include="Scripts\FancyZoomHTML.js" />
+    <Content Include="Scripts\Heatmap_min.js" />
+    <Content Include="Scripts\ImageMode.js" />
+    <Content Include="Scripts\ImageZoom.js" />
+    <Content Include="Scripts\jquery-1.2.6.min.js" />
+    <Content Include="Scripts\jquery-1.7.min.js" />
+    <Content Include="Scripts\jquery-1.8.0.js" />
+    <Content Include="Scripts\jquery.color.js" />
+    <Content Include="Scripts\jquery.dad.min.js" />
+    <Content Include="Scripts\jquery.min_v1.0.js" />
+    <Content Include="Scripts\menu.js" />
+    <Content Include="Scripts\passcar.js" />
+    <Content Include="Scripts\PIE.htc" />
+    <Content Include="Scripts\PIE.js" />
+    <Content Include="Scripts\public.js" />
+    <Content Include="Scripts\showphoto.js" />
+    <Content Include="Scripts\tab.js" />
+    <Content Include="Scripts\triggerjs.js" />
+    <Content Include="Scripts\zoom.js" />
+    <Content Include="DevManager\CCTVStationManager.aspx" />
+    <Content Include="Sound\hmdalarm.WAV" />
+    <Content Include="Sound\otheralarm.WAV" />
+    <Content Include="Sound\speedalarm.WAV" />
+    <Content Include="Station\MarkerManager.aspx" />
+    <Content Include="Station\DeviceOperation.aspx" />
+    <Content Include="Station\DeviceStatistics.aspx" />
+    <Content Include="Station\TGSLimitSpeed.aspx" />
+    <Content Include="Map\TgsShow.aspx" />
+    <Content Include="Styles\base.css" />
+    <Content Include="Styles\chooser.css" />
+    <Content Include="Styles\custom.css" />
+    <Content Include="Styles\index.css" />
+    <Content Include="Styles\jquery.dad.css" />
+    <Content Include="Styles\jquery.mCustomScrollbar.css" />
+    <Content Include="Style\customMap.css" />
+    <Content Include="Important\ImportantRule.aspx" />
+    <Content Include="Important\ImportantManager.aspx" />
+    <Content Include="System\Department.aspx" />
+    <Content Include="Images\aboutBack.png" />
+    <Content Include="Images\back.png" />
+    <Content Include="Images\back\back.gif" />
+    <Content Include="Images\back\back_bottleft.gif" />
+    <Content Include="Images\back\back_bottmid.gif" />
+    <Content Include="Images\back\back_bottright.gif" />
+    <Content Include="Images\back\back_midleft.gif" />
+    <Content Include="Images\back\back_midright.gif" />
+    <Content Include="Images\back\back_navigation.gif" />
+    <Content Include="Images\back\back_topleft.gif" />
+    <Content Include="Images\back\back_topmid.gif" />
+    <Content Include="Images\back\back_topright.gif" />
+    <Content Include="Images\back\gz.gif" />
+    <Content Include="Images\back\gz01.gif" />
+    <Content Include="Images\back_02.gif" />
+    <Content Include="Images\Banner\simple\carouselLeftNav.png" />
+    <Content Include="Images\Banner\simple\carouselLeftNavDisable.png" />
+    <Content Include="Images\Banner\simple\carouselLeftNavOn.png" />
+    <Content Include="Images\Banner\simple\carouselRightNav.png" />
+    <Content Include="Images\Banner\simple\carouselRightNavDisable.png" />
+    <Content Include="Images\Banner\simple\carouselRightNavOn.png" />
+    <Content Include="Images\Banner\simple\leftNavOFF.png" />
+    <Content Include="Images\Banner\simple\leftNavON.png" />
+    <Content Include="Images\Banner\simple\rightNavOFF.png" />
+    <Content Include="Images\Banner\simple\rightNavON.png" />
+    <Content Include="Images\Banner\simple\textBg_transparency.png" />
+    <Content Include="Images\Banner\simple\thumbActiveArrow.png" />
+    <Content Include="Images\bar.gif" />
+    <Content Include="Images\barversion.gif" />
+    <Content Include="Images\barwork.gif" />
+    <Content Include="Images\bar_hover.gif" />
+    <Content Include="Images\bodyBg.jpg" />
+    <Content Include="Images\bodyBg2.jpg" />
+    <Content Include="Images\bodyBg3.jpg" />
+    <Content Include="Images\button\2_dot.gif" />
+    <Content Include="Images\button\al.gif" />
+    <Content Include="Images\button\al_1.gif" />
+    <Content Include="Images\button\Amply.gif" />
+    <Content Include="Images\button\btnadd.gif" />
+    <Content Include="Images\button\btnchuli.gif" />
+    <Content Include="Images\button\btnclose.gif" />
+    <Content Include="Images\button\btncontinue.gif" />
+    <Content Include="Images\button\btndelete.gif" />
+    <Content Include="Images\button\btndetail.gif" />
+    <Content Include="Images\button\btnenter.gif" />
+    <Content Include="Images\button\btnenter_E.gif" />
+    <Content Include="Images\button\btnexcel.gif" />
+    <Content Include="Images\button\btnexport.gif" />
+    <Content Include="Images\button\btnlogin.gif" />
+    <Content Include="Images\button\btnNext.gif" />
+    <Content Include="Images\button\btnPre.gif" />
+    <Content Include="Images\button\btnprint.gif" />
+    <Content Include="Images\button\btnquery.gif" />
+    <Content Include="Images\button\btnreset.gif" />
+    <Content Include="Images\button\btnresetsmail.gif" />
+    <Content Include="Images\button\btnreset_small.gif" />
+    <Content Include="Images\button\btnreturn.gif" />
+    <Content Include="Images\button\btnsave.gif" />
+    <Content Include="Images\button\btntiqu.gif" />
+    <Content Include="Images\button\btnupdate.gif" />
+    <Content Include="Images\button\btnwuxiao.gif" />
+    <Content Include="Images\button\Cancel.GIF" />
+    <Content Include="Images\button\date.gif" />
+    <Content Include="Images\button\Delete.gif" />
+    <Content Include="Images\button\Delete_E.gif" />
+    <Content Include="Images\button\dl.gif" />
+    <Content Include="Images\button\dl_no.gif" />
+    <Content Include="Images\button\down.gif" />
+    <Content Include="Images\button\drop.gif" />
+    <Content Include="Images\button\Edit.GIF" />
+    <Content Include="Images\button\gas.gif" />
+    <Content Include="Images\button\Image.gif" />
+    <Content Include="Images\button\Image_E.gif" />
+    <Content Include="Images\button\nozoom.cur" />
+    <Content Include="Images\button\Play.gif" />
+    <Content Include="Images\button\Play_E.gif" />
+    <Content Include="Images\button\pointer.gif" />
+    <Content Include="Images\button\printexcel.gif" />
+    <Content Include="Images\button\query.gif" />
+    <Content Include="Images\button\up.gif" />
+    <Content Include="Images\button\Update.gif" />
+    <Content Include="Images\button\vcard_edit.png" />
+    <Content Include="Images\button\wait.gif" />
+    <Content Include="Images\button\xrange.gif" />
+    <Content Include="Images\button\xyrange.gif" />
+    <Content Include="Images\button\zoomin.cur" />
+    <Content Include="Images\button\zoomInIcon.gif" />
+    <Content Include="Images\button\zoomout.cur" />
+    <Content Include="Images\button\zoomOutIcon.gif" />
+    <Content Include="Images\button_left_06.png" />
+    <Content Include="Images\button_right_06.png" />
+    <Content Include="Images\cir_white.gif" />
+    <Content Include="Images\deviantart.png" />
+    <Content Include="Images\dribbble.png" />
+    <Content Include="Images\facebook.png" />
+    <Content Include="Images\firefox.png" />
+    <Content Include="Images\foldclose.gif" />
+    <Content Include="Images\foldopen.gif" />
+    <Content Include="Images\footer_lineback.gif" />
+    <Content Include="Images\gallery.jpg" />
+    <Content Include="Images\gmail.png" />
+    <Content Include="Images\group-expand-sprite.gif" />
+    <Content Include="Images\head.png" />
+    <Content Include="Images\header.jpg" />
+    <Content Include="Images\head\about.gif" />
+    <Content Include="Images\head\banner.gif" />
+    <Content Include="Images\head\banner1.gif" />
+    <Content Include="Images\head\head.gif" />
+    <Content Include="Images\head\head1.gif" />
+    <Content Include="Images\head\line.gif" />
+    <Content Include="Images\head\line2.gif" />
+    <Content Include="Images\head\logo.gif" />
+    <Content Include="Images\head\nav.gif" />
+    <Content Include="Images\head\nav2.gif" />
+    <Content Include="Images\head\nav_back.gif" />
+    <Content Include="Images\head\nav_back_hover.gif" />
+    <Content Include="Images\head\tableft.gif" />
+    <Content Include="Images\head\tabright.gif" />
+    <Content Include="Images\head_back.gif" />
+    <Content Include="Images\head_back.jpg" />
+    <Content Include="Images\icon.png" />
+    <Content Include="Images\icon01.png" />
+    <Content Include="Images\icon02.png" />
+    <Content Include="Images\icon04.png" />
+    <Content Include="Images\icon08.png" />
+    <Content Include="Images\icon128.png" />
+    <Content Include="Images\icon16.png" />
+    <Content Include="Images\icon32.png" />
+    <Content Include="Images\icon64.png" />
+    <Content Include="Images\icons.gif" />
+    <Content Include="Images\images_tab\back.gif" />
+    <Content Include="Images\images_tab\bg.gif" />
+    <Content Include="Images\images_tab\bigplay_03.gif" />
+    <Content Include="Images\images_tab\button_back.gif" />
+    <Content Include="Images\images_tab\choose_03.gif" />
+    <Content Include="Images\images_tab\first.gif" />
+    <Content Include="Images\images_tab\go.gif" />
+    <Content Include="Images\images_tab\go_hover.gif" />
+    <Content Include="Images\images_tab\grayBtn.gif" />
+    <Content Include="Images\images_tab\iconadd.gif" />
+    <Content Include="Images\images_tab\iconchart.gif" />
+    <Content Include="Images\images_tab\icondel.gif" />
+    <Content Include="Images\images_tab\icondetail.gif" />
+    <Content Include="Images\images_tab\iconedit.gif" />
+    <Content Include="Images\images_tab\iconexcel.gif" />
+    <Content Include="Images\images_tab\iconrefresh.gif" />
+    <Content Include="Images\images_tab\image_bubble\bubblebottomcenter.gif" />
+    <Content Include="Images\images_tab\image_bubble\bubblebottomleft.gif" />
+    <Content Include="Images\images_tab\image_bubble\bubblebottomright.gif" />
+    <Content Include="Images\images_tab\image_bubble\bubblecenterleft.gif" />
+    <Content Include="Images\images_tab\image_bubble\bubblecenterright.gif" />
+    <Content Include="Images\images_tab\image_bubble\bubbletopcenter.gif" />
+    <Content Include="Images\images_tab\image_bubble\bubbletopleft.gif" />
+    <Content Include="Images\images_tab\image_bubble\bubbletopright.gif" />
+    <Content Include="Images\images_tab\image_bubble\bubble_22.gif" />
+    <Content Include="Images\images_tab\image_bubble\close.gif" />
+    <Content Include="Images\images_tab\img.gif" />
+    <Content Include="Images\images_tab\last.gif" />
+    <Content Include="Images\images_tab\line_03.gif" />
+    <Content Include="Images\images_tab\logo.gif" />
+    <Content Include="Images\images_tab\logo.jpg" />
+    <Content Include="Images\images_tab\logo.png" />
+    <Content Include="Images\images_tab\map_03.gif" />
+    <Content Include="Images\images_tab\next.gif" />
+    <Content Include="Images\images_tab\next_hover.gif" />
+    <Content Include="Images\images_tab\right_back.jpg" />
+    <Content Include="Images\images_tab\search.gif" />
+    <Content Include="Images\images_tab\sleek.gif" />
+    <Content Include="Images\images_tab\sleek_a.gif" />
+    <Content Include="Images\images_tab\sleek_hover.gif" />
+    <Content Include="Images\images_tab\tabbottomcenter.gif" />
+    <Content Include="Images\images_tab\tabbottomleft.gif" />
+    <Content Include="Images\images_tab\tabbottomright.gif" />
+    <Content Include="Images\images_tab\tabcenterleft.gif" />
+    <Content Include="Images\images_tab\tabcenterright.gif" />
+    <Content Include="Images\images_tab\table_title_03.gif" />
+    <Content Include="Images\images_tab\tabtopcenter.gif" />
+    <Content Include="Images\images_tab\tabtopleft.gif" />
+    <Content Include="Images\images_tab\tabtopright.gif" />
+    <Content Include="Images\images_tab\tab_17.gif" />
+    <Content Include="Images\images_tab\tb.gif" />
+    <Content Include="Images\images_tab\time.gif" />
+    <Content Include="Images\images_tab\time_03.gif" />
+    <Content Include="Images\images_tab\title_back.gif" />
+    <Content Include="Images\images_tab\transparence_05.gif" />
+    <Content Include="Images\images_tab\transparent.gif" />
+    <Content Include="Images\images_tab\tree_03.gif" />
+    <Content Include="Images\images_tab\videobottomcenter.gif" />
+    <Content Include="Images\images_tab\videobottomleft.gif" />
+    <Content Include="Images\images_tab\videobottomright.gif" />
+    <Content Include="Images\images_tab\videocenterleft.gif" />
+    <Content Include="Images\images_tab\videocenterright.gif" />
+    <Content Include="Images\images_tab\videotopcenter.gif" />
+    <Content Include="Images\images_tab\videotopleft.gif" />
+    <Content Include="Images\images_tab\videotopright.gif" />
+    <Content Include="Images\images_tab\video_06.gif" />
+    <Content Include="Images\images_tab\video_lineback_03.gif" />
+    <Content Include="Images\images_tab\web_icon_019.gif" />
+    <Content Include="Images\images_tab\web_icon_020.gif" />
+    <Content Include="Images\images_tab\zx.gif" />
+    <Content Include="Images\images_tab\zx_hover.gif" />
+    <Content Include="Images\jt_1_02.jpg" />
+    <Content Include="Images\light.gif" />
+    <Content Include="Images\light.jpg" />
+    <Content Include="Images\loginsidebar.gif" />
+    <Content Include="Images\login\about.png" />
+    <Content Include="Images\login\Login.png" />
+    <Content Include="Images\login\logo.png" />
+    <Content Include="Images\logo.gif" />
+    <Content Include="Images\logo.png" />
+    <Content Include="Images\Map\google_hybrid0.gif" />
+    <Content Include="Images\Map\google_hybrid1.gif" />
+    <Content Include="Images\Map\google_map0.gif" />
+    <Content Include="Images\Map\google_map1.gif" />
+    <Content Include="Images\Map\google_satellite0.gif" />
+    <Content Include="Images\Map\google_satellite1.gif" />
+    <Content Include="Images\Map\icon_default.gif" />
+    <Content Include="Images\Map\icon_godown.gif" />
+    <Content Include="Images\Map\icon_goleft.gif" />
+    <Content Include="Images\Map\icon_goright.gif" />
+    <Content Include="Images\Map\icon_goup.gif" />
+    <Content Include="Images\Map\icon_zoomin.gif" />
+    <Content Include="Images\Map\icon_zoomout.gif" />
+    <Content Include="Images\Map\infowindow.gif" />
+    <Content Include="Images\Map\infowindow_close.gif" />
+    <Content Include="Images\Map\maptype_0a.gif" />
+    <Content Include="Images\Map\maptype_0b.gif" />
+    <Content Include="Images\Map\maptype_1a.gif" />
+    <Content Include="Images\Map\maptype_1b.gif" />
+    <Content Include="Images\Map\marker_large.png" />
+    <Content Include="Images\Map\marker_large_shadow.png" />
+    <Content Include="Images\Map\marker_small.png" />
+    <Content Include="Images\Map\marker_small_shadow.png" />
+    <Content Include="Images\Map\slider.gif" />
+    <Content Include="Images\Map\test.jpg" />
+    <Content Include="Images\Map\zoom_bar.gif" />
+    <Content Include="Images\nav.gif" />
+    <Content Include="Images\navigation_back.gif" />
+    <Content Include="Images\nav_button.gif" />
+    <Content Include="Images\nav_button_hover.gif" />
+    <Content Include="Images\nav_hover.gif" />
+    <Content Include="Images\newimg\404.png" />
+    <Content Include="Images\newimg\bg.gif" />
+    <Content Include="Images\newimg\collapse-all.gif" />
+    <Content Include="Images\newimg\coolite.png" />
+    <Content Include="Images\newimg\examples.css" />
+    <Content Include="Images\newimg\expand-all.gif" />
+    <Content Include="Images\newimg\group-expand-sprite.gif" />
+    <Content Include="Images\newimg\layout-browser-hd-bg.gif" />
+    <Content Include="Images\newimg\loading.gif" />
+    <Content Include="Images\newimg\loading32.gif" />
+    <Content Include="Images\newimg\logo.png" />
+    <Content Include="Images\newimg\new.gif" />
+    <Content Include="Images\newimg\newgray.gif" />
+    <Content Include="Images\newimg\noimage.gif" />
+    <Content Include="Images\newimg\noimage.png" />
+    <Content Include="Images\newimg\sample-over.gif" />
+    <Content Include="Images\newimg\title-background.png" />
+    <Content Include="Images\page\2.gif" />
+    <Content Include="Images\page\aboutProduct.jpg" />
+    <Content Include="Images\page\accept.png" />
+    <Content Include="Images\page\alarm.gif" />
+    <Content Include="Images\page\bfb.gif" />
+    <Content Include="Images\page\bfbg.gif" />
+    <Content Include="Images\page\biao.gif" />
+    <Content Include="Images\page\cate_fold.gif" />
+    <Content Include="Images\page\cate_open.gif" />
+    <Content Include="Images\page\down.PNG" />
+    <Content Include="Images\page\down2.PNG" />
+    <Content Include="Images\page\error.gif" />
+    <Content Include="Images\page\exclamation.png" />
+    <Content Include="Images\page\failed.gif" />
+    <Content Include="Images\page\head_center.gif" />
+    <Content Include="Images\page\head_left.gif" />
+    <Content Include="Images\page\head_rigth.gif" />
+    <Content Include="Images\page\left.PNG" />
+    <Content Include="Images\page\left2.PNG" />
+    <Content Include="Images\page\loading.gif" />
+    <Content Include="Images\page\loading1.gif" />
+    <Content Include="Images\page\loading_b.GIF" />
+    <Content Include="Images\page\loginback.gif" />
+    <Content Include="Images\page\navback.gif" />
+    <Content Include="Images\page\navback1.gif" />
+    <Content Include="Images\page\nav_line_13.gif" />
+    <Content Include="Images\page\normal.gif" />
+    <Content Include="Images\page\notimage.png" />
+    <Content Include="Images\page\pagemenu.gif" />
+    <Content Include="Images\page\pagetitle.gif" />
+    <Content Include="Images\page\Shutdown.gif" />
+    <Content Include="Images\page\SortDown.gif" />
+    <Content Include="Images\page\SortUp.gif" />
+    <Content Include="Images\page\splitter_bg.gif" />
+    <Content Include="Images\page\splitter_l.gif" />
+    <Content Include="Images\page\splitter_r.gif" />
+    <Content Include="Images\page\subnav_center.gif" />
+    <Content Include="Images\page\subnav_center1.gif" />
+    <Content Include="Images\page\subnav_left.gif" />
+    <Content Include="Images\page\subnav_right.gif" />
+    <Content Include="Images\page\success.gif" />
+    <Content Include="Images\page\tab1.gif" />
+    <Content Include="Images\page\tab2.gif" />
+    <Content Include="Images\page\Tab_Option_bg.gif" />
+    <Content Include="Images\page\Tab_Option_bg_OFF.gif" />
+    <Content Include="Images\page\Tab_Option_bg_ON.gif" />
+    <Content Include="Images\page\title_01.gif" />
+    <Content Include="Images\page\title_02.gif" />
+    <Content Include="Images\page\title_03.gif" />
+    <Content Include="Images\page\tooltop.gif" />
+    <Content Include="Images\page\unknow.gif" />
+    <Content Include="Images\page\work.gif" />
+    <Content Include="Images\police.png" />
+    <Content Include="Images\prettyPhoto\bl.gif" />
+    <Content Include="Images\prettyPhoto\br.gif" />
+    <Content Include="Images\prettyPhoto\btnClose.gif" />
+    <Content Include="Images\prettyPhoto\btnNext.gif" />
+    <Content Include="Images\prettyPhoto\btnPrevious.gif" />
+    <Content Include="Images\prettyPhoto\loader.gif" />
+    <Content Include="Images\prettyPhoto\tl.gif" />
+    <Content Include="Images\prettyPhoto\tr.gif" />
+    <Content Include="Images\prettyPhoto\ttl.gif" />
+    <Content Include="Images\prettyPhoto\ttp.gif" />
+    <Content Include="Images\prettyPhoto\ttr.gif" />
+    <Content Include="Images\sprite.png" />
+    <Content Include="Images\Start.png" />
+    <Content Include="Images\sun.jpg" />
+    <Content Include="Images\switch.gif" />
+    <Content Include="Images\switch_hover.gif" />
+    <Content Include="Images\System\01.png" />
+    <Content Include="Images\System\02.png" />
+    <Content Include="Images\System\03.png" />
+    <Content Include="Images\System\04.png" />
+    <Content Include="Images\System\05.png" />
+    <Content Include="Images\System\06.png" />
+    <Content Include="Images\System\07.png" />
+    <Content Include="Images\System\08.png" />
+    <Content Include="Images\System\09.png" />
+    <Content Include="Images\System\10.png" />
+    <Content Include="Images\System\11.png" />
+    <Content Include="Images\System\12.png" />
+    <Content Include="Images\System\13.png" />
+    <Content Include="Images\System\14.png" />
+    <Content Include="Images\System\15.png" />
+    <Content Include="Images\System\16.png" />
+    <Content Include="Images\System\17.png" />
+    <Content Include="Images\System\18.png" />
+    <Content Include="Images\System\19.png" />
+    <Content Include="Images\System\20.png" />
+    <Content Include="Images\System\21.png" />
+    <Content Include="Images\System\22.png" />
+    <Content Include="Images\System\99.png" />
+    <Content Include="Images\Title\00 - 副本.png" />
+    <Content Include="Images\Title\00.png" />
+    <Content Include="Images\Title\01 - 副本.png" />
+    <Content Include="Images\Title\01.png" />
+    <Content Include="Images\Title\02 - 副本.png" />
+    <Content Include="Images\Title\02.png" />
+    <Content Include="Images\Title\03 - 副本.png" />
+    <Content Include="Images\Title\03.png" />
+    <Content Include="Images\Title\04 - 副本.png" />
+    <Content Include="Images\Title\04.png" />
+    <Content Include="Images\Title\05 - 副本.png" />
+    <Content Include="Images\Title\05.png" />
+    <Content Include="Images\Title\06 - 副本.png" />
+    <Content Include="Images\Title\06.png" />
+    <Content Include="Images\Title\07 - 副本.png" />
+    <Content Include="Images\Title\07.png" />
+    <Content Include="Images\Title\08 - 副本.png" />
+    <Content Include="Images\Title\08.png" />
+    <Content Include="Images\Title\09 - 副本.png" />
+    <Content Include="Images\Title\09.png" />
+    <Content Include="Images\Title\100.png" />
+    <Content Include="Images\Title\101.png" />
+    <Content Include="Images\Title\102.png" />
+    <Content Include="Images\Title\103.png" />
+    <Content Include="Images\Title\104.png" />
+    <Content Include="Images\tree.gif" />
+    <Content Include="Images\treeadd.gif" />
+    <Content Include="Images\treeicon.gif" />
+    <Content Include="Images\treemiaus.gif" />
+    <Content Include="Images\welcome.gif" />
+    <Content Include="Images\win8\00.png" />
+    <Content Include="Images\win8\01.png" />
+    <Content Include="Images\win8\02.png" />
+    <Content Include="Images\win8\03.png" />
+    <Content Include="Images\win8\04.png" />
+    <Content Include="Images\win8\05.png" />
+    <Content Include="Images\win8\06.png" />
+    <Content Include="Images\win8\07.png" />
+    <Content Include="Images\win8\08.png" />
+    <Content Include="Images\win8\09.png" />
+    <Content Include="Images\win8\10.png" />
+    <Content Include="Images\win8\12.png" />
+    <Content Include="Images\win8\13.png" />
+    <Content Include="Images\win8\14.png" />
+    <Content Include="Images\win8\15.png" />
+    <Content Include="Images\win8\17.png" />
+    <Content Include="Images\win8\18.png" />
+    <Content Include="Images\win8\19.png" />
+    <Content Include="Images\win8\20.png" />
+    <Content Include="Images\win8\21.png" />
+    <Content Include="Images\win8\22.png" />
+    <Content Include="Images\win8\23.png" />
+    <Content Include="Images\win8\24.png" />
+    <Content Include="Images\win8\25.png" />
+    <Content Include="Images\win8\26.png" />
+    <Content Include="Images\win8\27.png" />
+    <Content Include="Images\win8\28.png" />
+    <Content Include="Images\win8\29.png" />
+    <Content Include="Images\win8\30.png" />
+    <Content Include="Images\win8\31.png" />
+    <Content Include="Images\win8\99.png" />
+    <Content Include="imgs\loginbg.png" />
+    <Content Include="imgs\loginbut.png" />
+    <Content Include="imgs\logo.png" />
+    <Content Include="imgs\输入框.png" />
+    <Content Include="Index.aspx" />
+    <Content Include="LoginOld.aspx" />
+    <Content Include="LogManager\LogBusiness.aspx" />
+    <Content Include="LogManager\LogError.aspx" />
+    <Content Include="LogManager\LogRunning.aspx" />
+    <Content Include="Peccancy\PeccancyCheck.aspx" />
+    <Content Include="Peccancy\PeccancyDelete.aspx" />
+    <Content Include="Peccancy\PeccancyQuery.aspx" />
+    <Content Include="Peccancy\PeccancySingleCheck.aspx" />
+    <Content Include="Peccancy\PeccancySingleRepeatCheck.aspx" />
+    <Content Include="Suspicion\SuspicionManager.aspx" />
+    <Content Include="Map\GisRoadBrowse.aspx" />
+    <Content Include="Map\GisRoadLinkBrowse.aspx" />
+    <Content Include="Template\DataTemplate.aspx" />
+    <Content Include="Template\ListTemplate.aspx" />
+    <Content Include="Template\SelectPage.aspx" />
+    <Content Include="Template\UserTemplate.aspx" />
+    <Content Include="Template\VideoTemplate.aspx" />
+    <Content Include="Template\WebLineChart.aspx" />
+    <Content Include="Template\WebSmallLineChart.aspx" />
+    <Content Include="UIDepartment.ascx" />
+    <Content Include="User\PoliceOfficer.aspx" />
+    <Content Include="User\PrivManager.aspx" />
+    <Content Include="VehicleHead.ascx" />
+    <Content Include="Station\DeviceManager.aspx" />
+    <Content Include="Station\DeviceStatus.aspx" />
+    <Content Include="Station\ServerManager.aspx" />
+    <Content Include="Station\StationManager.aspx" />
+    <Content Include="DevManager\TGSStationManager.aspx" />
+    <Content Include="System\SystemConfig.aspx" />
+    <Content Include="User\RoleManager.aspx" />
+    <Content Include="Styles\Site.css" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Style\custom.css" />
+    <Content Include="Style\examples.css" />
+    <Content Include="Style\font.css" />
+    <Content Include="Style\form.css" />
+    <Content Include="Style\global.css" />
+    <Content Include="Style\header.css" />
+    <Content Include="Style\header1.css" />
+    <Content Include="Style\index.css" />
+    <Content Include="Style\link.css" />
+    <Content Include="Style\login.css" />
+    <Content Include="Style\main.css" />
+    <Content Include="Style\metro.css" />
+    <Content Include="Style\navigation.css" />
+    <Content Include="Style\private.css" />
+    <Content Include="Style\scroll.css" />
+    <Content Include="Style\sidebar.css" />
+    <Content Include="Style\style.css" />
+    <Content Include="Style\styleMain.css" />
+    <Content Include="Style\tab.css" />
+    <Content Include="Style\table.css" />
+    <Content Include="Style\tooltipster.css" />
+    <Content Include="Style\zxmk.css" />
+    <Content Include="User\TGSUserManager.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="UserGuide\shuoming.pdf" />
+    <Content Include="Passcar\Getjson.ashx" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\LogService\BigDataLogService.wsdl" />
+    <Content Include="Web References\LogService\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </Content>
+    <None Include="Web References\OtherQueryService\OtherQueryInfo.wsdl" />
+    <Content Include="Web References\OtherQueryService\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </Content>
+    <None Include="Web References\QueryService\querypasscar.wsdl" />
+    <Content Include="Web References\QueryService\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Alarm\Getjson.ashx.cs">
+      <DependentUpon>Getjson.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Count\ODAnalysisMain.aspx.cs">
+      <DependentUpon>ODAnalysisMain.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Count\ODAnalysisMain.aspx.designer.cs">
+      <DependentUpon>ODAnalysisMain.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Count\PeccancyOperateAnalysis.aspx.cs">
+      <DependentUpon>PeccancyOperateAnalysis.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Count\PeccancyOperateAnalysis.aspx.designer.cs">
+      <DependentUpon>PeccancyOperateAnalysis.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Count\PeccancyOperateLog.aspx.cs">
+      <DependentUpon>PeccancyOperateLog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Count\PeccancyOperateLog.aspx.designer.cs">
+      <DependentUpon>PeccancyOperateLog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Port\FlowInfoQuery.aspx.cs">
+      <DependentUpon>FlowInfoQuery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Port\FlowInfoQuery.aspx.designer.cs">
+      <DependentUpon>FlowInfoQuery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Port\AlarmportSetting.aspx.cs">
+      <DependentUpon>AlarmportSetting.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Port\AlarmportSetting.aspx.designer.cs">
+      <DependentUpon>AlarmportSetting.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\CSBrowse.aspx.cs">
+      <DependentUpon>CSBrowse.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\CSBrowse.aspx.designer.cs">
+      <DependentUpon>CSBrowse.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\DropDownControl.aspx.cs">
+      <DependentUpon>DropDownControl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\DropDownControl.aspx.designer.cs">
+      <DependentUpon>DropDownControl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\DropDownSetValueControl.aspx.cs">
+      <DependentUpon>DropDownSetValueControl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\DropDownSetValueControl.aspx.designer.cs">
+      <DependentUpon>DropDownSetValueControl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\ExMainIndex.aspx.cs">
+      <DependentUpon>ExMainIndex.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\ExMainIndex.aspx.designer.cs">
+      <DependentUpon>ExMainIndex.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\ImageCut.aspx.cs">
+      <DependentUpon>ImageCut.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\ImageCut.aspx.designer.cs">
+      <DependentUpon>ImageCut.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Count\AllAnalysisMain.aspx.cs">
+      <DependentUpon>AllAnalysisMain.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Count\AllAnalysisMain.aspx.designer.cs">
+      <DependentUpon>AllAnalysisMain.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Count\DriverAnalysisMain.aspx.cs">
+      <DependentUpon>DriverAnalysisMain.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Count\DriverAnalysisMain.aspx.designer.cs">
+      <DependentUpon>DriverAnalysisMain.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Count\OtherAnalysisMain.aspx.cs">
+      <DependentUpon>OtherAnalysisMain.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Count\OtherAnalysisMain.aspx.designer.cs">
+      <DependentUpon>OtherAnalysisMain.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Count\PeccancyAnalysisMain.aspx.cs">
+      <DependentUpon>PeccancyAnalysisMain.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Count\PeccancyAnalysisMain.aspx.designer.cs">
+      <DependentUpon>PeccancyAnalysisMain.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Count\VehicleAnalysisMain.aspx.cs">
+      <DependentUpon>VehicleAnalysisMain.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Count\VehicleAnalysisMain.aspx.designer.cs">
+      <DependentUpon>VehicleAnalysisMain.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DataCount\AlarmDataCount.aspx.cs">
+      <DependentUpon>AlarmDataCount.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DataCount\AlarmDataCount.aspx.designer.cs">
+      <DependentUpon>AlarmDataCount.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Alarm\AlarmCarDeal.aspx.cs">
+      <DependentUpon>AlarmCarDeal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Alarm\AlarmCarDeal.aspx.designer.cs">
+      <DependentUpon>AlarmCarDeal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Alarm\AlarmInfoCount.aspx.cs">
+      <DependentUpon>AlarmInfoCount.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Alarm\AlarmInfoCount.aspx.designer.cs">
+      <DependentUpon>AlarmInfoCount.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Alarm\AlarmInfoQuery.aspx.cs">
+      <DependentUpon>AlarmInfoQuery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Alarm\AlarmInfoQuery.aspx.designer.cs">
+      <DependentUpon>AlarmInfoQuery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Alarm\AlarmMonitor.aspx.cs">
+      <DependentUpon>AlarmMonitor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Alarm\AlarmMonitor.aspx.designer.cs">
+      <DependentUpon>AlarmMonitor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Port\FlowMonitor.aspx.cs">
+      <DependentUpon>FlowMonitor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Port\FlowMonitor.aspx.designer.cs">
+      <DependentUpon>FlowMonitor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SpecialMonitor\SpecialMonitor.aspx.cs">
+      <DependentUpon>SpecialMonitor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Passcar\Getjson.ashx.cs">
+      <DependentUpon>Getjson.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Passcar\Test.aspx.cs">
+      <DependentUpon>Test.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Passcar\Test.aspx.designer.cs">
+      <DependentUpon>Test.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Suspicion\ChecklessManager.aspx.cs">
+      <DependentUpon>ChecklessManager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Suspicion\ChecklessManager.aspx.designer.cs">
+      <DependentUpon>ChecklessManager.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="System\NoticePicManager.aspx.cs">
+      <DependentUpon>NoticePicManager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="System\NoticePicManager.aspx.designer.cs">
+      <DependentUpon>NoticePicManager.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="System\SystemCode.aspx.cs">
+      <DependentUpon>SystemCode.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="System\SystemCode.aspx.designer.cs">
+      <DependentUpon>SystemCode.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SpecialMonitor\SpecialMonitor.aspx.designer.cs">
+      <DependentUpon>SpecialMonitor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="System\SystemMain.aspx.cs">
+      <DependentUpon>SystemMain.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="System\SystemMain.aspx.designer.cs">
+      <DependentUpon>SystemMain.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserGuide\Blank.aspx.cs">
+      <DependentUpon>Blank.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserGuide\Blank.aspx.designer.cs">
+      <DependentUpon>Blank.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Count\PassCarFlowCount.aspx.cs">
+      <DependentUpon>PassCarFlowCount.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Count\PassCarFlowCount.aspx.designer.cs">
+      <DependentUpon>PassCarFlowCount.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Count\PassCarInfoCount.aspx.cs">
+      <DependentUpon>PassCarInfoCount.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Count\PassCarInfoCount.aspx.designer.cs">
+      <DependentUpon>PassCarInfoCount.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Count\PassCarOcrCount.aspx.cs">
+      <DependentUpon>PassCarOcrCount.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Count\PassCarOcrCount.aspx.designer.cs">
+      <DependentUpon>PassCarOcrCount.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Count\PassCarSpeedCount.aspx.cs">
+      <DependentUpon>PassCarSpeedCount.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Count\PassCarSpeedCount.aspx.designer.cs">
+      <DependentUpon>PassCarSpeedCount.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Count\PeccancyCount.aspx.cs">
+      <DependentUpon>PeccancyCount.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Count\PeccancyCount.aspx.designer.cs">
+      <DependentUpon>PeccancyCount.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DataCount\CurrentDataCount.aspx.cs">
+      <DependentUpon>CurrentDataCount.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DataCount\CurrentDataCount.aspx.designer.cs">
+      <DependentUpon>CurrentDataCount.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DataCount\WinPassAnalysis.aspx.cs">
+      <DependentUpon>WinPassAnalysis.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DataCount\WinPassAnalysis.aspx.designer.cs">
+      <DependentUpon>WinPassAnalysis.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DataService\DataService.asmx.cs">
+      <DependentUpon>DataService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataCount\DeviceDataCount.aspx.cs">
+      <DependentUpon>DeviceDataCount.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DataCount\DeviceDataCount.aspx.designer.cs">
+      <DependentUpon>DeviceDataCount.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DevManager\DevManagerMain.aspx.cs">
+      <DependentUpon>DevManagerMain.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DevManager\DevManagerMain.aspx.designer.cs">
+      <DependentUpon>DevManagerMain.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ExtraList\ExtraListManager.aspx.cs">
+      <DependentUpon>ExtraListManager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExtraList\ExtraListManager.aspx.designer.cs">
+      <DependentUpon>ExtraListManager.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FilterCommon\StationStore.ashx.cs">
+      <DependentUpon>StationStore.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Important\ImportantMain.aspx.cs">
+      <DependentUpon>ImportantMain.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Important\ImportantMain.aspx.designer.cs">
+      <DependentUpon>ImportantMain.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DataCount\ImpRoadMonitor.aspx.cs">
+      <DependentUpon>ImpRoadMonitor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DataCount\ImpRoadMonitor.aspx.designer.cs">
+      <DependentUpon>ImpRoadMonitor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Important\PeccancyAreaSetting.aspx.cs">
+      <DependentUpon>PeccancyAreaSetting.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Important\PeccancyAreaSetting.aspx.designer.cs">
+      <DependentUpon>PeccancyAreaSetting.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LogManager\LogMain.aspx.cs">
+      <DependentUpon>LogMain.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LogManager\LogMain.aspx.designer.cs">
+      <DependentUpon>LogMain.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MainIndex.aspx.cs">
+      <DependentUpon>MainIndex.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MainIndex.aspx.designer.cs">
+      <DependentUpon>MainIndex.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Map\BGisBrowse.aspx.cs">
+      <DependentUpon>BGisBrowse.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Map\BGisBrowse.aspx.designer.cs">
+      <DependentUpon>BGisBrowse.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Map\CarHot.aspx.cs">
+      <DependentUpon>CarHot.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Map\CarHot.aspx.designer.cs">
+      <DependentUpon>CarHot.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Map\CarIllegalQuery.aspx.cs">
+      <DependentUpon>CarIllegalQuery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Map\CarIllegalQuery.aspx.designer.cs">
+      <DependentUpon>CarIllegalQuery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Map\CarQuery.aspx.cs">
+      <DependentUpon>CarQuery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Map\CarQuery.aspx.designer.cs">
+      <DependentUpon>CarQuery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Map\CarStrandQuery.aspx.cs">
+      <DependentUpon>CarStrandQuery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Map\CarStrandQuery.aspx.designer.cs">
+      <DependentUpon>CarStrandQuery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Map\CCTVSingleBrowse.aspx.cs">
+      <DependentUpon>CCTVSingleBrowse.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Map\CCTVSingleBrowse.aspx.designer.cs">
+      <DependentUpon>CCTVSingleBrowse.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Map\Dispatched.aspx.cs">
+      <DependentUpon>Dispatched.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Map\Dispatched.aspx.designer.cs">
+      <DependentUpon>Dispatched.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Map\MapStation.aspx.cs">
+      <DependentUpon>MapStation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Map\MapStation.aspx.designer.cs">
+      <DependentUpon>MapStation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Map\ShowImage.aspx.cs">
+      <DependentUpon>ShowImage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Map\ShowImage.aspx.designer.cs">
+      <DependentUpon>ShowImage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Map\TgsFlowAmply.aspx.cs">
+      <DependentUpon>TgsFlowAmply.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Map\TgsFlowAmply.aspx.designer.cs">
+      <DependentUpon>TgsFlowAmply.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Map\TgsPassCarAmply.aspx.cs">
+      <DependentUpon>TgsPassCarAmply.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Map\TgsPassCarAmply.aspx.designer.cs">
+      <DependentUpon>TgsPassCarAmply.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Map\TgsShowDevice.aspx.cs">
+      <DependentUpon>TgsShowDevice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Map\TgsShowDevice.aspx.designer.cs">
+      <DependentUpon>TgsShowDevice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Map\TgsShowStation.aspx.cs">
+      <DependentUpon>TgsShowStation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Map\TgsShowStation.aspx.designer.cs">
+      <DependentUpon>TgsShowStation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Passcar\AnalyFollowVehicles.aspx.cs">
+      <DependentUpon>AnalyFollowVehicles.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Passcar\AnalyFollowVehicles.aspx.designer.cs">
+      <DependentUpon>AnalyFollowVehicles.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Passcar\ComplexQuery.aspx.cs">
+      <DependentUpon>ComplexQuery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Passcar\ComplexQuery.aspx.designer.cs">
+      <DependentUpon>ComplexQuery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Passcar\DriverRelationAnalysis.aspx.cs">
+      <DependentUpon>DriverRelationAnalysis.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Passcar\DriverRelationAnalysis.aspx.designer.cs">
+      <DependentUpon>DriverRelationAnalysis.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Passcar\FaceShelterQuery.aspx.cs">
+      <DependentUpon>FaceShelterQuery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Passcar\FaceShelterQuery.aspx.designer.cs">
+      <DependentUpon>FaceShelterQuery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Passcar\FeatureQuery.aspx.cs">
+      <DependentUpon>FeatureQuery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Passcar\FeatureQuery.aspx.designer.cs">
+      <DependentUpon>FeatureQuery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Map\FootHold.aspx.cs">
+      <DependentUpon>FootHold.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Map\FootHold.aspx.designer.cs">
+      <DependentUpon>FootHold.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Map\FrequentOverCar.aspx.cs">
+      <DependentUpon>FrequentOverCar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Map\FrequentOverCar.aspx.designer.cs">
+      <DependentUpon>FrequentOverCar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Passcar\FisrtIntoCity.aspx.cs">
+      <DependentUpon>FisrtIntoCity.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Passcar\FisrtIntoCity.aspx.designer.cs">
+      <DependentUpon>FisrtIntoCity.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Passcar\ImgCarQuery.aspx.cs">
+      <DependentUpon>ImgCarQuery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Passcar\ImgCarQuery.aspx.designer.cs">
+      <DependentUpon>ImgCarQuery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Map\PathCarQuery.aspx.cs">
+      <DependentUpon>PathCarQuery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Map\PathCarQuery.aspx.designer.cs">
+      <DependentUpon>PathCarQuery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Map\QuipmentSpecial.aspx.cs">
+      <DependentUpon>QuipmentSpecial.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Map\QuipmentSpecial.aspx.designer.cs">
+      <DependentUpon>QuipmentSpecial.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Passcar\OneCarMulLisence.aspx.cs">
+      <DependentUpon>OneCarMulLisence.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Passcar\OneCarMulLisence.aspx.designer.cs">
+      <DependentUpon>OneCarMulLisence.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Passcar\OneLisenceMulCar.aspx.cs">
+      <DependentUpon>OneLisenceMulCar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Passcar\OneLisenceMulCar.aspx.designer.cs">
+      <DependentUpon>OneLisenceMulCar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Passcar\OneLisenceMulCarMapShow.aspx.cs">
+      <DependentUpon>OneLisenceMulCarMapShow.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Passcar\OneLisenceMulCarMapShow.aspx.designer.cs">
+      <DependentUpon>OneLisenceMulCarMapShow.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Passcar\PassAlarmQuery.aspx.cs">
+      <DependentUpon>PassAlarmQuery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Passcar\PassAlarmQuery.aspx.designer.cs">
+      <DependentUpon>PassAlarmQuery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Passcar\PasscarAllQuery.aspx.cs">
+      <DependentUpon>PasscarAllQuery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Passcar\PasscarAllQuery.aspx.designer.cs">
+      <DependentUpon>PasscarAllQuery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Passcar\PassCarInfoQueryMain.aspx.cs">
+      <DependentUpon>PassCarInfoQueryMain.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Passcar\PassCarInfoQueryMain.aspx.designer.cs">
+      <DependentUpon>PassCarInfoQueryMain.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Passcar\PassCarInfoQuery.aspx.cs">
+      <DependentUpon>PassCarInfoQuery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Passcar\PassCarInfoQuery.aspx.designer.cs">
+      <DependentUpon>PassCarInfoQuery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Passcar\PassCarInfoQueryImg.aspx.cs">
+      <DependentUpon>PassCarInfoQueryImg.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Passcar\PassCarInfoQueryImg.aspx.designer.cs">
+      <DependentUpon>PassCarInfoQueryImg.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Passcar\PassCarPathQuery.aspx.cs">
+      <DependentUpon>PassCarPathQuery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Passcar\PassCarPathQuery.aspx.designer.cs">
+      <DependentUpon>PassCarPathQuery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Passcar\PeccancyInfoQuery.aspx.cs">
+      <DependentUpon>PeccancyInfoQuery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Passcar\PeccancyInfoQuery.aspx.designer.cs">
+      <DependentUpon>PeccancyInfoQuery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Passcar\UnlicensedVehiclesQuery.aspx.cs">
+      <DependentUpon>UnlicensedVehiclesQuery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Passcar\UnlicensedVehiclesQuery.aspx.designer.cs">
+      <DependentUpon>UnlicensedVehiclesQuery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Passcar\VehicleRelationAnalysis.aspx.cs">
+      <DependentUpon>VehicleRelationAnalysis.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Passcar\VehicleRelationAnalysis.aspx.designer.cs">
+      <DependentUpon>VehicleRelationAnalysis.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DataCount\PeccancyDataCount.aspx.cs">
+      <DependentUpon>PeccancyDataCount.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DataCount\PeccancyDataCount.aspx.designer.cs">
+      <DependentUpon>PeccancyDataCount.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Passcar\WebImageTest.aspx.cs">
+      <DependentUpon>WebImageTest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Passcar\WebImageTest.aspx.designer.cs">
+      <DependentUpon>WebImageTest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PeccancyArea\PeccancyArea.aspx.cs">
+      <DependentUpon>PeccancyArea.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PeccancyArea\PeccancyArea.aspx.designer.cs">
+      <DependentUpon>PeccancyArea.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PeccancyArea\PeccancyAreaCheck.aspx.cs">
+      <DependentUpon>PeccancyAreaCheck.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PeccancyArea\PeccancyAreaCheck.aspx.designer.cs">
+      <DependentUpon>PeccancyAreaCheck.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PeccancyArea\PeccancyAreaChecking.aspx.cs">
+      <DependentUpon>PeccancyAreaChecking.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PeccancyArea\PeccancyAreaChecking.aspx.designer.cs">
+      <DependentUpon>PeccancyAreaChecking.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PeccancyArea\PeccancyAreaCount.aspx.cs">
+      <DependentUpon>PeccancyAreaCount.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PeccancyArea\PeccancyAreaCount.aspx.designer.cs">
+      <DependentUpon>PeccancyAreaCount.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PeccancyArea\PeccancyAreaQuery.aspx.cs">
+      <DependentUpon>PeccancyAreaQuery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PeccancyArea\PeccancyAreaQuery.aspx.designer.cs">
+      <DependentUpon>PeccancyAreaQuery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PeccancyArea\PeccancyAreaSetting.aspx.cs">
+      <DependentUpon>PeccancyAreaSetting.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PeccancyArea\PeccancyAreaSetting.aspx.designer.cs">
+      <DependentUpon>PeccancyAreaSetting.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Peccancy\LocationUpload.aspx.cs">
+      <DependentUpon>LocationUpload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Peccancy\LocationUpload.aspx.designer.cs">
+      <DependentUpon>LocationUpload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Peccancy\PeccancyRepeatCheck.aspx.cs">
+      <DependentUpon>PeccancyRepeatCheck.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Peccancy\PeccancyRepeatCheck.aspx.designer.cs">
+      <DependentUpon>PeccancyRepeatCheck.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Peccancy\DpcPeccancyQuery.aspx.cs">
+      <DependentUpon>DpcPeccancyQuery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Peccancy\DpcPeccancyQuery.aspx.designer.cs">
+      <DependentUpon>DpcPeccancyQuery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Peccancy\PeccancySettingMain.aspx.cs">
+      <DependentUpon>PeccancySettingMain.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Peccancy\PeccancySettingMain.aspx.designer.cs">
+      <DependentUpon>PeccancySettingMain.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Peccancy\PeccancyType.aspx.cs">
+      <DependentUpon>PeccancyType.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Peccancy\PeccancyType.aspx.designer.cs">
+      <DependentUpon>PeccancyType.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Peccancy\PeccancyTypeSetting.aspx.cs">
+      <DependentUpon>PeccancyTypeSetting.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Peccancy\PeccancyTypeSetting.aspx.designer.cs">
+      <DependentUpon>PeccancyTypeSetting.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Peccancy\Test.aspx.cs">
+      <DependentUpon>Test.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Peccancy\Test.aspx.designer.cs">
+      <DependentUpon>Test.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Peccancy\TmsStationManager.aspx.cs">
+      <DependentUpon>TmsStationManager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Peccancy\TmsStationManager.aspx.designer.cs">
+      <DependentUpon>TmsStationManager.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Peccancy\TmsUserLocation.aspx.cs">
+      <DependentUpon>TmsUserLocation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Peccancy\TmsUserLocation.aspx.designer.cs">
+      <DependentUpon>TmsUserLocation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="DevManager\CCTVStationManager.aspx.cs">
+      <DependentUpon>CCTVStationManager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DevManager\CCTVStationManager.aspx.designer.cs">
+      <DependentUpon>CCTVStationManager.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Station\DeviceMain.aspx.cs">
+      <DependentUpon>DeviceMain.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Station\DeviceMain.aspx.designer.cs">
+      <DependentUpon>DeviceMain.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Station\KeyRoadManager.aspx.cs">
+      <DependentUpon>KeyRoadManager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Station\KeyRoadManager.aspx.designer.cs">
+      <DependentUpon>KeyRoadManager.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Station\MarkerManager.aspx.cs">
+      <DependentUpon>MarkerManager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Station\MarkerManager.aspx.designer.cs">
+      <DependentUpon>MarkerManager.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Station\RoadMain.aspx.cs">
+      <DependentUpon>RoadMain.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Station\RoadMain.aspx.designer.cs">
+      <DependentUpon>RoadMain.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Station\DeviceOperation.aspx.cs">
+      <DependentUpon>DeviceOperation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Station\DeviceOperation.aspx.designer.cs">
+      <DependentUpon>DeviceOperation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Station\DeviceStatistics.aspx.cs">
+      <DependentUpon>DeviceStatistics.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Station\DeviceStatistics.aspx.designer.cs">
+      <DependentUpon>DeviceStatistics.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Station\StationMain.aspx.cs">
+      <DependentUpon>StationMain.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Station\StationMain.aspx.designer.cs">
+      <DependentUpon>StationMain.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Station\TGSLimitSpeed.aspx.cs">
+      <DependentUpon>TGSLimitSpeed.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Station\TGSLimitSpeed.aspx.designer.cs">
+      <DependentUpon>TGSLimitSpeed.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Map\TgsShow.aspx.cs">
+      <DependentUpon>TgsShow.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Map\TgsShow.aspx.designer.cs">
+      <DependentUpon>TgsShow.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Important\ImportantRule.aspx.cs">
+      <DependentUpon>ImportantRule.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Important\ImportantRule.aspx.designer.cs">
+      <DependentUpon>ImportantRule.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Important\ImportantManager.aspx.cs">
+      <DependentUpon>ImportantManager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Important\ImportantManager.aspx.designer.cs">
+      <DependentUpon>ImportantManager.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="System\Department.aspx.cs">
+      <DependentUpon>Department.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="System\Department.aspx.designer.cs">
+      <DependentUpon>Department.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LoginOld.aspx.cs">
+      <DependentUpon>LoginOld.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LoginOld.aspx.designer.cs">
+      <DependentUpon>LoginOld.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LogManager\LogBusiness.aspx.cs">
+      <DependentUpon>LogBusiness.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LogManager\LogBusiness.aspx.designer.cs">
+      <DependentUpon>LogBusiness.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LogManager\LogError.aspx.cs">
+      <DependentUpon>LogError.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LogManager\LogError.aspx.designer.cs">
+      <DependentUpon>LogError.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LogManager\LogRunning.aspx.cs">
+      <DependentUpon>LogRunning.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LogManager\LogRunning.aspx.designer.cs">
+      <DependentUpon>LogRunning.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Peccancy\PeccancyCheck.aspx.cs">
+      <DependentUpon>PeccancyCheck.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Peccancy\PeccancyCheck.aspx.designer.cs">
+      <DependentUpon>PeccancyCheck.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Peccancy\PeccancyDelete.aspx.cs">
+      <DependentUpon>PeccancyDelete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Peccancy\PeccancyDelete.aspx.designer.cs">
+      <DependentUpon>PeccancyDelete.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Peccancy\PeccancyQuery.aspx.cs">
+      <DependentUpon>PeccancyQuery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Peccancy\PeccancyQuery.aspx.designer.cs">
+      <DependentUpon>PeccancyQuery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Peccancy\PeccancySingleCheck.aspx.cs">
+      <DependentUpon>PeccancySingleCheck.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Peccancy\PeccancySingleCheck.aspx.designer.cs">
+      <DependentUpon>PeccancySingleCheck.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Peccancy\PeccancySingleRepeatCheck.aspx.cs">
+      <DependentUpon>PeccancySingleRepeatCheck.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Peccancy\PeccancySingleRepeatCheck.aspx.designer.cs">
+      <DependentUpon>PeccancySingleRepeatCheck.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Station\DeviceManager.aspx.cs">
+      <DependentUpon>DeviceManager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Station\DeviceManager.aspx.designer.cs">
+      <DependentUpon>DeviceManager.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Station\DeviceStatus.aspx.cs">
+      <DependentUpon>DeviceStatus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Station\DeviceStatus.aspx.designer.cs">
+      <DependentUpon>DeviceStatus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Station\ServerManager.aspx.cs">
+      <DependentUpon>ServerManager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Station\ServerManager.aspx.designer.cs">
+      <DependentUpon>ServerManager.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Station\StationManager.aspx.cs">
+      <DependentUpon>StationManager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Station\StationManager.aspx.designer.cs">
+      <DependentUpon>StationManager.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DevManager\TGSStationManager.aspx.cs">
+      <DependentUpon>TGSStationManager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DevManager\TGSStationManager.aspx.designer.cs">
+      <DependentUpon>TGSStationManager.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Suspicion\SuspicionManager.aspx.cs">
+      <DependentUpon>SuspicionManager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Suspicion\SuspicionManager.aspx.designer.cs">
+      <DependentUpon>SuspicionManager.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Map\GisRoadBrowse.aspx.cs">
+      <DependentUpon>GisRoadBrowse.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Map\GisRoadBrowse.aspx.designer.cs">
+      <DependentUpon>GisRoadBrowse.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Map\GisRoadLinkBrowse.aspx.cs">
+      <DependentUpon>GisRoadLinkBrowse.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Map\GisRoadLinkBrowse.aspx.designer.cs">
+      <DependentUpon>GisRoadLinkBrowse.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="System\SystemConfig.aspx.cs">
+      <DependentUpon>SystemConfig.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="System\SystemConfig.aspx.designer.cs">
+      <DependentUpon>SystemConfig.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Template\WebAlarmQuery.aspx.cs">
+      <DependentUpon>WebAlarmQuery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Template\WebAlarmQuery.aspx.designer.cs">
+      <DependentUpon>WebAlarmQuery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Template\DataTemplate.aspx.cs">
+      <DependentUpon>DataTemplate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Template\DataTemplate.aspx.designer.cs">
+      <DependentUpon>DataTemplate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Template\ListTemplate.aspx.cs">
+      <DependentUpon>ListTemplate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Template\ListTemplate.aspx.designer.cs">
+      <DependentUpon>ListTemplate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Template\SelectPage.aspx.cs">
+      <DependentUpon>SelectPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Template\SelectPage.aspx.designer.cs">
+      <DependentUpon>SelectPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Template\UserTemplate.aspx.cs">
+      <DependentUpon>UserTemplate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Template\UserTemplate.aspx.designer.cs">
+      <DependentUpon>UserTemplate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Template\VideoTemplate.aspx.cs">
+      <DependentUpon>VideoTemplate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Template\VideoTemplate.aspx.designer.cs">
+      <DependentUpon>VideoTemplate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Template\WebAlarmData.aspx.cs">
+      <DependentUpon>WebAlarmData.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Template\WebAlarmData.aspx.designer.cs">
+      <DependentUpon>WebAlarmData.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Template\WebComplexPieData.aspx.cs">
+      <DependentUpon>WebComplexPieData.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Template\WebComplexPieData.aspx.designer.cs">
+      <DependentUpon>WebComplexPieData.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Template\WebAlarmPieData.aspx.cs">
+      <DependentUpon>WebAlarmPieData.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Template\WebAlarmPieData.aspx.designer.cs">
+      <DependentUpon>WebAlarmPieData.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Template\WebDeviceGrid.aspx.cs">
+      <DependentUpon>WebDeviceGrid.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Template\WebDeviceGrid.aspx.designer.cs">
+      <DependentUpon>WebDeviceGrid.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Template\WebDevicePieData.aspx.cs">
+      <DependentUpon>WebDevicePieData.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Template\WebDevicePieData.aspx.designer.cs">
+      <DependentUpon>WebDevicePieData.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Template\WebDevicePieData1.aspx.cs">
+      <DependentUpon>WebDevicePieData1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Template\WebDevicePieData1.aspx.designer.cs">
+      <DependentUpon>WebDevicePieData1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Template\WebDevicePieData2.aspx.cs">
+      <DependentUpon>WebDevicePieData2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Template\WebDevicePieData2.aspx.designer.cs">
+      <DependentUpon>WebDevicePieData2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Template\WebDeviceShow.aspx.cs">
+      <DependentUpon>WebDeviceShow.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Template\WebDeviceShow.aspx.designer.cs">
+      <DependentUpon>WebDeviceShow.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Template\WebFlowData.aspx.cs">
+      <DependentUpon>WebFlowData.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Template\WebFlowData.aspx.designer.cs">
+      <DependentUpon>WebFlowData.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Template\WebLineChart.aspx.cs">
+      <DependentUpon>WebLineChart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Template\WebLineChart.aspx.designer.cs">
+      <DependentUpon>WebLineChart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Template\WebPassCarHot.aspx.cs">
+      <DependentUpon>WebPassCarHot.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Template\WebPassCarHot.aspx.designer.cs">
+      <DependentUpon>WebPassCarHot.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Template\WebPassCarBarData.aspx.cs">
+      <DependentUpon>WebPassCarBarData.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Template\WebPassCarBarData.aspx.designer.cs">
+      <DependentUpon>WebPassCarBarData.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Template\WebPassCarJLLX.aspx.cs">
+      <DependentUpon>WebPassCarJLLX.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Template\WebPassCarJLLX.aspx.designer.cs">
+      <DependentUpon>WebPassCarJLLX.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Template\WebPassCarType.aspx.cs">
+      <DependentUpon>WebPassCarType.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Template\WebPassCarType.aspx.designer.cs">
+      <DependentUpon>WebPassCarType.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Template\WebPassCarAnalysis.aspx.cs">
+      <DependentUpon>WebPassCarAnalysis.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Template\WebPassCarAnalysis.aspx.designer.cs">
+      <DependentUpon>WebPassCarAnalysis.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Template\WebPassCarVehHead.aspx.cs">
+      <DependentUpon>WebPassCarVehHead.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Template\WebPassCarVehHead.aspx.designer.cs">
+      <DependentUpon>WebPassCarVehHead.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Template\WebPeccancyBarData.aspx.cs">
+      <DependentUpon>WebPeccancyBarData.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Template\WebPeccancyBarData.aspx.designer.cs">
+      <DependentUpon>WebPeccancyBarData.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Template\WebPeccancyData.aspx.cs">
+      <DependentUpon>WebPeccancyData.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Template\WebPeccancyData.aspx.designer.cs">
+      <DependentUpon>WebPeccancyData.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Template\WebPeccancyGrid.aspx.cs">
+      <DependentUpon>WebPeccancyGrid.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Template\WebPeccancyGrid.aspx.designer.cs">
+      <DependentUpon>WebPeccancyGrid.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Template\WebSmallLineChart.aspx.cs">
+      <DependentUpon>WebSmallLineChart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Template\WebSmallLineChart.aspx.designer.cs">
+      <DependentUpon>WebSmallLineChart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\UserGuide.aspx.cs">
+      <DependentUpon>UserGuide.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\UserGuide.aspx.designer.cs">
+      <DependentUpon>UserGuide.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\PoliceOfficer.aspx.cs">
+      <DependentUpon>PoliceOfficer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\PoliceOfficer.aspx.designer.cs">
+      <DependentUpon>PoliceOfficer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\PrivManager.aspx.cs">
+      <DependentUpon>PrivManager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\PrivManager.aspx.designer.cs">
+      <DependentUpon>PrivManager.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\RoleManager.aspx.cs">
+      <DependentUpon>RoleManager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\RoleManager.aspx.designer.cs">
+      <DependentUpon>RoleManager.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\TGSUserManager.aspx.cs">
+      <DependentUpon>TGSUserManager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\TGSUserManager.aspx.designer.cs">
+      <DependentUpon>TGSUserManager.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="User\UserMain.aspx.cs">
+      <DependentUpon>UserMain.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User\UserMain.aspx.designer.cs">
+      <DependentUpon>UserMain.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\LogService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\OtherQueryService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\QueryService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="FileUpload\TEMP\" />
+    <Folder Include="Images\Watch\" />
+    <Folder Include="Language\" />
+    <Folder Include="log\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MyNet.Atmcs.Uscmcp.Bll\MyNet.Atmcs.Uscmcp.Bll.csproj">
+      <Project>{92B1CFF8-1AC4-4FC9-80CB-E609D39054C1}</Project>
+      <Name>MyNet.Atmcs.Uscmcp.Bll</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MyNet.Atmcs.Uscmcp.Data\MyNet.Atmcs.Uscmcp.Data.csproj">
+      <Project>{549C1473-352B-438F-8FF7-B0576B726E52}</Project>
+      <Name>MyNet.Atmcs.Uscmcp.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MyNet.Atmcs.Uscmcp.IData\MyNet.Atmcs.Uscmcp.IData.csproj">
+      <Project>{135B55EC-9A7E-4713-B78D-898E1625F99A}</Project>
+      <Name>MyNet.Atmcs.Uscmcp.IData</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MyNet.Atmcs.Uscmcp.Model\MyNet.Atmcs.Uscmcp.Model.csproj">
+      <Project>{619963ea-573d-4d14-b664-e7f58db7c576}</Project>
+      <Name>MyNet.Atmcs.Uscmcp.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MyNet.Atmcs.Uscmcp.UI\MyNet.Atmcs.Uscmcp.UI.csproj">
+      <Project>{44ef9b66-59bd-451c-9106-ab57bd6b8c0c}</Project>
+      <Name>MyNet.Atmcs.Uscmcp.UI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MyNet.Common.Lang\MyNet.Common.Lang.csproj">
+      <Project>{9e67d2c6-d828-4968-ae6f-e2941ccefa9f}</Project>
+      <Name>MyNet.Common.Lang</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="build\.DS_Store" />
+    <None Include="build\dist\.DS_Store" />
+    <None Include="build\source\.DS_Store" />
+    <None Include="Images\Map\00.psd" />
+    <None Include="Image\menuico.psd" />
+    <None Include="Image\navico.psd" />
+    <Content Include="log4net.config" />
+    <Content Include="Map\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Map\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Map\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Map\js\map.rar" />
+    <None Include="Properties\PublishProfiles\配置文件1.pubxml" />
+    <None Include="Style\Font\heydings_icons-webfont.eot" />
+    <None Include="Style\Font\heydings_icons-webfont.ttf" />
+    <None Include="Style\Font\heydings_icons-webfont.woff" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://10.2.111.249:8080/logs-webservice/services/BigDataLogService%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\LogService\</RelPath>
+      <UpdateFromURL>http://10.2.111.249:8080/logs-webservice/services/BigDataLogService%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>MyNet_Atmcs_Uscmcp_Web_LogService_BigDataLogService</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://192.168.1.232:8080/other-webservice/services/OtherQueryInfo%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\OtherQueryService\</RelPath>
+      <UpdateFromURL>http://192.168.1.232:8080/other-webservice/services/OtherQueryInfo%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>MyNet_Atmcs_Uscmcp_Web_OtherQueryService_OtherQueryInfo</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://192.168.1.232:8080/query_webservice/services/querypasscar%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\QueryService\</RelPath>
+      <UpdateFromURL>http://192.168.1.232:8080/query_webservice/services/querypasscar%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>MyNet_Atmcs_Uscmcp_Web_QueryService_querypasscar</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>11921</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

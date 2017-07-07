@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Message>
+<Language>CN</Language>
+<Dictionary>
+<MyNet.Atmcs.Uscmcp.Web.RoleManager>
+<RoleManager1 CN="角色编号：" EN="Role ID：" JP="" RU="" />
+<RoleManager2 CN="角色名称：" EN="Role Name：" JP="" RU="" />
+<RoleManager3 CN="查询" EN="Inquire" JP="" RU="" />
+<RoleManager4 CN="重置" EN="Reset" JP="" RU="" />
+<RoleManager5 CN="新增角色" EN="Add a role" JP="" RU="" />
+<RoleManager6 CN="删除角色" EN="Delete the role" JP="" RU="" />
+<RoleManager7 CN="更新" EN="Update" JP="" RU="" />
+<RoleManager8 CN="退出" EN="Drop out" JP="" RU="" />
+<RoleManager9 CN="角色编号" EN="Role ID" JP="" RU="" />
+<RoleManager10 CN="角色名称" EN="Role Name" JP="" RU="" />
+<RoleManager11 CN="角色描述" EN="Role Description" JP="" RU="" />
+<RoleManager12 CN="备注" EN="Remarks" JP="" RU="" />
+<RoleManager13 CN="详细信息" EN="Details" JP="" RU="" />
+<RoleManager14 CN="权限列表" EN="Permissions list" JP="" RU="" />
+<RoleManager15 CN="保存" EN="Save" JP="" RU="" />
+<RoleManager16 CN="您没有登录或操作超时，请重新登录!" EN="You are not logged in or the operation timed out, please log in again!" JP="" RU="" />
+<RoleManager17 CN="访问：用户角色管理" EN="Access: User role management" JP="" RU="" />
+<RoleManager18 CN="信息" EN="Information" JP="" RU="" />
+<RoleManager19 CN="确认要删除[" EN="Confirm that you want to delete[" JP="" RU="" />
+<RoleManager20 CN="是" EN="Yes" JP="" RU="" />
+<RoleManager21 CN="否" EN="No" JP="" RU="" />
+<RoleManager22 CN="角色修改" EN="Role modification" JP="" RU="" />
+<RoleManager23 CN="修改成功" EN="Successfully modified" JP="" RU="" />
+<RoleManager27 CN="修改角色:[" EN="Modify the role: [" JP="" RU="" />
+<RoleManager28 CN="角色删除" EN="Role deletion" JP="" RU="" />
+<RoleManager29 CN="删除成功" EN="Successfully deleted" JP="" RU="" />
+<RoleManager30 CN="删除:[" EN="Delete：[" JP="" RU="" />
+<RoleManager31 CN="]用户" EN="]User" JP="" RU="" />
+<RoleManager32 CN="角色" EN="Character" JP="" RU="" />
+<RoleManager33 CN="角色新增" EN="Role added" JP="" RU="" />
+<RoleManager34 CN="新增成功" EN="Added successfully" JP="" RU="" />
+<RoleManager35 CN="添加:" EN="Add to:" JP="" RU="" />
+<RoleManager36 CN="信息更新" EN="Information update" JP="" RU="" />
+<RoleManager38 CN="权限" EN="Permissions" JP="" RU="" />
+
+<RoleManager40 CN="增加角色" EN="Add a character" JP="" RU="" />
+<RoleManager43 CN="请输入角色名称" EN="Please enter a role name" JP="" RU="" />
+<RoleManager45 CN="请输入角色描述" EN="Please enter a description of the role" JP="" RU="" />
+<RoleManager47 CN="请输入备注" EN="Please enter a comment" JP="" RU="" />
+
+<RoleManager49 CN="取消" EN="Cancel" JP="" RU="" />
+<RoleManager50 CN="]吗?" EN="]It?" JP="" RU="" />
+</MyNet.Atmcs.Uscmcp.Web.RoleManager>
+</Dictionary>
+</Message>

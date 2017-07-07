@@ -1,0 +1,71 @@
+
+.github-buttons {
+    margin: 15px 0;
+}
+
+.github-buttons img {
+    display: block;
+    float: left;
+    margin: 0 10px 10px 0;
+}
+
+.proportion {
+    position: relative;
+}
+
+.proportion .filler {
+    width: 100%;
+    padding-top:60%;
+}
+
+
+.mag-eg-row {
+    margin-bottom: 15px;
+}
+.mag-eg-el-wrap {
+  margin-bottom: 15px;
+  width: 100%;
+}
+.mag-eg-doc {
+    margin: 20px;
+}
+
+.outer-wrap {
+    position: relative;
+    float: left;
+}
+/*
+[mag-zoom="outer"] {
+    position: absolute;
+    z-index: 10;
+    left: 100%;
+}
+*/
+
+
+[mag-thumb="inner-inline"] {
+    float: left;
+}
+
+
+.mag-eg-hud {
+    position: absolute;
+    z-index: 10;
+    text-align: right;
+    padding: 0.5em;
+    color: white;
+    background: black;
+    background: rgba(0,0,0,0.5);
+}
+
+.mag-eg-hud-left {
+    left: 0;
+    bottom: 0;
+    text-align: left;
+}
+
+.mag-eg-hud-right {
+    right: 0;
+    bottom: 0;
+    text-align: right;
+}

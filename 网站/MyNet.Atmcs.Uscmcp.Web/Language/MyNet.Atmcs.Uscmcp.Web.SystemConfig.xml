@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Message>
+<Language>CN</Language>
+<Dictionary>
+<MyNet.Atmcs.Uscmcp.Web.SystemConfig>
+<SystemConfig1   CN="系统参数管理" EN="System parameter management" JP="" RU="" />
+<SystemConfig2   CN="配置编号" EN="Configuration number" JP="" RU="" />
+<SystemConfig3   CN="配置名称" EN="The configuration name" JP="" RU="" />
+<SystemConfig4   CN="配置值" EN="Configure the value" JP="" RU="" />
+<SystemConfig5   CN="备注" EN="Remarks" JP="" RU="" />
+<SystemConfig6   CN="详细信息" EN="Details" JP="" RU="" />
+<SystemConfig7   CN="配置编号" EN="Configuration Number" JP="" RU="" />
+<SystemConfig8   CN="配置名称" EN="The configuration name" JP="" RU="" />
+<SystemConfig9   CN="配置值" EN="Configure the value" JP="" RU="" />
+<SystemConfig10  CN="备注" EN="Remarks" JP="" RU="" />
+<SystemConfig11  CN="增加" EN="Increase" JP="" RU="" />
+<SystemConfig12  CN="保存" EN="Save" JP="" RU="" />
+<SystemConfig13  CN="删除" EN="Delete" JP="" RU="" />
+<SystemConfig14  CN="您没有登录或操作超时，请重新登录!" EN="You are not logged in or the operation timed out, please log in again!" JP="" RU="" /> 
+<SystemConfig15  CN="访问：" EN="Access：" JP="" RU="" />
+<SystemConfig16  CN="信息" EN="Information" JP="" RU="" />
+<SystemConfig17  CN="确认要删除这条记录吗?" EN="Are you sure you want to delete this record?" JP="" RU="" />
+<SystemConfig18  CN="是" EN="Yes" JP="" RU="" />
+<SystemConfig19  CN="否" EN="No" JP="" RU="" />
+<SystemConfig20  CN="信息提示" EN="Message prompt " JP="" RU="" />
+<SystemConfig21  CN="删除成功" EN="Successfully deleted" JP="" RU="" />
+<SystemConfig22  CN="删除配置名称：[" EN="Delete the configuration name：[" JP="" RU="" />
+<SystemConfig23  CN="保存成功" EN="Saved successfully" JP="" RU="" />
+<SystemConfig24  CN="更新成功" EN="Update completed" JP="" RU="" />
+<SystemConfig28  CN="修改配置编号：[" EN="Modify the configuration number：[" JP="" RU="" />
+<SystemConfig31  CN="添加系统参数：" EN="Add system parameters：" JP="" RU="" />
+</MyNet.Atmcs.Uscmcp.Web.SystemConfig>
+</Dictionary>
+</Message>

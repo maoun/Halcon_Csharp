@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Message>
+  <Language>CN</Language>
+  <Dictionary>
+    <MyNet.Atmcs.Uscmcp.Web.ChecklessManager>
+      <ChecklessManager14 CN="比对编号" EN="" JP="" RU="" />
+      <ChecklessManager15 CN="号牌号码" EN="" JP="" RU="" />
+      <ChecklessManager16 CN="号牌种类" EN="" JP="" RU="" />
+      <ChecklessManager17 CN="车身颜色" EN="" JP="" RU="" />
+      <ChecklessManager18 CN="车辆品牌" EN="" JP="" RU="" />
+      <ChecklessManager19 CN="有效时间" EN="" JP="" RU="" />
+      <ChecklessManager20 CN="比对类型" EN="" JP="" RU="" />
+      <ChecklessManager21 CN="比对标识" EN="" JP="" RU="" />
+      <ChecklessManager22 CN="更新时间" EN="" JP="" RU="" />
+      <ChecklessManager24 CN="车辆信息" EN="" JP="" RU="" />
+      <ChecklessManager25 CN="批量录入" EN="" JP="" RU="" />
+      <ChecklessManager1 CN="车辆号牌：" EN="" JP="" RU="" />
+      <ChecklessManager2 CN="车牌类型：" EN="" JP="" RU="" />
+      <ChecklessManager3 CN="选择车牌类型..." EN="" JP="" RU="" />
+      <ChecklessManager5 CN="对比类型：" EN="" JP="" RU="" />
+      <ChecklessManager6 CN="选择比对类型..." EN="" JP="" RU="" />
+      <ChecklessManager7 CN="查询" EN="" JP="" RU="" />
+      <ChecklessManager8 CN="重置" EN="" JP="" RU="" />
+      <ChecklessManager9 CN="刷新" EN="" JP="" RU="" />
+      <ChecklessManager10 CN="导出XML" EN="" JP="" RU="" />
+      <ChecklessManager11 CN="导出Excel" EN="" JP="" RU="" />
+      <ChecklessManager12 CN="导出CSV" EN="" JP="" RU="" />
+      <ChecklessManager13 CN="打印" EN="" JP="" RU="" />
+      <ChecklessManager26 CN="车辆信息" EN="" JP="" RU="" />
+      <ChecklessManager27 CN="对比编号" EN="" JP="" RU="" />
+      <ChecklessManager28 CN="号牌号码" EN="" JP="" RU="" />
+      <ChecklessManager29 CN="号牌种类" EN="" JP="" RU="" />
+      <ChecklessManager30 CN="选择号牌种类" EN="" JP="" RU="" />
+      <ChecklessManager31 CN="车身颜色" EN="" JP="" RU="" />
+      <ChecklessManager32 CN="选择车身颜色" EN="" JP="" RU="" />
+      <ChecklessManager33 CN="车辆品牌" EN="" JP="" RU="" />
+      <ChecklessManager34 CN="对比类型" EN="" JP="" RU="" />
+      <ChecklessManager4 CN="选择对比类型" EN="" JP="" RU="" />
+      <ChecklessManager35 CN="对比原因" EN="" JP="" RU="" />
+      <ChecklessManager36 CN="数据来源" EN="" JP="" RU="" />
+      <ChecklessManager37 CN="比对标识" EN="" JP="" RU="" />
+      <ChecklessManager38 CN="选择比对或者撤销" EN="" JP="" RU="" />
+      <ChecklessManager39 CN="备注信息" EN="" JP="" RU="" />
+      <ChecklessManager40 CN="更新时间" EN="" JP="" RU="" />
+      <ChecklessManager41 CN="增加" EN="" JP="" RU="" />
+      <ChecklessManager42 CN="保存" EN="" JP="" RU="" />
+      <ChecklessManager43 CN="删除" EN="" JP="" RU="" />
+      <ChecklessManager44 CN="车辆实际" EN="" JP="" RU="" />
+      <ChecklessManager45 CN="选择Excel文件" EN="" JP="" RU="" />
+      <ChecklessManager48 CN="批量录入" EN="" JP="" RU="" />
+      <ChecklessManager46 CN="模板下载" EN="" JP="" RU="" />
+    </MyNet.Atmcs.Uscmcp.Web.ChecklessManager>
+  </Dictionary>
+</Message>

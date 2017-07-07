@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Message>
+  <Language>CN</Language>
+  <Dictionary>
+    <MyNet.Atmcs.Uscmcp.Web.WebPeccancyGrid>
+     
+      <WebPeccancyGrid2 CN="单位名称" EN="Company name" JP="" RU="" />
+      <WebPeccancyGrid3 CN="无记录" EN="No record" JP="" RU="" />
+     
+    </MyNet.Atmcs.Uscmcp.Web.WebPeccancyGrid>
+  </Dictionary>
+</Message>

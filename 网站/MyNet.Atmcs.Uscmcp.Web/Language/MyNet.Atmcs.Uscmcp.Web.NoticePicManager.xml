@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Message>
+<Language>EN</Language>
+<Dictionary>
+<MyNet.Atmcs.Uscmcp.Web.NoticePicManager>
+<NoticePicManager1 CN="公告名称：" EN="AnnouncementName" JP="" RU="" />
+<NoticePicManager2 CN="录入人：" EN="EntryPerson" JP="" RU="" />
+<NoticePicManager3 CN="选择录入人..." EN="SelectingTheEntry..." JP="" RU="" />
+<NoticePicManager4 CN="清除选中" EN="Remove the selected" JP="" RU="" />
+<NoticePicManager5 CN="查询" EN="Refer" JP="" RU="" />
+<NoticePicManager6 CN="重置" EN="Reset" JP="" RU="" />
+<NoticePicManager7 CN="添加信息" EN="Add information" JP="" RU="" />
+<NoticePicManager8 CN="编辑" EN="Compile" JP="" RU="" />
+<NoticePicManager9 CN="删除" EN="Cancel" JP="" RU="" />
+<NoticePicManager10 CN="公告名称" EN="AnnouncementName" JP="" RU="" />
+<NoticePicManager11 CN="公告简称" EN="Announcement referred to as" JP="" RU="" />
+<NoticePicManager12 CN="详细描述" EN="Elaborate" JP="" RU="" />
+<NoticePicManager13 CN="违法行为" EN="Unlawful act" JP="" RU="" />
+<NoticePicManager14 CN="录入人" EN="EntryPerson" JP="" RU="" />
+<NoticePicManager15 CN="录入时间" EN="Edttime" JP="" RU="" />
+<NoticePicManager16 CN="详细信息" EN="Detailed information" JP="" RU="" />
+<NoticePicManager17 CN="车辆图片(图片点击滚轮缩放)" EN="Vehicle images" JP="" RU="" />
+<NoticePicManager18 CN="文件" EN="File" JP="" RU="" />
+<NoticePicManager19 CN="浏览" EN="Browse" JP="" RU="" />
+<NoticePicManager20 CN="取消" EN="Abrogate" JP="" RU="" />
+<NoticePicManager21 CN="添加" EN="Addition" JP="" RU="" />
+<NoticePicManager22 CN="信息提示" EN="Information cue" JP="" RU="" />
+<NoticePicManager23 CN="添加成功" EN="Add successful" JP="" RU="" />
+<NoticePicManager24 CN="添加失败" EN="Add failed" JP="" RU="" />
+<NoticePicManager25  CN="未作任何修改！" EN="Without any changes!" JP="" RU="" />
+<NoticePicManager26  CN="修改失败" EN="Fail to edit" JP="" RU="" />
+<NoticePicManager27 CN="删除成功" EN="Successfully delete" JP="" RU="" />
+<NoticePicManager28  CN="删除失败" EN="Failed to delete" JP="" RU="" />
+<NoticePicManager29 CN="提示" EN="Prompt" JP="" RU="" />
+<NoticePicManager30 CN="是否删除此条公告信息" EN="Whether to delete this announcement information" JP="" RU="" />
+<NoticePicManager31 CN="是" EN="Yes" JP="" RU="" />
+<NoticePicManager32 CN="否" EN="No" JP="" RU="" />
+<NoticePicManager33 CN="修改" EN="Amend" JP="" RU="" />
+<NoticePicManager34  CN="您没有登录或操作超时，请重新登录!" EN="You are not logged in or the operation timed out, please log in again!" JP="" RU="" />
+<NoticePicManager35 CN="访问：" EN="Access:" JP="" RU="" />
+<NoticePicManager39  CN="描述" EN="Description" JP="" RU="" />
+<NoticePicManager41  CN="添加:" EN="Addition：" JP="" RU="" />
+<NoticePicManager42  CN="修改:" EN="Amend：" JP="" RU="" />
+<NoticePicManager43  CN="删除:[" EN="删除：[" JP="" RU="" />
+</MyNet.Atmcs.Uscmcp.Web.NoticePicManager>
+</Dictionary>
+</Message>

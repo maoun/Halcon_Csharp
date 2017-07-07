@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Message>
+  <Language>CN</Language>
+  <Dictionary>
+    <MyNet.Atmcs.Uscmcp.Web.MarkerManager>
+      <MarkerManager1 CN="地图浏览" EN="" JP="" RU="" />
+      <MarkerManager2 CN="重载地图" EN="" JP="" RU="" />
+      <MarkerManager3 CN="中心点" EN="" JP="" RU="" />
+      <MarkerManager4 CN="标注" EN="" JP="" RU="" />
+      <MarkerManager6 CN="监测点类型" EN="" JP="" RU="" />
+      <MarkerManager7 CN="选择监测点类型..." EN="" JP="" RU="" />
+      <MarkerManager8 CN="查询" EN="" JP="" RU="" />
+      <MarkerManager9 CN="刷新" EN="" JP="" RU="" />
+      <MarkerManager10 CN="交通监测点信息标注" EN="" JP="" RU="" />
+      <MarkerManager16 CN="用该列进行分组" EN="" JP="" RU="" />
+      <MarkerManager17 CN="显示分组" EN="" JP="" RU="" />
+      <MarkerManager18 CN="施工占道信息标注" EN="" JP="" RU="" />
+      <MarkerManager19 CN="显示施工占道信息" EN="" JP="" RU="" />
+      <MarkerManager24 CN="交通管制信息标注" EN="" JP="" RU="" />
+      <MarkerManager25 CN="显示交通管制信息" EN="" JP="" RU="" />
+      <MarkerManager11 CN="监测点类型" EN="" JP="" RU="" />
+      <MarkerManager12 CN="监测点名称" EN="" JP="" RU="" />
+      <MarkerManager13 CN="标注情况" EN="" JP="" RU="" />
+      <MarkerManager14 CN="地图上标注" EN="" JP="" RU="" />
+      <MarkerManager15 CN="删除地点标注" EN="" JP="" RU="" />
+      <MarkerManager20 CN="施工占道名称" EN="" JP="" RU="" />
+      <MarkerManager26 CN="交通管制名称" EN="" JP="" RU="" />
+      <KeyRoadManager1 CN="地图浏览" EN="" JP="" RU="" />
+      <KeyRoadManager2 CN="重载地图" EN="" JP="" RU="" />
+      <KeyRoadManager3 CN="中心点" EN="" JP="" RU="" />
+      <KeyRoadManager4 CN="标注" EN="" JP="" RU="" />
+      <KeyRoadManager6 CN="监测点类型" EN="" JP="" RU="" />
+      <KeyRoadManager7 CN="选择监测点类型..." EN="" JP="" RU="" />
+      <KeyRoadManager8 CN="查询" EN="" JP="" RU="" />
+      <KeyRoadManager9 CN="刷新" EN="" JP="" RU="" />
+      <KeyRoadManager10 CN="交通监测点信息标注" EN="" JP="" RU="" />
+      <KeyRoadManager16 CN="用该列进行分组" EN="" JP="" RU="" />
+      <KeyRoadManager17 CN="显示分组" EN="" JP="" RU="" />
+      <KeyRoadManager18 CN="施工占道信息标注" EN="" JP="" RU="" />
+      <KeyRoadManager19 CN="显示施工占道信息" EN="" JP="" RU="" />
+      <KeyRoadManager24 CN="交通管制信息标注" EN="" JP="" RU="" />
+      <KeyRoadManager25 CN="显示交通管制信息" EN="" JP="" RU="" />
+      <KeyRoadManager11 CN="监测点类型" EN="" JP="" RU="" />
+      <KeyRoadManager12 CN="监测点名称" EN="" JP="" RU="" />
+      <KeyRoadManager13 CN="标注情况" EN="" JP="" RU="" />
+      <KeyRoadManager14 CN="地图上标注" EN="" JP="" RU="" />
+      <KeyRoadManager15 CN="删除地点标注" EN="" JP="" RU="" />
+      <KeyRoadManager20 CN="施工占道名称" EN="" JP="" RU="" />
+      <KeyRoadManager21 CN="标注情况" EN="" JP="" RU="" />
+      <KeyRoadManager22 CN="地图上标注" EN="" JP="" RU="" />
+      <KeyRoadManager23 CN="删除地点标注" EN="" JP="" RU="" />
+      <KeyRoadManager26 CN="交通管制名称" EN="" JP="" RU="" />
+    </MyNet.Atmcs.Uscmcp.Web.MarkerManager>
+  </Dictionary>
+</Message>

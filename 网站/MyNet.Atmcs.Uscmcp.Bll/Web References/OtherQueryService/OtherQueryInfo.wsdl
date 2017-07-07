@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc12="http://www.w3.org/2003/05/soap-encoding" xmlns:soap12="http://www.w3.org/2003/05/soap-envelope" xmlns:tns="http://query" xmlns:soapenc11="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap11="http://schemas.xmlsoap.org/soap/envelope/" targetNamespace="http://query" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://query">
+      <xsd:element name="QueryUntreatedLlegalInfo">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="in0" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in1" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="QueryUntreatedLlegalInfoResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="out" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="QueryLlegalScoreCount">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="in0" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in1" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="QueryLlegalScoreCountResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="out" type="xsd:int" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="QueryLlegalCount">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="in0" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in1" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="QueryLlegalCountResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="out" type="xsd:int" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="GetFeatureImageSearch">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="in0" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="GetFeatureImageSearchResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="out" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="QueryObjectOut">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="in0" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in1" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="QueryObjectOutResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="out" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="WriteObjectOut">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="in0" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in1" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="WriteObjectOutResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="out" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="GetImageSearch">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="in0" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="GetImageSearchResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="out" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="QueryPersonRelationAnalysis">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="in0" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="QueryPersonRelationAnalysisResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="out" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="QueryHandleLlegalPersons">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="in0" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="1" maxOccurs="1" name="in1" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="QueryHandleLlegalPersonsResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element minOccurs="1" maxOccurs="1" name="out" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="QueryLlegalCountResponse">
+    <wsdl:part name="parameters" element="tns:QueryLlegalCountResponse" />
+  </wsdl:message>
+  <wsdl:message name="QueryLlegalScoreCountRequest">
+    <wsdl:part name="parameters" element="tns:QueryLlegalScoreCount" />
+  </wsdl:message>
+  <wsdl:message name="QueryLlegalScoreCountResponse">
+    <wsdl:part name="parameters" element="tns:QueryLlegalScoreCountResponse" />
+  </wsdl:message>
+  <wsdl:message name="WriteObjectOutResponse">
+    <wsdl:part name="parameters" element="tns:WriteObjectOutResponse" />
+  </wsdl:message>
+  <wsdl:message name="QueryUntreatedLlegalInfoResponse">
+    <wsdl:part name="parameters" element="tns:QueryUntreatedLlegalInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetImageSearchResponse">
+    <wsdl:part name="parameters" element="tns:GetImageSearchResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetFeatureImageSearchResponse">
+    <wsdl:part name="parameters" element="tns:GetFeatureImageSearchResponse" />
+  </wsdl:message>
+  <wsdl:message name="QueryLlegalCountRequest">
+    <wsdl:part name="parameters" element="tns:QueryLlegalCount" />
+  </wsdl:message>
+  <wsdl:message name="QueryHandleLlegalPersonsResponse">
+    <wsdl:part name="parameters" element="tns:QueryHandleLlegalPersonsResponse" />
+  </wsdl:message>
+  <wsdl:message name="WriteObjectOutRequest">
+    <wsdl:part name="parameters" element="tns:WriteObjectOut" />
+  </wsdl:message>
+  <wsdl:message name="GetFeatureImageSearchRequest">
+    <wsdl:part name="parameters" element="tns:GetFeatureImageSearch" />
+  </wsdl:message>
+  <wsdl:message name="QueryUntreatedLlegalInfoRequest">
+    <wsdl:part name="parameters" element="tns:QueryUntreatedLlegalInfo" />
+  </wsdl:message>
+  <wsdl:message name="QueryObjectOutRequest">
+    <wsdl:part name="parameters" element="tns:QueryObjectOut" />
+  </wsdl:message>
+  <wsdl:message name="QueryObjectOutResponse">
+    <wsdl:part name="parameters" element="tns:QueryObjectOutResponse" />
+  </wsdl:message>
+  <wsdl:message name="QueryPersonRelationAnalysisResponse">
+    <wsdl:part name="parameters" element="tns:QueryPersonRelationAnalysisResponse" />
+  </wsdl:message>
+  <wsdl:message name="QueryPersonRelationAnalysisRequest">
+    <wsdl:part name="parameters" element="tns:QueryPersonRelationAnalysis" />
+  </wsdl:message>
+  <wsdl:message name="QueryHandleLlegalPersonsRequest">
+    <wsdl:part name="parameters" element="tns:QueryHandleLlegalPersons" />
+  </wsdl:message>
+  <wsdl:message name="GetImageSearchRequest">
+    <wsdl:part name="parameters" element="tns:GetImageSearch" />
+  </wsdl:message>
+  <wsdl:portType name="OtherQueryInfoPortType">
+    <wsdl:operation name="QueryUntreatedLlegalInfo">
+      <wsdl:input name="QueryUntreatedLlegalInfoRequest" message="tns:QueryUntreatedLlegalInfoRequest" />
+      <wsdl:output name="QueryUntreatedLlegalInfoResponse" message="tns:QueryUntreatedLlegalInfoResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="QueryLlegalScoreCount">
+      <wsdl:input name="QueryLlegalScoreCountRequest" message="tns:QueryLlegalScoreCountRequest" />
+      <wsdl:output name="QueryLlegalScoreCountResponse" message="tns:QueryLlegalScoreCountResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="QueryLlegalCount">
+      <wsdl:input name="QueryLlegalCountRequest" message="tns:QueryLlegalCountRequest" />
+      <wsdl:output name="QueryLlegalCountResponse" message="tns:QueryLlegalCountResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFeatureImageSearch">
+      <wsdl:input name="GetFeatureImageSearchRequest" message="tns:GetFeatureImageSearchRequest" />
+      <wsdl:output name="GetFeatureImageSearchResponse" message="tns:GetFeatureImageSearchResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="QueryObjectOut">
+      <wsdl:input name="QueryObjectOutRequest" message="tns:QueryObjectOutRequest" />
+      <wsdl:output name="QueryObjectOutResponse" message="tns:QueryObjectOutResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="WriteObjectOut">
+      <wsdl:input name="WriteObjectOutRequest" message="tns:WriteObjectOutRequest" />
+      <wsdl:output name="WriteObjectOutResponse" message="tns:WriteObjectOutResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="GetImageSearch">
+      <wsdl:input name="GetImageSearchRequest" message="tns:GetImageSearchRequest" />
+      <wsdl:output name="GetImageSearchResponse" message="tns:GetImageSearchResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="QueryPersonRelationAnalysis">
+      <wsdl:input name="QueryPersonRelationAnalysisRequest" message="tns:QueryPersonRelationAnalysisRequest" />
+      <wsdl:output name="QueryPersonRelationAnalysisResponse" message="tns:QueryPersonRelationAnalysisResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="QueryHandleLlegalPersons">
+      <wsdl:input name="QueryHandleLlegalPersonsRequest" message="tns:QueryHandleLlegalPersonsRequest" />
+      <wsdl:output name="QueryHandleLlegalPersonsResponse" message="tns:QueryHandleLlegalPersonsResponse" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="OtherQueryInfoHttpBinding" type="tns:OtherQueryInfoPortType">
+    <wsdlsoap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="QueryUntreatedLlegalInfo">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="QueryUntreatedLlegalInfoRequest">
+        <wsdlsoap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="QueryUntreatedLlegalInfoResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryLlegalScoreCount">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="QueryLlegalScoreCountRequest">
+        <wsdlsoap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="QueryLlegalScoreCountResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryLlegalCount">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="QueryLlegalCountRequest">
+        <wsdlsoap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="QueryLlegalCountResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFeatureImageSearch">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="GetFeatureImageSearchRequest">
+        <wsdlsoap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="GetFeatureImageSearchResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryObjectOut">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="QueryObjectOutRequest">
+        <wsdlsoap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="QueryObjectOutResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WriteObjectOut">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="WriteObjectOutRequest">
+        <wsdlsoap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="WriteObjectOutResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetImageSearch">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="GetImageSearchRequest">
+        <wsdlsoap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="GetImageSearchResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryPersonRelationAnalysis">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="QueryPersonRelationAnalysisRequest">
+        <wsdlsoap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="QueryPersonRelationAnalysisResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryHandleLlegalPersons">
+      <wsdlsoap:operation soapAction="" />
+      <wsdl:input name="QueryHandleLlegalPersonsRequest">
+        <wsdlsoap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="QueryHandleLlegalPersonsResponse">
+        <wsdlsoap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="OtherQueryInfo">
+    <wsdl:port name="OtherQueryInfoHttpPort" binding="tns:OtherQueryInfoHttpBinding">
+      <wsdlsoap:address location="http://192.168.1.232:8080/other-webservice/services/OtherQueryInfo" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

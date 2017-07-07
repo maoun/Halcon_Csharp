@@ -1,0 +1,69 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+    <title>hidden</title>
+    <style type="text/css">
+<!--
+body {
+ margin-left: 0px;
+ margin-top: 0px;
+ margin-right: 0px;
+ margin-bottom: 0px;
+}
+-->
+</style>
+    <style type="text/css">
+<!--
+body,td,th {
+ color: #CCCCCC;
+ font-size: 9pt;
+}
+body {
+ background-color: #000000;
+}
+-->
+</style>
+
+    <script language="javascript" type="text/javascript">
+        function HideList(ss)
+        {
+            if (frmHide.liststatus.value==0)
+            {
+                eval("document.getElementById('arrow').className='hiddenr'");
+                top.bbs.cols="*,10,0";
+                document.getElementById("content").innerHTML = "<p>显</p><p>示</p><p>图</p><p>片</p>";
+            }
+            else
+            {
+                eval("document.getElementById('arrow').className='hiddenl'");
+                top.bbs.cols="*,10,400";
+                document.getElementById("content").innerHTML = "<p>隐</p><p>藏</p><p>图</p><p>片</p>";
+            }
+            frmHide.liststatus.value = 1 - frmHide.liststatus.value;
+        }
+    </script>
+
+</head>
+<body>
+    <table height="100%" border="0" cellpadding="0" cellspacing="0" class="hiddentable">
+        <tr>
+            <td class="hiddentop">
+            </td>
+        </tr>
+        <tr>
+            <td class="hiddenl" onclick="HideList(arrow)" style="cursor: hand" id="arrow">
+                <form name="frmHide">
+                    <input type="hidden" name="liststatus" value="0">
+                </form>
+                <div id="content">
+                    <p>隐</p><p>藏</p><p>图</p><p>片</p>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td class="hiddenbottom">
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

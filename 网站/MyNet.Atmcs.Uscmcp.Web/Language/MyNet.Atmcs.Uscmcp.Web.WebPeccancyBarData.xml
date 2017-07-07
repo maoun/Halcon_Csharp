@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Message>
+  <Language>CN</Language>
+  <Dictionary>
+    <MyNet.Atmcs.Uscmcp.Web.WebPeccancyBarData>
+      <WebPeccancyBarData1 CN="违法类型统计暂无数据" EN="Illegal type of statistics no data" JP="" RU="" />
+    </MyNet.Atmcs.Uscmcp.Web.WebPeccancyBarData>
+  </Dictionary>
+</Message>

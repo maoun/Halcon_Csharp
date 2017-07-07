@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Message>
+  <Language>CN</Language>
+  <Dictionary>
+    <MyNet.Atmcs.Web.MainIndex>
+      <AlarmInfoCount1 CN="用户信息" EN="" JP="" RU="" />
+      <AlarmInfoCount2 CN="修改密码" EN="" JP="" RU="" />
+      <AlarmInfoCount3 CN="注销登录" EN="" JP="" RU="" />
+      <AlarmInfoCount4 CN="检测屏幕" EN="" JP="" RU="" />
+      <AlarmInfoCount5 CN="下载控件" EN="" JP="" RU="" />
+      <AlarmInfoCount6 CN="更换背景" EN="" JP="" RU="" />
+      <AlarmInfoCount7 CN="关于我们" EN="" JP="" RU="" />
+      <AlarmInfoCount8 CN="用户手册" EN="" JP="" RU="" />
+    </MyNet.Atmcs.Web.MainIndex>
+  </Dictionary>
+</Message>

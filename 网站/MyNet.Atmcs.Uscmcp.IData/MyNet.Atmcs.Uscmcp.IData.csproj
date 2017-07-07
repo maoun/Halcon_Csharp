@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{135B55EC-9A7E-4713-B78D-898E1625F99A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MyNet.Atmcs.Uscmcp.IData</RootNamespace>
+    <AssemblyName>MyNet.Atmcs.Uscmcp.IData</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="log4net">
+      <HintPath>..\..\..\2015新版本\通用\MyNet.Common.Log\MyNet.Common.Log\bin\Debug\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="MyNet.DataAccess.Model">
+      <HintPath>..\..\..\2015新版本\WEBFramework\MyNet.DataAccess\MyNet.DataAccess.Interface\MyNet.DataAccess.Model\bin\Debug\MyNet.DataAccess.Model.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DALFactory.cs" />
+    <Compile Include="IDataCommon.cs" />
+    <Compile Include="IDataCountInfo.cs" />
+    <Compile Include="IDeviceManager.cs" />
+    <Compile Include="IEngineroomManager.cs" />
+    <Compile Include="IFacilityManager.cs" />
+    <Compile Include="IGisShow.cs" />
+    <Compile Include="ILogManager.cs" />
+    <Compile Include="IMapManager.cs" />
+    <Compile Include="INoticeManager.cs" />
+    <Compile Include="IPasscarManager.cs" />
+    <Compile Include="IRoadManager.cs" />
+    <Compile Include="IServiceManager.cs" />
+    <Compile Include="ISettingManager.cs" />
+    <Compile Include="ISettingManagerNew.cs" />
+    <Compile Include="IStationManager.cs" />
+    <Compile Include="ISystemManager.cs" />
+    <Compile Include="ISystemManagerNew.cs" />
+    <Compile Include="ITgsDataInfo.cs" />
+    <Compile Include="ITgsPproperty.cs" />
+    <Compile Include="ITgsPpropertyNew.cs" />
+    <Compile Include="IUserManager.cs" />
+    <Compile Include="IUserManagerNew.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MyNet.Atmcs.Uscmcp.Model\MyNet.Atmcs.Uscmcp.Model.csproj">
+      <Project>{619963ea-573d-4d14-b664-e7f58db7c576}</Project>
+      <Name>MyNet.Atmcs.Uscmcp.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

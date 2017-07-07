@@ -1,0 +1,26 @@
+/* CMS CSS. Always, always adjusting. */
+/* (C) 2008 */
+
+body {
+    margin: 30px;
+    padding: 0;
+    border: 0;
+    color: #000000;
+    font-family: helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 12px;
+    text-align: left;
+}
+
+img {
+    border: 0;
+}
+
+#main .photoblock-many { /* A general full-width photo block (that clears), for many thumbnails */
+    margin: 0 10px 10px -4px;
+    clear: both;
+    width: 100%;
+    text-align: center;
+    font-size: 10px;
+    color: #888888;
+}

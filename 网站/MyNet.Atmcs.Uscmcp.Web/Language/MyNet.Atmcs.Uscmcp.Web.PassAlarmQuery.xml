@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Message>
+  <Language>CN</Language>
+  <Dictionary>
+    <MyNet.Atmcs.Uscmcp.Web.PassAlarmQuery>
+      <PassAlarmQuery1 CN="号牌种类：" EN="Number plate type:" JP="" RU="" />
+      <PassAlarmQuery2 CN="请选择..." EN="Please choose..." JP="" RU="" />
+      <PassAlarmQuery3 CN="清除选中" EN="Clear selected" JP="" RU="" />
+      <PassAlarmQuery4 CN="号牌号码：" EN="Number plate number：" JP="" RU="" />
+      <PassAlarmQuery5 CN="六位号牌号码" EN="Six number plate number" JP="" RU="" />
+      <PassAlarmQuery6 CN="模糊查询" EN="Fuzzy query" JP="" RU="" />
+      <PassAlarmQuery7 CN="卡口列表：" EN="Bayonet List:" JP="" RU="" />
+      <PassAlarmQuery8 CN="车身颜色：" EN="Body color:" JP="" RU="" />
+      <PassAlarmQuery9 CN="选择车身颜色..." EN="Select Body Color..." JP="" RU="" />
+      <PassAlarmQuery10 CN="查询" EN="Inquire" JP="" RU="" />
+      <PassAlarmQuery11 CN="重置" EN="Reset" JP="" RU="" />
+      <PassAlarmQuery12 CN="高级查询" EN="Advanced Search" JP="" RU="" />
+      <PassAlarmQuery13 CN="车辆品牌：" EN="Vehicle Brands:" JP="" RU="" />
+      <PassAlarmQuery14 CN="行驶方向：" EN="Driving direction:" JP="" RU="" />
+      <PassAlarmQuery15 CN="选择行驶方向..." EN="Select driving direction ..." JP="" RU="" />
+      <PassAlarmQuery16 CN="车速(km/h)：" EN="Speed (km / h):" JP="" RU="" />
+      <PassAlarmQuery17 CN="车道编号：" EN="Lane Number:" JP="" RU="" />
+      <PassAlarmQuery18 CN="查询结果" EN="Search result" JP="" RU="" />
+      <PassAlarmQuery19 CN="当前0页,共0页" EN="Current 0 Pages, Total 0 Pages" JP="" RU="" />
+      <PassAlarmQuery20 CN="首页" EN="Home" JP="" RU="" />
+      <PassAlarmQuery21 CN="上一页" EN="Previous page" JP="" RU="" />
+      <PassAlarmQuery22 CN="下一页" EN="Next page" JP="" RU="" />
+      <PassAlarmQuery23 CN="尾页" EN="Last page" JP="" RU="" />
+      <PassAlarmQuery24 CN="导出Excel" EN="ExportExcel" JP="" RU="" />
+      <PassAlarmQuery25 CN="详细" EN="Detailed" JP="" RU="" />
+      <PassAlarmQuery26 CN="记录编号" EN="Record number" JP="" RU="" />
+      <PassAlarmQuery27 CN="报警卡口" EN="Alarm bayonet" JP="" RU="" />
+      <PassAlarmQuery28 CN="号牌号码" EN="Number plate number" JP="" RU="" />
+      <PassAlarmQuery29 CN="号牌种类" EN="Number plate type" JP="" RU="" />
+      <PassAlarmQuery30 CN="报警时间" EN="Alarm time" JP="" RU="" />
+      <PassAlarmQuery31 CN="报警类型" EN="Alarm Type" JP="" RU="" />
+      <PassAlarmQuery32 CN="报警原因" EN="Cause of alarm" JP="" RU="" />
+      <PassAlarmQuery33 CN="处理状态" EN="Processing state" JP="" RU="" />
+      <PassAlarmQuery34 CN="车辆图片(图片点击滚轮缩放)" EN="Vehicle picture (picture click wheel zoom)" JP="" RU="" />
+      <PassAlarmQuery35 CN="卡口选择" EN="Bayonet selection" JP="" RU="" />
+      <PassAlarmQuery36 CN="加载中..." EN="Loading..." JP="" RU="" />
+      <PassAlarmQuery37 CN="清除" EN="Clear" JP="" RU="" />
+      <PassAlarmQuery38 CN="关闭" EN="shut down" JP="" RU="" />
+      <PassAlarmQuery39 CN="返回目录" EN="Back to Contents" JP="" RU="" />
+      <PassAlarmQuery41 CN="您没有登录或操作超时，请重新登录!" EN="You are not logged in or the operation timed out, please log in again!" JP="" RU="" />
+      <PassAlarmQuery42 CN="访问：报警信息查询" EN="Access: Alarm information query" JP="" RU="" />
+      <PassAlarmQuery43 CN="查询结果：共计查询出符合条件的记录0条,现在显示0条" EN="Search Results: Total 0 out of 0 matching records, now show 0" JP="" RU="" />
+      <PassAlarmQuery44 CN="报警车辆查询信息列表" EN="List of alarm vehicle information" JP="" RU="" />
+      <PassAlarmQuery45 CN="当前" EN="Current" JP="" RU="" />
+      <PassAlarmQuery46 CN="页,共" EN="Pages, Total" JP="" RU="" />
+      <PassAlarmQuery47 CN="页" EN="Pages" JP="" RU="" />
+      <PassAlarmQuery48 CN="查询结果：共计查询出符合条件的记录" EN="Query results: a total of inquiries out to meet the conditions of the record" JP="" RU="" />
+      <PassAlarmQuery49 CN="条" EN="Article" JP="" RU="" />
+      <PassAlarmQuery50 CN="信息提示" EN="Message notification" JP="" RU="" />
+      <PassAlarmQuery51 CN="未查询到相关记录" EN="Not related to the query records" JP="" RU="" />
+      <PassAlarmQuery52 CN="条,现在显示" EN="Article,now displayed" JP="" RU="" />
+      <PassAlarmQuery53 CN="查询结果：共计查询出符合条件的记录0条" EN="Search Results: Total 0 out of the records meet the conditions" JP="" RU="" />
+      <PassAlarmQuery54 CN="未查询到相关记录" EN="Not related to the query records" JP="" RU="" />
+      <PassAlarmQuery55 CN="处理完成" EN="Processing is complete" JP="" RU="" />
+      <PassAlarmQuery56 CN="只能选择两个小时之内的时间！" EN="Can only choose two hours of time!" JP="" RU="" />
+      <PassAlarmQuery57 CN="查询结果：当前查询出符合条件的记录0条,现在显示0条" EN="Query results: The current query out of the records meet the conditions 0, now shows 0" JP="" RU="" />
+      <PassAlarmQuery58 CN="当前第1页,共0页" EN="Current page 1 of 0" JP="" RU="" />
+      <PassAlarmQuery59 CN="最多只能选择10个卡口！" EN="Can only choose up to 10 bayonet!" JP="" RU="" />
+      <PassAlarmQuery61 CN="卡口列表" EN="Bayonet list" JP="" RU="" />
+      <PassAlarmQuery62 CN="滨州市交通警察支队" EN="Binzhou City Traffic Police Detachment" JP="" RU="" />
+      <PassAlarmQuery63 CN="提示" EN="Prompt" JP="" RU="" />
+      <PassAlarmQuery64 CN="请选择处理类型" EN="Please select the type of treatment" JP="" RU="" />
+      <PassAlarmQuery65 CN="查询时间：" EN="Querytime：" JP="" RU="" />
+    </MyNet.Atmcs.Uscmcp.Web.PassAlarmQuery>
+  </Dictionary>
+</Message>

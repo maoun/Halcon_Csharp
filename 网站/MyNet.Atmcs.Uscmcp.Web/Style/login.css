@@ -1,0 +1,90 @@
+ 
+ 
+/*JIA 2009,4month*/
+/*------------------------------------------------------------------ 
+[Login] 
+1 input / .input 
+2 Login top back / .loginTopBack
+3 Login left back / .loginLeftBack
+4 Login Right back / .loginRightBack
+5 Login user back / .loginUserBack
+6 button / .btnSearch
+ 
+——————————————————————-*/
+/*登录首页界面样式----------------------------------------------------------------*/
+/*宽125PX,高20PX,1PX蓝青色实线边框;浅青蓝背景,字体白色,大小12PX*/
+.loginListText {
+	width:125px;
+	height:20px;
+	border:solid 1px #0468a7;
+	background:#32a2e3;
+	color:#ffffff;
+	font-size:12px; }
+ 
+/* 登录样式----------------------------------------------------------------*/
+/*宽974PX,高331PX;字体黑体,大小22PX,文字居中,粗体;上边内补丁20PX,左边内补丁10PX;背景不重复*/
+.loginTopBack {
+	width:974px;
+	height:331px;
+	font-family:"黑体";
+	font-size:22px;
+	text-align:center;
+	padding-top:20px;
+	padding-left:10px;
+	font-weight:bold;
+	background:url(../login/images/login_01.jpg) no-repeat; }
+/*宽393PX,高116PX;背景不重复*/ 
+.loginLeftBack {
+	width:393px;
+	height:116px;
+	background:url(../login/images/login_05.gif) no-repeat; }
+/*宽174PX,高81PX;背景不重复*/  
+.loginUserBack {
+	width:174px;
+	height:81px;
+	background:url(../login/images/login_06.gif) no-repeat; }
+/*文本流向对象的右边;宽407PX,高116PX;背景不重复*/ 
+.loginRightBack {
+	float:left;
+	width:407px;
+	height:116px;
+	background:url(../login/images/login_07.gif) no-repeat; }
+/*宽975PX,高160PX;背景不重复*/ 
+.loginBottomBack {
+	width:975px;
+	height:160px;
+	background:url(../login/images/login_12.gif) no-repeat; }
+ 
+/*宽50PX,高35PX;背景不重复*/
+.loginbar {
+	width:50px;
+	height:35px;
+	background:url(../login/images/login_08.gif) no-repeat; }
+/*宽33PX,高35PX,背景不重复*/ 
+.loginBtnrBack {
+	width:33px;
+	height:35px;
+	background:url(../login/images/login_11.gif) no-repeat; }
+ 
+/*按钮样式----------------------------------------------------------------*/
+/*宽46PX,高35PX;背景不重复;字体大小12PX,行高35PX,文本居中*/
+.loginBtnSearch {
+	width:46px;
+	height:35px;
+	background:url(../login/images/login_09.gif) no-repeat;
+	font-size:12px;
+	line-height:35px;
+	text-align:center; }
+/*块对象的默认值,宽40PX,高35PX;外补丁自动;字体浅蓝青色,文本居中,蓝青色发光,文字之间的间隔5PX*/ 
+.loginBtnSearch .loginLbl {
+		display:block;
+		width:40px;
+		height:35px;
+		margin:0 auto;
+		color:#BCDBEB;
+		filter:glow(color=#1070a3,strength=1);
+		cursor:pointer;
+		letter-spacing:5px;
+		text-align:center; }
+/*字体浅蓝青色,蓝青色发光*/ 
+ 

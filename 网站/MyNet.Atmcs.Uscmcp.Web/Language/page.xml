@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Message>
+  <Language>CN</Language>
+  <Dictionary>
+    <page>
+      <WindowShow19 CN="通行证信息" EN="Passport information" JP="" RU="" />
+      <WindowShow20 CN="起止时间" EN="Start and end time" JP="" RU="" />
+      <WindowShow21 CN="政府公告" EN="Government Notice" JP="" RU="" />
+      <WindowShow22 CN="选择政府公告" EN="Select the government bulletin" JP="" RU="" />
+      <WindowShow23 CN="通行路段" EN="Access road" JP="" RU="" />
+	  <WindowShow24 CN="通行时段" EN="Passage time" JP="" RU="" />
+      <WindowShow25 CN="加入违法" EN="Join the illegal" JP="" RU="" />
+	     <WindowShow26 CN="通行证状态：" EN="Pass status：" JP="" RU="" />
+      <WindowShow53 CN="取到通行证" EN="Take to the pass" JP="" RU="" />
+     <WindowShow54 CN="无通行证" EN="No pass" JP="" RU="" />
+	  
+	   <WindowShow50 CN="过往车辆详细信息" EN="Passage vehicle details" JP="" RU="" />
+	   <WindowShow51 CN="退出" EN="Quit" JP="" RU="" />
+	   <WindowShow52 CN="号牌号码" EN="Number plate number" JP="" RU="" />
+      <WindowShow28 CN="车道编号" EN="Lane Number" JP="" RU="" />
+      <WindowShow29 CN="车辆速度" EN="Vehicle speed" JP="" RU="" />
+      <WindowShow30 CN="号牌种类" EN="Number plate type" JP="" RU="" />
+      <WindowShow31 CN="过往时间" EN="Past time" JP="" RU="" />
+      <WindowShow32 CN="记录类型" EN="The record type" JP="" RU="" />
+      <WindowShow33 CN="行驶方向" EN="Driving direction" JP="" RU="" />
+      <WindowShow34 CN="卡口名称" EN="Bayonet name" JP="" RU="" />
+       <WindowShow35 CN="数据来源" EN="Data Sources" JP="" RU="" />
+    </page>
+  </Dictionary>
+</Message>

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Message>
+  <Language>CN</Language>
+  <Dictionary>
+    <MyNet.Atmcs.Uscmcp.Web.DeviceStatus>
+      <DeviceStatus28 CN="设备列表" EN="" JP="" RU="" />
+      <DeviceStatus29 CN="已关联设备监测点列表" EN="" JP="" RU="" />
+      <DeviceStatus30 CN="未关联设备监测点列表" EN="" JP="" RU="" />
+      <DeviceStatus31 CN="其它设备列表" EN="" JP="" RU="" />
+      <DeviceStatus32 CN="服务器列表" EN="" JP="" RU="" />
+    </MyNet.Atmcs.Uscmcp.Web.DeviceStatus>
+  </Dictionary>
+</Message>

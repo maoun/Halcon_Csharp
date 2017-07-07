@@ -1,0 +1,102 @@
+
+.mag-host {
+    position: relative;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+.mag-zoomed-container {
+    position: absolute;
+    /*position: relative;*/
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+}
+
+.mag-zoomed-container > * {
+    position: absolute;
+}
+
+.mag-noflow {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    overflow: hidden;
+}
+
+.mag-noflow > * {
+    position: absolute;
+}
+
+.mag-zoomed {
+    /* under .mag-noflow > * */
+    /*position: absolute;*/
+}
+
+.mag-zoomed img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.mag-zone {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 2;
+}
+
+.mag-thumb {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+[mag-thumb] {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+[mag-thumb] img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.mag-lens {
+    position: absolute;
+    z-index: 2;
+}
+
+[mag-zoom] {
+    display: none;
+}
+
+.mag-js [mag-zoom][mag-toggle="false"] {
+    display: block;
+}
+
+[mag-flow="inline"] {
+    display: inline-block;
+    position: relative;
+    width: auto;
+    height: auto;
+}
+[mag-flow="inline"] .mag-thumb {
+    position: relative;
+}

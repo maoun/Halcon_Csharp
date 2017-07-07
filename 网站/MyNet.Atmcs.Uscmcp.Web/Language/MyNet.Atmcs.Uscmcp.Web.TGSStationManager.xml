@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Message>
+  <Language>CN</Language>
+  <Dictionary>
+    <MyNet.Atmcs.Uscmcp.Web.TGSStationManager>
+      <TGSStationManager80 CN="卡口接入服务器信息（使用/总计）" EN="" JP="" RU="" />
+      <TGSStationManager1 CN="设备名称：" EN="" JP="" RU="" />
+      <TGSStationManager2 CN="设备类型：" EN="" JP="" RU="" />
+      <TGSStationManager3 CN="选择设备类型..." EN="" JP="" RU="" />
+      <TGSStationManager4 CN="查询" EN="" JP="" RU="" />
+      <TGSStationManager5 CN="重置" EN="" JP="" RU="" />
+      <TGSStationManager6 CN="刷新" EN="" JP="" RU="" />
+      <TGSStationManager25 CN="用该列进行分组" EN="" JP="" RU="" />
+      <TGSStationManager26 CN="显示分组" EN="" JP="" RU="" />
+      <TGSStationManager8 CN="添加连接设备" EN="" JP="" RU="" />
+      <TGSStationManager9 CN="修改信息" EN="" JP="" RU="" />
+      <TGSStationManager10 CN="删除连接设备" EN="" JP="" RU="" />
+      <TGSStationManager12 CN="导出Excel" EN="" JP="" RU="" />
+      <TGSStationManager27 CN="服务器信息列表" EN="" JP="" RU="" />
+      <TGSStationManager28 CN="监测点类型" EN="" JP="" RU="" />
+      <TGSStationManager29 CN="选择监测点类型..." EN="" JP="" RU="" />
+      <TGSStationManager30 CN="查询监测点" EN="" JP="" RU="" />
+      <TGSStationManager31 CN="请输入查询监测点名称查询" EN="" JP="" RU="" />
+      <TGSStationManager32 CN="查询" EN="" JP="" RU="" />
+      <TGSStationManager33 CN="监测点名称" EN="" JP="" RU="" />
+      <TGSStationManager34 CN="选择监测点..." EN="" JP="" RU="" />
+      <TGSStationManager35 CN="连接的设备" EN="" JP="" RU="" />
+      <TGSStationManager36 CN="选择连接设备..." EN="" JP="" RU="" />
+      <TGSStationManager37 CN="所属方向" EN="" JP="" RU="" />
+      <TGSStationManager38 CN="选择设备所属方向..." EN="" JP="" RU="" />
+      <TGSStationManager39 CN="设备通道号" EN="" JP="" RU="" />
+      <TGSStationManager40 CN="例如：1" EN="" JP="" RU="" />
+      <TGSStationManager41 CN="是否文件扫描" EN="" JP="" RU="" />
+      <TGSStationManager42 CN="是文件扫描方式时有效" EN="" JP="" RU="" />
+      <TGSStationManager43 CN="图片保存路径" EN="" JP="" RU="" />
+      <TGSStationManager44 CN="本地连接IP" EN="" JP="" RU="" />
+      <TGSStationManager45 CN="192.168.11.1" EN="" JP="" RU="" />
+      <TGSStationManager47 CN="例如：8000" EN="" JP="" RU="" />
+      <TGSStationManager48 CN="使用特殊规则" EN="" JP="" RU="" />
+      <TGSStationManager49 CN="选择用标示..." EN="" JP="" RU="" />
+      <TGSStationManager50 CN="是否启用" EN="" JP="" RU="" />
+      <TGSStationManager51 CN="选择是否启用..." EN="" JP="" RU="" />
+      <TGSStationManager52 CN="确定" EN="" JP="" RU="" />
+      <TGSStationManager53 CN="取消" EN="" JP="" RU="" />
+      <TGSStationManager14 CN="监测点名称" EN="" JP="" RU="" />
+      <TGSStationManager15 CN="设备状态" EN="" JP="" RU="" />
+      <TGSStationManager16 CN="所属方向" EN="" JP="" RU="" />
+      <TGSStationManager17 CN="设备名称" EN="" JP="" RU="" />
+      <TGSStationManager18 CN="设备类型" EN="" JP="" RU="" />
+      <TGSStationManager19 CN="设备型号" EN="" JP="" RU="" />
+      <TGSStationManager20 CN="设备IP" EN="" JP="" RU="" />
+      <TGSStationManager21 CN="设备端口" EN="" JP="" RU="" />
+      <TGSStationManager22 CN="设备通道" EN="" JP="" RU="" />
+      <TGSStationManager23 CN="图片路径" EN="" JP="" RU="" />
+      <TGSStationManager24 CN="外部编号" EN="" JP="" RU="" />
+    </MyNet.Atmcs.Uscmcp.Web.TGSStationManager>
+  </Dictionary>
+</Message>

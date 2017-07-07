@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>图片放大（鼠标滚轮放大或缩小）</title>
+    <link rel="stylesheet" type="text/css" href="../Styles/BigImg/bootstrap.min.css" /><!-- 去掉白框-->
+    <link rel="stylesheet" type="text/css" href="../Styles/BigImg/mag.css" />
+    <link rel="stylesheet" type="text/css" href="../Styles/BigImg/default.css" />
+    <link rel="stylesheet" type="text/css" href="../Styles/BigImg/htmleaf-demo.css">
+    <link rel="stylesheet" type="text/css" href="../Styles/BigImg/index.css" />
+    <style type="text/css">
+        .controls-btns button {
+            color: #333;
+        }
+
+        .mt50 {
+            margin-top: 50px;
+        }
+    </style>
+
+    <script type="text/javascript">
+        function LoadImg() {
+            var path = location.href;
+            if ("=".indexOf(path)) {
+                var paths = path.split("=");
+                document.getElementById("showImg").src = paths[1];
+                document.getElementById("zoomImg").src = paths[1];
+            }
+        }
+    </script>
+</head>
+<body onload=LoadImg()>
+    <div class="mag-eg-el-wrap img-thumbnail">
+        <div class="proportion">
+            <div mag-thumb="inner" class="mag-eg-el">
+                <img title="鼠标滚轮放大或缩小" id="showImg" />
+            </div>
+            <div mag-zoom="inner" class="mag-eg-el">
+                <img title="鼠标滚轮放大或缩小" id="zoomImg" />
+            </div>
+            <div class="filler"></div>
+        </div>
+    </div>
+    <script src="../Scripts/BigImg/jquery-1.11.0.min.js" type="text/javascript"></script>
+    <script src="../Scripts/BigImg/jquery.bridget.js"></script>
+    <script src="../Scripts/BigImg/jquery.mousewheel.min.js"></script>
+    <script src="../Scripts/BigImg/jquery.event.drag.js"></script>
+    <script src="../Scripts/BigImg/screenfull.js"></script>
+    <script src="../Scripts/BigImg/hammer.min.js"></script>
+    <script src="../Scripts/BigImg/PreventGhostClick.js"></script>
+    <script src="../Scripts/BigImg/mag.js"></script>
+    <script src="../Scripts/BigImg/mag-jquery.js"></script>
+    <script src="../Scripts/BigImg/mag-control.js"></script>
+    <script src="../Scripts/BigImg/mag-analytics.js"></script>
+    <script src="../Scripts/BigImg/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Message>
+  <Language>CN</Language>
+  <Dictionary>
+    <MyNet.Atmcs.Uscmcp.Web.Station.RoadMain>
+      <RoadMain1 CN="道路管理" EN="" JP="" RU="" />
+      <RoadMain2 CN="重点道路管理" EN="" JP="" RU="" />
+    </MyNet.Atmcs.Uscmcp.Web.Station.RoadMain>
+  </Dictionary>
+</Message>

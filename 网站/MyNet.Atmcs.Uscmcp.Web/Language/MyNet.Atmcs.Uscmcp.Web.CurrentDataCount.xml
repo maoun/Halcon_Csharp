@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Message>
+  <Language>CN</Language>
+  <Dictionary>
+    <MyNet.Atmcs.Uscmcp.Web.CurrentDataCount>
+      <CurrentDataCount1 CN="今日监测总量" EN="Today's total monitoring" JP="" RU="" />
+      <CurrentDataCount4 CN="昨天" EN="Yesterday" JP="" RU="" />
+      <CurrentDataCount7 CN="本周" EN="This week" JP="" RU="" />
+      <CurrentDataCount8 CN="本月" EN="This month" JP="" RU="" />
+      <CurrentDataCount9 CN="详细信息" EN="The detailed information" JP="" RU="" />
+      <CurrentDataCount10 CN="综合图表分析" EN="Based on the analysis of the chart" JP="" RU="" />
+      <CurrentDataCount11 CN="车辆热力分布" EN="Vehicle thermal distribution" JP="" RU="" />
+      <CurrentDataCount12 CN="退出" EN="exit" JP="" RU="" />
+      <CurrentDataCount13 CN="您没有登录或操作超时，请重新登陆!" EN="You are not logged in or operating a timeout, please login again" JP="" RU="" />
+      <CurrentDataCount14 CN="访问：" EN="access" JP="" RU="" />
+      <CurrentDataCount15 CN="自定义时间" EN="The custom time" JP="" RU="" />
+      <CurrentDataCount2 CN="(" EN="" JP="" RU="" />
+      <CurrentDataCount3 CN=")" EN="" JP="" RU="" />
+    </MyNet.Atmcs.Uscmcp.Web.CurrentDataCount>
+  </Dictionary>
+</Message>

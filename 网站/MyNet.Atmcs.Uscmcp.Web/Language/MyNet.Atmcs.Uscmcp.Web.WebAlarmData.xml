@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Message>
+  <Language>CN</Language>
+  <Dictionary>
+    <MyNet.Atmcs.Uscmcp.Web.WebAlarmData>
+      <WebAlarmData1 CN="历史平均" EN="Historical average" JP="" RU="" />
+      <WebAlarmData2 CN="报警总计" EN="Total alarms" JP="" RU="" />
+      <WebAlarmData3 CN="时" EN="hour" JP="" RU="" />
+      <WebAlarmData4 CN="24小时通过车次与实际在线对比分析" EN="24 hours by train with the actual online comparative analysis" JP="" RU="" />
+    </MyNet.Atmcs.Uscmcp.Web.WebAlarmData>
+  </Dictionary>
+</Message>

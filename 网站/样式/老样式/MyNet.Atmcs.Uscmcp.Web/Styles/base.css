@@ -1,0 +1,614 @@
+﻿/* CSS Document */
+body {
+    margin: 0 auto;
+    padding: 0;
+    color:#333;
+    font-size: 12px;
+    font-family: "Hiragino Sans GB","微软雅黑","宋体","sans-serif";
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    position: absolute;
+    overflow: auto;
+    height: 100%;
+}
+
+    body > div {
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+div, form, ul, ol, li, span, p, dl, dt, dd, img {
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+ul, ol, li {
+    list-style: none;
+}
+
+table, td, textarea {
+    font-size: 12px;
+    resize: none;
+}
+
+form {
+    outline: none;
+}
+
+input, button, select, textarea {
+    outline: none;
+}
+
+input {
+    font-family: "Hiragino Sans GB","微软雅黑","宋体","sans-serif";
+}
+
+a {
+    color: #20366f;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+    a:hover {
+        color: #FF0000;
+        text-decoration: underline;
+    }
+
+    .nl, .nl a, .nl a:hover, a.nl, a.nl:hover {
+        text-decoration: none;
+    }
+
+    .ul, .ul a, .ul a:hover, a.ul, a.ul:hover {
+        text-decoration: underline;
+    }
+
+img {
+    vertical-align: middle;
+    border: 0;
+}
+
+.jspScrollable, .jspContainer {
+    outline: none;
+}
+
+.ml5 {
+    margin-left: 5px;
+}
+
+.ml10 {
+    margin-left: 10px;
+}
+
+.ml15 {
+    margin-left: 15px;
+}
+
+.ml20 {
+    margin-left: 20px;
+}
+
+.ml25 {
+    margin-left: 25px;
+}
+/*共用*/
+
+/*清除浮动*/
+.clearbox {
+    clear: both;
+    font-size: 0px;
+    line-height: 0px;
+    height: 0px;
+    border: 0px;
+    visibility: hidden;
+}
+/*溢出隐藏*/
+.overflow_hidden {
+    overflow: hidden;
+}
+
+.wrapper {
+    width: 100%;
+    margin: 0 auto;
+    min-width: 1920px;
+    min-height: 1080px;
+    background: url(../Image/bg1.jpg) no-repeat;
+    position: relative;
+}
+
+.index-width {
+    width: 1920px;
+    margin: 0 auto;
+}
+
+.menulist {
+    position: fixed;
+    left: 0;
+    top: 200px;
+}
+
+    .menulist ul {
+        float: left;
+        display: block;
+    }
+
+        .menulist ul li {
+            display: block;
+            width: 66px;
+            background: rgba(255, 255, 255, 0.2) !important;
+            filter: Alpha(opacity=20);
+            background: #fff;
+            border-bottom: 1px solid #e1e5e8;
+            border-right: 1px solid #e1e5e8;
+            margin-bottom: 3px;
+        }
+
+            .menulist ul li a {
+                height: 60px;
+                background: url(../Image/menuico.png) no-repeat;
+                display: block;
+                padding-right: 65px;
+                font-family: "黑体";
+                color: #fff;
+                font-weight: bold;
+                line-height: 60px;
+                font-size: 0;
+            }
+
+                .menulist ul li a:hover {
+                    text-decoration: none;
+                }
+
+                .menulist ul li a.traffic {
+                    background-position: 0 0;
+                }
+
+                .menulist ul li a.call {
+                    background-position: 0 -120px;
+                }
+
+                .menulist ul li a.distribution {
+                    background-position: 0 -240px;
+                }
+
+                .menulist ul li a.monitor {
+                    background-position: 0 -360px;
+                }
+
+                .menulist ul li a.abnormal {
+                    background-position: 0 -480px;
+                }
+
+            .menulist ul li.active {
+                background: rgba(251, 80, 4, 1) !important;
+                filter: Alpha(opacity=100);
+                background: #fb5004;
+            }
+
+            .menulist ul li.aw {
+                width: 150px;
+            }
+
+            .menulist ul li.active a.traffic {
+                background-position: right -60px;
+                padding-left: 8px;
+                font-size: 18px;
+            }
+
+            .menulist ul li.active a.call {
+                background-position: right -180px;
+                padding-left: 8px;
+                font-size: 18px;
+            }
+
+            .menulist ul li.active a.distribution {
+                background-position: right -300px;
+                padding-left: 8px;
+                font-size: 18px;
+            }
+
+            .menulist ul li.active a.monitor {
+                background-position: right -420px;
+                padding-left: 8px;
+                font-size: 18px;
+            }
+
+            .menulist ul li.active a.abnormal {
+                background-position: right -540px;
+                padding-left: 8px;
+                font-size: 18px;
+            }
+
+/*header*/
+.header {
+    width: 100%;
+    float: left;
+    height: 90px;
+    background: rgba(255, 255, 255, 0.3) !important;
+    filter: Alpha(opacity=30);
+    background: #fff;
+    overflow-x: auto;
+    position: relative;
+    min-width: 1300px;
+}
+
+    .header .logo {
+        float: left;
+        padding: 22px 10px;
+        position: relative;
+        z-index: 99;
+    }
+
+    .header ul.nav {
+        float: left;
+        margin: 0px 0 10px -400px;
+        position: absolute;
+        left: 50%;
+        top: 10px;
+    }
+
+        .header ul.nav li {
+            float: left;
+            margin: 0 15px;
+            position: relative;
+        }
+
+            .header ul.nav li span.icoB {
+                width: 70px;
+                height: 70px;
+                float: left;
+                background-image: url(../Image/navico.png);
+                cursor: pointer;
+            }
+
+            .header ul.nav li span.channel1 {
+                background-position: 0 0;
+            }
+
+            .header ul.nav li span.channel2 {
+                background-position: -70px 0;
+            }
+
+            .header ul.nav li span.channel3 {
+                background-position: -140px 0;
+            }
+
+            .header ul.nav li span.channel4 {
+                background-position: -210px 0;
+            }
+
+            .header ul.nav li span.channel5 {
+                background-position: -280px 0;
+            }
+
+            .header ul.nav li span.channel6 {
+                background-position: -350px 0;
+            }
+
+            .header ul.nav li span.channel7 {
+                background-position: -420px 0;
+            }
+
+            .header ul.nav li span.channel8 {
+                background-position: -490px 0;
+            }
+
+
+        .header ul.nav .activees span.channel1 {
+            background-position: 0 -70px !important;
+        }
+
+        .header ul.nav .activees span.channel2 {
+            background-position: -70px -70px !important;
+        }
+
+        .header ul.nav .activees span.channel3 {
+            background-position: -140px -70px !important;
+        }
+
+        .header ul.nav .activees span.channel4 {
+            background-position: -210px -70px !important;
+        }
+
+        .header ul.nav .activees span.channel5 {
+            background-position: -280px -70px !important;
+        }
+
+        .header ul.nav .activees span.channel6 {
+            background-position: -350px -70px !important;
+        }
+
+        .header ul.nav .activees span.channel7 {
+            background-position: -420px -70px !important;
+        }
+
+        .header ul.nav .activees span.channel8 {
+            background-position: -490px -70px !important;
+        }
+
+
+
+/*透明*/
+.x-panel-body {
+    border-color: transparent !important;
+    background-color: transparent !important;
+}
+
+.header ul.nav li span.channel1:hover {
+    background-position: 0 -70px !important;
+}
+
+.header ul.nav li span.channel2:hover {
+    background-position: -70px -70px !important;
+}
+
+.header ul.nav li span.channel3:hover {
+    background-position: -140px -70px !important;
+}
+
+.header ul.nav li span.channel4:hover {
+    background-position: -210px -70px !important;
+}
+
+.header ul.nav li span.channel5:hover {
+    background-position: -280px -70px !important;
+}
+
+.header ul.nav li span.channel6:hover {
+    background-position: -350px -70px !important;
+}
+
+.header ul.nav li span.channel7:hover {
+    background-position: -420px -70px !important;
+}
+
+.header ul.nav li span.channel8:hover {
+    background-position: -490px -70px !important;
+}
+
+.header ul.nav li span.arrow {
+    width: 21px;
+    height: 11px;
+    position: absolute;
+    left: 20%;
+    bottom: -10px;
+    background: url(../Image/Upward_ico.png) no-repeat;
+    display: none;
+}
+
+.header .member {
+    float: right;
+    padding: 35px 0;
+    margin-right: 50px;
+    position: relative;
+    z-index: 99;
+}
+
+    .header .member a {
+        color: #000;
+        font-size: 17px;
+        float: left;
+        height: 19px;
+        line-height: 19px;
+        padding-left: 22px;
+        background: url(../Image/mem_ico.png) no-repeat 0 center;
+    }
+
+.morelist {
+    width: 100%;
+    float: left;
+    height: 60px;
+    background: rgba(0, 0, 0, 0.05) !important;
+    display: none;
+}
+
+    .morelist ul {
+        width: 100%;
+        float: left;
+        text-align: center;
+    }
+
+        .morelist ul li {
+            display: inline-block;
+            margin: 0 30px;
+            line-height: 60px;
+        }
+
+            .morelist ul li span {
+                font-size: 17px;
+                color: #000;
+                cursor: pointer;
+            }
+
+                .morelist ul li span:hover {
+                    color: #284148;
+                    text-decoration: none;
+                }
+
+                .morelist ul li span.active {
+                    color: #fb5004;
+                }
+
+/*显示屏*/
+.screenlist {
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top:90px;
+    width: 100%;
+    text-align: center;
+    z-index: 999999;
+    display: none;
+}
+
+    .screenlist div[class^="dropzone"] {
+        display: inline-block;
+        width: 180px;
+        height: 160px;
+        background: url(../Image/monitorbg.png) no-repeat;
+        margin: 19px 10px;
+        text-align: center;
+        font-size: 52px;
+        line-height: 97px;
+        color: #D6D6D6;
+        background-size: 180px 120px;
+        margin-left: 30px;
+    }
+
+
+
+
+/*面包屑*/
+.Crumbsbox {
+    width: 100%;
+    margin: 0 auto;
+}
+
+    .Crumbsbox .boxCo {
+        width: 1000px;
+        height: 47px;
+        float: left;
+        border-top: 1px solid #ebebeb;
+    }
+
+        .Crumbsbox .boxCo .Position {
+            float: left;
+            height: 25px;
+            line-height: 25px;
+            margin-top: 11px;
+            margin-left: 30px;
+            color: #4a4a4a;
+            font-size: 14px;
+        }
+
+            .Crumbsbox .boxCo .Position span {
+                font-size: 14px;
+                color: #9b9b9b;
+            }
+
+                .Crumbsbox .boxCo .Position span.current {
+                    font-size: 14px;
+                    color: #4a4a4a;
+                    margin: 0 3px;
+                }
+
+            .Crumbsbox .boxCo .Position a {
+                font-size: 14px;
+                color: #3d87a8;
+                margin: 0 3px;
+            }
+
+            .Crumbsbox .boxCo .Position em {
+                width: 5px;
+                height: 8px;
+                background: url(../Image/copy.png) no-repeat;
+                display: inline-block;
+            }
+
+        .Crumbsbox .boxCo .Search {
+            float: right;
+            height: 28px;
+            border: 1px solid #a4a4a4;
+            -moz-border-radius: 3px;
+            -webkit-border-radius: 3px;
+            border-radius: 3px;
+            behavior: url(js/pie.htc);
+            margin-right: 30px;
+            margin-top: 8px;
+        }
+
+            .Crumbsbox .boxCo .Search .input_text_s {
+                width: 140px;
+                float: left;
+                padding: 0 10px;
+                height: 28px;
+                border: none;
+                background: none;
+                color: #d0d0d0;
+                font-size: 14px;
+            }
+
+            .Crumbsbox .boxCo .Search:hover {
+                border: 1px solid #f3a77b;
+            }
+
+            .Crumbsbox .boxCo .Search .input_button {
+                width: 30px;
+                height: 28px;
+                float: left;
+                background: url(../Image/Search_ico.png) no-repeat;
+                border: none;
+                cursor: pointer;
+            }
+
+
+/*footer*/
+.footerbox {
+    width: 100%;
+    margin: 0 auto;
+    height: 50px;
+    border-top: 1px solid #b3c3d8;
+    overflow: hidden;
+    min-width: 1920px;
+}
+
+    .footerbox .f_box {
+        width: 100%;
+        float: left;
+        text-align: center;
+        line-height: 50px;
+        font-size: 14px;
+        color: #032488;
+        font-weight: bold;
+    }
+
+
+/*分页*/
+.pageGro {
+    overflow: hidden;
+    text-align: center;
+    padding: 12px 0;
+}
+
+    .pageGro a, .pageGro span {
+        font-size: 12px;
+        color: #4a4a4a;
+        padding: 2px 5px;
+        margin: 0 3px;
+        -moz-border-radius: 3px;
+        -webkit-border-radius: 3px;
+        border-radius: 3px;
+        behavior: url(js/pie.htc);
+    }
+
+        .pageGro a:hover {
+            background-color: #eff4cc;
+            text-decoration: none;
+            color: #4a4a4a;
+        }
+
+        .pageGro span.pageUp, .pageGro span.pageDown {
+            font-size: 12px;
+            color: #4a4a4a;
+        }
+
+        .pageGro span.current {
+            background-color: #aec700;
+            color: #fff;
+            font-size: 14px;
+        }
+
+        .pageGro a.current {
+            font-size: 14px;
+        }

@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Message>
+  <Language>CN</Language>
+  <Dictionary>
+    <MyNet.Atmcs.Uscmcp.Web.Map.CarQuery>
+      <CarQuery1 CN="地图浏览" EN="Map browsing" JP="" RU="" />
+      <CarQuery2 CN="重载地图" EN="Reload the map" JP="" RU="" />
+      <CarQuery3 CN="清除" EN="Clear" JP="" RU="" />
+      <CarQuery4 CN="中心点" EN="Center point" JP="" RU="" />
+      <CarQuery5 CN="测距" EN="Distance measurement" JP="" RU="" />
+      <CarQuery6 CN="测面积" EN="Measuring area" JP="" RU="" />
+      <CarQuery7 CN="开始时间:" EN="Starting time:" JP="" RU="" />
+      <CarQuery8 CN="结束时间:" EN="End Time:" JP="" RU="" />
+      <CarQuery9 CN="跟随时间(&gt;=)" EN="Follow Time(&gt;=)" JP="" RU="" />
+      <CarQuery10 CN="秒" EN="Second" JP="" RU="" />
+      <CarQuery11 CN="同行卡口(&gt;=)" EN="Peer mount(&gt;=)" JP="" RU="" />
+      <CarQuery12 CN="个" EN="A" JP="" RU="" />
+      <CarQuery13 CN="号牌号码:" EN="Number plate:" JP="" RU="" />
+      <CarQuery14 CN=" 号牌种类" EN="Number plate type" JP="" RU="" />
+      <CarQuery15 CN="请选择" EN="Please choose" JP="" RU="" />
+      <CarQuery16 CN="请选择号牌种类..." EN="Please select plate type ..." JP="" RU="" />
+      <CarQuery17 CN="清除选中" EN="Clear selected" JP="" RU="" />
+      <CarQuery18 CN=" 车身颜色" EN="Vehicle Body Color" JP="" RU="" />
+      <CarQuery19 CN="请选择..." EN="Please choose..." JP="" RU="" />
+      <CarQuery20 CN="查找" EN="Search" JP="" RU="" />
+      <CarQuery21 CN="序号" EN="Serial number" JP="" RU="" />
+      <CarQuery22 CN="号牌号码" EN="Number plate" JP="" RU="" />
+      <CarQuery24 CN="同行卡口数" EN="Peer check pointnumbermber plate" JP="" RU="" />
+      <CarQuery25 CN="过车信息" EN="Past Car information" JP="" RU="" />
+      <CarQuery26 CN="车辆信息" EN="Vehicle information" JP="" RU="" />
+      <CarQuery27 CN="类型" EN="Type" JP="" RU="" />
+      <CarQuery30 CN="颜色" EN="Color" JP="" RU="" />
+      <CarQuery31 CN="车辆品牌" EN="Vehicle Brands" JP="" RU="" />
+      <CarQuery32 CN="车辆轨迹" EN="Vehicle trajectory" JP="" RU="" />
+      <CarQuery33 CN="落脚点" EN="Foothold" JP="" RU="" />
+      <CarQuery34 CN="违法信息查询" EN="Illegal information query" JP="" RU="" />
+      <CarQuery35 CN="过车记录查询" EN="Car records inquiries" JP="" RU="" />
+      <CarQuery36 CN="访问：" EN="Access:" JP="" RU="" />
+      <CarQuery37 CN="卡口" EN="Bayonet" JP="" RU="" />
+      <CarQuery39 CN="过车时间" EN="Passing time" JP="" RU="" />
+      <CarQuery40 CN="伴随时间" EN="Concomitant time" JP="" RU="" />
+      <CarQuery41 CN="您没有登录或操作超时，请重新登录!" EN="You are not logged in or the operation timed out, please log in again!" JP="" RU="" />
+      <CarQuery42 CN="提示" EN="prompt" JP="" RU="" />
+      <CarQuery52 CN="无数据！" EN="No data!" JP="" RU="" />
+      <CarQuery43 CN="跟随时间不能大于60秒！" EN="The following time can not be greater than 60 seconds!" JP="" RU="" />
+      <CarQuery44 CN="同行卡口必须大于等于2个！" EN="Peer card must be greater than or equal two!" JP="" RU="" />
+      <CarQuery45 CN="时间范围未选择！" EN="Time range not selected!" JP="" RU="" />
+      <CarQuery46 CN="号牌号码未录入！" EN="Number plate number is not entered!" JP="" RU="" />
+      <CarQuery47 CN="时间范围不能多于24个小时！" EN="The time range can not be more than 24 hours!" JP="" RU="" />
+      <CarQuery49 CN="过车时间" EN="Passing time" JP="" RU="" />
+      <CarQuery50 CN="接口服务报错！" EN="Interface service error!" JP="" RU="" />
+      <CarQuery51 CN="无伴随车辆！" EN="No accompanying vehicle!" JP="" RU="" />
+      <CarQuery28 CN="卡口名称" EN="Check point name" JP="" RU="" />
+      <CarQuery52 CN="车身颜色：" EN="Color of car：" JP="" RU="" />
+      <CarQuery53 CN="车辆品牌：" EN="Vehicle Brand：" JP="" RU="" />
+    </MyNet.Atmcs.Uscmcp.Web.Map.CarQuery>
+  </Dictionary>
+</Message>

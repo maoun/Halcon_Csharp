@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Message>
+  <Language>CN</Language>
+  <Dictionary>
+    <MyNet.Atmcs.Uscmcp.Web.PeccancyInfoQuery>
+      <PeccancyInfoQuery1 CN="号牌种类：" EN="Number plate type:" JP="" RU="" />
+      <PeccancyInfoQuery2 CN="请选择..." EN="Please choose..." JP="" RU="" />
+      <PeccancyInfoQuery3 CN="清除选中" EN="Clear selected" JP="" RU="" />
+      <PeccancyInfoQuery4 CN="号牌号码：" EN="Number plate:" JP="" RU="" />
+      <PeccancyInfoQuery5 CN="六位号牌号码" EN="Six number plate number" JP="" RU="" />
+      <PeccancyInfoQuery6 CN="模糊查询" EN="Fuzzy query" JP="" RU="" />
+      <PeccancyInfoQuery7 CN="卡口列表：" EN="Bayonet List:" JP="" RU="" />
+      <PeccancyInfoQuery8 CN="车身颜色：" EN="Body color:" JP="" RU="" />
+      <PeccancyInfoQuery9 CN="选择车身颜色..." EN="Select Body Color ..." JP="" RU="" />
+      <PeccancyInfoQuery10 CN="查询" EN="Inquire" JP="" RU="" />
+      <PeccancyInfoQuery11 CN="重置" EN="Reset" JP="" RU="" />
+      <PeccancyInfoQuery12 CN="高级查询" EN="Advanced Search" JP="" RU="" />
+      <PeccancyInfoQuery13 CN="车辆品牌：" EN="Vehicle Brands:" JP="" RU="" />
+      <PeccancyInfoQuery14 CN="行驶方向：" EN="Driving direction:" JP="" RU="" />
+      <PeccancyInfoQuery15 CN="选择行驶方向..." EN="Select driving direction ..." JP="" RU="" />
+      <PeccancyInfoQuery16 CN="车速(km/h)：" EN="Speed (km / h):" JP="" RU="" />
+      <PeccancyInfoQuery17 CN="车道编号：" EN="Lane Number:" JP="" RU="" />
+      <PeccancyInfoQuery18 CN="查询结果" EN="Search result" JP="" RU="" />
+      <PeccancyInfoQuery19 CN="当前0页,共0页" EN="Current 0 Pages, Total 0 Pages" JP="" RU="" />
+      <PeccancyInfoQuery20 CN="首页" EN="Home" JP="" RU="" />
+      <PeccancyInfoQuery21 CN="上一页" EN="Previous page" JP="" RU="" />
+      <PeccancyInfoQuery22 CN="下一页" EN="Next page" JP="" RU="" />
+      <PeccancyInfoQuery23 CN="尾页" EN="Last page" JP="" RU="" />
+      <PeccancyInfoQuery24 CN="导出Excel" EN="ExportExcel" JP="" RU="" />
+      <PeccancyInfoQuery25 CN="详细" EN="Detailed" JP="" RU="" />
+      <PeccancyInfoQuery26 CN="视频" EN="Video" JP="" RU="" />
+      <PeccancyInfoQuery27 CN="记录编号" EN="Record number" JP="" RU="" />
+      <PeccancyInfoQuery28 CN="违法地点" EN="Illegal Location" JP="" RU="" />
+      <PeccancyInfoQuery29 CN="号牌号码" EN="Number plate number" JP="" RU="" />
+      <PeccancyInfoQuery30 CN="号牌种类" EN="Number plate type" JP="" RU="" />
+      <PeccancyInfoQuery31 CN="违法时间" EN="Illegal time" JP="" RU="" />
+      <PeccancyInfoQuery32 CN="违法行为" EN="Illegal behavior" JP="" RU="" />
+      <PeccancyInfoQuery33 CN="行驶方向" EN="Driving direction" JP="" RU="" />
+      <PeccancyInfoQuery34 CN="速度/限速" EN="Speed / speed limit" JP="" RU="" />
+      <PeccancyInfoQuery35 CN="审核状态" EN="Approval Status" JP="" RU="" />
+      <PeccancyInfoQuery36 CN="所属机构" EN="Affiliation" JP="" RU="" />
+      <PeccancyInfoQuery37 CN="车辆图片(图片点击滚轮缩放)" EN="Vehicle picture (picture click wheel zoom)" JP="" RU="" />
+      <PeccancyInfoQuery38 CN="卡口选择" EN="Bayonet selection" JP="" RU="" />
+      <PeccancyInfoQuery39 CN="加载中..." EN="Loading..." JP="" RU="" />
+      <PeccancyInfoQuery40 CN="清除" EN="Clear" JP="" RU="" />
+      <PeccancyInfoQuery41 CN="关闭" EN="Shut down" JP="" RU="" />
+      <PeccancyInfoQuery42 CN="返回目录" EN="Back to Contents" JP="" RU="" />
+      <PeccancyInfoQuery43 CN="您没有登录或操作超时，请重新登录!" EN="You are not logged in or the operation timed out, please log in again!" JP="" RU="" />
+      <PeccancyInfoQuery44 CN="查询结果：共计查询出符合条件的记录0条,现在显示0条" EN="Search Results: Total 0 out of 0 matching records, now show 0" JP="" RU="" />
+      <PeccancyInfoQuery45 CN="访问：违法车辆查询" EN="Access: Illegal vehicle inquiry" JP="" RU="" />
+      <PeccancyInfoQuery46 CN="违法车辆查询信息列表" EN="Illegal vehicle inquiry information list" JP="" RU="" />
+      <PeccancyInfoQuery47 CN="查询结果：共计查询出符合条件的记录" EN="Query results: a total of inquiries out to meet the conditions of the record" JP="" RU="" />
+      <PeccancyInfoQuery48 CN="条" EN="Article" JP="" RU="" />
+      <PeccancyInfoQuery49 CN="信息提示" EN="Message notification" JP="" RU="" />
+      <PeccancyInfoQuery50 CN="未查询到相关记录" EN="Not related to the query records" JP="" RU="" />
+      <PeccancyInfoQuery51 CN="查询结果：共计查询出符合条件的记录" EN="Query results: a total of inquiries out to meet the conditions of the record" JP="" RU="" />
+      <PeccancyInfoQuery52 CN="条,现在显示" EN="Article，Is now displayed" JP="" RU="" />
+      <PeccancyInfoQuery53 CN="当前" EN="Current" JP="" RU="" />
+      <PeccancyInfoQuery54 CN="页,共" EN="Pages, Total" JP="" RU="" />
+      <PeccancyInfoQuery55 CN="页" EN="Pages" JP="" RU="" />
+      <PeccancyInfoQuery56 CN="只能选择两个小时之内的时间！" EN="Can only choose two hours of time!" JP="" RU="" />
+      <PeccancyInfoQuery57 CN="查询结果：当前查询出符合条件的记录0条,现在显示0条" EN="Query results: The current query out of the records meet the conditions 0, now shows 0" JP="" RU="" />
+      <PeccancyInfoQuery58 CN="当前第1页,共0页" EN="Current page 1 of 0" JP="" RU="" />
+      <PeccancyInfoQuery59 CN="最多只能选择10个卡口！" EN="Can only choose up to 10 bayonet!" JP="" RU="" />
+      <PeccancyInfoQuery60 CN="卡口列表" EN="Bayonet list" JP="" RU="" />
+      <PeccancyInfoQuery61 CN="滨州市交通警察支队" EN="Binzhou City Traffic Police Detachment" JP="" RU="" />
+      <PeccancyInfoQuery62 CN="查询时间：" EN="Querytime:" JP="" RU="" />
+    </MyNet.Atmcs.Uscmcp.Web.PeccancyInfoQuery>
+  </Dictionary>
+</Message>

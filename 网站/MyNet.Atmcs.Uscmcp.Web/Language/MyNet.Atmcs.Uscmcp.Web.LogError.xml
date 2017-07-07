@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Message>
+  <Language>CN</Language>
+  <Dictionary>
+    <MyNet.Atmcs.Uscmcp.Web.LogError>
+      <LogError1 CN="查询时间" EN="Query time" JP="" RU="" />
+      <LogError2 CN="查询" EN="Inquire" JP="" RU="" />
+     
+      <LogError3 CN="详细" EN="Detailed" JP="" RU="" />
+      <LogError4 CN="错误源" EN="Error source" JP="" RU="" />
+      <LogError5 CN="错误信息" EN="Error message" JP="" RU="" />
+      <LogError6 CN="产生日期" EN="Generates the date" JP="" RU="" />
+      <LogError7 CN="错误描述" EN="Error description" JP="" RU="" />
+	   <LogError8 CN="导出Excel" EN="Export Excel" JP="" RU="" />
+	    <LogError9 CN="您没有登录或操作超时，请重新登录!" EN="You are not logged in or the operation timed out, please sign in again!" JP="" RU="" />
+	  
+      <LogError10 CN="访问：错误日志查询" EN="Access: Error Log Query" JP="" RU="" />
+	  <LogError11 CN="错误日志查询列表" EN="Error log query list" JP="" RU="" />
+    </MyNet.Atmcs.Uscmcp.Web.LogError>
+  </Dictionary>
+</Message>

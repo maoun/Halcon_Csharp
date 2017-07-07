@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Message>
+  <Language>CN</Language>
+  <Dictionary>
+    <MyNet.Atmcs.Uscmcp.Web.PassCarInfoQueryImg>
+      <PassCarInfoQueryImg1 CN="号牌种类：" EN="Number plate type：" JP="" RU="" />
+      <PassCarInfoQueryImg2 CN="请选择..." EN="Please choose..." JP="" RU="" />
+      <PassCarInfoQueryImg3 CN="清除选中" EN="Clear selected" JP="" RU="" />
+      <PassCarInfoQueryImg4 CN="号牌号码：" EN="Number plate：" JP="" RU="" />
+      <PassCarInfoQueryImg5 CN="六位号牌号码" EN="Six Number of the plate number" JP="" RU="" />
+      <PassCarInfoQueryImg6 CN="模糊查询" EN="Fuzzy query" JP="" RU="" />
+      <PassCarInfoQueryImg7 CN="车身颜色：" EN="Vehicle Body Color：" JP="" RU="" />
+      <PassCarInfoQueryImg8 CN="选择车身颜色..." EN="Select body color..." JP="" RU="" />
+      <PassCarInfoQueryImg9 CN="查询" EN="Query" JP="" RU="" />
+      <PassCarInfoQueryImg10 CN="重置" EN="Reset" JP="" RU="" />
+      <PassCarInfoQueryImg11 CN="高级查询" EN="Advanced Search" JP="" RU="" />
+      <PassCarInfoQueryImg12 CN="行驶方向：" EN="Driving direction：" JP="" RU="" />
+      <PassCarInfoQueryImg13 CN="选择行驶方向..." EN="Select driving direction ..." JP="" RU="" />
+      <PassCarInfoQueryImg14 CN="车速(km/h)：" EN="Speed (km / h)：" JP="" RU="" />
+      <PassCarInfoQueryImg15 CN="查询结果" EN="Search result" JP="" RU="" />
+      <PassCarInfoQueryImg16 CN="当前0页,共0页" EN="Current 0 Pages, Total 0 Pages" JP="" RU="" />
+      <PassCarInfoQueryImg17 CN="上一页" EN="Previous page" JP="" RU="" />
+      <PassCarInfoQueryImg18 CN="下一页" EN="Next page" JP="" RU="" />
+      <PassCarInfoQueryImg19 CN="卡口选择" EN="Bayonet selection" JP="" RU="" />
+      <PassCarInfoQueryImg20 CN="加载中..." EN="Loading..." JP="" RU="" />
+      <PassCarInfoQueryImg21 CN="清除" EN="Clear" JP="" RU="" />
+      <PassCarInfoQueryImg22 CN="关闭" EN="Shut down" JP="" RU="" />
+      <PassCarInfoQueryImg23 CN="返回目录" EN="Back to Contents" JP="" RU="" />
+      <PassCarInfoQueryImg24 CN="您没有登录或操作超时，请重新登录!" EN="You are not logged in or the operation timed out, please log in again!" JP="" RU="" />
+      <PassCarInfoQueryImg25 CN="查询结果：目前查询出符合条件的记录0条,剩余符合条件的尚未加载，请点击下一页进行加载" EN="Query Results: At present, the query out of the record 0, the remaining eligible has not yet loaded, please click on the next page to load" JP="" RU="" />
+      <PassCarInfoQueryImg26 CN="访问：过往车辆查询图片展示" EN="Access: Passage vehicle query image display" JP="" RU="" />
+      <PassCarInfoQueryImg27 CN="查询结果：当前查询出符合条件的记录" EN="Query results: the current query out of the records meet the conditions" JP="" RU="" />
+      <PassCarInfoQueryImg28 CN="条，当前显示8条，其余结果尚未显示，请点击 下一页 进行显示" EN="Article, The current display 8, the remaining results have not yet displayed, please click on the next page to display" JP="" RU="" />
+      <PassCarInfoQueryImg29 CN="条" EN="Article" JP="" RU="" />
+      <PassCarInfoQueryImg30 CN="条,当前显示" EN="Article，current display" JP="" RU="" />
+      <PassCarInfoQueryImg31 CN="条，其余结果尚未显示，请点击 上一页 进行显示" EN="Article，The rest of the results have not yet been displayed. Click the previous page to display" JP="" RU="" />
+      <PassCarInfoQueryImg32 CN="信息提示" EN="Message notification" JP="" RU="" />
+      <PassCarInfoQueryImg33 CN="未查询到相关记录" EN="Not related to the query records" JP="" RU="" />
+      <PassCarInfoQueryImg34 CN="页" EN="Page" JP="" RU="" />
+      <PassCarInfoQueryImg35 CN="页,共" EN="Page，Total" JP="" RU="" />
+      <PassCarInfoQueryImg36 CN="当前" EN="Current" JP="" RU="" />
+      <PassCarInfoQueryImg37 CN="只能选择两个小时之内的时间！" EN="Can only choose two hours of time!" JP="" RU="" />
+      <PassCarInfoQueryImg38 CN="查询结果：当前查询出符合条件的记录0条,现在显示0条" EN="Query results: The current query out of the records meet the conditions 0, now shows 0" JP="" RU="" />
+      <PassCarInfoQueryImg39 CN="当前第1页,共0页" EN="Current page 1 of 0" JP="" RU="" />
+      <PassCarInfoQueryImg40 CN="最多只能选择10个卡口！" EN="Can only choose up to 10 bayonet!" JP="" RU="" />
+      <PassCarInfoQueryImg41 CN="滨州市交通警察支队" EN="Binzhou City Traffic Police Detachment" JP="" RU="" />
+      <PassCarInfoQueryImg42 CN="查询时间：" EN="Query time：" JP="" RU="" />
+      <PassCarInfoQueryImg43 CN="卡口列表：" EN="Bayonet list：" JP="" RU="" />
+      <PassCarInfoQueryImg83 CN="车辆品牌：" EN="Vehicle Brands" JP="" RU="" />
+    </MyNet.Atmcs.Uscmcp.Web.PassCarInfoQueryImg>
+  </Dictionary>
+</Message>

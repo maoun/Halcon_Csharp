@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Message>
+  <Language>CN</Language>
+  <Dictionary>
+    <MyNet.Atmcs.Uscmcp.Web.PeccancyDataCount>
+      <PeccancyDataCount1 CN="今日违法总量" EN="Today's total illegal" JP="" RU="" />
+      <PeccancyDataCount2 CN="昨天" EN="Yesterday" JP="" RU="" />
+      <PeccancyDataCount3 CN="本周" EN="This week" JP="" RU="" />
+      <PeccancyDataCount4 CN="本月" EN="This month" JP="" RU="" />
+      <PeccancyDataCount5 CN="自定义时间" EN="The custom time" JP="" RU="" />
+    </MyNet.Atmcs.Uscmcp.Web.PeccancyDataCount>
+  </Dictionary>
+</Message>

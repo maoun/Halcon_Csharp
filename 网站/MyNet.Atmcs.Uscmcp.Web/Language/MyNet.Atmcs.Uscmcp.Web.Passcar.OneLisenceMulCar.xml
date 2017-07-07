@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Message>
+  <Language>CN</Language>
+  <Dictionary>
+    <MyNet.Atmcs.Uscmcp.Web.Passcar.OneLisenceMulCar>
+
+ <OneLisenceMulCar1 CN="号牌号码" EN="Number plate" JP="" RU="" />
+ <OneLisenceMulCar2 CN="查询" EN="Query" JP="" RU="" />
+ <OneLisenceMulCar3 CN="首页" EN="Home" JP="" RU="" />
+ <OneLisenceMulCar4 CN="上一页" EN="Previous page" JP="" RU="" />
+ <OneLisenceMulCar5 CN="下一页" EN="Next page" JP="" RU="" />
+ <OneLisenceMulCar6 CN="尾页" EN="Last page" JP="" RU="" />
+ <OneLisenceMulCar7 CN="当前0页,共0页" EN="Current 0 Pages, Total 0 Pages" JP="" RU="" />
+<OneLisenceMulCar9 CN="号牌种类" EN="Number plate type" JP="" RU="" />
+<OneLisenceMulCar10 CN="套牌次数" EN="Number of decks" JP="" RU="" />
+<OneLisenceMulCar11 CN="hpzl" EN="HPZL" JP="" RU="" />
+<OneLisenceMulCar12 CN="查询结果：当前是第" EN="Search result: Current is the first" JP="" RU="" />
+<OneLisenceMulCar13 CN="页,共有" EN="Pages, total" JP="" RU="" />
+<OneLisenceMulCar15 CN="条记录" EN="Records" JP="" RU="" />
+<OneLisenceMulCar16 CN="加入套牌库" EN="Join the deck library" JP="" RU="" />
+<OneLisenceMulCar17 CN="地图" EN="Map" JP="" RU="" />
+<OneLisenceMulCar18 CN="车驾管信息" EN="Vehicle driving control information" JP="" RU="" />
+<OneLisenceMulCar19 CN="车牌号牌：" EN="Vehicle license number plate：" JP="" RU="" />
+<OneLisenceMulCar20 CN="号牌种类：" EN="Number plate type：" JP="" RU="" />
+<OneLisenceMulCar21 CN="车身颜色：" EN="Vehicle Body Color：" JP="" RU="" />
+<OneLisenceMulCar22 CN="使用性质：" EN="Nature of use：" JP="" RU="" />
+<OneLisenceMulCar23 CN="车辆状态：" EN="Vehicle status：" JP="" RU="" />
+<OneLisenceMulCar24 CN="发证机关：" EN="Issuing authority：" JP="" RU="" />
+<OneLisenceMulCar25 CN="车主姓名：" EN="Name of owner：" JP="" RU="" />
+<OneLisenceMulCar26 CN="联系电话：" EN="Contact number：" JP="" RU="" />
+<OneLisenceMulCar27 CN="有效期止：" EN="Valid only：" JP="" RU="" />
+<OneLisenceMulCar28 CN="家庭住址：" EN="Home address：" JP="" RU="" />
+<OneLisenceMulCar29 CN="您没有登录或操作超时，请重新登录!" EN="You are not logged in or the operation timed out, please log in again!" JP="" RU="" />
+<OneLisenceMulCar30 CN="访问：车辆套牌" EN="Access: Vehicle deck" JP="" RU="" />
+<OneLisenceMulCar31 CN="提示" EN="Prompt" JP="" RU="" />
+<OneLisenceMulCar32 CN="成功加入套牌库" EN="Successfully added to the deck library" JP="" RU="" />
+<OneLisenceMulCar33 CN="加入套牌库失败，请重试！" EN="Failed to join the deck library, please try again!" JP="" RU="" />
+<OneLisenceMulCar34 CN="信息提示" EN="Message notification" JP="" RU="" />
+<OneLisenceMulCar35 CN="不存在号牌信息，无法获取车驾管信息" EN="There is no license plate information, can not get the vehicle driving control information" JP="" RU="" />
+<OneLisenceMulCar36 CN="无套牌信息！" EN="No deck information!" JP="" RU="" />
+<OneLisenceMulCar37 CN="当前" EN="Current" JP="" RU="" />
+<OneLisenceMulCar38 CN="页,共" EN="Pages, Total" JP="" RU="" />
+<OneLisenceMulCar39 CN="页" EN="Total" JP="" RU="" />
+<OneLisenceMulCar40 CN="该车牌不是本省车牌，无法获取车驾管信息" EN="The license plate is not the province license plate, can not get the car driving control information" JP="" RU="" />
+ <OneLisenceMulCar41 CN="查询时间："  EN="Querytime:" JP="" RU="" />
+    </MyNet.Atmcs.Uscmcp.Web.Passcar.OneLisenceMulCar>
+  </Dictionary>
+</Message>

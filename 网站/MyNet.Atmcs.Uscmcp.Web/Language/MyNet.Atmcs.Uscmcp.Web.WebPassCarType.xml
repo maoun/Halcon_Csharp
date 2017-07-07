@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Message>
+  <Language>CN</Language>
+  <Dictionary>
+    <MyNet.Atmcs.Uscmcp.Web.WebPassCarType>
+      <WebPassCarType1 CN="车辆号牌种类统计分析" EN="Vehicle plate type statistical analysis" JP="" RU="" />
+    </MyNet.Atmcs.Uscmcp.Web.WebPassCarType>
+  </Dictionary>
+</Message>

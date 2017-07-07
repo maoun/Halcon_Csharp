@@ -1,0 +1,12 @@
+﻿body {
+}
+ .TabButton {
+            border-top-style: none;
+            border-right-style: none;
+            border-left-style: none;
+            border-bottom-style: none;
+            color: blue;
+            font-weight: bold;
+            font-size:15px;
+            background-color:transparent;/*背景为透明的*/
+        }

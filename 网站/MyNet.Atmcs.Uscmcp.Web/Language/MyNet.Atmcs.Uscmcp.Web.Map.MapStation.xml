@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Message>
+  <Language>CN</Language>
+  <Dictionary>
+    <MyNet.Atmcs.Uscmcp.Web.Map.MapStation>
+      <MapStation8 CN="卡口名称" EN="" JP="" RU="" />
+      <MapStation9 CN="x" EN="" JP="" RU="" />
+      <MapStation10 CN="y" EN="" JP="" RU="" />
+      <MapStation11 CN="卡口ID" EN="" JP="" RU="" />
+    </MyNet.Atmcs.Uscmcp.Web.Map.MapStation>
+  </Dictionary>
+</Message>

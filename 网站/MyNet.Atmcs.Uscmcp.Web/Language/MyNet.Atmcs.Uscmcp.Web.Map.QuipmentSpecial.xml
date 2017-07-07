@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Message>
+  <Language>CN</Language>
+  <Dictionary>
+    <MyNet.Atmcs.Uscmcp.Web.Map.QuipmentSpecial>
+      <QuipmentSpecial1 CN="地图浏览" EN="Map browsing" JP="" RU="" />
+      <QuipmentSpecial2 CN="重载地图" EN="Reload the map" JP="" RU="" />
+      <QuipmentSpecial3 CN="清除" EN="Clear" JP="" RU="" />
+      <QuipmentSpecial4 CN="中心点" EN="Center point" JP="" RU="" />
+      <QuipmentSpecial5 CN="测距" EN="Distance measurement" JP="" RU="" />
+      <QuipmentSpecial6 CN="测面积" EN="Measuring area" JP="" RU="" />
+      <QuipmentSpecial7 CN="电子警察" EN="Electronic police" JP="" RU="" />
+      <QuipmentSpecial8 CN="治安卡口" EN="Security Check point" JP="" RU="" />
+      <QuipmentSpecial11 CN="虚拟卡口" EN="Virtual bayonet" JP="" RU="" />
+      <QuipmentSpecial9 CN="电子测速" EN="Electronic speed measurement" JP="" RU="" />
+      <QuipmentSpecial10 CN="高清视频" EN="HD video" JP="" RU="" />
+	   <QuipmentSpecial12 CN="您没有登录或操作超时，请重新登录!" EN="You are not logged in or the operation timed out, please log in again!" JP="" RU="" />
+	    <QuipmentSpecial13 CN="访问：" EN="Access：" JP="" RU="" />
+    </MyNet.Atmcs.Uscmcp.Web.Map.QuipmentSpecial>
+  </Dictionary>
+</Message>

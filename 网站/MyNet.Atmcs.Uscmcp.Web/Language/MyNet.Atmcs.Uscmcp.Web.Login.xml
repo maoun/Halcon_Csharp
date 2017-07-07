@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Message>
+  <Language>CN</Language>
+  <Dictionary>
+    <MyNet.Atmcs.Uscmcp.Web.Login>
+      <Login3 CN="请输入用户名" EN="" JP="" RU="" />
+      <Login1 CN="智慧车行云应用系统" EN="" JP="" RU="" />
+      <Login2 CN="登录" EN="" JP="" RU="" />
+    </MyNet.Atmcs.Uscmcp.Web.Login>
+  </Dictionary>
+</Message>

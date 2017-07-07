@@ -1,0 +1,53 @@
+ 
+ 
+/*JIA 2009,4month-5month*/
+/*主页面主体左侧样式----------------------------------------------------------------*/
+/*文本流向对象的右边,宽168PX*/
+.sidebar {
+	float:left;
+	width:168px; }
+/*外补丁自动,宽168PX*/ 
+.sidebarContainer {
+	margin:0 auto;
+	width:168px; }
+ 
+/*主页面主体左侧样式  工作导航----------------------------------------------------------------*/
+/*宽168PX,高23PX;字体红色发光,浅蓝色,行高23PX;背景不重复;固定滤镜效果背景不重复 文本颜色行高*/
+.sidebarWork {
+	width:168px;
+	height:23px;
+	filter:glow(Color=red, Strength=1);
+	background:url(../images/barwork.gif) no-repeat;
+	color:#C7EAF7;
+	line-height:23px; }
+ 
+/*主页面主体左侧样式    栏目（例如：勤务管理）----------------------------------------------*/
+/*宽168PX,高25PX;字体浅青色,行高25PX;背景不重复*/
+.sidebarColumn {
+	width:168px;
+	color:#C7EAF7;
+	line-height:25px;
+	background:url(../images/bar.gif) no-repeat; }
+.sidebarColumn ul{
+    list-style:none;
+}
+.sidebarColumn ul li {
+     display:block;
+	 line-height:25px;
+}
+ 
+/*主页面主体左侧样式     版本号-----------------------------------------------------------*/
+/*宽168PX,高23PX;字体浅青色,行高23PX;背景不重复*/
+.sidebarVersion {
+	width:168px;
+	height:23px;
+	color:#C7EAF7;
+	line-height:23px;
+	background:url(../images/barversion.gif) no-repeat; }
+ 
+/*主界面左侧导航样式----------------------------------------------------------------*/
+/*宽168PX,高470PX,浅青色背景*/
+.sidebarTree {
+	width:168px;
+	height:470px;
+	background-color:#E5F4FD; }

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Message>
+  <Language>CN</Language>
+  <Dictionary>
+    <MyNet.Atmcs.Uscmcp.Web.AlarmDataCount>
+      <AlarmDataCount1 CN="今日报警总量" EN="Today the total alarm" JP="" RU="" />
+      <AlarmDataCount2 CN="昨天" EN="Yesterday" JP="" RU="" />
+      <AlarmDataCount3 CN="本周" EN="This week" JP="" RU="" />
+      <AlarmDataCount4 CN="本月" EN="This month" JP="" RU="" />
+      <AlarmDataCount5 CN="自定义时间" EN="The Custom time" JP="" RU="" />
+    </MyNet.Atmcs.Uscmcp.Web.AlarmDataCount>
+  </Dictionary>
+</Message>

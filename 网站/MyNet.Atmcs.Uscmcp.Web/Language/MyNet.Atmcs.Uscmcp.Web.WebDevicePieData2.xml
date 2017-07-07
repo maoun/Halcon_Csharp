@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Message>
+  <Language>CN</Language>
+  <Dictionary>
+    <MyNet.Atmcs.Uscmcp.Web.WebDevicePieData2>
+      <WebDevicePieData21 CN="设备异常分析" EN="Equipment anomaly analysis" JP="" RU="" />
+      <WebDevicePieData22 CN="网络异常" EN="network anomaly" JP="" RU="" />
+      <WebDevicePieData23 CN="网络正常,数据异常" EN="network is normal and the data is abnormal" JP="" RU="" />
+      <WebDevicePieData24 CN="正常" EN="normal" JP="" RU="" />
+    </MyNet.Atmcs.Uscmcp.Web.WebDevicePieData2>
+  </Dictionary>
+</Message>

@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Message>
+  <Language>CN</Language>
+  <Dictionary>
+    <MyNet.Atmcs.Uscmcp.Web.PoliceOfficer>
+      <policeOffcer54 CN="部门列表" EN="" JP="" RU="" />
+      <PoliceOfficer1 CN="部门信息列表" EN="" JP="" RU="" />
+      <PoliceOfficer2 CN="姓名：" EN="" JP="" RU="" />
+      <PoliceOfficer3 CN="警号：" EN="" JP="" RU="" />
+      <PoliceOfficer4 CN="现职务：" EN="" JP="" RU="" />
+      <PoliceOfficer5 CN="选择职务.." EN="" JP="" RU="" />
+      <PoliceOfficer6 CN="性别：" EN="" JP="" RU="" />
+      <PoliceOfficer7 CN="选择性别.." EN="" JP="" RU="" />
+      <PoliceOfficer8 CN="所属机关：" EN="" JP="" RU="" />
+      <PoliceOfficer9 CN="查询" EN="" JP="" RU="" />
+      <PoliceOfficer10 CN="重置" EN="" JP="" RU="" />
+      <PoliceOfficer11 CN="刷新" EN="" JP="" RU="" />
+      <PoliceOfficer12 CN="新增" EN="" JP="" RU="" />
+      <PoliceOfficer13 CN="修改" EN="" JP="" RU="" />
+      <PoliceOfficer14 CN="删除" EN="" JP="" RU="" />
+      <PoliceOfficer15 CN="导出Excel" EN="" JP="" RU="" />
+      <PoliceOfficer25 CN="警务人员基本信息" EN="" JP="" RU="" />
+      <PoliceOfficer26 CN="所属单位" EN="" JP="" RU="" />
+      <PoliceOfficer27 CN="性别" EN="" JP="" RU="" />
+      <PoliceOfficer28 CN="选择性别..." EN="" JP="" RU="" />
+      <PoliceOfficer29 CN="姓名" EN="" JP="" RU="" />
+      <PoliceOfficer30 CN="出生日期" EN="" JP="" RU="" />
+      <PoliceOfficer31 CN="家庭住址" EN="" JP="" RU="" />
+      <PoliceOfficer32 CN="身份证号" EN="" JP="" RU="" />
+      <PoliceOfficer33 CN="警号" EN="" JP="" RU="" />
+      <PoliceOfficer34 CN="警衔" EN="" JP="" RU="" />
+      <PoliceOfficer35 CN="请选择..." EN="" JP="" RU="" />
+      <PoliceOfficer36 CN="现职务" EN="" JP="" RU="" />
+      <PoliceOfficer38 CN="编制类别" EN="" JP="" RU="" />
+      <PoliceOfficer40 CN="特勤级别" EN="" JP="" RU="" />
+      <PoliceOfficer41 CN="请选择..." EN="" JP="" RU="" />
+      <PoliceOfficer42 CN="手机" EN="" JP="" RU="" />
+      <PoliceOfficer43 CN="办公电话" EN="" JP="" RU="" />
+      <PoliceOfficer44 CN="手台" EN="" JP="" RU="" />
+      <PoliceOfficer45 CN="手台呼号" EN="" JP="" RU="" />
+      <PoliceOfficer46 CN="手台组号" EN="" JP="" RU="" />
+      <PoliceOfficer47 CN="警用装备" EN="" JP="" RU="" />
+      <PoliceOfficer48 CN="取消" EN="" JP="" RU="" />
+      <PoliceOfficer18 CN="姓名" EN="" JP="" RU="" />
+      <PoliceOfficer19 CN="性别" EN="" JP="" RU="" />
+      <PoliceOfficer20 CN="警号" EN="" JP="" RU="" />
+      <PoliceOfficer21 CN="现职务" EN="" JP="" RU="" />
+      <PoliceOfficer24 CN="所属机关" EN="" JP="" RU="" />
+      <PoliceOfficer17 CN="访问：" EN="" JP="" RU="" />
+      <PoliceOfficer66 CN="清除选中" EN="" JP="" RU="" />
+    </MyNet.Atmcs.Uscmcp.Web.PoliceOfficer>
+  </Dictionary>
+</Message>

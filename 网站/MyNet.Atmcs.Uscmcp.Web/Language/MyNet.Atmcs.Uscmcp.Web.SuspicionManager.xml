@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Message>
+  <Language>CN</Language>
+  <Dictionary>
+    <MyNet.Atmcs.Uscmcp.Web.SuspicionManager>
+      <SuspicionManager1 CN="号牌号码：" EN="" JP="" RU="" />
+      <SuspicionManager53 CN="号牌种类:" EN="" JP="" RU="" />
+      <SuspicionManager3 CN="请选择..." EN="" JP="" RU="" />
+      <SuspicionManager4 CN="布控类型：" EN="" JP="" RU="" />
+      <SuspicionManager5 CN="选择布控类型..." EN="" JP="" RU="" />
+      <SuspicionManager6 CN="查询" EN="" JP="" RU="" />
+      <SuspicionManager7 CN="重置" EN="" JP="" RU="" />
+      <SuspicionManager8 CN="刷新" EN="" JP="" RU="" />
+      <SuspicionManager21 CN="导出Excel" EN="" JP="" RU="" />
+      <SuspicionManager63 CN="模糊布控" EN="" JP="" RU="" />
+      <SuspicionManager26 CN="布控车辆信息" EN="" JP="" RU="" />
+      <SuspicionManager27 CN="比对编号" EN="" JP="" RU="" />
+      <SuspicionManager28 CN="号牌号码:" EN="" JP="" RU="" />
+      <SuspicionManager29 CN="号牌种类" EN="" JP="" RU="" />
+      <SuspicionManager30 CN="选择号牌种类" EN="" JP="" RU="" />
+      <SuspicionManager31 CN="车身颜色" EN="" JP="" RU="" />
+      <SuspicionManager32 CN="选择车身颜色" EN="" JP="" RU="" />
+      <SuspicionManager33 CN="车辆品牌" EN="" JP="" RU="" />
+      <SuspicionManager16 CN="布控类型" EN="" JP="" RU="" />
+      <SuspicionManager35 CN="选择比对类型" EN="" JP="" RU="" />
+      <SuspicionManager36 CN="有效时间" EN="" JP="" RU="" />
+      <SuspicionManager37 CN="布控原因" EN="" JP="" RU="" />
+      <SuspicionManager39 CN="报警接收人" EN="" JP="" RU="" />
+      <SuspicionManager40 CN="清除" EN="" JP="" RU="" />
+      <SuspicionManager41 CN="关闭" EN="" JP="" RU="" />
+      <SuspicionManager42 CN="布控标识" EN="" JP="" RU="" />
+      <SuspicionManager43 CN="选择比对或者撤销" EN="" JP="" RU="" />
+      <SuspicionManager60 CN="布控联系人" EN="" JP="" RU="" />
+      <SuspicionManager61 CN="联系电话" EN="" JP="" RU="" />
+      <SuspicionManager44 CN="备注信息" EN="" JP="" RU="" />
+      <SuspicionManager45 CN="更新时间" EN="" JP="" RU="" />
+      <SuspicionManager46 CN="增加" EN="" JP="" RU="" />
+      <SuspicionManager47 CN="保存" EN="" JP="" RU="" />
+      <SuspicionManager48 CN="删除" EN="" JP="" RU="" />
+      <SuspicionManager49 CN="车辆信息" EN="" JP="" RU="" />
+      <SuspicionManager50 CN="选择Excel文件" EN="" JP="" RU="" />
+      <SuspicionManager51 CN="模板下载" EN="" JP="" RU="" />
+      <SuspicionManager52 CN="保存" EN="" JP="" RU="" />
+      <SuspicionManager10 CN="布控编号" EN="" JP="" RU="" />
+      <SuspicionManager11 CN="号牌号码" EN="" JP="" RU="" />
+      <SuspicionManager12 CN="号牌种类" EN="" JP="" RU="" />
+      <SuspicionManager13 CN="车身颜色" EN="" JP="" RU="" />
+      <SuspicionManager14 CN="车辆品牌" EN="" JP="" RU="" />
+      <SuspicionManager15 CN="有效时间" EN="" JP="" RU="" />
+      <SuspicionManager88 CN="布控联系人" EN="" JP="" RU="" />
+      <SuspicionManager89 CN="联系电话" EN="" JP="" RU="" />
+      <SuspicionManager18 CN="更新时间" EN="" JP="" RU="" />
+      <SuspicionManager24 CN="布控车辆信息" EN="" JP="" RU="" />
+      <SuspicionManager25 CN="批量录入" EN="" JP="" RU="" />
+      <SuspicionManager117 CN="人员列表" EN="" JP="" RU="" />
+      <SuspicionManager65 CN="车辆布控管理" EN="" JP="" RU="" />
+      <SuspicionManager66 CN="已布控" EN="" JP="" RU="" />
+      <SuspicionManager2 CN="六位号牌号码：" EN="" JP="" RU="" />
+      <SuspicionManager9 CN="重置" EN="" JP="" RU="" />
+      <SuspicionManager17 CN="页,共有" EN="" JP="" RU="" />
+      <SuspicionManager64 CN="条记录" EN="" JP="" RU="" />
+      <SuspicionManager34 CN="布控车辆信息" EN="" JP="" RU="" />
+      <SuspicionManager38 CN="选择号牌种类" EN="" JP="" RU="" />
+      <SuspicionManager54 CN="备注信息" EN="" JP="" RU="" />
+      <SuspicionManager55 CN="更新时间" EN="" JP="" RU="" />
+      <SuspicionManager56 CN="增加" EN="" JP="" RU="" />
+      <SuspicionManager57 CN="增加" EN="" JP="" RU="" />
+      <SuspicionManager58 CN="保存" EN="" JP="" RU="" />
+      <SuspicionManager59 CN="删除" EN="" JP="" RU="" />
+      <SuspicionManager62 CN="模板下载" EN="" JP="" RU="" />
+      <SuspicionManager119 CN="访问：" EN="" JP="" RU="" />
+      <SuspicionManager19 CN="布控编号" EN="" JP="" RU="" />
+      <SuspicionManager20 CN="号牌号码" EN="" JP="" RU="" />
+      <SuspicionManager22 CN="车身颜色" EN="" JP="" RU="" />
+      <SuspicionManager23 CN="车辆品牌" EN="" JP="" RU="" />
+    </MyNet.Atmcs.Uscmcp.Web.SuspicionManager>
+  </Dictionary>
+</Message>

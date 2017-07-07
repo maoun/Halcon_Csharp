@@ -1,0 +1,206 @@
+ 
+ 
+/*JIA 2009,4month*/
+/*所有链接样式----------------------------------------------------------------*/
+/*文字深灰色,文本装饰为无*/
+A:link {
+	color:#1D1F20;
+	text-decoration:none; }
+ 
+/* unvisited link */
+/*文字深灰色,文本装饰为无*/
+A:visited {
+	color:#1D1F20;
+	text-decoration:none; }
+ 
+/* visited links */
+/*文字红色,文本装饰为无*/
+A:hover {
+	color:#FF0000;
+	text-decoration:none; }
+ 
+/* hover links */
+/*导航链接样式----------------------------------------------------------------*/
+/*块对象的默认值;文本流向对象的右边;宽81PX,高19PX;上边外补丁5PX,左边外补丁0PX,上下左右内补丁1px 2px 1px 2px;背景不重复;字体白色,文本无装饰,行高19PX*/
+#navigation a {
+	display:block;
+	float:left;
+	width:81px;
+	height:19px;
+	margin-top:5px;
+	margin-left:0px;
+	padding:1px 2px 1px 2px;
+	background:url(../images/nav.gif) no-repeat;
+	color:#fff;
+	text-decoration:none;
+	line-height:19px; }
+
+/*块对象的默认值,文本流向对象的右边,宽81PX,高19PX;上下左右内补丁1px 2px 1px 2px;字体白色,无装饰,行高19PX;背景不重复*/ 
+#navigation a:hover {
+	float:left;
+	display:block;
+	width:81px;
+	height:19px;
+	padding:1px 2px 1px 2px;
+	color:#fff;
+	text-decoration:none;
+	background:url(../images/nav_hover.gif) no-repeat;
+	line-height:19px; }
+	
+/*form样式中的链接样式----------------------------------------------------------------*/
+/*按钮样式 上一页 下一页---*/
+/*块对象的默认值,高度15PX,背景居中,字体无装饰,行高15PX,不显示超过对象尺寸的内容*/
+.formBtnSearch a{
+     display:block; 
+	 height:15px; 
+	 background:url(../images/images_tab/next.gif) center ;
+	 text-decoration:none;
+	 line-height:15px;
+	 overflow:hidden;
+}
+/*高度15PX,背景居中,行高15PX*/
+.formBtnSearch a:hover{ 
+     height:15px; 
+	 background:url(../images/images_tab/next.gif) center center; 
+	 line-height:15px;
+}
+/*字体灰色,1PX白色发光*/
+.formBtnSearch a:hover .formLbl{ 
+     color:#ACA899; 
+	 filter:glow(color=#ffffff,strength=1);
+}
+/*转按钮链接样式---*/
+/*块对象的默认值,高15PX,背景居中,字体无装饰,行高15PX,不显示超过对象尺寸的内容*/
+.formBtnTurn a{ 
+     display:block; 
+	 height:15px; 
+	 background:url(../images/images_tab/go.gif) center; 
+	 text-decoration:none; 
+	 line-height:15px;
+	 overflow:hidden;
+}
+/*高15PX,背景居中,行高15PX*/
+.formBtnTurn a:hover{ 
+     height:15px; 
+	 background:url(../images/images_tab/go.gif) center center; 
+	 line-height:15px;
+}
+/*字体灰色,1PX白色发光*/
+.formBtnTurn a:hover .formLbl{ 
+     color:#ACA899;
+	 filter:glow(color=#ffffff,strength=1);
+}
+
+/*所有按钮链接样式 查询---------------------------------------------------------*/
+/*块对象的默认值,高22PX,背景居中,字体无装饰,行高22PX,不显示超过对象尺寸的内容*/
+.formSearch a{ 
+     display:block; 
+	 height:22px; 
+	 background:url(../images/images_tab/search.gif) center; 
+	 text-decoration:none; 
+	 line-height:22px;
+	 overflow:hidden;
+}
+/*高22PX,背景居中,行高22PX*/
+.formSearch a:hover{ 
+     height:22px; 
+	 background:url(../images/images_tab/search.gif) center center; 
+	 line-height:22px;
+}
+/*字体灰色,1PX白色发光*/
+.formSearch a:hover .formLbl{ 
+     color:#ACA899; 
+	 filter:glow(color=#ffffff,strength=1);
+}
+
+/*灰色按钮链接样式---------------------------------------------------------*/
+/*块对象的默认值,高20PX,背景居中,字体无装饰,行高20PX,不显示超过对象尺寸的内容*/
+.formGrayBtn a{ 
+     display:block; 
+	 height:20px; 
+	 background:url(../images/images_tab/grayBtn.gif) center; 
+	 text-decoration:none; 
+	 line-height:20px;
+	 overflow:hidden;
+}
+/*高20PX,背景居中,行高20PX*/
+.formGrayBtn a:hover{ 
+     height:20px; 
+	 background:url(../images/images_tab/grayBtn.gif) center center; 
+	 line-height:20px;
+}
+/*字体灰色,1PX白色发光*/
+.formGrayBtn a:hover .formLbl{ 
+     color:#ACA899; 
+	 filter:glow(color=#ffffff,strength=1);
+}
+
+/*登录界面中连接样式*/
+/*按钮样式*/
+/*块对象的默认值,高35PX,背景居中;字体无装饰,行高35PX;不显示超过对象尺寸的内容*/ 
+.loginBtnSearch a:link {
+		display:block;
+		height:35px;
+		background:url(../login/images/login_09.gif) center;
+		text-decoration:none;
+		line-height:35px;
+		overflow:hidden; }
+/*高35PX;背景居中;字体行高35PX;*/ 
+.loginBtnSearch a:hover {
+		height:35px;
+		background:url(../login/images/login_09_1.gif) center center;
+		line-height:35px; }
+.loginBtnSearch a:hover .loginLbl {
+		color:#BCDBEB;
+		filter:glow(color=#1070a3,strength=1); }
+		
+/*scroll样式中链接样式*/
+/*字体浅蓝色,黑色发光,文本装饰为无*/
+#scrolldoorFrame ul a{ 
+      color:#A5D1EC;
+	  /* color:#03515d */ 
+	  filter:glow(color=#000000,strength=1); 
+	  text-decoration:none;
+}
+
+/*sidebarColumn样式中链接*/
+/*块对象的默认值,宽168PX,高25PX;字体青色,行高25PX;背景不重复*/
+.sidebarColumn a{
+    display:block;
+	width:168px;
+	height:25px;
+	color:#C7EAF7;
+	line-height:25px;
+	background:url(../images/bar.gif) no-repeat; 
+}
+/*宽168PX,高25PX;字体青色,行高25PX;背景不重复*/
+.sidebarColumn a:hover{
+	width:168px;
+	height:25px;
+	color:#C7EAF7;
+	line-height:25px;
+	background:url(../images/bar_hover.gif) no-repeat; 
+}
+
+/*交通综合信息发布字体链接样式*/
+/*字体灰色,字体无装饰*/
+.sidebarText a{
+    color:#333333;
+	text-decoration:none;
+}
+/*字体红色,字体无装饰*/
+.sidebarText a:hover {
+    color:#FF0000;
+	text-decoration:none;
+}
+/*交通综合信息发布字体链接样式*/
+/*字体青色,无装饰*/
+#headerZh a{
+    color:#A6C6DB;
+	text-decoration:none;
+}
+/*字头红色,下划线*/
+#headerZh a:hover{
+    color:#FF0000;
+	text-decoration:underline;
+}

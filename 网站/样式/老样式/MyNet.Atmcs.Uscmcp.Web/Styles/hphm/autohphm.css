@@ -1,0 +1,10 @@
+﻿  .haopai_name1, .haopai_name2, .haopai_name3, .haopai_name4, .haopai_name5, .haopai_name6 {
+            width: 16px;
+            height: 25px;
+            margin-top: 0px;
+            margin-top: 0px !important;
+           color: black;
+             background:rgba(255,255,255,0.6);
+            border-right-color: #a0a0a0;
+              border-width: 1px;
+        }

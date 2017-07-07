@@ -1,0 +1,89 @@
+@font-face
+{
+	font-family: 'HeydingsCommonIconsRegular';
+	src: url('font/heydings_icons-webfont.eot');
+	src: url('font/heydings_icons-webfont.eot?#iefix') format('embedded-opentype'), url('font/heydings_icons-webfont.woff') format('woff'), url('font/heydings_icons-webfont.ttf') format('truetype'), url('font/heydings_icons-webfont.svg#HeydingsCommonIconsRegular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+*
+{
+	margin: 0;
+	padding: 0;
+}
+
+.buttonitem
+{
+	width: 100px;
+	height: 100px;
+	margin: 7px;
+	background: transparent;
+	float: left;
+	border-radius: 50px;
+	border-width:0 0px; 
+	border-color:#bbbbbb; 
+	border-style:solid;  
+	position:relative;
+}
+
+h2
+{
+	font-family: 'HeydingsCommonIconsRegular' , sans-serif;
+	font-weight: 600;
+	margin: 20px 0 0 0;
+	color: #fff;
+	text-align: center;
+	font-size: 50px;
+	line-height: 50px;
+}
+.imageicon
+{
+	 width:90px;
+	 height:90px; 
+	 margin-left:20px; 
+	 margin-top: 20px;
+}
+.tooltip p
+{
+	font-family: sans-serif;
+	font-size: 16px;
+	font-weight: 600;
+	color:#ffffff;
+	text-align: center;
+}
+
+.tooltip
+{
+	width: 150px;
+	padding: 10px;
+	border-radius: 3px;
+	position: absolute;
+	margin: -1500px 0 0 -30px;
+	-webkit-transition: margin .5s ease-in-out;
+	-moz-transition: margin .5s ease-in-out;
+}
+
+.buttonitem:hover
+{
+	background: transparent
+}
+
+.buttonitem:hover .tooltip
+{
+	margin: -135px 0 0 -30px;
+	-webkit-transition: margin .15s ease-in-out;
+	-moz-transition: margin .15s ease-in-out;
+}
+
+.arrow
+{
+	position: absolute;
+	margin: 15px 0 0 60px;
+	width: 0;
+	height: 0;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-top: 10px solid transparent;
+}
+

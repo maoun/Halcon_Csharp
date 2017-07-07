@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Message>
+  <Language>CN</Language>
+  <Dictionary>
+    <MyNet.Atmcs.Uscmcp.Web.PasscarAllQuery>
+      <PasscarAllQuery1 CN="号牌种类：" EN="Number plate type：" JP="" RU="" />
+      <PasscarAllQuery2 CN="请选择..." EN="please choose..." JP="" RU="" />
+      <PasscarAllQuery3 CN="清除选中" EN="Clear selected" JP="" RU="" />
+      <PasscarAllQuery4 CN="号牌号码：" EN="Plate number：" JP="" RU="" />
+      <PasscarAllQuery5 CN="六位号牌号码" EN="Six plate number" JP="" RU="" />
+      <PasscarAllQuery6 CN="模糊查询" EN="Fuzzy query" JP="" RU="" />
+      <PasscarAllQuery7 CN="车身颜色：" EN="Vehicle Body Color" JP="" RU="" />
+      <PasscarAllQuery8 CN="选择车身颜色..." EN="Select body color..." JP="" RU="" />
+      <PasscarAllQuery9 CN="高级查询" EN="Advanced query" JP="" RU="" />
+      <PasscarAllQuery10 CN="行驶方向：" EN="Driving direction" JP="" RU="" />
+      <PasscarAllQuery11 CN="选择行驶方向..." EN="Choose driving direction..." JP="" RU="" />
+      <PasscarAllQuery12 CN="车速(km/h)：" EN="The speed of the car" JP="" RU="" />
+      <PasscarAllQuery13 CN="车道编号" EN="Lane number" JP="" RU="" />
+      <PasscarAllQuery14 CN="没有显示" EN="Did not show" JP="" RU="" />
+      <PasscarAllQuery15 CN="清除" EN="Remove" JP="" RU="" />
+      <PasscarAllQuery16 CN="关闭" EN="Shut down" JP="" RU="" />
+      <PasscarAllQuery17 CN="返回目录" EN="Back to Contents" JP="" RU="" />
+      <PasscarAllQuery18 CN="卡口选择" EN="Check point choice" JP="" RU="" />
+      <PasscarAllQuery19 CN="加载中..." EN="In the load..." JP="" RU="" />
+      <PasscarAllQuery20 CN="您没有登录或操作超时，请重新登录!" EN="You are not logged in or the operation timed out, please log in again!" JP="" RU="" />
+      <PasscarAllQuery21 CN="信息提示" EN="Message prompt " JP="" RU="" />
+      <PasscarAllQuery22 CN="只能选择两个小时之内的时间！" EN="Can only choose two hours of time!" JP="" RU="" />
+      <PasscarAllQuery23 CN="最多只能选择10个卡口！" EN="Can only choose up to 10 bayonet!" JP="" RU="" />
+      <PasscarAllQuery24 CN="请选择开始时间及结束时间！" EN="Please select start time and end time!" JP="" RU="" />
+      <PasscarAllQuery25 CN="模糊查询状态,请输入完整号牌号码和号牌种类！" EN="Fuzzy query status, please enter the full number and type plate number plate!" JP="" RU="" />
+      <PasscarAllQuery26 CN="请输入号牌号码和号牌种类！" EN="Please input plate number and plate type!" JP="" RU="" />
+      <PasscarAllQuery27 CN="卡口列表" EN="Bayonet list" JP="" RU="" />
+      <PasscarAllQuery28 CN="滨州市交通警察支队" EN="Binzhou City Traffic Police Detachment" JP="" RU="" />
+      <PasscarAllQuery29 CN="查询时间：" EN="Inquire Time:" JP="" RU="" />
+      <PasscarAllQuery30 CN="卡口列表：" EN="Bayonet List:" JP="" RU="" />
+	  <PasscarAllQuery31 CN="车辆品牌：" EN="Vehicle brand:" JP="" RU="" />
+   
+   </MyNet.Atmcs.Uscmcp.Web.PasscarAllQuery>
+  </Dictionary>
+</Message>

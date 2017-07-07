@@ -1,0 +1,244 @@
+/*JIA 2009,4month*/
+
+/*input 样式*/
+/*灰色边框*/
+INPUT{
+	border: 1px solid #C8C8C6;
+}
+/*背景以X轴方向平铺,高18PX,行高18PX*/
+input.text
+{
+	 background:url(../images/images_tab/button_back.gif) repeat-x;
+	 height:18px;
+	 line-height:18px; 
+}
+/*宽20PX,边框无*/
+input.radio
+{
+	width: 20px;border: 0px;
+}
+/*宽20PX,边框无*/
+input.checkbox
+{
+    width:20px; border:0px;
+	}
+/*1PX灰色实线边框*/
+textarea{
+ border:1px solid #C8C8C6;
+ }
+
+/*高度16PX,1PX灰蓝色实线边框,白色背景,无背景图片;字体行高16PX,*/
+#formListText {
+     height:16px; 
+	 border:1px solid #7F9DB9;
+	 background-color:#FFFFFF;
+	 background-image:none; 
+	 line-height:16px;
+}
+
+/*宽度128PX,高度固定,浅灰色背景,1PX灰蓝色实线边框;字体深灰色*/
+select{
+width:auto;
+height:19px;
+*height:20px !important;
+*height:20px;
+background-color:#f4f4f4;
+border:1px solid #7F9DB9;
+color:#1D1F20;
+}
+/*列表框或下拉框样式*/
+	
+
+/*按钮样式 上一页 下一页----------------------------------------------------*/
+/*文本流向对象的左边,宽高固定,行高15PX,背景不重复,不显示超过对象尺寸的内容*/
+.formBtnSearch{ 
+     float:right; 
+	 width:43px; 
+	 height:15px; 
+	 line-height:15px; 
+	 background:url(../images/images_tab/next.gif) no-repeat; 
+	 overflow:hidden;
+}
+
+/*块对象的默认,宽37PX,高15PX,外补丁自动,左边内补丁3PX,上边内补丁0PX;字体黑色,文本居中;竖起一只手指的手形光标*/
+.formBtnSearch .formLbl{ 
+     display:block; 
+	 width:37px; 
+	 height:15px; 
+	 margin:0 auto; 
+	 padding-left:3px; 
+	 padding-top:0px; 
+	 color:#000; 
+	 cursor:pointer; 
+	 text-align:center;
+}
+
+/*转按钮----------------------------------------------------------------*/
+/*文本流向对象的右边,宽37PX,高15PX,行高15PX;背景不重复;不显示超过对象尺寸的内容*/
+.formBtnTurn{ 
+     float:right; 
+	 width:37px; 
+	 height:15px; 
+	 line-height:15px; 
+	 background:url(../images/images_tab/go.gif) no-repeat; 
+	 overflow:hidden;
+}
+
+/*块对象的默认值,宽24PX,高15PX,外补丁自动,左边内补丁3PX,上边内补丁0PX,字体黑色,文本居中,竖起一只手指的手形光标*/
+.formBtnTurn .formLbl{ 
+     display:block; 
+	 width:24px; 
+	 height:15px; 
+	 margin:0 auto; 
+	 padding-left:13px; 
+	 padding-top:0px; 
+	 color:#000000;
+	 text-align:center; 
+	 cursor:pointer;
+}
+
+/*所有按钮样式 查询---------------------------------------------------------*/
+/*宽82PX,高22PX,行高22PX,背景不重复,不显示超过对象尺寸的内容*/
+.formSearch{
+     width:82px; 
+	 height:22px; 
+	 line-height:22px; 
+	 background:url(../images/images_tab/search.gif) no-repeat; 
+	 overflow:hidden;
+}
+/*块对象的默认值,宽79PX,高15PX,外补丁自动,左边内补丁3PX,上边内补丁0PX,文本居中,字体浅蓝色,竖起一只手指的手形光标*/
+.formSearch .formLbl{ 
+     display:block;
+	 width:79px; 
+	 height:15px; 
+	 padding-left:3px; 
+	 padding-top:0px; 
+	 margin:0 auto; 
+	 text-align:center; 
+	 color:#1065AD; 
+	 cursor:pointer;
+}
+
+/*灰色按钮样式---------------------------------------------------------*/
+/*宽63PX,高20PX,背景不重复,不显示超过对象尺寸的内容*/
+.formGrayBtn{
+     width:63px; 
+	 height:20px; 
+	 line-height:20px; 
+	 background:url(../images/images_tab/grayBtn.gif) no-repeat; 
+	 overflow:hidden;
+}
+
+/*块对象的默认值,宽60PX,高20PX,外补丁自动,左边内补丁3PX,上边内补丁0PX,文本居中,字体黑色,竖起一只手指的手形光标*/
+.formGrayBtn .formLbl{ 
+     display:block;
+	 width:60px; 
+	 height:20px; 
+	 padding-left:3px; 
+	 padding-top:0px; 
+	 margin:0 auto; 
+	 text-align:center; 
+	 color:#000000; 
+	 cursor:pointer;
+}
+
+/*转到第几页中输入框样式------------------------------------------------*/
+/*宽20PX,高12PX,1PX灰色实线边框*/
+#formBtngo { 
+     width:20px; 
+	 height:12px; 
+	 border:1px solid #999999;
+}
+
+
+/*交通综合信息发布系统首页中登录样式------------------------------------------------*/
+#form {
+      float:left;
+      width:168px; 
+	  margin-top:6px; 
+	  margin-bottom:6px; 
+	  color:#0468A7;
+}
+/*字体行高12PX,文本居中*/
+.formTime { 
+    text-align:center; 
+	line-height:21px;
+}
+
+/*文本流向对象的右边,宽168PX,高24PX,背景不重复;字体浅青色,行高25PX,蓝色发光*/
+.formLoginSidebar{ 
+    float:left; 
+	width:168px; 
+	height:24px; 
+	background:url(../images/loginsidebar.gif) no-repeat; 
+	color:#C7EAF7;
+	line-height:24px; 
+	filter:glow(color=#1070a3,strength=1);
+}
+
+/*按钮图标样式----------------------------------------------------------------*/
+/*文本流向对象的左边,宽47PX,高21PX,上补丁5PX,右补丁5PX,背景不重复;字体行高21PX;固定滤镜效果背景不重复;不显示超过对象尺寸的内容*/
+.formBtnLogin{
+            float:right;
+			display:block;
+			width:43px;
+			height:41px; 
+			margin-top:2px;
+			margin-right:3px;
+			line-height:41px; 
+			background:url(../images/login_button_back.gif) no-repeat;
+			overflow:hidden;
+}
+/*块对象的默认值,高21PX,背景居中;字体无装饰;字体行高21PX;不显示超过对象尺寸的内容*/
+.formBtnLogin a{
+            display:block;
+			height:41px;
+			background:url(../images/login_button_back.gif) center ;
+			text-decoration:none; 
+			line-height:41px;
+			overflow:hidden;
+}
+/*高21PX,背景居中;字体行高21PX;*/
+.formBtnLogin a:hover{ 
+            height:41px;
+			background:url(../images/login_button_back_hover.gif) center center;
+			line-height:41px;
+}
+/*块对象的默认值,宽40PX,高21PX,外补丁自动,左补丁3PX,上补丁0PX;字体青色;竖起一只手指的手形光标;文字之间的间距,居中,蓝色发光*/
+.formBtnLogin .formLoginLbl{
+            display:block; 
+			width:34px; 
+			height:36px;
+			margin:0 auto;
+			padding-left:3px;
+			padding-top:0px; 
+			color:#BEE5F7;
+			cursor:pointer;
+			letter-spacing:5px;
+			text-align:center;
+			filter:glow(color=#1070a3,strength=1);
+}
+/*字体浅蓝色,蓝色发光*/
+.formBtnLogin a:hover .formLoginLbl{ 
+            color:#BDD5F7;
+			filter:glow(color=#1070a3,strength=1);
+}
+
+/*交通综合信息发布INPUT样式*/
+/*文字行高21PX,青色;*/
+#form label {
+            float:left;
+			padding-left:3px;
+			line-height:21px; 
+			color:#32A2E3;
+}
+/*宽100PX;高17PX;1PX灰蓝色实线边框;背景青色;文字行高21PX,白色;*/
+#form input {
+            width:65px; 
+            height:16px; 
+			border:1px solid #0468A7; 
+			background-color:#32A2E3;
+			background-image:none; 
+			line-height:18px; 
+			color:#ffffff;
+}

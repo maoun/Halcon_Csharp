@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Message>
+  <Language>CN</Language>
+  <Dictionary>
+    <MyNet.Atmcs.Uscmcp.Web.WebPeccancyData>
+      <WebPeccancyData1 CN="访问：" EN="access：" JP="" RU="" />
+      <WebPeccancyData2 CN="历史平均" EN="Historical average" JP="" RU="" />
+      <WebPeccancyData3 CN="违法总数" EN="Total number of offenses" JP="" RU="" />
+      <WebPeccancyData4 CN="时" EN="hour" JP="" RU="" />
+      <WebPeccancyData5 CN="24小时通过车次与实际在线对比分析" EN="24 hours by train with the actual online comparative analysis" JP="" RU="" />
+    </MyNet.Atmcs.Uscmcp.Web.WebPeccancyData>
+  </Dictionary>
+</Message>

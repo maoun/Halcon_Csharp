@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Message>
+  <Language>CN</Language>
+  <Dictionary>
+    <MyNet.Atmcs.Uscmcp.Web.WebPassCarJLLX>
+      <WebPassCarJLLX2 CN="黑名单(100%)" EN="Blacklisted (100%)" JP="" RU="" />
+      <WebPassCarJLLX1 CN="报警类型统计分析" EN="Alarm type statistical analysis" JP="" RU="" />
+    </MyNet.Atmcs.Uscmcp.Web.WebPassCarJLLX>
+  </Dictionary>
+</Message>

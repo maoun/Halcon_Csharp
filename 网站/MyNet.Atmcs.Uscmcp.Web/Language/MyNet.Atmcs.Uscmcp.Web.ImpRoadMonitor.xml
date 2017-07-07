@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Message>
+  <Language>CN</Language>
+  <Dictionary>
+    <MyNet.Atmcs.Uscmcp.Web.ImpRoadMonitor>
+      <ImpRoadMonitor1 CN="重点道路分析图" EN="Key Road Analysis Diagram" JP="" RU="" />
+	 <ImpRoadMonitor2 CN="道路名称" EN="Road name" JP="" RU="" />
+      <ImpRoadMonitor3 CN="图例" EN="legend" JP="" RU="" />
+      <ImpRoadMonitor4 CN="过车总数" EN="Total number of passes" JP="" RU="" />
+      <ImpRoadMonitor5 CN="历史均值" EN="Historical average" JP="" RU="" />
+      <ImpRoadMonitor6 CN="您没有登录或操作超时，请重新登录!" EN="You are not logged in or the operation timed out, please log in again!" JP="" RU="" />
+     
+      <ImpRoadMonitor7 CN="访问：" EN="access:" JP="" RU="" />
+    </MyNet.Atmcs.Uscmcp.Web.ImpRoadMonitor>
+  </Dictionary>
+</Message>

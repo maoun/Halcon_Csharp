@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{6141683F-8A12-4E36-9623-2EB02B2C2303}") = "样机库查询", "样机库查询\样机库查询.isproj", "{6FFE9C3A-D707-4190-B481-CBF46F66C472}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		CD_ROM|Default = CD_ROM|Default
+		DVD-5|Default = DVD-5|Default
+		SingleImage|Default = SingleImage|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6FFE9C3A-D707-4190-B481-CBF46F66C472}.CD_ROM|Default.ActiveCfg = CD_ROM
+		{6FFE9C3A-D707-4190-B481-CBF46F66C472}.CD_ROM|Default.Build.0 = CD_ROM
+		{6FFE9C3A-D707-4190-B481-CBF46F66C472}.DVD-5|Default.ActiveCfg = DVD-5
+		{6FFE9C3A-D707-4190-B481-CBF46F66C472}.DVD-5|Default.Build.0 = DVD-5
+		{6FFE9C3A-D707-4190-B481-CBF46F66C472}.SingleImage|Default.ActiveCfg = SingleImage
+		{6FFE9C3A-D707-4190-B481-CBF46F66C472}.SingleImage|Default.Build.0 = SingleImage
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

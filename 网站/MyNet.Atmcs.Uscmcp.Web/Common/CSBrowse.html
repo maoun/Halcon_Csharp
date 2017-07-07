@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=GBK"/>
+    <title></title>
+    <script type="text/javascript">
+        function SetUrl() {
+            var obj = thisMovie("UscmcpWebActiveX");
+            var url = "http://localhost:63932/DataService/DataService.asmx";
+            obj.SetServiceUrl(url);
+            obj.SetUserId('000001', 'screen');
+        }
+        function thisMovie(movieName) {
+                return document.getElementById(movieName);
+        }
+    </script>
+</head>
+<body onload="SetUrl()">
+   
+        <object id="UscmcpWebActiveX" classid="clsid:956F226D-0AEB-45f9-9DBC-7815C5FD0F70" style="position: absolute; z-index: auto; top: 0px; left: -2px; width: 100%; height: 100%;">
+            <param name="wmode" value="transparent" />
+        </object>
+    
+</body>
+</html>

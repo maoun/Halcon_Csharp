@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="MyNet.Atmcs.Uscmcp.Bll.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="MyNet_Atmcs_Uscmcp_Bll_OtherQueryService_OtherQueryInfo" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://192.168.1.232:8080/other-webservice/services/OtherQueryInfo</Value>
+    </Setting>
+    <Setting Name="MyNet_Atmcs_Uscmcp_Bll_QueryService_querypasscar" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://192.168.1.232:8080/query_webservice/services/querypasscar</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Message>
+  <Language>CN</Language>
+  <Dictionary>
+    <MyNet.Atmcs.Uscmcp.Web.StationManager>
+      <StationManager139 CN="机构管理" EN="" JP="" RU="" />
+      <StationManager1 CN="机构关系" EN="" JP="" RU="" />
+      <StationManager2 CN="地点与监测点详细信息" EN="" JP="" RU="" />
+      <StationManager20 CN="用该列进行分组" EN="" JP="" RU="" />
+      <StationManager21 CN="显示分组" EN="" JP="" RU="" />
+      <StationManager3 CN="收起展开" EN="" JP="" RU="" />
+      <StationManager4 CN="增加地点" EN="" JP="" RU="" />
+      <StationManager5 CN="修改地点" EN="" JP="" RU="" />
+      <StationManager6 CN="删除地点" EN="" JP="" RU="" />
+      <StationManager7 CN="删除监测点" EN="" JP="" RU="" />
+      <StationManager8 CN="更新" EN="" JP="" RU="" />
+      <StationManager9 CN="退出" EN="" JP="" RU="" />
+      <StationManager22 CN="筛选条件" EN="" JP="" RU="" />
+      <StationManager11 CN="例如：123456789012" EN="" JP="" RU="" />
+      <StationManager13 CN="例如：西直门" EN="" JP="" RU="" />
+      <StationManager23 CN="方向管理" EN="" JP="" RU="" />
+      <StationManager24 CN="增加方向" EN="" JP="" RU="" />
+      <StationManager25 CN="增加" EN="" JP="" RU="" />
+      <StationManager26 CN="删除方向" EN="" JP="" RU="" />
+      <StationManager27 CN="删除" EN="" JP="" RU="" />
+      <StationManager32 CN="更新" EN="" JP="" RU="" />
+      <StationManager33 CN="设备关联系统" EN="" JP="" RU="" />
+      <StationManager34 CN="关联设备" EN="" JP="" RU="" />
+      <StationManager35 CN="增加" EN="" JP="" RU="" />
+      <StationManager36 CN="移除关联" EN="" JP="" RU="" />
+      <StationManager37 CN="删除" EN="" JP="" RU="" />
+      <StationManager43 CN="修改地点" EN="" JP="" RU="" />
+      <StationManager44 CN="地点编号" EN="" JP="" RU="" />
+      <StationManager45 CN="例如:[201311021111111]" EN="" JP="" RU="" />
+      <StationManager46 CN="地点名称" EN="" JP="" RU="" />
+      <StationManager47 CN="例如:西直门北大街电警" EN="" JP="" RU="" />
+      <StationManager48 CN="确定" EN="" JP="" RU="" />
+      <StationManager49 CN="取消" EN="" JP="" RU="" />
+      <StationManager50 CN="设备关联" EN="" JP="" RU="" />
+      <StationManager51 CN="设备名称：" EN="" JP="" RU="" />
+      <StationManager52 CN="设备IP：" EN="" JP="" RU="" />
+      <StationManager53 CN="设备类型：" EN="" JP="" RU="" />
+      <StationManager54 CN="选择设备类型..." EN="" JP="" RU="" />
+      <StationManager55 CN="设备型号：" EN="" JP="" RU="" />
+      <StationManager56 CN="选择设备型号..." EN="" JP="" RU="" />
+      <StationManager57 CN="查询" EN="" JP="" RU="" />
+      <StationManager58 CN="重置" EN="" JP="" RU="" />
+      <StationManager59 CN="确认" EN="" JP="" RU="" />
+      <StationManager60 CN="取消" EN="" JP="" RU="" />
+      <StationManager61 CN="未绑定的设备" EN="" JP="" RU="" />
+      <StationManager67 CN="筛选条件" EN="" JP="" RU="" />
+      <StationManager68 CN="增加" EN="" JP="" RU="" />
+      <StationManager69 CN="增加选择行" EN="" JP="" RU="" />
+      <StationManager70 CN="增加所有" EN="" JP="" RU="" />
+      <StationManager71 CN="增加所有行" EN="" JP="" RU="" />
+      <StationManager72 CN="移除" EN="" JP="" RU="" />
+      <StationManager73 CN="移除当前行" EN="" JP="" RU="" />
+      <StationManager74 CN="移除所有" EN="" JP="" RU="" />
+      <StationManager75 CN="移除所有行" EN="" JP="" RU="" />
+      <StationManager76 CN="已绑定的设备" EN="" JP="" RU="" />
+      <StationManager77 CN="更新" EN="" JP="" RU="" />
+      <StationManager78 CN="退出" EN="" JP="" RU="" />
+      <StationManager10 CN="外部编号" EN="" JP="" RU="" />
+      <StationManager12 CN="监测点名称" EN="" JP="" RU="" />
+      <StationManager14 CN="监测点编号" EN="" JP="" RU="" />
+      <StationManager15 CN="监测点类型" EN="" JP="" RU="" />
+      <StationManager16 CN="监测点类型编号" EN="" JP="" RU="" />
+      <StationManager17 CN="地点编号" EN="" JP="" RU="" />
+      <StationManager18 CN="所属地点" EN="" JP="" RU="" />
+      <StationManager19 CN="关联情况" EN="" JP="" RU="" />
+      <StationManager28 CN="卡口编号" EN="" JP="" RU="" />
+      <StationManager29 CN="方向编号" EN="" JP="" RU="" />
+      <StationManager38 CN="ID" EN="" JP="" RU="" />
+      <StationManager39 CN="设备名称" EN="" JP="" RU="" />
+      <StationManager40 CN="设备类型" EN="" JP="" RU="" />
+      <StationManager41 CN="设备型号" EN="" JP="" RU="" />
+      <StationManager42 CN="设备IP" EN="" JP="" RU="" />
+      <StationManager62 CN="设备ID" EN="" JP="" RU="" />
+      <StationManager66 CN="设备是否绑定" EN="" JP="" RU="" />
+      <StationManager87 CN="信息提示" EN="" JP="" RU="" />
+      <StationManager89 CN="请选择所属单位！" EN="" JP="" RU="" />
+      <StationManager156 CN="设备关联信息" EN="" JP="" RU="" />
+      <StationManager157 CN="方向管理" EN="" JP="" RU="" />
+      <StationManager90 CN="地点信息管理" EN="" JP="" RU="" />
+      <StationManager91 CN="地点信息" EN="" JP="" RU="" />
+      <StationManager92 CN="所属单位" EN="" JP="" RU="" />
+      <StationManager93 CN="地点编号" EN="" JP="" RU="" />
+      <StationManager94 CN="地点名称" EN="" JP="" RU="" />
+      <StationManager95 CN="保存" EN="" JP="" RU="" />
+      <StationManager96 CN="取消" EN="" JP="" RU="" />
+      <StationManager97 CN="监测点类型列表" EN="" JP="" RU="" />
+      <StationManager140 CN="监测点类型" EN="" JP="" RU="" />
+      <StationManager141 CN="电警" EN="" JP="" RU="" />
+      <StationManager98 CN="保存成功" EN="" JP="" RU="" />
+      <StationManager106 CN="- 设备关联信息" EN="" JP="" RU="" />
+      <StationManager107 CN="- 方向管理" EN="" JP="" RU="" />
+      <StationManager83 CN="信息" EN="" JP="" RU="" />
+      <StationManager84 CN="确认要删除下面的所有信息，包括监测信息和设备关联信息，确实要进行吗?" EN="" JP="" RU="" />
+      <StationManager85 CN="是" EN="" JP="" RU="" />
+      <StationManager86 CN="否" EN="" JP="" RU="" />
+      <StationManager142 CN="卡口" EN="" JP="" RU="" />
+      <StationManager143 CN="测速" EN="" JP="" RU="" />
+      <StationManager88 CN="删除成功" EN="" JP="" RU="" />
+    </MyNet.Atmcs.Uscmcp.Web.StationManager>
+  </Dictionary>
+</Message>

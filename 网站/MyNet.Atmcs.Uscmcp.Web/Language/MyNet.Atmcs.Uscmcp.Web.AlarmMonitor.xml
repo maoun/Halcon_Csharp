@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Message>
+  <Language>CN</Language>
+  <Dictionary>
+    <MyNet.Atmcs.Uscmcp.Web.AlarmMonitor>
+      <AlarmMonitor1 CN="报警车辆信息" EN="" JP="" RU="" />
+      <AlarmMonitor2 CN="开始接收" EN="" JP="" RU="" />
+      <AlarmMonitor3 CN="停止接收" EN="" JP="" RU="" />
+      <AlarmMonitor4 CN="图片信息" EN="" JP="" RU="" />
+      <AlarmMonitor5 CN="列表显示" EN="" JP="" RU="" />
+      <AlarmMonitor15 CN="报警类型" EN="" JP="" RU="" />
+      <AlarmMonitor6 CN="报警卡口" EN="" JP="" RU="" />
+      <AlarmMonitor7 CN="号牌号码" EN="" JP="" RU="" />
+      <AlarmMonitor8 CN="号牌种类" EN="" JP="" RU="" />
+      <AlarmMonitor9 CN="报警时间" EN="" JP="" RU="" />
+      <AlarmMonitor10 CN="行驶方向" EN="" JP="" RU="" />
+      <AlarmMonitor11 CN="布控类型" EN="" JP="" RU="" />
+      <AlarmMonitor12 CN="报警类型" EN="" JP="" RU="" />
+      <AlarmMonitor13 CN="报警原因" EN="" JP="" RU="" />
+      <AlarmMonitor16 CN="处理结果" EN="" JP="" RU="" />
+      <AlarmMonitor14 CN="详细" EN="" JP="" RU="" />
+      <AlarmMonitor17 CN="报警车辆监视" EN="" JP="" RU="" />
+      <AlarmMonitor18 CN="查看详细信息" EN="" JP="" RU="" />
+      <AlarmMonitor20 CN="访问：" EN="" JP="" RU="" />
+    </MyNet.Atmcs.Uscmcp.Web.AlarmMonitor>
+  </Dictionary>
+</Message>

@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Message>
+  <Language>CN</Language>
+  <Dictionary>
+    <MyNet.Atmcs.Uscmcp.Web.CCTVStationManager>
+      <CCTVStationManager2 CN="设备名称：" EN="" JP="" RU="" />
+      <CCTVStationManager3 CN="设备类型：" EN="" JP="" RU="" />
+      <CCTVStationManager4 CN="选择设备类型..." EN="" JP="" RU="" />
+      <CCTVStationManager5 CN="查询" EN="" JP="" RU="" />
+      <CCTVStationManager6 CN="重置" EN="" JP="" RU="" />
+      <CCTVStationManager7 CN="刷新" EN="" JP="" RU="" />
+      <CCTVStationManager9 CN="添加连接设备" EN="" JP="" RU="" />
+      <CCTVStationManager10 CN="修改信息" EN="" JP="" RU="" />
+      <CCTVStationManager11 CN="删除连接设备" EN="" JP="" RU="" />
+      <CCTVStationManager13 CN="导出Excel" EN="" JP="" RU="" />
+      <CCTVStationManager26 CN="监测点类型" EN="" JP="" RU="" />
+      <CCTVStationManager27 CN="选择监测点类型..." EN="" JP="" RU="" />
+      <CCTVStationManager28 CN="查询监测点名称" EN="" JP="" RU="" />
+      <CCTVStationManager29 CN="请输入查询监测点名称查询" EN="" JP="" RU="" />
+      <CCTVStationManager30 CN="查询" EN="" JP="" RU="" />
+      <CCTVStationManager31 CN="监测点名称" EN="" JP="" RU="" />
+      <CCTVStationManager32 CN="选择监测点..." EN="" JP="" RU="" />
+      <CCTVStationManager33 CN="实时监视设备" EN="" JP="" RU="" />
+      <CCTVStationManager34 CN="选择连接监视设备..." EN="" JP="" RU="" />
+      <CCTVStationManager35 CN="监控通道号" EN="" JP="" RU="" />
+      <CCTVStationManager36 CN="例如：1" EN="" JP="" RU="" />
+      <CCTVStationManager37 CN="录像回放设备" EN="" JP="" RU="" />
+      <CCTVStationManager38 CN="选择连接录像回放设备..." EN="" JP="" RU="" />
+      <CCTVStationManager39 CN="回放通道号" EN="" JP="" RU="" />
+      <CCTVStationManager40 CN="例如：1" EN="" JP="" RU="" />
+      <CCTVStationManager80 CN="所属方向" EN="" JP="" RU="" />
+      <CCTVStationManager41 CN="选择设备所属方向..." EN="" JP="" RU="" />
+      <CCTVStationManager42 CN="矩阵编号" EN="" JP="" RU="" />
+      <CCTVStationManager43 CN="例如：9999" EN="" JP="" RU="" />
+      <CCTVStationManager44 CN="是否启用" EN="" JP="" RU="" />
+      <CCTVStationManager45 CN="选择是否启用..." EN="" JP="" RU="" />
+      <CCTVStationManager46 CN="确定" EN="" JP="" RU="" />
+      <CCTVStationManager47 CN="取消" EN="" JP="" RU="" />
+      <CCTVStationManager15 CN="监测点名称" EN="" JP="" RU="" />
+      <CCTVStationManager16 CN="设备状态" EN="" JP="" RU="" />
+      <CCTVStationManager17 CN="所属方向" EN="" JP="" RU="" />
+      <CCTVStationManager18 CN="实时视频设备" EN="" JP="" RU="" />
+      <CCTVStationManager20 CN="实时设备IP" EN="" JP="" RU="" />
+      <CCTVStationManager21 CN="实时通道" EN="" JP="" RU="" />
+      <CCTVStationManager22 CN="录像回放设备" EN="" JP="" RU="" />
+      <CCTVStationManager23 CN="回放设备类型" EN="" JP="" RU="" />
+      <CCTVStationManager24 CN="回放设备IP" EN="" JP="" RU="" />
+      <CCTVStationManager25 CN="回放通道" EN="" JP="" RU="" />
+    </MyNet.Atmcs.Uscmcp.Web.CCTVStationManager>
+  </Dictionary>
+</Message>
