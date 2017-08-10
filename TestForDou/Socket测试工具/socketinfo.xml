@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<ArrayOfSocketInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" />  <SocketInfo>
+    <Name>客户端1</Name>
+    <Type>Client</Type>
+    <Format>Hex</Format>
+    <ServerIp>221.6.14.6</ServerIp>
+    <Port>4004</Port>
+    <Protocol>Tcp</Protocol>
+    <Data>ABA510000161646D696E2C3132333435363BDC</Data>
+    <IsAuto>true</IsAuto>
+  </SocketInfo>
+</ArrayOfSocketInfo>端1</Name>
+    <Type>Server</Type>
+    <Format>AscII</Format>
+    <ServerIp>127.0.0.1</ServerIp>
+    <Port>8890</Port>
+    <Protocol>Tcp</Protocol>
+    <Data>请录入测试数据</Data>
+    <IsAuto>false</IsAuto>
+  </SocketInfo>
+</ArrayOfSocketInfo>

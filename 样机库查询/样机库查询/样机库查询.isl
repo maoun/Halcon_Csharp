@@ -52,7 +52,7 @@
 	<summary>
 		<codepage>1252</codepage>
 		<title>##ID_STRING3##</title>
-		<subject/>
+		<subject></subject>
 		<author>##ID_STRING2##</author>
 		<keywords>Installer,MSI,Database</keywords>
 		<comments>Contact:  Your local administrator</comments>
@@ -225,6 +225,7 @@
 	<table name="AppSearch">
 		<col key="yes" def="s72">Property</col>
 		<col key="yes" def="s72">Signature_</col>
+		<row><td>DOTNETVERSION40CLIENT</td><td>DotNet40Client</td></row>
 		<row><td>DOTNETVERSION40FULL</td><td>DotNet40Full</td></row>
 		<row><td>DOTNETVERSION45FULL</td><td>DotNet45Full</td></row>
 	</table>
@@ -343,6 +344,7 @@
 		<col def="S0">ISDotNetInstallerArgsRollback</col>
 		<row><td>ISX_DEFAULTCOMPONENT</td><td>{DC2D7305-1655-44FA-A6BC-4D30AA662E84}</td><td>INSTALLDIR</td><td>2</td><td/><td/><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
 		<row><td>MySql.Data.dll</td><td>{1A955640-88A6-4CF2-8C7E-CEC38A51D9DB}</td><td>INSTALLDIR</td><td>2</td><td/><td>mysql.data.dll</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
+		<row><td>NewComponent1</td><td>{8D30478C-05A4-4ED9-AB49-13F9774E9DAE}</td><td>INSTALLDIR</td><td>2</td><td/><td/><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
 		<row><td>test1.exe</td><td>{93837FAD-B4C3-473D-BF83-E68B43175362}</td><td>INSTALLDIR</td><td>2</td><td/><td>test1.exe</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
 		<row><td>test1.vshost.exe</td><td>{2A3DACA5-DD2F-4CE5-93BB-A1FBC4DB2602}</td><td>INSTALLDIR</td><td>2</td><td/><td>test1.vshost.exe</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
 	</table>
@@ -943,10 +945,10 @@
 		<row><td>InstallWelcome</td><td>Back</td><td>NewDialog</td><td>SplashBitmap</td><td>Display_IsBitmapDlg</td><td>0</td></row>
 		<row><td>InstallWelcome</td><td>Cancel</td><td>SpawnDialog</td><td>CancelSetup</td><td>1</td><td>0</td></row>
 		<row><td>InstallWelcome</td><td>Next</td><td>NewDialog</td><td>ReadyToInstall</td><td>1</td><td>0</td></row>
-		<row><td>LicenseAgreement</td><td>Back</td><td>NewDialog</td><td>InstallWelcome</td><td>1</td><td>0</td></row>
+		<row><td>LicenseAgreement</td><td>Back</td><td>NewDialog</td><td>InstallWelcome</td><td>NOT Installed</td><td>0</td></row>
 		<row><td>LicenseAgreement</td><td>Cancel</td><td>SpawnDialog</td><td>CancelSetup</td><td>1</td><td>0</td></row>
 		<row><td>LicenseAgreement</td><td>ISPrintButton</td><td>DoAction</td><td>ISPrint</td><td>1</td><td>0</td></row>
-		<row><td>LicenseAgreement</td><td>Next</td><td>NewDialog</td><td>CustomerInformation</td><td>AgreeToLicense = "Yes"</td><td>0</td></row>
+		<row><td>LicenseAgreement</td><td>Next</td><td>NewDialog</td><td>ReadyToInstall</td><td>AgreeToLicense = "Yes"</td><td>0</td></row>
 		<row><td>MaintenanceType</td><td>Back</td><td>NewDialog</td><td>MaintenanceWelcome</td><td>1</td><td>0</td></row>
 		<row><td>MaintenanceType</td><td>Cancel</td><td>SpawnDialog</td><td>CancelSetup</td><td>1</td><td>0</td></row>
 		<row><td>MaintenanceType</td><td>Next</td><td>NewDialog</td><td>CustomSetup</td><td>_IsMaintenance = "Change"</td><td>12</td></row>
@@ -1054,6 +1056,7 @@
 	<table name="CreateFolder">
 		<col key="yes" def="s72">Directory_</col>
 		<col key="yes" def="s72">Component_</col>
+		<row><td>INSTALLDIR</td><td>NewComponent1</td></row>
 	</table>
 
 	<table name="CustomAction">
@@ -1871,6 +1874,7 @@
 		<col key="yes" def="s72">Component_</col>
 		<row><td>AlwaysInstall</td><td>ISX_DEFAULTCOMPONENT</td></row>
 		<row><td>AlwaysInstall</td><td>MySql.Data.dll</td></row>
+		<row><td>AlwaysInstall</td><td>NewComponent1</td></row>
 		<row><td>AlwaysInstall</td><td>test1.exe</td></row>
 		<row><td>AlwaysInstall</td><td>test1.vshost.exe</td></row>
 	</table>
@@ -1912,6 +1916,7 @@
 		<row><td>PROJECT_ASSISTANT_DEFAULT_FEATURE</td><td>AlwaysInstall</td></row>
 		<row><td>PROJECT_ASSISTANT_FEATURES</td><td>NonSelectable</td></row>
 		<row><td>RegistryPageEnabled</td><td>No</td></row>
+		<row><td>test1.exe</td><td/></row>
 	</table>
 
 	<table name="ISBillBoard">
@@ -2040,6 +2045,7 @@
 		<col def="S0">Miscellaneous</col>
 		<row><td>ISX_DEFAULTCOMPONENT</td><td/><td/><td>_D5B5DDF3_9F57_4A05_8E4E_AB77EECD5F52_FILTER</td><td/><td/><td/><td/></row>
 		<row><td>MySql.Data.dll</td><td/><td/><td>_B70C02C0_2654_441A_BC06_44A26C45DDC8_FILTER</td><td/><td/><td/><td/></row>
+		<row><td>NewComponent1</td><td/><td/><td>_DE55F510_420D_4D43_997F_C1EFE059D417_FILTER</td><td/><td/><td/><td/></row>
 		<row><td>test1.exe</td><td/><td/><td>_69FDAE5A_3B8A_429C_BB82_963977D7CA92_FILTER</td><td/><td/><td/><td/></row>
 		<row><td>test1.vshost.exe</td><td/><td/><td>_0AB7F568_A51C_4D22_97C1_25FBF14166A0_FILTER</td><td/><td/><td/><td/></row>
 	</table>
@@ -2662,6 +2668,8 @@
 		<row><td>COMPANY_NAME</td><td>2052</td><td>公司名称</td><td>0</td><td/><td>866477129</td></row>
 		<row><td>DN_AlwaysInstall</td><td>2052</td><td>始终安装</td><td>0</td><td/><td>866477129</td></row>
 		<row><td>IDPROP_EXPRESS_LAUNCH_CONDITION_COLOR</td><td>2052</td><td>系统颜色设置不足以运行 [ProductName]。</td><td>0</td><td/><td>866477129</td></row>
+		<row><td>IDPROP_EXPRESS_LAUNCH_CONDITION_DOTNETVERSION40CLIENT</td><td>1033</td><td>Microsoft .NET Framework 4.0 Client Package or greater needs to be installed for this installation to continue.</td><td>0</td><td/><td>1009091657</td></row>
+		<row><td>IDPROP_EXPRESS_LAUNCH_CONDITION_DOTNETVERSION40CLIENT</td><td>2052</td><td>Microsoft .NET Framework 4.0 Client Package or greater needs to be installed for this installation to continue.</td><td>0</td><td/><td>1009091657</td></row>
 		<row><td>IDPROP_EXPRESS_LAUNCH_CONDITION_DOTNETVERSION40FULL</td><td>2052</td><td>Microsoft .NET Framework 4.0 Full package or greater needs to be installed for this installation to continue.</td><td>0</td><td/><td>866477129</td></row>
 		<row><td>IDPROP_EXPRESS_LAUNCH_CONDITION_DOTNETVERSION45FULL</td><td>2052</td><td>Microsoft .NET Framework 4.5 Full package or greater needs to be installed for this installation to continue.</td><td>0</td><td/><td>866477129</td></row>
 		<row><td>IDPROP_EXPRESS_LAUNCH_CONDITION_OS</td><td>2052</td><td>操作系统不足以运行 [ProductName]。</td><td>0</td><td/><td>866477129</td></row>
@@ -3884,9 +3892,10 @@
 		<col def="S255">ISBuildSourcePath</col>
 		<col def="I2">ISIconIndex</col>
 		<row><td>ARPPRODUCTICON.exe</td><td/><td>d:\Users\Mao_TP\Pictures\QQ图片20170703165512.ico</td><td>0</td></row>
-		<row><td>test1.exe1_BB13EDEF00C842928CFA1EDCEA8EF184.exe</td><td/><td>&lt;ISProductFolder&gt;\redist\Language Independent\OS Independent\GenericExe.ico</td><td>0</td></row>
-		<row><td>test1.exe_67E57C61886648A89BC2DD04D9D0083E.exe</td><td/><td>&lt;ISProductFolder&gt;\redist\Language Independent\OS Independent\GenericExe.ico</td><td>0</td></row>
+		<row><td>Shortcut_D43F38FA745B460F91798A7465C8ADF6.exe</td><td/><td>C:\Program Files (x86)\InstallShield\2013LE\Redist\Language Independent\OS Independent\uninstall.ico</td><td>0</td></row>
+		<row><td>test1.exe1_A94551FE5D8E4924987993FF99A0A723.exe</td><td/><td>d:\Users\Mao_TP\Pictures\QQ图片20170703165512.ico</td><td>0</td></row>
 		<row><td>test1.exe_8FC08132B461430D989240CD46E2D1C2.exe</td><td/><td>&lt;ISProductFolder&gt;\redist\Language Independent\OS Independent\GenericExe.ico</td><td>0</td></row>
+		<row><td>test1.exe_9FEBF6E8007745188194C3F25DD130D6.exe</td><td/><td>d:\Users\Mao_TP\Pictures\QQ图片20170703165512.ico</td><td>0</td></row>
 		<row><td>test1.vshost.exe_AEC323439B184F859CFEB98E3DE67B38.exe</td><td/><td>&lt;ISProductFolder&gt;\redist\Language Independent\OS Independent\GenericExe.ico</td><td>0</td></row>
 		<row><td>test1.vshost.exe_DC1CF0AF148149B8B0E0EC8D85465895.exe</td><td/><td>&lt;ISProductFolder&gt;\redist\Language Independent\OS Independent\GenericExe.ico</td><td>0</td></row>
 	</table>
@@ -4021,7 +4030,7 @@ UwBpAG4AZwBsAGUASQBtAGEAZwBlAAEARQB4AHAAcgBlAHMAcwA=
 		<row><td>ISTheme</td><td>InstallShield Blue.theme</td></row>
 		<row><td>ISUSLock</td><td>{28315EE8-409F-4F59-BC9C-388265F2FDB9}</td></row>
 		<row><td>ISUSSignature</td><td>{E567DD27-7EBE-4B5F-B0AD-31E877BD819F}</td></row>
-		<row><td>ISVisitedViews</td><td>viewAssistant,viewProject,viewFileExtensions,viewAppFiles,viewShortcuts,viewUI</td></row>
+		<row><td>ISVisitedViews</td><td>viewAssistant,viewProject,viewFileExtensions,viewAppFiles,viewShortcuts,viewUI,viewISToday,viewSetupDesign</td></row>
 		<row><td>Limited</td><td>1</td></row>
 		<row><td>LockPermissionMode</td><td>1</td></row>
 		<row><td>MsiExecCmdLineOptions</td><td/></row>
@@ -4079,6 +4088,7 @@ UwBpAG4AZwBsAGUASQBtAGEAZwBlAAEARQB4AHAAcgBlAHMAcwA=
 	<table name="LaunchCondition">
 		<col key="yes" def="s255">Condition</col>
 		<col def="l255">Description</col>
+		<row><td>DOTNETVERSION40CLIENT&gt;="#1"</td><td>##IDPROP_EXPRESS_LAUNCH_CONDITION_DOTNETVERSION40CLIENT##</td></row>
 		<row><td>DOTNETVERSION40FULL&gt;="#1"</td><td>##IDPROP_EXPRESS_LAUNCH_CONDITION_DOTNETVERSION40FULL##</td></row>
 		<row><td>DOTNETVERSION45FULL&gt;="#1"</td><td>##IDPROP_EXPRESS_LAUNCH_CONDITION_DOTNETVERSION45FULL##</td></row>
 	</table>
@@ -4410,7 +4420,7 @@ UwBpAG4AZwBsAGUASQBtAGEAZwBlAAEARQB4AHAAcgBlAHMAcwA=
 		<row><td>RestartManagerOption</td><td>CloseRestart</td><td/></row>
 		<row><td>SERIALNUMBER</td><td/><td/></row>
 		<row><td>SERIALNUMVALSUCCESSRETVAL</td><td>1</td><td/></row>
-		<row><td>SecureCustomProperties</td><td>ISFOUNDNEWERPRODUCTVERSION;USERNAME;COMPANYNAME;ISX_SERIALNUM;SUPPORTDIR;DOTNETVERSION40FULL;DOTNETVERSION45FULL</td><td/></row>
+		<row><td>SecureCustomProperties</td><td>ISFOUNDNEWERPRODUCTVERSION;USERNAME;COMPANYNAME;ISX_SERIALNUM;SUPPORTDIR;DOTNETVERSION40FULL;DOTNETVERSION45FULL;DOTNETVERSION40CLIENT</td><td/></row>
 		<row><td>SelectedSetupType</td><td>##IDS__DisplayName_Typical##</td><td/></row>
 		<row><td>SetupType</td><td>Typical</td><td/></row>
 		<row><td>UpgradeCode</td><td>{2571686A-3FE9-4977-92A9-35EED277275A}</td><td/></row>
@@ -4455,6 +4465,7 @@ UwBpAG4AZwBsAGUASQBtAGEAZwBlAAEARQB4AHAAcgBlAHMAcwA=
 		<col def="s255">Key</col>
 		<col def="S255">Name</col>
 		<col def="I2">Type</col>
+		<row><td>DotNet40Client</td><td>2</td><td>SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Client</td><td>Install</td><td>2</td></row>
 		<row><td>DotNet40Full</td><td>2</td><td>SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full</td><td>Install</td><td>2</td></row>
 		<row><td>DotNet45Full</td><td>2</td><td>SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full</td><td>Version</td><td>2</td></row>
 	</table>
@@ -4475,6 +4486,7 @@ UwBpAG4AZwBsAGUASQBtAGEAZwBlAAEARQB4AHAAcgBlAHMAcwA=
 		<col def="L255">FileName</col>
 		<col def="s72">DirProperty</col>
 		<col def="i2">InstallMode</col>
+		<row><td>Shortcut</td><td>NewComponent1</td><td/><td>product_name1</td><td>2</td></row>
 		<row><td>test1.exe</td><td>test1.exe</td><td/><td>product_name1</td><td>2</td></row>
 		<row><td>test1.vshost.exe</td><td>test1.vshost.exe</td><td/><td>product_name1</td><td>2</td></row>
 	</table>
@@ -4562,8 +4574,9 @@ UwBpAG4AZwBsAGUASQBtAGEAZwBlAAEARQB4AHAAcgBlAHMAcwA=
 		<col def="S255">ISComments</col>
 		<col def="S255">ISShortcutName</col>
 		<col def="I4">ISAttributes</col>
-		<row><td>test1.exe</td><td>product_name1</td><td>##IDS_SHORTCUT_DISPLAY_NAME3##</td><td>test1.exe</td><td>AlwaysInstall</td><td/><td/><td/><td>test1.exe_67E57C61886648A89BC2DD04D9D0083E.exe</td><td>0</td><td>1</td><td>INSTALLDIR</td><td/><td/><td/><td/><td/><td/><td/></row>
-		<row><td>test1.exe1</td><td>DesktopFolder</td><td>##IDS_SHORTCUT_DISPLAY_NAME3##</td><td>test1.exe</td><td>AlwaysInstall</td><td/><td/><td/><td>test1.exe1_BB13EDEF00C842928CFA1EDCEA8EF184.exe</td><td>0</td><td>1</td><td>INSTALLDIR</td><td/><td/><td/><td/><td/><td/><td/></row>
+		<row><td>Shortcut</td><td>product_name1</td><td>UNINST|Uninstall 样机库查询</td><td>NewComponent1</td><td>[SystemFolder]msiexec.exe</td><td>/x {B95C5E30-1BF3-4C97-87F5-B8F1D4A285A6}</td><td/><td/><td>Shortcut_D43F38FA745B460F91798A7465C8ADF6.exe</td><td>0</td><td>1</td><td/><td/><td/><td/><td/><td/><td/><td/></row>
+		<row><td>test1.exe</td><td>product_name1</td><td>##IDS_SHORTCUT_DISPLAY_NAME3##</td><td>test1.exe</td><td>AlwaysInstall</td><td/><td/><td/><td>test1.exe_9FEBF6E8007745188194C3F25DD130D6.exe</td><td>0</td><td>1</td><td>INSTALLDIR</td><td/><td/><td/><td/><td/><td/><td/></row>
+		<row><td>test1.exe1</td><td>DesktopFolder</td><td>##IDS_SHORTCUT_DISPLAY_NAME3##</td><td>test1.exe</td><td>AlwaysInstall</td><td/><td/><td/><td>test1.exe1_A94551FE5D8E4924987993FF99A0A723.exe</td><td>0</td><td>1</td><td>INSTALLDIR</td><td/><td/><td/><td/><td/><td/><td/></row>
 		<row><td>test1.vshost.exe</td><td>product_name1</td><td>##IDS_SHORTCUT_DISPLAY_NAME4##</td><td>test1.vshost.exe</td><td>AlwaysInstall</td><td/><td/><td/><td>test1.vshost.exe_DC1CF0AF148149B8B0E0EC8D85465895.exe</td><td>0</td><td>1</td><td>INSTALLDIR</td><td/><td/><td/><td/><td/><td/><td/></row>
 	</table>
 

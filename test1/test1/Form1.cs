@@ -70,7 +70,7 @@ namespace test1
             MySqlCommand mycom = null;
             MySqlCommand mycom2 = null;
             MySqlDataAdapter myrec = null;
-            myconn = new MySqlConnection("Host =192.168.8.93;Database=bec_yangji_db;Username=common_user;Password=longer");
+            myconn = new MySqlConnection("Host =192.168.0.250;Database=bec_yangji_db;Username=root;Password=maounfeng");
             myconn.Open();
             //查询
             mycom = myconn.CreateCommand();

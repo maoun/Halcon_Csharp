@@ -1,0 +1,104 @@
+
+dev_close_window ()
+
+
+list_image_files ('./','default', [], ImageFiles)
+
+
+* ocrファイルオープン
+read_ocr_class_mlp ('Document_0-9A-Z_NoRej.omc', OCRHandle)
+
+
+for i := 0 to |ImageFiles|-1 by 1
+    * 画像読み込み
+    read_image (Image, ImageFiles)
+    * 白黒画像
+    rgb1_to_gray (Image, GrayImage)
+    * 反転画像
+    invert_image (GrayImage, ImageInvert)    
+    
+    * 円形構造
+    gen_disc_se (SE, 'byte', 15, 15, 0)
+    gray_bothat (GrayImage, SE, ImageBotHat)
+
+
+    dev_open_window_fit_image (Image, 0, 0, -1, -1, WindowHandle)
+    
+    * =============================================
+    *                   画像処理
+    * =============================================
+    
+    * ■■■■ 暗い背景に、明るい文字(A) ■■■■
+    * 文字領域抽出(A)
+    gray_tophat (GrayImage, SE, ImageTopHat)
+    threshold (ImageTopHat, Reg_Light, 95, 255)
+    connection (Reg_Light, Reg_Light_con)
+    select_shape (Reg_Light_con, Reg_Light_sel, ['width', 'height'], 'and', [10, 10], [30, 30])
+    union1 (Reg_Light_sel, Reg_Light_un)
+    closing_rectangle1 (Reg_Light_un, Reg_Light_cl_V, 1, 20)
+    
+    connection (Reg_Light_cl_V, Reg_Light_cl_V_con)
+    select_shape (Reg_Light_cl_V_con, Reg_Light_lb_V, 'ra','and', 120, 1000)
+
+
+    * A -> 垂直ラベリング
+    count_obj (Reg_Light_lb_V, Light_H_Number)
+    connection (Reg_Light_cl_V, Reg_Dark_cl_V_con)
+    select_shape (Reg_Light_cl_V_con, Reg_Light_lb_V, 'ra','and', 120, 1000)
+
+
+    closing_rectangle1 (Reg_Light_un, Reg_Light_cl_V, 1, 20)
+    
+    for j := 1 to Light_H_Number by 1
+        select_obj (Reg_Light_lb_V, Reg_Light_lb_V_obj, j)
+        intersection (Reg_Light_sel, Reg_Light_lb_V_obj, Reg_Light_V_sel_obj)
+        
+        select_shape (Reg_Light_V_sel_obj, Reg_Light_chars_V, 'area', 'and', 1, 99999)
+        sort_region (Reg_Light_chars_V, Reg_Light_chars_V_sort, 'character', 'true', 'row')
+        
+        * do ocr : 反転画像ImageInvert使用
+        do_ocr_multi_class_mlp (Reg_Light_chars_V_sort, ImageInvert, OCRHandle, Class, Confidence)
+        
+        * 表示
+        smallest_rectangle1 (Reg_Light_chars_V_sort, Row1, Col1, Row2, Col2)        
+        shape_trans (Reg_Light_chars_V_sort, Reg_Light_V_block, 'rectangle1')
+        dev_clear_window ()
+        dev_display (GrayImage)
+        dev_set_draw ('margin')
+        dev_set_line_width (2)
+        dev_display (Reg_Light_V_block)
+        for c := 0 to |Row1|-1 by 1
+            disp_message (WindowHandle, Class[c], 'window', Row1[c], Col2[c]+20, 'black', 'true')
+        endfor
+        stop ()
+    endfor
+    
+    * A -> 水平ラベリング
+    * 省略
+    * do ocr : 反転画像ImageInvert使用
+*     do_ocr_multi_class_mlp (Reg_Light_chars_H_sort, ImageInvert, OCRHandle, Class, Confidence)
+    
+    * ■■■■ 明るい背景に、暗い文字(B) ■■■■
+    * 文字領域抽出(B)
+    gray_bothat (GrayImage, SE, ImageBotHat)
+    threshold (ImageBotHat, Reg_Dark, 95, 255)
+    connection (Reg_Dark, Reg_Dark_con)
+    select_shape (Reg_Dark_con, Reg_Dark_sel, ['width', 'height'], 'and', [10, 10], [30, 30])
+    union1 (Reg_Dark_sel, Reg_Dark_un)  
+  
+    * B -> 垂直ラベリング
+    * 省略
+    * do ocr : 画像GrayImage使用    
+*     do_ocr_multi_class_mlp (Reg_Dark_chars_V_sort, GrayImage, OCRHandle, Class, Confidence)
+    
+    * B -> 水平ラベリング
+    * 省略
+    * do ocr : 画像GrayImage使用
+*     do_ocr_multi_class_mlp (Reg_Dark_chars_H_sort, GrayImage, OCRHandle, Class, Confidence)
+    
+    dev_close_window ()
+endfor
+
+
+* ocrファイルクローズ
+close_all_ocrs () 
