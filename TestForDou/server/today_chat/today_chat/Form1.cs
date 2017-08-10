@@ -58,48 +58,6 @@ namespace today_chat
                   
         }
 
-        //public static byte[] readBuffer(Stream Netstream,int bufferlen)
-        //{
-        //    // 如果指定的无效长度的缓冲区，则指定一个默认的长度作为缓存大小
-        //    if(bufferlen>0)
-        //    {
-        //        bufferlen = 0x8000;
-        //    }
-        //    //创建一个缓冲区
-        //    byte[] buffer = new byte[bufferlen];
-        //    int read = 0;
-        //    int block;
-
-        //    // 每次从流中读取缓存大小的数据，直到读取完所有的流为止
-        //    while ((block = NetStream.Read(buffer, read, buffer.Length - read)) > 0)
-        //    {
-        //        // 重新设定读取位置
-        //        read += block;
-
-        //        // 检查是否到达了缓存的边界，检查是否还有可以读取的信息
-        //        if (read == buffer.Length)
-        //        {
-        //            // 尝试读取一个字节
-        //            int nextByte = NetStream.ReadByte();
-
-        //            // 读取失败则说明读取完成可以返回结果
-        //            if (nextByte == -1)
-        //            {
-        //                return buffer;
-        //            }
-
-        //            // 调整数组大小准备继续读取
-        //            byte[] newBuf = new byte[buffer.Length * 2];
-        //            Array.Copy(buffer, newBuf, buffer.Length);
-        //            newBuf[read] = (byte)nextByte;
-
-        //            // buffer是一个引用（指针），这里意在重新设定buffer指针指向一个更大的内存
-        //            buffer = newBuf;
-        //            read++;
-        //            return buffer;
-        //        }
-        //    }
-        //}
         private void GetMessage()  // 获取消息
         {
             if (NetStream != null && NetStream.DataAvailable) // 网络流 非空 或者数据可用
@@ -133,10 +91,8 @@ namespace today_chat
             DialogResult Dr = MessageBox.Show("这样会中断与客户端的连接,你要关闭该窗体吗？", "服务器信息", MessageBoxButtons.YesNo, MessageBoxIcon.Warning); ;
             if (DialogResult.Yes == Dr)
             {
-                e.Cancel = false;
                 try
-                {
-                   
+                {                   
                     this.Thd.Abort();
                     Listener.Stop();
                     e.Cancel = false;
