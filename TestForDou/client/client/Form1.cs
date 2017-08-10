@@ -29,9 +29,16 @@ namespace client
         {
             if (Stream != null && Stream.DataAvailable)
             {
+                //设定一个缓冲区，大小默认为1024字节
+                const int bufferSize = 1024;
+                byte[] buffer = new byte[bufferSize];
+                int readBytes = 0;
+                Stream.ReadTimeout = 1000;     
+                readBytes = Stream.Read(buffer, 0, bufferSize);
+                string str = Encoding.ASCII.GetString(buffer).Substring(0, readBytes);//ascii码转换为string
                 rtxChatInfo.AppendText(DateTime.Now.ToString());
                 rtxChatInfo.AppendText(" 服务器说:\n");
-                rtxChatInfo.AppendText(ClientReader.ReadLine() + "\n");
+                rtxChatInfo.AppendText(str + "\n");
                 //下拉框
                 rtxChatInfo.SelectionStart = rtxChatInfo.Text.Length;
                 rtxChatInfo.Focus();
@@ -88,12 +95,15 @@ namespace client
                 {
                     //HexToAsscii.HexToAsci(rtxSendMessage.Text)
                     string abc = HexToAsscii.HexToAsci(rtxSendMessage.Text);
-                    ClientWriter.Write(HexToAsscii.HexToAsci(rtxSendMessage.Text));//信息写入流
-                    ClientWriter.Flush();
-                    rtxChatInfo.AppendText(DateTime.Now.ToString()); // 显示框 rtxChatInfo
-                    rtxChatInfo.AppendText(" 客户端说: \n");
-                    rtxChatInfo.AppendText(rtxSendMessage.Text + "\n");
-                    rtxSendMessage.Clear();
+                    if (abc!=null)
+                    {
+                        ClientWriter.Write(abc);//信息写入流
+                        ClientWriter.Flush();
+                        rtxChatInfo.AppendText(DateTime.Now.ToString()); // 显示框 rtxChatInfo
+                        rtxChatInfo.AppendText(" 客户端说: \n");
+                        rtxChatInfo.AppendText(rtxSendMessage.Text + "\n");
+                        rtxSendMessage.Clear();
+                    }                    
                     //下拉框
                     rtxChatInfo.SelectionStart = rtxChatInfo.Text.Length;
                     rtxChatInfo.Focus();
@@ -168,39 +178,38 @@ namespace client
         public static string HexToAsci(string strHex)
         {
             //hex转ascii
-            while (true)
+            //去掉空格
+            CharEnumerator CEnumerator = strHex.GetEnumerator();
+            string tmp = null;
+            while (CEnumerator.MoveNext())
             {
-                //去掉空格
-                CharEnumerator CEnumerator = strHex.GetEnumerator();
-                string tmp = null;
-                while (CEnumerator.MoveNext())
+                byte[] array = new byte[1];
+                array = System.Text.Encoding.ASCII.GetBytes(CEnumerator.Current.ToString());
+                int asciicode = (short)(array[0]);
+                if (asciicode != 32)
                 {
-                    byte[] array = new byte[1];
-                    array = System.Text.Encoding.ASCII.GetBytes(CEnumerator.Current.ToString());
-                    int asciicode = (short)(array[0]);
-                    if (asciicode != 32)
-                    {
-                        tmp += CEnumerator.Current.ToString();
-                    }
+                    tmp += CEnumerator.Current.ToString();
                 }
+            }
 
-                try
+            try
+            {
+                tmp = tmp.Replace("\n", "").Replace(" ", "").Replace("\t", "").Replace("\r", "");//去掉换行和回车
+                byte[] buff = new byte[tmp.Length / 2];
+                int index = 0;
+                for (int i = 0; i < tmp.Length; i += 2)
                 {
-                    tmp = tmp.Replace("\n", "").Replace(" ", "").Replace("\t", "").Replace("\r", "");//去掉换行和回车
-                    byte[] buff = new byte[tmp.Length / 2];
-                    int index = 0;
-                    for (int i = 0; i < tmp.Length; i += 2)
-                    {
-                        buff[index] = Convert.ToByte(tmp.Substring(i, 2), 16);
-                        ++index;
-                    }
-                    string result = Encoding.Default.GetString(buff);
-                    return result;
+                    buff[index] = Convert.ToByte(tmp.Substring(i, 2), 16);
+                    ++index;
                 }
-                catch
-                {
-                    MessageBox.Show("不是十六进制数");
-                }
+                string result = Encoding.Default.GetString(buff);
+                return result;
+            }
+            catch
+            {
+                MessageBox.Show("不是十六进制数");
+                string result = null;
+                return result;
             }
         }
         public static string AssciiToHex(string strAsscii)

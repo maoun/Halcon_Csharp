@@ -31,25 +31,25 @@ namespace today_chat
                 //try
                 //{
                    
-                    IPAddress[] Ips = Dns.GetHostAddresses(""); // 本机 IP地址 定义
-                    string GetIp = Ips[0].ToString(); // 获取到IP 地址
-                    Listener = new TcpListener(IPAddress.Parse("192.168.8.21"), 9600); // 监听
-                    Listener.Start(); // 开始监听  
-            while (true)
+            IPAddress[] Ips = Dns.GetHostAddresses(""); // 本机 IP地址 定义
+            string GetIp = Ips[0].ToString(); // 获取到IP 地址
+            Listener = new TcpListener(IPAddress.Parse("192.168.8.21"), 9600); // 监听
+            Listener.Start(); // 开始监听  
+             while (true)
             {
-                    string a = SocketError.SocketError.ToString();
-                    CheckForIllegalCrossThreadCalls = false;
-                    btnBeginServer.Enabled = false;// 开始服务器 按键控件使能关闭
-                   // MessageBox.Show("服务器已经开启！", "服务器消息", MessageBoxButtons.OK, MessageBoxIcon.Information);  
-                    this.Text = "服务器 已经开启……";
-                    SocketClient = Listener.AcceptSocket();//接受挂起----监听到的Socket
-                    NetStream = new NetworkStream(SocketClient); // 网络流
-                    ServerWriter = new StreamWriter(NetStream);
-                    ServerReader = new StreamReader(NetStream);
-                    if (SocketClient.Connected)  // 监听 ScoketClient 
-                    {
-                        MessageBox.Show("客户端连接成功!", "服务器消息", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    }                   
+                string a = SocketError.SocketError.ToString();
+                CheckForIllegalCrossThreadCalls = false;
+                btnBeginServer.Enabled = false;// 开始服务器 按键控件使能关闭
+                // MessageBox.Show("服务器已经开启！", "服务器消息", MessageBoxButtons.OK, MessageBoxIcon.Information);  
+                this.Text = "服务器 已经开启……";
+                SocketClient = Listener.AcceptSocket();//接受挂起----监听到的Socket
+                NetStream = new NetworkStream(SocketClient); // 网络流
+                ServerWriter = new StreamWriter(NetStream);
+                ServerReader = new StreamReader(NetStream);
+                if (SocketClient.Connected)  // 监听 ScoketClient 
+                {
+                    MessageBox.Show("客户端连接成功!", "服务器消息", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }                   
                 //}
                 //catch 
                 //{             
@@ -57,14 +57,64 @@ namespace today_chat
             }
                   
         }
+
+        //public static byte[] readBuffer(Stream Netstream,int bufferlen)
+        //{
+        //    // 如果指定的无效长度的缓冲区，则指定一个默认的长度作为缓存大小
+        //    if(bufferlen>0)
+        //    {
+        //        bufferlen = 0x8000;
+        //    }
+        //    //创建一个缓冲区
+        //    byte[] buffer = new byte[bufferlen];
+        //    int read = 0;
+        //    int block;
+
+        //    // 每次从流中读取缓存大小的数据，直到读取完所有的流为止
+        //    while ((block = NetStream.Read(buffer, read, buffer.Length - read)) > 0)
+        //    {
+        //        // 重新设定读取位置
+        //        read += block;
+
+        //        // 检查是否到达了缓存的边界，检查是否还有可以读取的信息
+        //        if (read == buffer.Length)
+        //        {
+        //            // 尝试读取一个字节
+        //            int nextByte = NetStream.ReadByte();
+
+        //            // 读取失败则说明读取完成可以返回结果
+        //            if (nextByte == -1)
+        //            {
+        //                return buffer;
+        //            }
+
+        //            // 调整数组大小准备继续读取
+        //            byte[] newBuf = new byte[buffer.Length * 2];
+        //            Array.Copy(buffer, newBuf, buffer.Length);
+        //            newBuf[read] = (byte)nextByte;
+
+        //            // buffer是一个引用（指针），这里意在重新设定buffer指针指向一个更大的内存
+        //            buffer = newBuf;
+        //            read++;
+        //            return buffer;
+        //        }
+        //    }
+        //}
         private void GetMessage()  // 获取消息
         {
             if (NetStream != null && NetStream.DataAvailable) // 网络流 非空 或者数据可用
-            {
-               
+            {     
+                //设定一个缓冲区，大小默认为1024字节
+                const int bufferSize = 1024;
+                byte[] buffer = new byte[bufferSize];
+                int readBytes = 0;
+                NetStream.ReadTimeout = 1000; 
+                readBytes = NetStream.Read(buffer, 0, bufferSize);
+                string str = Encoding.ASCII.GetString(buffer).Substring(0, readBytes);//ascii码转换为string
                 rtxChatInfo.AppendText(DateTime.Now.ToString());
                 rtxChatInfo.AppendText("  客户端说:\n");
-                rtxChatInfo.AppendText(ServerReader.ReadLine() + "\n");
+                              
+                rtxChatInfo.AppendText(str + "\n");
                 //下拉框
                 rtxChatInfo.SelectionStart = rtxChatInfo.Text.Length;
                 rtxChatInfo.Focus();
@@ -83,11 +133,12 @@ namespace today_chat
             DialogResult Dr = MessageBox.Show("这样会中断与客户端的连接,你要关闭该窗体吗？", "服务器信息", MessageBoxButtons.YesNo, MessageBoxIcon.Warning); ;
             if (DialogResult.Yes == Dr)
             {
+                e.Cancel = false;
                 try
                 {
-                    Listener.Stop();
+                   
                     this.Thd.Abort();
-
+                    Listener.Stop();
                     e.Cancel = false;
                 }
                 catch { }
