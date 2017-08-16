@@ -25,12 +25,10 @@ namespace today_chat
         StreamReader ServerReader; // 服务器 读 
         StreamWriter ServerWriter; // 服务器 写
         Thread Thd;   // 线程
+        Thread thread;
+        #region TCP通讯
         public void BeginLister()     // 打开服务器 子函数
-        {
-            
-                //try
-                //{
-                   
+        {            
             IPAddress[] Ips = Dns.GetHostAddresses(""); // 本机 IP地址 定义
             string GetIp = Ips[0].ToString(); // 获取到IP 地址
             Listener = new TcpListener(IPAddress.Parse("192.168.8.21"), 9600); // 监听
@@ -50,10 +48,6 @@ namespace today_chat
                 {
                     MessageBox.Show("客户端连接成功!", "服务器消息", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }                   
-                //}
-                //catch 
-                //{             
-                //}// 不做处理 继续测试监听
             }
                   
         }
@@ -157,5 +151,174 @@ namespace today_chat
         {
 
         }
+        #endregion
+
+        #region  UDP通讯
+        private IPEndPoint ipLocalPoint;
+        private EndPoint RemotePoint;
+        private Socket mySocket;
+        private bool RunningFlag = false;
+        public void UDPListen()
+        {
+
+            try
+            {
+                //得到本机IP，设置UDP端口号     
+                ipLocalPoint = new IPEndPoint(IPAddress.Parse("192.168.8.21"), 9601);
+
+                //定义网络类型，数据连接类型和网络协议UDP  
+                mySocket = new Socket(AddressFamily.InterNetwork, SocketType.Dgram, ProtocolType.Udp);
+
+                //绑定网络地址  
+                mySocket.Bind(ipLocalPoint);
+
+                //得到客户机IP  
+                IPEndPoint ipep = new IPEndPoint(getValidIP(txtServerIp.Text), getValidPort(txtPort.Text));
+                RemotePoint = (EndPoint)(ipep);
+
+                //启动一个新的线程，执行方法this.ReceiveHandle，  
+                //以便在一个独立的进程中执行数据接收的操作  
+
+                RunningFlag = true;
+                thread = new Thread(new ThreadStart(ReceiveHandle));
+                thread.Start();
+                this.Text = "连接成功";
+            }
+            catch
+            {
+                this.Text = "连接失败……";
+                return;
+            }
+        }
+
+        private IPAddress getIPAddress()//
+        {
+            // 获得本机局域网IP地址  
+            IPAddress[] AddressList = Dns.GetHostEntry(Dns.GetHostName()).AddressList;
+            if (AddressList.Length < 1)
+            {
+                this.Text = "本机IP未获取";
+                return null;
+            }
+            return AddressList[0];
+        }
+
+        private int getValidPort(string port)
+        {
+            int lport;
+            //测试端口号是否有效  
+            try
+            {
+                //是否为空  
+                if (port == "")
+                {
+                    this.Text = "端口号无效，不能启动DUP";
+                }
+                lport = System.Convert.ToInt32(port);
+            }
+            catch (Exception e)
+            {
+                //txtServerIp.Enabled = true;
+                //btnConnect.Enabled = true;
+                MessageBox.Show("服务器连失败!", "错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                this.Text = "连接失败……";
+                return 1;
+            }
+            return lport;
+        }
+
+        private IPAddress getValidIP(string ip)
+        {
+            IPAddress lip = null;
+            //测试IP是否有效  
+            try
+            {
+                //是否为空  
+                if (!IPAddress.TryParse(ip, out lip))
+                {
+                    this.Text = "IP无效，不能启动DUP";
+                }
+            }
+            catch (Exception e)
+            {
+                this.Text = "无效的IP：" + e.ToString() + "\n";
+                return null;
+            }
+            return lip;
+        }
+
+        private void ReceiveHandle()
+        {
+            //接收数据处理线程  
+            string msg;
+            byte[] data = new byte[1024];
+            Control.CheckForIllegalCrossThreadCalls = false;
+            while (RunningFlag)
+            {
+                if (mySocket == null || mySocket.Available < 1)
+                {
+                    //Thread.Sleep(200);
+                    continue;
+                }
+                //跨线程调用控件  
+                //接收UDP数据报，引用参数RemotePoint获得源地址  
+                try
+                {
+                    int rlen = mySocket.ReceiveFrom(data, ref RemotePoint);
+                    msg = Encoding.Default.GetString(data, 0, rlen);
+                    rtxChatInfo.AppendText(DateTime.Now.ToString());
+                    rtxChatInfo.AppendText(" 服务器说:\n");
+                    rtxChatInfo.AppendText(msg + "\n");
+                    //下拉框
+                    rtxChatInfo.SelectionStart = rtxChatInfo.Text.Length;
+                    rtxChatInfo.Focus();
+                    rtxSendMessage.Focus();
+                }
+                catch
+                {
+                    MessageBox.Show("远程主机无响应");
+                }
+            }
+        }
+
+        private void UDPSend()
+        {
+            try
+            {
+                if (rtxSendMessage.Text.Trim() != "") // 发送消息不为空
+                {
+                    //HexToAsscii.HexToAsci(rtxSendMessage.Text)
+                    string abc = HexToAsscii.HexToAsci(rtxSendMessage.Text);
+                    if (abc != null)
+                    {
+                        byte[] data = Encoding.Default.GetBytes(abc);
+                        mySocket.SendTo(data, data.Length, SocketFlags.None, RemotePoint);
+                        rtxChatInfo.AppendText(DateTime.Now.ToString()); // 显示框 rtxChatInfo
+                        rtxChatInfo.AppendText(" 客户端说: \n");
+                        rtxChatInfo.AppendText(rtxSendMessage.Text + "\n");
+                        rtxSendMessage.Clear();
+                    }
+                    //下拉框
+                    rtxChatInfo.SelectionStart = rtxChatInfo.Text.Length;
+                    rtxChatInfo.Focus();
+                    rtxSendMessage.Focus();
+                }
+                else
+                {
+                    MessageBox.Show("信息不能为空!", "错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    txtServerIp.Focus();
+                    return;
+                }
+            }
+            catch
+            {
+                txtServerIp.Enabled = true;
+                btnConnect.Enabled = true;
+                MessageBox.Show("服务器连失败!", "错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                this.Text = "连接失败……";
+                return;
+            }
+        }
+        #endregion
     }
 }

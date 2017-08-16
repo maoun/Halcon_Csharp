@@ -10,41 +10,27 @@ namespace HexToAsscii
     {
         public static string HexToAsci(string strHex)
         {
-            //hex转ascii
-            while (true)
+            //hex转ascii           
+            strHex = strHex.Replace("\n", "").Replace(" ", "").Replace("\t", "").Replace("\r", "");//去掉换行和回车
+            try
             {
-                //去掉空格
-                CharEnumerator CEnumerator = strHex.GetEnumerator();
-                string tmp = null;
-                while (CEnumerator.MoveNext())
+                byte[] buff = new byte[strHex.Length / 2];
+                int index = 0;
+                for (int i = 0; i < strHex.Length; i += 2)
                 {
-                    byte[] array = new byte[1];
-                    array = System.Text.Encoding.ASCII.GetBytes(CEnumerator.Current.ToString());
-                    int asciicode = (short)(array[0]);
-                    if (asciicode != 32)
-                    {
-                        tmp += CEnumerator.Current.ToString();
-                    }
+                    buff[index] = Convert.ToByte(strHex.Substring(i, 2), 16);
+                    ++index;
                 }
-                tmp = tmp.Replace("\n", "").Replace(" ", "").Replace("\t", "").Replace("\r", "");//去掉换行和回车
-                try
-                {
-                    byte[] buff = new byte[tmp.Length / 2];
-                    int index = 0;
-                    for (int i = 0; i < tmp.Length; i += 2)
-                    {
-                        buff[index] = Convert.ToByte(tmp.Substring(i, 2), 16);
-                        ++index;
-                    }
-                    string result = Encoding.Default.GetString(buff);
-                    return result;
-                }
-                catch
-                {
-                    Console.WriteLine("不是十六进制数字");
-                }
+                string result = Encoding.Default.GetString(buff);
+                return result;
+            }
+            catch
+            {
+                Console.WriteLine("不是十六进制数字");
+                return "";
             }
         }
+
         public static string AssciiToHex(string strAsscii)
         {
             ////ascii转hex

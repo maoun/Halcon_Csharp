@@ -1767,10 +1767,10 @@ public partial class HDevelopExport
 #if !(NO_EXPORT_MAIN || NO_EXPORT_APP_MAIN)
 public class HDevelopExportApp
 {
-  static void Main(string[] args)
-  {
-    new HDevelopExport();
-  }
+  //static void Main(string[] args)
+  //{
+  //  new HDevelopExport();
+  //}
 }
 #endif
 

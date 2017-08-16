@@ -35,6 +35,8 @@
             this.btnSend = new System.Windows.Forms.Button();
             this.tmrGetMess = new System.Windows.Forms.Timer(this.components);
             this.grpClient = new System.Windows.Forms.GroupBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.lblmode = new System.Windows.Forms.Label();
             this.txtPort = new System.Windows.Forms.TextBox();
             this.lblPort = new System.Windows.Forms.Label();
             this.grpChatInfo = new System.Windows.Forms.GroupBox();
@@ -59,7 +61,7 @@
             // 
             // txtServerIp
             // 
-            this.txtServerIp.Location = new System.Drawing.Point(138, 24);
+            this.txtServerIp.Location = new System.Drawing.Point(138, 30);
             this.txtServerIp.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.txtServerIp.Name = "txtServerIp";
             this.txtServerIp.Size = new System.Drawing.Size(305, 31);
@@ -68,7 +70,7 @@
             // 
             // btnConnect
             // 
-            this.btnConnect.Location = new System.Drawing.Point(675, 24);
+            this.btnConnect.Location = new System.Drawing.Point(601, 79);
             this.btnConnect.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.btnConnect.Name = "btnConnect";
             this.btnConnect.Size = new System.Drawing.Size(105, 40);
@@ -96,6 +98,8 @@
             // 
             // grpClient
             // 
+            this.grpClient.Controls.Add(this.comboBox1);
+            this.grpClient.Controls.Add(this.lblmode);
             this.grpClient.Controls.Add(this.txtPort);
             this.grpClient.Controls.Add(this.lblPort);
             this.grpClient.Controls.Add(this.btnConnect);
@@ -105,17 +109,40 @@
             this.grpClient.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.grpClient.Name = "grpClient";
             this.grpClient.Padding = new System.Windows.Forms.Padding(6, 5, 6, 5);
-            this.grpClient.Size = new System.Drawing.Size(790, 77);
+            this.grpClient.Size = new System.Drawing.Size(790, 126);
             this.grpClient.TabIndex = 13;
             this.grpClient.TabStop = false;
             this.grpClient.Text = "服务器连接";
             // 
+            // comboBox1
+            // 
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "TCP/IP",
+            "UDP"});
+            this.comboBox1.Location = new System.Drawing.Point(138, 85);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(140, 29);
+            this.comboBox1.TabIndex = 18;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
+            // lblmode
+            // 
+            this.lblmode.AutoSize = true;
+            this.lblmode.Location = new System.Drawing.Point(29, 86);
+            this.lblmode.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+            this.lblmode.Name = "lblmode";
+            this.lblmode.Size = new System.Drawing.Size(94, 21);
+            this.lblmode.TabIndex = 17;
+            this.lblmode.Text = "通讯方式";
+            // 
             // txtPort
             // 
-            this.txtPort.Location = new System.Drawing.Point(521, 24);
+            this.txtPort.Location = new System.Drawing.Point(521, 30);
             this.txtPort.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.txtPort.Name = "txtPort";
-            this.txtPort.Size = new System.Drawing.Size(114, 31);
+            this.txtPort.Size = new System.Drawing.Size(185, 31);
             this.txtPort.TabIndex = 16;
             this.txtPort.Text = "9600";
             // 
@@ -132,7 +159,7 @@
             // grpChatInfo
             // 
             this.grpChatInfo.Controls.Add(this.rtxChatInfo);
-            this.grpChatInfo.Location = new System.Drawing.Point(24, 91);
+            this.grpChatInfo.Location = new System.Drawing.Point(24, 140);
             this.grpChatInfo.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.grpChatInfo.Name = "grpChatInfo";
             this.grpChatInfo.Padding = new System.Windows.Forms.Padding(6, 5, 6, 5);
@@ -161,7 +188,7 @@
             this.grpSend.Controls.Add(this.rtxSendMessage);
             this.grpSend.Controls.Add(this.btnClose);
             this.grpSend.Controls.Add(this.btnSend);
-            this.grpSend.Location = new System.Drawing.Point(22, 525);
+            this.grpSend.Location = new System.Drawing.Point(22, 574);
             this.grpSend.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.grpSend.Name = "grpSend";
             this.grpSend.Padding = new System.Windows.Forms.Padding(6, 5, 6, 5);
@@ -196,7 +223,7 @@
             this.AcceptButton = this.btnSend;
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(823, 696);
+            this.ClientSize = new System.Drawing.Size(823, 754);
             this.Controls.Add(this.grpSend);
             this.Controls.Add(this.grpChatInfo);
             this.Controls.Add(this.grpClient);
@@ -218,19 +245,21 @@
 
         #endregion
 
-        private System.Windows.Forms.Label lblServerIp;
-        private System.Windows.Forms.TextBox txtServerIp;
-        private System.Windows.Forms.Button btnConnect;
-        private System.Windows.Forms.Button btnSend;
-        private System.Windows.Forms.Timer tmrGetMess;
-        private System.Windows.Forms.GroupBox grpClient;
-        private System.Windows.Forms.GroupBox grpChatInfo;
-        private System.Windows.Forms.GroupBox grpSend;
-        private System.Windows.Forms.RichTextBox rtxChatInfo;
-        private System.Windows.Forms.TextBox txtPort;
-        private System.Windows.Forms.Label lblPort;
-        private System.Windows.Forms.Button btnClose;
-        private System.Windows.Forms.RichTextBox rtxSendMessage;
+        public System.Windows.Forms.Label lblServerIp;
+        public System.Windows.Forms.Button btnConnect;
+        public System.Windows.Forms.Button btnSend;
+        public System.Windows.Forms.Timer tmrGetMess;
+        public System.Windows.Forms.GroupBox grpClient;
+        public System.Windows.Forms.GroupBox grpChatInfo;
+        public System.Windows.Forms.GroupBox grpSend;
+        public System.Windows.Forms.RichTextBox rtxChatInfo;
+        public System.Windows.Forms.Label lblPort;
+        public System.Windows.Forms.Button btnClose;
+        public System.Windows.Forms.RichTextBox rtxSendMessage;
+        public System.Windows.Forms.ComboBox comboBox1;
+        public System.Windows.Forms.Label lblmode;
+        public System.Windows.Forms.TextBox txtServerIp;
+        public System.Windows.Forms.TextBox txtPort;
     }
 }
 
