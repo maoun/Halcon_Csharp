@@ -8,7 +8,7 @@ namespace HexToAsscii
 {
     class HexToAsscii
     {
-        public static string HexToAsci(string strHex)
+        public static byte[] HexToAsci(string strHex)
         {
             //hex转ascii           
             strHex = strHex.Replace("\n", "").Replace(" ", "").Replace("\t", "").Replace("\r", "");//去掉换行和回车
@@ -22,12 +22,12 @@ namespace HexToAsscii
                     ++index;
                 }
                 string result = Encoding.Default.GetString(buff);
-                return result;
+                return buff;
             }
             catch
             {
                 Console.WriteLine("不是十六进制数字");
-                return "";
+                return null;
             }
         }
 

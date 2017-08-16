@@ -85,8 +85,10 @@ namespace HexToAsscii
             while(true)
             {
                 string a = Console.ReadLine();
-                string b = HexToAsscii.HexToAsci(a);
+                byte[] b = HexToAsscii.HexToAsci(a);
+                //string c = HexToAsscii.AssciiToHex(b);
                 Console.WriteLine(b);
+                //Console.WriteLine(c);
             }         
         }
     }
