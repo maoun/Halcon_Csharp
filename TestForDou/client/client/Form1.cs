@@ -15,14 +15,18 @@ namespace client
     public partial class Form1 : Form
     {
         int mode=0; 
-        public TcpClient TcpClient;   // TCP连接     
-        public StreamReader ClientReader;  // 网络流 读数据
-        public StreamWriter ClientWriter;  // 网络流 写数据  
-        public NetworkStream Stream; // 网络流
-        public Thread Thd;
+        //public TcpClient TcpClient;   // TCP连接     
+        //public StreamReader ClientReader;  // 网络流 读数据
+        //public StreamWriter ClientWriter;  // 网络流 写数据  
+        //public NetworkStream Stream; // 网络流
+        //public Thread Thd;
         public Thread thread;
-        public UdpClient udpcSend;    //UDP发送
-        public UdpClient udpcRecv;    //UDP接收
+        private IPEndPoint ipLocalPoint;
+        private EndPoint RemotePoint;
+        private Socket mySocket;
+        private bool RunningFlag = false;
+        //public UdpClient udpcSend;    //UDP发送
+        //public UdpClient udpcRecv;    //UDP接收
 
         public Form1()
         {
@@ -59,13 +63,13 @@ namespace client
 
         private void tmrGetMess_Tick(object sender, EventArgs e)  // 执行的接收信息
         {
-            if(mode==0)
-            {
-                GetMessage();
-            }
-            else
-            {
-            }            
+            //if (mode == 0)
+            //{
+            //    GetMessage();
+            //}
+            //else
+            //{
+            //}            
         }
 
         private void btnClose_Click(object sender, EventArgs e)
@@ -78,15 +82,7 @@ namespace client
             if (DialogResult.Yes == dr)
             {
                 e.Cancel = false;
-                if (Thd != null)
-                {
-                    Thd.Abort();
-                }
-                else if (thread!=null)
-                {
-                    thread.Abort();
-                }
-               
+                thread.Abort();
             }
             else
             {
@@ -123,11 +119,7 @@ namespace client
         }
        
 
-        #region  UDP通讯
-        private IPEndPoint ipLocalPoint;
-        private EndPoint RemotePoint;
-        private Socket mySocket;
-        private bool RunningFlag = false;  
+        #region  UDP通讯          
         public void UDPListen()
         {
 
@@ -277,28 +269,28 @@ namespace client
         }
         #endregion
 
-        #region TCP通讯
-        public void GetMessage()  //  接收服务器传的数据
-        {
-            if (Stream != null && Stream.DataAvailable)
-            {
-                //设定一个缓冲区，大小默认为1024字节
-                const int bufferSize = 1024;
-                byte[] buffer = new byte[bufferSize];
-                int readBytes = 0;
-                Stream.ReadTimeout = 1000;
-                readBytes = Stream.Read(buffer, 0, bufferSize);
-                string str = Encoding.ASCII.GetString(buffer).Substring(0, readBytes);//buffer转换为string
-                //str = HexToAsscii.HexToAsci(str);
-                rtxChatInfo.AppendText(DateTime.Now.ToString());
-                rtxChatInfo.AppendText(" 服务器说:\n");
-                rtxChatInfo.AppendText(str + "\n");
-                //下拉框
-                rtxChatInfo.SelectionStart = rtxChatInfo.Text.Length;
-                rtxChatInfo.Focus();
-                rtxSendMessage.Focus();
-            }
-        }
+        #region TCP通讯       
+        //public void GetMessage()  //  接收服务器传的数据
+        //{
+        //    if (Stream != null && Stream.DataAvailable)
+        //    {
+        //        //设定一个缓冲区，大小默认为1024字节
+        //        const int bufferSize = 1024;
+        //        byte[] buffer = new byte[bufferSize];
+        //        int readBytes = 0;
+        //        Stream.ReadTimeout = 1000;
+        //        readBytes = Stream.Read(buffer, 0, bufferSize);
+        //        string str = Encoding.ASCII.GetString(buffer).Substring(0, readBytes);//buffer转换为string
+        //        //str = HexToAsscii.HexToAsci(str);
+        //        rtxChatInfo.AppendText(DateTime.Now.ToString());
+        //        rtxChatInfo.AppendText(" 服务器说:\n");
+        //        rtxChatInfo.AppendText(str + "\n");
+        //        //下拉框
+        //        rtxChatInfo.SelectionStart = rtxChatInfo.Text.Length;
+        //        rtxChatInfo.Focus();
+        //        rtxSendMessage.Focus();
+        //    }
+        //}
         public void GetConn()   //  连接函数
         {
             CheckForIllegalCrossThreadCalls = false;
@@ -306,10 +298,11 @@ namespace client
             {
                 try
                 {
-                    TcpClient = new TcpClient(txtServerIp.Text, int.Parse(txtPort.Text.Trim()));
-                    Stream = TcpClient.GetStream();
-                    ClientReader = new StreamReader(Stream);
-                    ClientWriter = new StreamWriter(Stream);
+                    
+                    //TcpClient = new TcpClient(txtServerIp.Text, int.Parse(txtPort.Text.Trim()));
+                    //Stream = TcpClient.GetStream();
+                    //ClientReader = new StreamReader(Stream);
+                    //ClientWriter = new StreamWriter(Stream);
                     txtServerIp.Enabled = false;
                     btnConnect.Enabled = false;
                     this.Text = "客户端   " + "正在与" + txtServerIp.Text.Trim() + txtPort.Text.Trim() + "连接……";
@@ -334,8 +327,36 @@ namespace client
             }
             else
             {
-                Thd = new Thread(new ThreadStart(GetConn));// 先执行 连接函数 ，在执行现场启动，新线程
-                Thd.Start();// 线程启动
+
+                try
+                {
+                    //得到本机IP，设置UDP端口号     
+                    //ipLocalPoint = new IPEndPoint(IPAddress.Parse(txtServerIp.Text), getValidPort(txtPort.Text) + 1);
+                    if(mySocket!=null)
+                    {
+                        mySocket.Close();
+                    }
+                    
+                    //定义网络类型，数据连接类型和网络协议UDP  
+                    //mySocket = new Socket(AddressFamily.InterNetwork, SocketType.Dgram, ProtocolType.Udp);
+                    IPEndPoint endPoint = new IPEndPoint(IPAddress.Parse(txtServerIp.Text), System.Convert.ToInt32(txtPort.Text));
+                    mySocket = new Socket(endPoint.Address.AddressFamily, SocketType.Stream, ProtocolType.Tcp);
+                    //绑定网络地址  
+                    //mySocket.Bind(endPoint);
+                    mySocket.Connect(endPoint);
+                    //启动一个新的线程，执行方法this.ReceiveHandle，  
+                    //以便在一个独立的进程中执行数据接收的操作  
+
+                    RunningFlag = true;
+                    thread = new Thread(new ThreadStart(ReceiveHandle));
+                    thread.Start();
+                    this.Text = "连接成功";
+                }
+                catch
+                {
+                    this.Text = "连接失败……";
+                    return;
+                }
             }
         }
         public void SendMessage()
@@ -344,16 +365,23 @@ namespace client
             {
                 if (rtxSendMessage.Text.Trim() != "") // 发送消息不为空
                 {
-                    //HexToAsscii.HexToAsci(rtxSendMessage.Text)
                     string abc = HexToAscii.HexToAsci(rtxSendMessage.Text);
-                    //abc = HexToAsscii.HexToAsci(abc);
-                    if (rtxSendMessage.Text != null)
+                    //string abc = rtxSendMessage.Text;              
+                    //abc = HexToAsscii.HexToAsci(abc)                                         
+                    if (abc != null)
                     {
-                        ClientWriter.Write(abc);//信息写入流
-                        ClientWriter.Flush();
+                        byte[] data = Encoding.Default.GetBytes(abc);
+                        //得到客户机IP  
+                        IPEndPoint ipep = new IPEndPoint(getValidIP(txtServerIp.Text), getValidPort(txtPort.Text));
+                        RemotePoint = (EndPoint)(ipep);
+                        mySocket.SendTo(data, data.Length, SocketFlags.None, RemotePoint);  
+                        //Stream.Write(data, 0, data.Length);
+                        //ClientWriter.Write(abc);                //信息写入流
+                        //Stream.Flush();
+                        //ClientWriter.Flush();
                         rtxChatInfo.AppendText(DateTime.Now.ToString()); // 显示框 rtxChatInfo
                         rtxChatInfo.AppendText(" 客户端说: \n");
-                        rtxChatInfo.AppendText(abc + "\n");
+                        rtxChatInfo.AppendText(rtxSendMessage.Text + "\n");
                         rtxSendMessage.Clear();
                     }
                     //下拉框
