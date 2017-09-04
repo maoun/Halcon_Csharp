@@ -30,13 +30,13 @@ namespace develop_calibrate_camera.calibrate_camera
 
         private void chosefile_Click(object sender, EventArgs e)
         {
-            textFiles.Clear();
+            txtFiles.Clear();
             System.Windows.Forms.FolderBrowserDialog folder = new System.Windows.Forms.FolderBrowserDialog();
             if (folder.ShowDialog() == DialogResult.OK)
             {
-                this.textFiles.Text = folder.SelectedPath;
+                this.txtFiles.Text = folder.SelectedPath;
             }
-            ImagePath = textFiles.Text;
+            ImagePath = txtFiles.Text;
             txtLog.Text = "选择路径为：" + ImagePath +"\r\n"+DateTime.Now+"\r\n";
         }
 
@@ -218,7 +218,8 @@ namespace develop_calibrate_camera.calibrate_camera
             HOperatorSet.CreateCalibData("calibration_object", 1, 1, out hv_CalibDataID);
             //Specify the used calibration plane using the name of the
             //description file
-            hv_CalPlateDescr = "calplate_80mm.cpd";
+
+            hv_CalPlateDescr = "calplate_" + txtCalibtate.Text + "mm.cpd";
             HOperatorSet.SetCalibDataCalibObject(hv_CalibDataID, 0, hv_CalPlateDescr);
 
             double sx = System.Convert.ToDouble(txtSx.Text);
@@ -284,7 +285,14 @@ namespace develop_calibrate_camera.calibrate_camera
 
         private void startcalibrate_Click(object sender, EventArgs e)
         {
-            action();
+            if (txtFiles.Text=="")
+            {
+                txtLog.Text = txtLog.Text + "未选定图像路径" + "\r\n" + DateTime.Now + "\r\n";
+            }
+            else
+            {
+                action();
+            }           
         }
 
     }

@@ -30,7 +30,7 @@
         {
             this.startcalibrate = new System.Windows.Forms.Button();
             this.chosefile = new System.Windows.Forms.Button();
-            this.textFiles = new System.Windows.Forms.TextBox();
+            this.txtFiles = new System.Windows.Forms.TextBox();
             this.groupFiles = new System.Windows.Forms.GroupBox();
             this.txtLog = new System.Windows.Forms.TextBox();
             this.groupImage = new System.Windows.Forms.GroupBox();
@@ -44,16 +44,16 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.groupCamPar = new System.Windows.Forms.GroupBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.txtCalibtate = new System.Windows.Forms.TextBox();
-            this.txtFocus = new System.Windows.Forms.TextBox();
-            this.txtKappa = new System.Windows.Forms.TextBox();
-            this.txtSx = new System.Windows.Forms.TextBox();
-            this.txtSy = new System.Windows.Forms.TextBox();
-            this.txtCx = new System.Windows.Forms.TextBox();
-            this.txtCy = new System.Windows.Forms.TextBox();
-            this.txtIx = new System.Windows.Forms.TextBox();
             this.txtIy = new System.Windows.Forms.TextBox();
+            this.txtIx = new System.Windows.Forms.TextBox();
+            this.txtCy = new System.Windows.Forms.TextBox();
+            this.txtCx = new System.Windows.Forms.TextBox();
+            this.txtSy = new System.Windows.Forms.TextBox();
+            this.txtSx = new System.Windows.Forms.TextBox();
+            this.txtKappa = new System.Windows.Forms.TextBox();
+            this.txtFocus = new System.Windows.Forms.TextBox();
+            this.txtCalibtate = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
             this.groupFiles.SuspendLayout();
             this.groupImage.SuspendLayout();
             this.groupCamPar.SuspendLayout();
@@ -79,19 +79,19 @@
             this.chosefile.UseVisualStyleBackColor = true;
             this.chosefile.Click += new System.EventHandler(this.chosefile_Click);
             // 
-            // textFiles
+            // txtFiles
             // 
-            this.textFiles.Font = new System.Drawing.Font("宋体", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.textFiles.Location = new System.Drawing.Point(213, 70);
-            this.textFiles.Multiline = true;
-            this.textFiles.Name = "textFiles";
-            this.textFiles.Size = new System.Drawing.Size(479, 37);
-            this.textFiles.TabIndex = 3;
-            this.textFiles.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.txtFiles.Font = new System.Drawing.Font("宋体", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.txtFiles.Location = new System.Drawing.Point(213, 70);
+            this.txtFiles.Multiline = true;
+            this.txtFiles.Name = "txtFiles";
+            this.txtFiles.Size = new System.Drawing.Size(479, 37);
+            this.txtFiles.TabIndex = 3;
+            this.txtFiles.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // groupFiles
             // 
-            this.groupFiles.Controls.Add(this.textFiles);
+            this.groupFiles.Controls.Add(this.txtFiles);
             this.groupFiles.Controls.Add(this.startcalibrate);
             this.groupFiles.Controls.Add(this.chosefile);
             this.groupFiles.Dock = System.Windows.Forms.DockStyle.Bottom;
@@ -234,6 +234,87 @@
             this.groupCamPar.TabStop = false;
             this.groupCamPar.Text = "相机参数";
             // 
+            // txtIy
+            // 
+            this.txtIy.Font = new System.Drawing.Font("宋体", 8F);
+            this.txtIy.Location = new System.Drawing.Point(482, 144);
+            this.txtIy.Multiline = true;
+            this.txtIy.Name = "txtIy";
+            this.txtIy.Size = new System.Drawing.Size(100, 21);
+            this.txtIy.TabIndex = 17;
+            // 
+            // txtIx
+            // 
+            this.txtIx.Font = new System.Drawing.Font("宋体", 8F);
+            this.txtIx.Location = new System.Drawing.Point(482, 109);
+            this.txtIx.Multiline = true;
+            this.txtIx.Name = "txtIx";
+            this.txtIx.Size = new System.Drawing.Size(100, 21);
+            this.txtIx.TabIndex = 16;
+            // 
+            // txtCy
+            // 
+            this.txtCy.Font = new System.Drawing.Font("宋体", 8F);
+            this.txtCy.Location = new System.Drawing.Point(482, 76);
+            this.txtCy.Multiline = true;
+            this.txtCy.Name = "txtCy";
+            this.txtCy.Size = new System.Drawing.Size(100, 21);
+            this.txtCy.TabIndex = 15;
+            // 
+            // txtCx
+            // 
+            this.txtCx.Font = new System.Drawing.Font("宋体", 8F);
+            this.txtCx.Location = new System.Drawing.Point(482, 42);
+            this.txtCx.Multiline = true;
+            this.txtCx.Name = "txtCx";
+            this.txtCx.Size = new System.Drawing.Size(100, 21);
+            this.txtCx.TabIndex = 14;
+            // 
+            // txtSy
+            // 
+            this.txtSy.Font = new System.Drawing.Font("宋体", 8F);
+            this.txtSy.Location = new System.Drawing.Point(209, 147);
+            this.txtSy.Multiline = true;
+            this.txtSy.Name = "txtSy";
+            this.txtSy.Size = new System.Drawing.Size(100, 21);
+            this.txtSy.TabIndex = 13;
+            // 
+            // txtSx
+            // 
+            this.txtSx.Font = new System.Drawing.Font("宋体", 8F);
+            this.txtSx.Location = new System.Drawing.Point(209, 112);
+            this.txtSx.Multiline = true;
+            this.txtSx.Name = "txtSx";
+            this.txtSx.Size = new System.Drawing.Size(100, 21);
+            this.txtSx.TabIndex = 12;
+            // 
+            // txtKappa
+            // 
+            this.txtKappa.Font = new System.Drawing.Font("宋体", 8F);
+            this.txtKappa.Location = new System.Drawing.Point(209, 76);
+            this.txtKappa.Multiline = true;
+            this.txtKappa.Name = "txtKappa";
+            this.txtKappa.Size = new System.Drawing.Size(100, 21);
+            this.txtKappa.TabIndex = 11;
+            // 
+            // txtFocus
+            // 
+            this.txtFocus.Font = new System.Drawing.Font("宋体", 8F);
+            this.txtFocus.Location = new System.Drawing.Point(209, 39);
+            this.txtFocus.Multiline = true;
+            this.txtFocus.Name = "txtFocus";
+            this.txtFocus.Size = new System.Drawing.Size(100, 21);
+            this.txtFocus.TabIndex = 10;
+            // 
+            // txtCalibtate
+            // 
+            this.txtCalibtate.Font = new System.Drawing.Font("宋体", 8F);
+            this.txtCalibtate.Location = new System.Drawing.Point(714, 42);
+            this.txtCalibtate.Multiline = true;
+            this.txtCalibtate.Name = "txtCalibtate";
+            this.txtCalibtate.Size = new System.Drawing.Size(100, 21);
+            this.txtCalibtate.TabIndex = 9;
+            // 
             // label9
             // 
             this.label9.AutoSize = true;
@@ -242,78 +323,6 @@
             this.label9.Size = new System.Drawing.Size(115, 21);
             this.label9.TabIndex = 8;
             this.label9.Text = "标定板规格";
-            // 
-            // txtCalibtate
-            // 
-            this.txtCalibtate.Location = new System.Drawing.Point(714, 42);
-            this.txtCalibtate.Multiline = true;
-            this.txtCalibtate.Name = "txtCalibtate";
-            this.txtCalibtate.Size = new System.Drawing.Size(100, 21);
-            this.txtCalibtate.TabIndex = 9;
-            // 
-            // txtFocus
-            // 
-            this.txtFocus.Location = new System.Drawing.Point(209, 39);
-            this.txtFocus.Multiline = true;
-            this.txtFocus.Name = "txtFocus";
-            this.txtFocus.Size = new System.Drawing.Size(100, 21);
-            this.txtFocus.TabIndex = 10;
-            // 
-            // txtKappa
-            // 
-            this.txtKappa.Location = new System.Drawing.Point(209, 76);
-            this.txtKappa.Multiline = true;
-            this.txtKappa.Name = "txtKappa";
-            this.txtKappa.Size = new System.Drawing.Size(100, 21);
-            this.txtKappa.TabIndex = 11;
-            // 
-            // txtSx
-            // 
-            this.txtSx.Location = new System.Drawing.Point(209, 112);
-            this.txtSx.Multiline = true;
-            this.txtSx.Name = "txtSx";
-            this.txtSx.Size = new System.Drawing.Size(100, 21);
-            this.txtSx.TabIndex = 12;
-            // 
-            // txtSy
-            // 
-            this.txtSy.Location = new System.Drawing.Point(209, 147);
-            this.txtSy.Multiline = true;
-            this.txtSy.Name = "txtSy";
-            this.txtSy.Size = new System.Drawing.Size(100, 21);
-            this.txtSy.TabIndex = 13;
-            // 
-            // txtCx
-            // 
-            this.txtCx.Location = new System.Drawing.Point(482, 42);
-            this.txtCx.Multiline = true;
-            this.txtCx.Name = "txtCx";
-            this.txtCx.Size = new System.Drawing.Size(100, 21);
-            this.txtCx.TabIndex = 14;
-            // 
-            // txtCy
-            // 
-            this.txtCy.Location = new System.Drawing.Point(482, 76);
-            this.txtCy.Multiline = true;
-            this.txtCy.Name = "txtCy";
-            this.txtCy.Size = new System.Drawing.Size(100, 21);
-            this.txtCy.TabIndex = 15;
-            // 
-            // txtIx
-            // 
-            this.txtIx.Location = new System.Drawing.Point(482, 109);
-            this.txtIx.Multiline = true;
-            this.txtIx.Name = "txtIx";
-            this.txtIx.Size = new System.Drawing.Size(100, 21);
-            this.txtIx.TabIndex = 16;
-            // 
-            // txtIy
-            // 
-            this.txtIy.Location = new System.Drawing.Point(482, 144);
-            this.txtIy.Multiline = true;
-            this.txtIy.Name = "txtIy";
-            this.txtIy.Size = new System.Drawing.Size(100, 21);
-            this.txtIy.TabIndex = 17;
             // 
             // Calibrate
             // 
@@ -341,7 +350,7 @@
 
         private System.Windows.Forms.Button startcalibrate;
         private System.Windows.Forms.Button chosefile;
-        private System.Windows.Forms.TextBox textFiles;
+        private System.Windows.Forms.TextBox txtFiles;
         private System.Windows.Forms.GroupBox groupFiles;
         private System.Windows.Forms.TextBox txtLog;
         private System.Windows.Forms.GroupBox groupImage;

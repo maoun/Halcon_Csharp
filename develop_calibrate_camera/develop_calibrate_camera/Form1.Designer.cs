@@ -34,6 +34,8 @@
             this.hWindowControl1 = new HalconDotNet.HWindowControl();
             this.hWindowControl2 = new HalconDotNet.HWindowControl();
             this.button4 = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // button1
@@ -71,27 +73,27 @@
             // 
             // hWindowControl1
             // 
-            this.hWindowControl1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.hWindowControl1.BackColor = System.Drawing.Color.Black;
             this.hWindowControl1.BorderColor = System.Drawing.Color.Black;
+            this.hWindowControl1.Dock = System.Windows.Forms.DockStyle.Left;
             this.hWindowControl1.ImagePart = new System.Drawing.Rectangle(0, 0, 640, 480);
-            this.hWindowControl1.Location = new System.Drawing.Point(12, 12);
+            this.hWindowControl1.Location = new System.Drawing.Point(0, 0);
             this.hWindowControl1.Name = "hWindowControl1";
-            this.hWindowControl1.Size = new System.Drawing.Size(450, 379);
+            this.hWindowControl1.Size = new System.Drawing.Size(509, 426);
             this.hWindowControl1.TabIndex = 5;
-            this.hWindowControl1.WindowSize = new System.Drawing.Size(450, 379);
+            this.hWindowControl1.WindowSize = new System.Drawing.Size(509, 426);
             // 
             // hWindowControl2
             // 
-            this.hWindowControl2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.hWindowControl2.BackColor = System.Drawing.Color.Black;
             this.hWindowControl2.BorderColor = System.Drawing.Color.Black;
+            this.hWindowControl2.Dock = System.Windows.Forms.DockStyle.Right;
             this.hWindowControl2.ImagePart = new System.Drawing.Rectangle(0, 0, 640, 480);
-            this.hWindowControl2.Location = new System.Drawing.Point(556, 12);
+            this.hWindowControl2.Location = new System.Drawing.Point(515, 0);
             this.hWindowControl2.Name = "hWindowControl2";
-            this.hWindowControl2.Size = new System.Drawing.Size(450, 379);
+            this.hWindowControl2.Size = new System.Drawing.Size(503, 426);
             this.hWindowControl2.TabIndex = 6;
-            this.hWindowControl2.WindowSize = new System.Drawing.Size(450, 379);
+            this.hWindowControl2.WindowSize = new System.Drawing.Size(503, 426);
             // 
             // button4
             // 
@@ -104,20 +106,30 @@
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.hWindowControl1);
+            this.panel1.Controls.Add(this.hWindowControl2);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1018, 426);
+            this.panel1.TabIndex = 8;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1018, 609);
             this.Controls.Add(this.button4);
-            this.Controls.Add(this.hWindowControl2);
-            this.Controls.Add(this.hWindowControl1);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
+            this.Controls.Add(this.panel1);
             this.Name = "Form1";
             this.Text = "Form1";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -130,6 +142,7 @@
         private HalconDotNet.HWindowControl hWindowControl1;
         private HalconDotNet.HWindowControl hWindowControl2;
         private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Panel panel1;
     }
 }
 
