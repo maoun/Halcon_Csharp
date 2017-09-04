@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using HalconDotNet;
 using System.Threading;
+using develop_calibrate_camera.calibrate_camera;
 
 namespace develop_calibrate_camera
 {
@@ -23,7 +24,8 @@ namespace develop_calibrate_camera
         public HTuple hv_AcqHandle = null;
         Thread dispig;
         public int chuli;
-      
+        public int count=0;
+
         public void getin()
         {
             HOperatorSet.GenEmptyObj(out ho_Image);
@@ -55,6 +57,7 @@ namespace develop_calibrate_camera
                     HOperatorSet.SelectShape(ho_ConnectedRegions, out ho_SelectedRegions, "area",
                         "and", 20000, 9999999);
                     HOperatorSet.DispObj(ho_SelectedRegions, hWindowControl2.HalconWindow);
+                    HOperatorSet.WriteImage(ho_Image, "jpeg", 0, "D:/Users/Mao_TP/Desktop/Image" + count);
                 }               
                 ho_GrayImage.Dispose();
                 ho_Regions.Dispose();
@@ -76,19 +79,28 @@ namespace develop_calibrate_camera
         {
             dispig = new Thread(getin);
             dispig.Start();
+            button1.Enabled = false;
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             chuli = 1;
+            count++;
+            
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            ho_Image.Dispose();
-            dispig.Abort();
-            HOperatorSet.CloseAllFramegrabbers();
-            //this.Close();
+            try
+            {
+                ho_Image.Dispose();
+                dispig.Abort();
+                HOperatorSet.CloseAllFramegrabbers();
+                button1.Enabled = true;
+                //this.Close();
+            }
+            catch { }
+            
         }
 
         private void GetRegion( )
@@ -101,6 +113,24 @@ namespace develop_calibrate_camera
             {
 
             }
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            bool isfind = false;
+            foreach (Form fm in Application.OpenForms)
+            {
+                //判断Form2是否存在，如果在激活并给予焦点
+                if (fm.Name == "Calibrate")
+                {
+                    fm.WindowState = FormWindowState.Maximized;
+                    fm.WindowState = FormWindowState.Normal;
+                    fm.Activate();
+                    return;
+                }
+            }
+            //如果窗口不存在，打开窗口
+            if (!isfind) { Form fm = new Calibrate(); fm.Show(); }
         }
     }
 }

@@ -5,10 +5,11 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
-using System.Net.Sockets;//
-using System.Net;//
-using System.IO;//
-using System.Threading;//
+using System.Net.Sockets;
+using System.Net;
+using System.IO;
+using System.Threading;
+using System.Text.RegularExpressions;
 
 namespace client
 {
@@ -186,21 +187,20 @@ namespace client
             byte[] data = new byte[1024];
             Control.CheckForIllegalCrossThreadCalls = false; //跨线程调用控件 
             while (RunningFlag)
-            {
-                if (mySocket == null || mySocket.Available < 1)
-                {
-                    //Thread.Sleep(200);
-                    continue;
-                }
-                
-                //接收UDP数据报，引用参数RemotePoint获得源地址  
+            {              
                 try
                 {
+                    if (mySocket == null || mySocket.Available < 1)
+                    {                     
+                        continue;
+                    }                
                     int rlen = mySocket.ReceiveFrom(data, ref RemotePoint);
                     msg = Encoding.Default.GetString(data, 0, rlen);
+                    string seversay = HexToAscii.AsciiToHex(msg);
+                    seversay =Regex.Replace(seversay,@"(\d{2}(?!$))","$1 ");  
                     rtxChatInfo.AppendText(DateTime.Now.ToString());
                     rtxChatInfo.AppendText(" 服务器说:\n");
-                    rtxChatInfo.AppendText(msg + "\n");
+                    rtxChatInfo.AppendText(seversay + " " + "[" + rlen + "]" + "\n");
                     //下拉框
                     rtxChatInfo.SelectionStart = rtxChatInfo.Text.Length;
                     rtxChatInfo.Focus();
@@ -208,7 +208,7 @@ namespace client
                 }
                 catch 
                 {
-                    MessageBox.Show("远程主机无响应");
+                    //MessageBox.Show("远程主机无响应");
                 }           
             }
         }
@@ -228,7 +228,7 @@ namespace client
                         rtxChatInfo.AppendText(DateTime.Now.ToString()); // 显示框 rtxChatInfo
                         rtxChatInfo.AppendText(" 客户端说: \n");
                         rtxChatInfo.AppendText(rtxSendMessage.Text + "\n");
-                        rtxSendMessage.Clear();
+                        //rtxSendMessage.Clear();
                     }
                     //下拉框
                     rtxChatInfo.SelectionStart = rtxChatInfo.Text.Length;
@@ -328,7 +328,7 @@ namespace client
                         rtxChatInfo.AppendText(DateTime.Now.ToString()); // 显示框 rtxChatInfo
                         rtxChatInfo.AppendText(" 客户端说: \n");
                         rtxChatInfo.AppendText(rtxSendMessage.Text + "\n");
-                        rtxSendMessage.Clear();
+                        //rtxSendMessage.Clear();
                     }
                     //下拉框
                     rtxChatInfo.SelectionStart = rtxChatInfo.Text.Length;

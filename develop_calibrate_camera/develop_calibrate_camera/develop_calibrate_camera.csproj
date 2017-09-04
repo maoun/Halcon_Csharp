@@ -90,8 +90,11 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="calibrate_camera\calibrate_cameras_monocular.cs">
-      <SubType>Code</SubType>
+    <Compile Include="calibrate_camera\Calibrate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="calibrate_camera\Calibrate.Designer.cs">
+      <DependentUpon>Calibrate.cs</DependentUpon>
     </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -99,11 +102,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Initialization_camera\Class1.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="Initialization_camera\Class1.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="calibrate_camera\Calibrate.resx">
+      <DependentUpon>Calibrate.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
