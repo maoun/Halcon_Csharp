@@ -32,12 +32,13 @@ namespace test1
                 {
                     pictureBox1.Image = null;
                     string Image_path = this.listView1.FocusedItem.SubItems[9].Text;
-                    pictureBox1.Image = Image.FromFile(@Image_path);
+                    var path = Image_path.Split(';');
+                    pictureBox1.Image = Image.FromFile(@path[0]);
                 }
                 catch
                 {
                     MessageBox.Show("没有图片","提示");
-                }
+                }                
             }
         }
         private void bindListCiew()
@@ -68,8 +69,8 @@ namespace test1
             
             MySqlConnection myconn = null;
             MySqlCommand mycom = null;
-            MySqlCommand mycom2 = null;
-            MySqlDataAdapter myrec = null;
+            //MySqlCommand mycom2 = null;
+            //MySqlDataAdapter myrec = null;
             myconn = new MySqlConnection("Host =192.168.0.250;Database=bec_yangji_db;Username=root;Password=maounfeng");
             myconn.Open();
             //查询
@@ -105,12 +106,82 @@ namespace test1
                 MessageBox.Show("查询内容不存在", "错误");
             }
             myconn.Close();
+            button1.Focus();
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private int ImgNumber = 0;
+        private void next_Click(object sender, EventArgs e)
         {
-
+            ImgNumber += 1;
+            if (listView1.SelectedIndices != null && listView1.SelectedIndices.Count > 0)
+            {
+                try
+                {
+                    pictureBox1.Image = null;
+                    string Image_path = this.listView1.FocusedItem.SubItems[9].Text;
+                    //复数图片显示
+                    var path = Image_path.Split(';');
+                    int n = path.Length;
+                    if (ImgNumber >= n)
+                    {
+                        ImgNumber = 0;
+                    }
+                    pictureBox1.Image = Image.FromFile(@path[ImgNumber]);
+                    if (ImgPicture.Visible)
+                    {
+                        ImgPicture.pictureBox1.Image = this.pictureBox1.Image;
+                    }
+                }
+                catch
+                {
+                    MessageBox.Show("没有图片", "提示");
+                }
+            }
         }
 
+        private void last_Click(object sender, EventArgs e)
+        {
+            ImgNumber -= 1;
+            if (listView1.SelectedIndices != null && listView1.SelectedIndices.Count > 0)
+            {
+                try
+                {
+                    pictureBox1.Image = null;
+                    string Image_path = this.listView1.FocusedItem.SubItems[9].Text;
+                    //复数图片显示
+                    var path = Image_path.Split(';');
+                    int n = path.Length;
+                    if (ImgNumber < 0)
+                    {
+                        ImgNumber = n-1;
+                    }
+                    pictureBox1.Image = Image.FromFile(@path[ImgNumber]);
+                    if (ImgPicture.Visible)
+                    {
+                        ImgPicture.pictureBox1.Image = this.pictureBox1.Image;
+                    }
+                }
+                catch
+                {
+                    MessageBox.Show("没有图片", "提示");
+                }
+            }
+        }
+
+         ImageForm ImgPicture = new ImageForm();
+         
+        public void pictureBox1_Click(object sender, EventArgs e)
+        {
+            ImgPicture.Size = new Size(500, 500);
+            if (ImgPicture.Visible)
+            {
+                ImgPicture.Hide();
+            }
+            else
+            {               
+                ImgPicture.Show();
+                ImgPicture.pictureBox1.Image = this.pictureBox1.Image;
+            }              
+        }
     }
 }
