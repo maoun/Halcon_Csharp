@@ -173,7 +173,7 @@ namespace test1
         public void pictureBox1_Click(object sender, EventArgs e)
         {
             ImgPicture.Size = new Size(500, 500);
-            if (ImgPicture.Visible)
+            if (ImgPicture.Visible || pictureBox1.Image == null)
             {
                 ImgPicture.Hide();
             }
