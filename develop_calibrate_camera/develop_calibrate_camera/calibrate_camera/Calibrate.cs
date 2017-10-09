@@ -37,7 +37,11 @@ namespace develop_calibrate_camera.calibrate_camera
                 this.txtFiles.Text = folder.SelectedPath;
             }
             ImagePath = txtFiles.Text;
-            txtLog.Text = "选择路径为：" + ImagePath +"\r\n"+DateTime.Now+"\r\n";
+            if (txtFiles.Text != "")
+            {
+                txtLog.Text = "选择路径为：" + ImagePath +"\r\n"+DateTime.Now+"\r\n";
+            }
+            
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -182,7 +186,7 @@ namespace develop_calibrate_camera.calibrate_camera
         private void action()
         {
 
-
+            int log = 0;
             // Local iconic variables 
 
             HObject ho_Image, ho_MarkContours = null;
@@ -220,7 +224,17 @@ namespace develop_calibrate_camera.calibrate_camera
             //description file
 
             hv_CalPlateDescr = "calplate_" + txtCalibtate.Text + "mm.cpd";
-            HOperatorSet.SetCalibDataCalibObject(hv_CalibDataID, 0, hv_CalPlateDescr);
+            try 
+            {
+                HOperatorSet.SetCalibDataCalibObject(hv_CalibDataID, 0, hv_CalPlateDescr); 
+            }
+            catch 
+            {
+                if (log == 0)
+                {
+                    log = 1;
+                }
+            }            
 
             double sx = System.Convert.ToDouble(txtSx.Text);
             double sy = System.Convert.ToDouble(txtSy.Text);
@@ -258,11 +272,12 @@ namespace develop_calibrate_camera.calibrate_camera
                     }
                     catch
                     {
-                        //图像标定失败
-                        txtLog.Text = txtLog.Text + "图像" + hv_Index.ToString() + "处理失败" + "\r\n" + DateTime.Now + "\r\n";
+                        if (log == 0)
+                        {
+                            txtLog.Text = txtLog.Text + "图像" + hv_Index.ToString() + "处理失败" + "\r\n" + DateTime.Now + "\r\n";
+                        }
+                        //图像标定失败                        
                     }
-
-
                 }
 
                 HOperatorSet.CalibrateCameras(hv_CalibDataID, out hv_Error);
@@ -274,13 +289,26 @@ namespace develop_calibrate_camera.calibrate_camera
                 ho_MarkContours.Dispose();
                 //txtLog.Clear();
                 txtLog.Text = txtLog.Text + "相机内参" + hv_CameraParametersCalibrated.ToString() + "\r\n" + DateTime.Now + "\r\n";
-
             }
             catch
             {
-                txtLog.Text = txtLog.Text + "图像质量出现问题，标定失败" + "\r\n" + DateTime.Now + "\r\n";
+                if(log ==0)
+                {
+                    log = 2;
+                }
             }
-            
+            switch (log)
+            {
+                case 1:
+                    txtLog.Text = txtLog.Text + "相机参数错误，标定失败" + "\r\n" + DateTime.Now + "\r\n";
+                    break;
+                case 2:
+                    txtLog.Text = txtLog.Text + "图像质量出现问题，标定失败" + "\r\n" + DateTime.Now + "\r\n";
+                    break;
+                default:
+                    txtLog.Text = txtLog.Text + "标定成功" + "\r\n" + DateTime.Now + "\r\n";
+                    break;
+            }
         }
 
         private void startcalibrate_Click(object sender, EventArgs e)
@@ -288,6 +316,12 @@ namespace develop_calibrate_camera.calibrate_camera
             if (txtFiles.Text=="")
             {
                 txtLog.Text = txtLog.Text + "未选定图像路径" + "\r\n" + DateTime.Now + "\r\n";
+            }
+            //参数验证
+            //有待改进
+            else if (txtIy.Text == "" || txtIx.Text == "" || txtCy.Text == "" || txtCx.Text == "" || txtSy.Text == "" || txtSx.Text == "" || txtKappa.Text == "" || txtFocus.Text == "" || txtCalibtate.Text == "")
+            {
+                txtLog.Text = txtLog.Text + "未填写参数" + "\r\n" + DateTime.Now + "\r\n";
             }
             else
             {
