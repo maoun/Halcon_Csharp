@@ -279,7 +279,6 @@ namespace develop_calibrate_camera.calibrate_camera
                         //图像标定失败                        
                     }
                 }
-
                 HOperatorSet.CalibrateCameras(hv_CalibDataID, out hv_Error);
                 HOperatorSet.GetCalibData(hv_CalibDataID, "camera", 0, "params", out hv_CameraParametersCalibrated);
                 HOperatorSet.GetCalibData(hv_CalibDataID, "camera", 0, "params_labels", out hv_ParLabels);

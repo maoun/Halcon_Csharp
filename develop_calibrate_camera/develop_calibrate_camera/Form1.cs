@@ -85,8 +85,7 @@ namespace develop_calibrate_camera
         private void button2_Click(object sender, EventArgs e)
         {
             chuli = 1;
-            count++;
-            
+            count++;            
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -99,8 +98,7 @@ namespace develop_calibrate_camera
                 button1.Enabled = true;
                 //this.Close();
             }
-            catch { }
-            
+            catch { }   
         }
 
         private void GetRegion( )
