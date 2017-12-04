@@ -30,14 +30,10 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.hWindowControl1 = new HalconDotNet.HWindowControl();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.button5 = new System.Windows.Forms.Button();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.button6 = new System.Windows.Forms.Button();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.txtIP = new System.Windows.Forms.TextBox();
+            this.btnLink = new System.Windows.Forms.Button();
+            this.txtTrans = new System.Windows.Forms.TextBox();
+            this.txtSet = new System.Windows.Forms.TextBox();
             this.btnstop = new System.Windows.Forms.Button();
             this.txtTime = new System.Windows.Forms.TextBox();
             this.txtNumber = new System.Windows.Forms.TextBox();
@@ -46,6 +42,8 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.lblTime = new System.Windows.Forms.Label();
             this.lblNumber = new System.Windows.Forms.Label();
+            this.lblSet = new System.Windows.Forms.Label();
+            this.lblTrans = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -69,69 +67,36 @@
             this.hWindowControl1.TabIndex = 0;
             this.hWindowControl1.WindowSize = new System.Drawing.Size(800, 600);
             // 
-            // textBox1
+            // txtIP
             // 
-            this.textBox1.Location = new System.Drawing.Point(127, 20);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 31);
-            this.textBox1.TabIndex = 1;
+            this.txtIP.Location = new System.Drawing.Point(127, 24);
+            this.txtIP.Name = "txtIP";
+            this.txtIP.Size = new System.Drawing.Size(155, 31);
+            this.txtIP.TabIndex = 1;
+            this.txtIP.Text = "192.168.1.1";
             // 
-            // button1
+            // btnLink
             // 
-            this.button1.Location = new System.Drawing.Point(20, 20);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(76, 31);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnLink.Location = new System.Drawing.Point(20, 24);
+            this.btnLink.Name = "btnLink";
+            this.btnLink.Size = new System.Drawing.Size(76, 31);
+            this.btnLink.TabIndex = 2;
+            this.btnLink.Text = "Link";
+            this.btnLink.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // txtTrans
             // 
-            this.button2.Location = new System.Drawing.Point(20, 90);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(76, 31);
-            this.button2.TabIndex = 4;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.txtTrans.Location = new System.Drawing.Point(127, 94);
+            this.txtTrans.Name = "txtTrans";
+            this.txtTrans.Size = new System.Drawing.Size(378, 31);
+            this.txtTrans.TabIndex = 3;
             // 
-            // textBox2
+            // txtSet
             // 
-            this.textBox2.Location = new System.Drawing.Point(127, 90);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 31);
-            this.textBox2.TabIndex = 3;
-            // 
-            // button5
-            // 
-            this.button5.Location = new System.Drawing.Point(298, 92);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(76, 31);
-            this.button5.TabIndex = 10;
-            this.button5.Text = "button5";
-            this.button5.UseVisualStyleBackColor = true;
-            // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(405, 92);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 31);
-            this.textBox5.TabIndex = 9;
-            // 
-            // button6
-            // 
-            this.button6.Location = new System.Drawing.Point(298, 22);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(76, 31);
-            this.button6.TabIndex = 8;
-            this.button6.Text = "button6";
-            this.button6.UseVisualStyleBackColor = true;
-            // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(405, 22);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(100, 31);
-            this.textBox6.TabIndex = 7;
+            this.txtSet.Location = new System.Drawing.Point(405, 22);
+            this.txtSet.Name = "txtSet";
+            this.txtSet.Size = new System.Drawing.Size(100, 31);
+            this.txtSet.TabIndex = 7;
             // 
             // btnstop
             // 
@@ -179,20 +144,18 @@
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.lblTrans);
+            this.panel2.Controls.Add(this.lblSet);
             this.panel2.Controls.Add(this.lblTime);
             this.panel2.Controls.Add(this.btnmodel);
-            this.panel2.Controls.Add(this.textBox1);
+            this.panel2.Controls.Add(this.txtIP);
             this.panel2.Controls.Add(this.btnstart);
-            this.panel2.Controls.Add(this.button1);
+            this.panel2.Controls.Add(this.btnLink);
             this.panel2.Controls.Add(this.btnstop);
-            this.panel2.Controls.Add(this.textBox2);
-            this.panel2.Controls.Add(this.button2);
+            this.panel2.Controls.Add(this.txtTrans);
             this.panel2.Controls.Add(this.txtTime);
-            this.panel2.Controls.Add(this.textBox6);
-            this.panel2.Controls.Add(this.button6);
+            this.panel2.Controls.Add(this.txtSet);
             this.panel2.Controls.Add(this.txtNumber);
-            this.panel2.Controls.Add(this.textBox5);
-            this.panel2.Controls.Add(this.button5);
             this.panel2.Controls.Add(this.lblNumber);
             this.panel2.Location = new System.Drawing.Point(13, 630);
             this.panel2.Name = "panel2";
@@ -219,6 +182,26 @@
             this.lblNumber.Text = "Number";
             this.lblNumber.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // lblSet
+            // 
+            this.lblSet.Font = new System.Drawing.Font("宋体", 9F);
+            this.lblSet.Location = new System.Drawing.Point(305, 24);
+            this.lblSet.Name = "lblSet";
+            this.lblSet.Size = new System.Drawing.Size(76, 31);
+            this.lblSet.TabIndex = 23;
+            this.lblSet.Text = "Set";
+            this.lblSet.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblTrans
+            // 
+            this.lblTrans.Font = new System.Drawing.Font("宋体", 9F);
+            this.lblTrans.Location = new System.Drawing.Point(20, 94);
+            this.lblTrans.Name = "lblTrans";
+            this.lblTrans.Size = new System.Drawing.Size(76, 31);
+            this.lblTrans.TabIndex = 24;
+            this.lblTrans.Text = "Trans";
+            this.lblTrans.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(168F, 168F);
@@ -244,14 +227,10 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox txtIP;
+        private System.Windows.Forms.Button btnLink;
+        private System.Windows.Forms.TextBox txtTrans;
+        private System.Windows.Forms.TextBox txtSet;
         private System.Windows.Forms.Button btnstop;
         private System.Windows.Forms.TextBox txtTime;
         private System.Windows.Forms.TextBox txtNumber;
@@ -261,6 +240,8 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label lblTime;
         private System.Windows.Forms.Label lblNumber;
+        private System.Windows.Forms.Label lblSet;
+        private System.Windows.Forms.Label lblTrans;
     }
 }
 
