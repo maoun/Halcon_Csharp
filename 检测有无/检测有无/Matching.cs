@@ -11,7 +11,7 @@ using HalconDotNet;
 
 namespace 检测有无
 {
-    public partial class Form1 : Form
+    public partial class Matching : Form
     {
         int i = 0;
         HTuple ModelID = null;
@@ -23,7 +23,7 @@ namespace 检测有无
         public HObject ho_Image1 = null, ho_Circle = null;
 
 
-        public Form1()
+        public Matching()
         {
             InitializeComponent();
         }
@@ -233,7 +233,7 @@ namespace 检测有无
                 {
                     Az[Ai[k]-1] = 1;
                 }
-                txtTrans.Text = string.Join(",", Az);
+                txtTrans.Text = string.Join("", Az);
             }            
         }
 
@@ -280,5 +280,29 @@ namespace 检测有无
             {
             }           
         }
+
+        private void btnLink_Click(object sender, EventArgs e)
+        {
+            bool isfind = false;
+            foreach (Form fm in Application.OpenForms)
+            {
+                //判断Form2是否存在，如果在激活并给予焦点
+                if (fm.Name == "Link")
+                {
+                    fm.WindowState = FormWindowState.Maximized;
+                    fm.WindowState = FormWindowState.Normal;
+                    fm.Activate();
+                    return;
+                }
+            }
+            //如果窗口不存在，打开窗口
+            if (!isfind) { Form fm = new Link(); fm.Show(); }
+        }
+
+        //public void ChangeText(string s)
+        //{
+        //    Link fl = new Link();
+        //    txtIP.Text = fl.txtServerIp.Text;
+        //}
     }
 }

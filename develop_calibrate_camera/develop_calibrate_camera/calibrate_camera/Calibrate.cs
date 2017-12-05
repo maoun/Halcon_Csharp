@@ -325,7 +325,7 @@ namespace develop_calibrate_camera.calibrate_camera
             else
             {
                 action();
-            }           
+            } 
         }
 
     }

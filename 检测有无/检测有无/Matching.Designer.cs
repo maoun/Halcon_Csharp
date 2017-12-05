@@ -1,6 +1,6 @@
 ﻿namespace 检测有无
 {
-    partial class Form1
+    partial class Matching
     {
         /// <summary>
         /// 必需的设计器变量。
@@ -40,10 +40,10 @@
             this.btnstart = new System.Windows.Forms.Button();
             this.btnmodel = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.lblTrans = new System.Windows.Forms.Label();
+            this.lblSet = new System.Windows.Forms.Label();
             this.lblTime = new System.Windows.Forms.Label();
             this.lblNumber = new System.Windows.Forms.Label();
-            this.lblSet = new System.Windows.Forms.Label();
-            this.lblTrans = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -83,6 +83,7 @@
             this.btnLink.TabIndex = 2;
             this.btnLink.Text = "Link";
             this.btnLink.UseVisualStyleBackColor = true;
+            this.btnLink.Click += new System.EventHandler(this.btnLink_Click);
             // 
             // txtTrans
             // 
@@ -162,6 +163,26 @@
             this.panel2.Size = new System.Drawing.Size(797, 244);
             this.panel2.TabIndex = 21;
             // 
+            // lblTrans
+            // 
+            this.lblTrans.Font = new System.Drawing.Font("宋体", 9F);
+            this.lblTrans.Location = new System.Drawing.Point(20, 94);
+            this.lblTrans.Name = "lblTrans";
+            this.lblTrans.Size = new System.Drawing.Size(76, 31);
+            this.lblTrans.TabIndex = 24;
+            this.lblTrans.Text = "Trans";
+            this.lblTrans.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblSet
+            // 
+            this.lblSet.Font = new System.Drawing.Font("宋体", 9F);
+            this.lblSet.Location = new System.Drawing.Point(305, 24);
+            this.lblSet.Name = "lblSet";
+            this.lblSet.Size = new System.Drawing.Size(76, 31);
+            this.lblSet.TabIndex = 23;
+            this.lblSet.Text = "Set";
+            this.lblSet.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // lblTime
             // 
             this.lblTime.Font = new System.Drawing.Font("宋体", 9F);
@@ -182,27 +203,7 @@
             this.lblNumber.Text = "Number";
             this.lblNumber.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // lblSet
-            // 
-            this.lblSet.Font = new System.Drawing.Font("宋体", 9F);
-            this.lblSet.Location = new System.Drawing.Point(305, 24);
-            this.lblSet.Name = "lblSet";
-            this.lblSet.Size = new System.Drawing.Size(76, 31);
-            this.lblSet.TabIndex = 23;
-            this.lblSet.Text = "Set";
-            this.lblSet.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblTrans
-            // 
-            this.lblTrans.Font = new System.Drawing.Font("宋体", 9F);
-            this.lblTrans.Location = new System.Drawing.Point(20, 94);
-            this.lblTrans.Name = "lblTrans";
-            this.lblTrans.Size = new System.Drawing.Size(76, 31);
-            this.lblTrans.TabIndex = 24;
-            this.lblTrans.Text = "Trans";
-            this.lblTrans.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // Form1
+            // Matching
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(168F, 168F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
@@ -214,7 +215,7 @@
             this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
-            this.Name = "Form1";
+            this.Name = "Matching";
             this.Text = "Matching";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
@@ -227,9 +228,8 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TextBox txtIP;
         private System.Windows.Forms.Button btnLink;
-        private System.Windows.Forms.TextBox txtTrans;
+        public System.Windows.Forms.TextBox txtTrans;
         private System.Windows.Forms.TextBox txtSet;
         private System.Windows.Forms.Button btnstop;
         private System.Windows.Forms.TextBox txtTime;
@@ -242,6 +242,7 @@
         private System.Windows.Forms.Label lblNumber;
         private System.Windows.Forms.Label lblSet;
         private System.Windows.Forms.Label lblTrans;
+        public System.Windows.Forms.TextBox txtIP;
     }
 }
 
