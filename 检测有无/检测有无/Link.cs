@@ -56,9 +56,28 @@ namespace 检测有无
 
         private void btnConnect_Click(object sender, EventArgs e)
         {
-            //fm.ChangeText(txtServerIp.Text);
+            GiveValue(txtServerIp.Text);
             Listen();
         }
+        private void btnStop_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                thread.Abort();
+                txtLog.AppendText(DateTime.Now.ToString() + "\n");
+                txtLog.AppendText("连接已断开" + "\n");
+                txtLog.Focus();
+                btnConnect.Enabled = true;
+            }
+            catch
+            {
+                txtLog.AppendText(DateTime.Now.ToString() + "\n");
+                txtLog.AppendText("连接不存在或未断开" + "\n");
+                txtLog.Focus();
+                btnConnect.Enabled = true;
+            }
+        }
+
 
         #region 功能
         public void Listen()
@@ -79,25 +98,42 @@ namespace 检测有无
                     }
                     //定义网络类型，数据连接类型和网络协议TCP 
                     IPAddress ip = getValidIP(txtServerIp.Text);
-                    int port = getValidPort(txtPort.Text);
-                    IPEndPoint endPoint = new IPEndPoint(ip,port);
-                    mySocket = new Socket(endPoint.Address.AddressFamily, SocketType.Stream, ProtocolType.Tcp);
-                    //连接网络地址
-                    mySocket.Connect(endPoint);
-                    //启动一个新的线程，执行方法this.ReceiveHandle，  
-                    //以便在一个独立的进程中执行数据接收的操作 
-                    RunningFlag = true;
-                    thread = new Thread(new ThreadStart(ReceiveHandle));
-                    thread.Start();
-                    txtLog.AppendText(DateTime.Now.ToString() + "\n");
-                    txtLog.AppendText("连接成功" + "\n");
-                    txtLog.Focus();
+                    Ping pingSender = new Ping();
+                    PingReply reply = pingSender.Send(ip, 1);//第一个参数为ip地址，第二个参数为ping的时间ms
+                    if (reply.Status == IPStatus.Success)
+                    {
+                        //ping的通
+                        txtLog.AppendText("IP地址有效" + "\n");
+                        int port = getValidPort(txtPort.Text);
+                        if (port != 0)
+                        {
+                            IPEndPoint endPoint = new IPEndPoint(ip, port);
+                            mySocket = new Socket(endPoint.Address.AddressFamily, SocketType.Stream, ProtocolType.Tcp);
+                            //连接网络地址
+                            mySocket.Connect(endPoint);
+                            //启动一个新的线程，执行方法this.ReceiveHandle，  
+                            //以便在一个独立的进程中执行数据接收的操作 
+                            RunningFlag = true;
+                            thread = new Thread(new ThreadStart(ReceiveHandle));
+                            thread.Start();
+                            txtLog.AppendText(DateTime.Now.ToString() + "\n");
+                            txtLog.AppendText("连接成功" + "\n");
+                            txtLog.Focus();
+                            btnConnect.Enabled = false;
+                        }
+                    }
+                    else
+                    {
+                        //ping不通
+                        txtLog.AppendText("IP地址无效" + "\n");
+                    }                              
                 }
                 catch
                 {
                     txtLog.AppendText(DateTime.Now.ToString() + "\n");
                     txtLog.AppendText("连接失败" + "\n");
                     txtLog.Focus();
+                    btnConnect.Enabled = true;
                     return;
                 }
             }
@@ -181,9 +217,10 @@ namespace 检测有无
             //测试IP是否有效  
             try
             {
+                txtLog.AppendText(DateTime.Now.ToString() + "\n");
+                txtLog.AppendText("正在尝试连接IP..." + "\n");
+                txtLog.Focus();
                 IPAddress.TryParse(ip, out lip);
-                Ping pingSender = new Ping();
-                PingReply reply = pingSender.Send(lip, 1);//第一个参数为ip地址，第二个参数为ping的时间ms           
             }
             catch
             {
@@ -215,26 +252,28 @@ namespace 检测有无
             }
             return lport;
         }
-        #endregion 功能
 
-        private void btnStop_Click(object sender, EventArgs e)
+        //委托
+        public Action<string> GiveValue;
+
+        //控制txt行数
+        private void txtLog_TextChanged(object sender, EventArgs e)
         {
-            try
+            if (this.txtLog.Lines.Length > 20)
             {
-                thread.Abort();
-                txtLog.AppendText(DateTime.Now.ToString() + "\n");
-                txtLog.AppendText("连接已断开" + "\n");
-                txtLog.Focus();
-            }
-            catch 
-            {
-                txtLog.AppendText(DateTime.Now.ToString() + "\n");
-                txtLog.AppendText("连接不存在或未断开" + "\n");
-                txtLog.Focus();
+                string[] newlines = new string[19];
+                Array.Copy(this.txtLog.Lines, this.txtLog.Lines.Length - 20, newlines, 0, 19);
+                this.txtLog.Lines = newlines;
+                //this.txtLog.Focus();//获取焦点
+                txtLog.AppendText("\n");
             }
         }
+        #endregion 功能
+
+
 
         #region FINS/TCP通讯      
+      
         #endregion FINS/TCP通讯
     }
 }

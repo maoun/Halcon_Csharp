@@ -234,6 +234,8 @@ namespace 检测有无
                     Az[Ai[k]-1] = 1;
                 }
                 txtTrans.Text = string.Join("", Az);
+                //调用发送窗口
+                LinkFormCheck();
             }            
         }
 
@@ -283,26 +285,34 @@ namespace 检测有无
 
         private void btnLink_Click(object sender, EventArgs e)
         {
-            bool isfind = false;
+            //如果窗口不存在，打开窗口
+            if (!LinkFormCheck())
+            {
+                Link fm = new Link();
+                fm.Show();
+                fm.GiveValue = ChangeText;
+            }
+        }
+
+        private bool LinkFormCheck()
+        {
             foreach (Form fm in Application.OpenForms)
             {
                 //判断Form2是否存在，如果在激活并给予焦点
                 if (fm.Name == "Link")
                 {
-                    fm.WindowState = FormWindowState.Maximized;
-                    fm.WindowState = FormWindowState.Normal;
+                    //fm.WindowState = FormWindowState.Maximized;
+                    //fm.WindowState = FormWindowState.Normal;
                     fm.Activate();
-                    return;
-                }
+                    return true;
+                }                
             }
-            //如果窗口不存在，打开窗口
-            if (!isfind) { Form fm = new Link(); fm.Show(); }
+            return false;
         }
 
-        //public void ChangeText(string s)
-        //{
-        //    Link fl = new Link();
-        //    txtIP.Text = fl.txtServerIp.Text;
-        //}
+        public void ChangeText(string s)
+        {
+            txtIP.Text = s;
+        }
     }
 }

@@ -103,6 +103,7 @@
             this.txtLog.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.txtLog.Size = new System.Drawing.Size(639, 225);
             this.txtLog.TabIndex = 6;
+            this.txtLog.TextChanged += new System.EventHandler(this.txtLog_TextChanged);
             // 
             // gbxLog
             // 
@@ -116,14 +117,19 @@
             // 
             // Link
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 21F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(168F, 168F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.AutoScroll = true;
+            this.AutoSize = true;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(676, 368);
             this.Controls.Add(this.gbxLog);
             this.Controls.Add(this.btnConnect);
             this.Controls.Add(this.btnStop);
             this.Controls.Add(this.gbxPort);
             this.Controls.Add(this.gbxIP);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "Link";
             this.Text = "Link";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Link_FormClosing);
