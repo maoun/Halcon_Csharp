@@ -22,13 +22,5 @@ namespace test1
             e.Cancel = true;
             this.Hide();            
         }
-
-        //private void ImageForm_Load(object sender, EventArgs e)
-        //{
-        //    Form1 f1 = new Form1();
-        //    pictureBox1.Image = f1.pictureBox1.Image;
-
-        //}
-
     }
 }

@@ -14,6 +14,12 @@ namespace test1
 {
     public partial class Form1 : Form
     {
+
+
+        ImageForm ImgPicture = new ImageForm();
+         
+
+
         public Form1()
         {
             InitializeComponent();
@@ -33,11 +39,11 @@ namespace test1
                     pictureBox1.Image = null;
                     string Image_path = this.listView1.FocusedItem.SubItems[9].Text;
                     var path = Image_path.Split(';');
-                    pictureBox1.Image = Image.FromFile(@path[0]);
+                    pictureBox1.Image = Image.FromFile(@"\\192.168.0.250/web_ser/" + path[0]);
                 }
                 catch
                 {
-                    MessageBox.Show("没有图片","提示");
+                    pictureBox1.Image = Image.FromFile(@"\\192.168.0.250/web_ser/error.JPG");
                 }                
             }
         }
@@ -59,6 +65,11 @@ namespace test1
         private void button1_Click(object sender, EventArgs e)
         {
             listView1.Items.Clear();
+            pictureBox1.Image = null;
+            if (ImgPicture.Visible)
+            {
+                ImgPicture.Hide();
+            }
             string pinpai = textBox1.Text;
             string laiyuanku = textBox2.Text;
             string leibie = textBox3.Text;
@@ -77,7 +88,7 @@ namespace test1
             mycom = myconn.CreateCommand();
             try
             {
-                string sql = string.Format("select * from bec_yangji_code where `品牌` like '%"+ pinpai +"'and `来源库` like'%"+laiyuanku+"'and `类别` like'%"+leibie+"' ;");
+                string sql = string.Format("select * from bec_yangji_code where `品牌` like '%" + pinpai + "'and `来源库` like'%" + laiyuanku + "'and `类别` like'%" + leibie + "'and `样机型号` like'%" + yangjixinghao + "'and`样机生产批号`like'%" + shengchanpihao + "'and`入库日期`like '%" + rukuriqi + "%'and`样品状态`like'%" + zhuangtai + "';");
                 mycom.CommandText = sql;
                 mycom.CommandType = CommandType.Text;
                 MySqlDataReader sdr = mycom.ExecuteReader();
@@ -117,24 +128,39 @@ namespace test1
             {
                 try
                 {
-                    pictureBox1.Image = null;
+                    if (pictureBox1.Image != null)
+                    {
+                        pictureBox1.Image.Dispose();//释放内存，防止溢出
+                    }
                     string Image_path = this.listView1.FocusedItem.SubItems[9].Text;
                     //复数图片显示
                     var path = Image_path.Split(';');
+                    //去除字符串数组中空字符串
+                    List<string> list = new List<string>();
+                    foreach (string s in path)
+                    {
+                        if (!string.IsNullOrEmpty(s))
+                        {
+                            list.Add(s);
+                        }
+                    }
+                    path = list.ToArray();                    
+                    //组装
                     int n = path.Length;
                     if (ImgNumber >= n)
                     {
                         ImgNumber = 0;
                     }
-                    pictureBox1.Image = Image.FromFile(@path[ImgNumber]);
+                    pictureBox1.Image = Image.FromFile(@"\\192.168.0.250/web_ser/" + path[ImgNumber]);
                     if (ImgPicture.Visible)
                     {
+                        ImgPicture.pictureBox1.Image.Dispose();//释放内存，防止溢出
                         ImgPicture.pictureBox1.Image = this.pictureBox1.Image;
-                    }
+                    }                   
                 }
                 catch
                 {
-                    MessageBox.Show("没有图片", "提示");
+                    pictureBox1.Image = Image.FromFile(@"\\192.168.0.250/web_ser/error.JPG");
                 }
             }
         }
@@ -146,30 +172,44 @@ namespace test1
             {
                 try
                 {
+                    if (pictureBox1.Image != null)
+                    {
+                        pictureBox1.Image.Dispose();//释放内存，防止溢出
+                    }
                     pictureBox1.Image = null;
                     string Image_path = this.listView1.FocusedItem.SubItems[9].Text;
                     //复数图片显示
                     var path = Image_path.Split(';');
+                    //去除字符串数组中空字符串
+                    List<string> list = new List<string>();
+                    foreach (string s in path)
+                    {
+                        if (!string.IsNullOrEmpty(s))
+                        {
+                            list.Add(s);
+                        }
+                    }
+                    path = list.ToArray();
+                    //组装
                     int n = path.Length;
                     if (ImgNumber < 0)
                     {
-                        ImgNumber = n-1;
+                        ImgNumber = n - 1;
                     }
-                    pictureBox1.Image = Image.FromFile(@path[ImgNumber]);
+                    pictureBox1.Image = Image.FromFile(@"\\192.168.0.250/web_ser/" + path[ImgNumber]);                    
                     if (ImgPicture.Visible)
                     {
+                        ImgPicture.pictureBox1.Image.Dispose();//释放内存，防止溢出
                         ImgPicture.pictureBox1.Image = this.pictureBox1.Image;
-                    }
+                    }     
                 }
                 catch
                 {
-                    MessageBox.Show("没有图片", "提示");
+                    pictureBox1.Image = Image.FromFile(@"\\192.168.0.250/web_ser/error.JPG");
                 }
             }
         }
 
-         ImageForm ImgPicture = new ImageForm();
-         
         public void pictureBox1_Click(object sender, EventArgs e)
         {
             ImgPicture.Size = new Size(500, 500);

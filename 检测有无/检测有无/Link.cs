@@ -18,7 +18,7 @@ namespace 检测有无
 {
     public partial class Link : Form
     {
-
+        public static Link Instance;
         public Thread thread;
         //private IPEndPoint ipLocalPoint;
         private EndPoint RemotePoint;
@@ -28,6 +28,7 @@ namespace 检测有无
 
         public Link()
         {
+            Instance = this;
             InitializeComponent();
         }
 
@@ -78,7 +79,6 @@ namespace 检测有无
             }
         }
 
-
         #region 功能
         public void Listen()
         {
@@ -92,11 +92,11 @@ namespace 检测有无
             {
                 try
                 {
-                    if (mySocket != null)
-                    {
-                        mySocket.Close();
-                    }
-                    //定义网络类型，数据连接类型和网络协议TCP 
+                    //if (mySocket != null)
+                    //{
+                    //    mySocket.Close();
+                    //}
+                    //定义网络类型，数据连接类型和网络协议UDP
                     IPAddress ip = getValidIP(txtServerIp.Text);
                     Ping pingSender = new Ping();
                     PingReply reply = pingSender.Send(ip, 1);//第一个参数为ip地址，第二个参数为ping的时间ms
@@ -104,13 +104,13 @@ namespace 检测有无
                     {
                         //ping的通
                         txtLog.AppendText("IP地址有效" + "\n");
-                        int port = getValidPort(txtPort.Text);
-                        if (port != 0)
+                        int port = getValidPort(txtPort.Text+1);//对方端口号不能与本地端口号相同
+                        if (port != 1)
                         {
                             IPEndPoint endPoint = new IPEndPoint(ip, port);
-                            mySocket = new Socket(endPoint.Address.AddressFamily, SocketType.Stream, ProtocolType.Tcp);
-                            //连接网络地址
-                            mySocket.Connect(endPoint);
+                            mySocket = new Socket(AddressFamily.InterNetwork, SocketType.Dgram, ProtocolType.Udp);
+                            //绑定网络地址
+                            mySocket.Bind(endPoint);
                             //启动一个新的线程，执行方法this.ReceiveHandle，  
                             //以便在一个独立的进程中执行数据接收的操作 
                             RunningFlag = true;
@@ -170,13 +170,13 @@ namespace 检测有无
         }
 
         //发送数据
-        public void SendMessage()
+        public void SendMessage(string s)
         {
             try
             {
-                if (fm.txtTrans.Text.Trim() != "") // 发送消息不为空
+                if (s.Trim() != "") // 发送消息不为空
                 {
-                    byte[] data = HexToAscii.HexToAsci(fm.txtTrans.Text);
+                    byte[] data = System.Text.Encoding.ASCII.GetBytes(s);
                     if (data != null)
                     {
                         //得到客户机IP  
@@ -185,7 +185,7 @@ namespace 检测有无
                         mySocket.SendTo(data, data.Length, SocketFlags.None, RemotePoint);
                         txtLog.AppendText(DateTime.Now.ToString()); // 显示框 rtxChatInfo
                         txtLog.AppendText(" 客户端说: \n");
-                        txtLog.AppendText(fm.txtTrans.Text + "\n");
+                        txtLog.AppendText(s + "\n");
                         txtLog.Focus();
                         //rtxSendMessage.Clear();
                     }
@@ -267,10 +267,15 @@ namespace 检测有无
                 //this.txtLog.Focus();//获取焦点
                 txtLog.AppendText("\n");
             }
+            string [] log = new string[1];
+            Array.Copy(this.txtLog.Lines,this.txtLog.Lines.Length-2,log,0,1);
+            using (System.IO.StreamWriter file = new System.IO.StreamWriter("test2.txt", true))
+            {
+                //file.Write(line);//直接追加文件末尾，不换行
+                file.WriteLine(log[0]);// 直接追加文件末尾，换行
+            }
         }
         #endregion 功能
-
-
 
         #region FINS/TCP通讯      
       
