@@ -113,7 +113,8 @@ namespace client
             try
             {
                 //得到本机IP，设置UDP端口号     
-                ipLocalPoint = new IPEndPoint(IPAddress.Parse(txtServerIp.Text), getValidPort(txtPort.Text) + 1); //本地端口号和客户机端口号不能相同              
+                ipLocalPoint = new IPEndPoint(IPAddress.Parse(txtServerIp.Text), getValidPort(txtPort.Text) + 1);
+
                 //定义网络类型，数据连接类型和网络协议UDP  
                 mySocket = new Socket(AddressFamily.InterNetwork, SocketType.Dgram, ProtocolType.Udp);
 

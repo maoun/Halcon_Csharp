@@ -21,7 +21,7 @@ namespace 检测有无
         public HObject ho_SelectedRegions, ho_RegionUnion, ho_RegionDilation;
         public HObject ho_ImageReduced1, ho_GrayImage;
         public HObject ho_Image1 = null, ho_Circle = null;
-        
+
 
         public Matching()
         {
@@ -166,7 +166,6 @@ namespace 检测有无
             ho_ImageReduced1.Dispose();
             return hv_ModelID;
         }
-       
         private void btnstart_Click(object sender, EventArgs e)
         {
             bool flag=true;
@@ -237,7 +236,6 @@ namespace 检测有无
                 txtTrans.Text = string.Join("", Az);
                 //调用发送窗口
                 LinkFormCheck();
-                Link.Instance.SendMessage(txtTrans.Text);
             }            
         }
 
@@ -307,7 +305,7 @@ namespace 检测有无
                     //fm.WindowState = FormWindowState.Normal;
                     fm.Activate();
                     return true;
-                }
+                }                
             }
             return false;
         }
