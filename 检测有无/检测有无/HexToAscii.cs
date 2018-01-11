@@ -44,7 +44,7 @@ namespace 检测有无
         }
         public static string AsciiToHex(string strAsscii)
         {
-            ////ascii转hex
+            //ascii转hex
             //ascii转字符串
             byte[] array = System.Text.Encoding.ASCII.GetBytes(strAsscii);
             string strB = System.Text.Encoding.ASCII.GetString(array);
